@@ -33,9 +33,9 @@ INDICATOR_NAMES = {
     "SP.UWT.TFRT": "Unmet need for contraception (% of married women ages 15-49)",
 }
 
-esg_data = pd.read_csv('data/esg/ESGData.csv', sep=',')
-esg_series = pd.read_csv('data/esg/ESGSeries.csv', sep=',')
-religion_individual = pd.read_csv('data/religion/Religion_Individual.csv', sep=',')
+esg_data = pd.read_csv('esg/ESGData.csv', sep=',')
+esg_series = pd.read_csv('esg/ESGSeries.csv', sep=',')
+religion_individual = pd.read_csv('religion/Religion_Individual.csv', sep=',')
 
 prune_esg_result = esg_data.loc[esg_data['SeriesCode'].isin(
     INDICATOR_NAMES.keys())]
@@ -48,5 +48,5 @@ prune_esg_result["Topic"] = [prune_esg_series.loc[prune_esg_series["SeriesCode"]
 prune_esg_result["Definition"] = [prune_esg_series.loc[prune_esg_series["SeriesCode"]
                                                        == esg, 'Longdefinition'].values[0] for esg in prune_esg_result['SeriesCode'].values]
 
-prune_esg_result.to_csv(r'./data/esg/CountryData.csv', index=False)
+prune_esg_result.to_csv(r'./esg/CountryData.csv', index=False)
 
