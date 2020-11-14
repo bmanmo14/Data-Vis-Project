@@ -24,14 +24,29 @@ class ReligionData {
     this.religion = "";
     this.year = year
   }
+
 }
 
-class YearData {
+class Topic {
+  constructor(topic) {
+    this.topic = topic;
+    this.attributes = {};
+    this.attribute_definition = {};
+  }
+
+  setAttribute(attribute_name, attribute_value, attribute_definition) {
+    this.attributes[attribute_name] = attribute_value;
+    this.attribute_definition[attribute_name] = attribute_definition;
+  }
+
+}
+
+class Year {
   /**
-   * Creates the YearData Object for a specific Country's year.
+   * Creates the Year Object for a specific Country's year.
    *  - Year
    *    - Religion Object
-   *    - TopicData {Dict of Topics}
+   *    - Topic {Dict of Topics}
    *
    * @param year
    */
@@ -40,24 +55,35 @@ class YearData {
     this.topics = {}
     this.religion = "";
   }
+
+  setTopicAttribute(topic, attribute_name, attribute_value, attribute_definition) {
+    if(!(topic in this.topics)) {
+      this.topics[topic] = new Topic(topic);
+    }
+    this.topics[topic].setAttribute(attribute_name, attribute_value, attribute_definition);
+  }
+
 }
 
-class TopicData {
-  constructor(topic) {
-    this.topic = topic;
-    this.attributes = {};
-    this.attribute_definition = {};
+class Country {
+  constructor(country_code, country_name){
+    this.country_code = country_code;
+    this.country_name = country_name;
+    this.years = {}
   }
 
-  setAttribute(name, value, definition) {
-    this.attributes[name] = value;
-    this.attribute_definition[name] = definition;
+  setYearTopicAttribute(year, topic, attribute_name, attribute_value, attribute_definition) {
+    if(!(year in this.years)) {
+      this.years[year] = new Year(year);
+    }
+    this.years[year].setTopicAttribute(topic, attribute_name, attribute_value, attribute_definition)
   }
+
 }
 
 class CountryData {
   /**
-   * Creates the Country Data Object from CountryData.csv
+   * Creates the CountryData Object from CountryData.csv
    * The class should look something like:
    * - Country
    *  - Year
@@ -69,32 +95,25 @@ class CountryData {
    */
 
   constructor(data) {
-    var countries = {};
-    const headers = data.columns;
+    this.countries = {};
     for(var i = 0; i < data.length; i++) {
       var row = data[i];
-      const country = row[COUNTRY_NAME];
+      const country_code = row[COUNTRY_CODE];
+      const country_name = row[COUNTRY_NAME];
       const topic = this.createTopic(row[TOPIC]);
       const attribute_name = row[ATTRIBUTE_NAME].split(" (")[0];
       const attribute_definition = row[DEFINITION];
 
-      if(!(country in countries)) {
-        countries[country] = {}
+      if(!(country_code in this.countries)) {
+        this.countries[country_code] = new Country(country_code, country_name)
       }
 
       for(var y = YEAR_START; y < YEAR_END; y++) {
-        if(!(y in countries[country])) {
-          countries[country][y] = new YearData(y);
-        }
         const attribute_value = row[y];
-        var year = countries[country][y];
-        if(!(topic in year.topics)) {
-          year.topics[topic] = new TopicData(topic);
-        }
-        year.topics[topic].setAttribute(attribute_name, attribute_value, attribute_definition);
+        this.countries[country_code].setYearTopicAttribute(y, topic, attribute_name, attribute_value, attribute_definition)
       }
     }
-    console.log(countries);
+    console.log(this.countries);
   }
 
   createTopic(t) {
