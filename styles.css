@@ -98,7 +98,8 @@ td.head {
 }
 
 .containerg {
-  float: left;
+  margin: auto;
+  text-align: center;
 }
 
 .containert {
