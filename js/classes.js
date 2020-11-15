@@ -128,6 +128,8 @@ class CountryData {
     // Main Structures that hold Country and Religion data
     this.countries = {};
     this.religions = {};
+    this.topics = [];
+    this.attributes = [];
 
     this.country_religions = {};
 
@@ -145,6 +147,9 @@ class CountryData {
     } else if(topic == "Gender") {
       topic = "Education";
     }
+    if(!(this.topics.includes(topic))) {
+      this.topics.push(topic);
+    }
     return topic;
   }
 
@@ -155,6 +160,9 @@ class CountryData {
       const country_name = row[COUNTRY_NAME];
       const topic = this.createTopic(row[TOPIC]);
       const attribute_name = row[ATTRIBUTE_NAME].split(" (")[0];
+      if(!(this.attributes.includes(attribute_name))) {
+        this.attributes.push(attribute_name);
+      }
       const attribute_definition = row[DEFINITION];
 
       if(!(country_code in this.countries)) {
