@@ -1,77 +1,77 @@
 country_code,year,abbrev,country_name,religion,religion_id,parent_religion
-2,1946,USA,United States of America,Baptist,1440,Christian
-2,1947,USA,United States of America,Baptist,1440,Christian
-2,1948,USA,United States of America,Baptist,1440,Christian
-2,1949,USA,United States of America,Baptist,1440,Christian
-2,1950,USA,United States of America,Baptist,1440,Christian
-2,1951,USA,United States of America,Baptist,1440,Christian
-2,1952,USA,United States of America,Baptist,1440,Christian
-2,1953,USA,United States of America,Presbyterian,1422,Christian
-2,1954,USA,United States of America,Presbyterian,1422,Christian
-2,1955,USA,United States of America,Presbyterian,1422,Christian
-2,1956,USA,United States of America,Presbyterian,1422,Christian
-2,1957,USA,United States of America,Presbyterian,1422,Christian
-2,1958,USA,United States of America,Presbyterian,1422,Christian
-2,1959,USA,United States of America,Presbyterian,1422,Christian
-2,1960,USA,United States of America,Presbyterian,1422,Christian
-2,1961,USA,United States of America,Roman Catholic,1222,Christian
-2,1962,USA,United States of America,Roman Catholic,1222,Christian
-2,1963,USA,United States of America,Roman Catholic,1222,Christian
-2,1964,USA,United States of America,Disciples of Christ (Congregationalist),1423,Christian
-2,1965,USA,United States of America,Disciples of Christ (Congregationalist),1423,Christian
-2,1966,USA,United States of America,Disciples of Christ (Congregationalist),1423,Christian
-2,1967,USA,United States of America,Disciples of Christ (Congregationalist),1423,Christian
-2,1968,USA,United States of America,Disciples of Christ (Congregationalist),1423,Christian
-2,1969,USA,United States of America,Quaker,1480,Christian
-2,1970,USA,United States of America,Quaker,1480,Christian
-2,1971,USA,United States of America,Quaker,1480,Christian
-2,1972,USA,United States of America,Quaker,1480,Christian
-2,1973,USA,United States of America,Quaker,1480,Christian
-2,1974,USA,United States of America,Quaker,1480,Christian
-2,1975,USA,United States of America,Episcopalian,1510,Christian
-2,1976,USA,United States of America,Episcopalian,1510,Christian
-2,1977,USA,United States of America,Baptist,1440,Christian
-2,1978,USA,United States of America,Baptist,1440,Christian
-2,1979,USA,United States of America,Baptist,1440,Christian
-2,1980,USA,United States of America,Baptist,1440,Christian
-2,1981,USA,United States of America,Presbyterian,1422,Christian
-2,1982,USA,United States of America,Presbyterian,1422,Christian
-2,1983,USA,United States of America,Presbyterian,1422,Christian
-2,1984,USA,United States of America,Presbyterian,1422,Christian
-2,1985,USA,United States of America,Presbyterian,1422,Christian
-2,1986,USA,United States of America,Presbyterian,1422,Christian
-2,1987,USA,United States of America,Presbyterian,1422,Christian
-2,1988,USA,United States of America,Presbyterian,1422,Christian
-2,1989,USA,United States of America,Episcopalian,1510,Christian
-2,1990,USA,United States of America,Episcopalian,1510,Christian
-2,1991,USA,United States of America,Episcopalian,1510,Christian
-2,1992,USA,United States of America,Episcopalian,1510,Christian
-2,1993,USA,United States of America,Baptist,1440,Christian
-2,1994,USA,United States of America,Baptist,1440,Christian
-2,1995,USA,United States of America,Baptist,1440,Christian
-2,1996,USA,United States of America,Baptist,1440,Christian
-2,1997,USA,United States of America,Baptist,1440,Christian
-2,1998,USA,United States of America,Baptist,1440,Christian
-2,1999,USA,United States of America,Baptist,1440,Christian
-2,2000,USA,United States of America,Baptist,1440,Christian
-2,2001,USA,United States of America,Methodist,1460,Christian
-2,2002,USA,United States of America,Methodist,1460,Christian
-2,2003,USA,United States of America,Methodist,1460,Christian
-2,2004,USA,United States of America,Methodist,1460,Christian
-2,2005,USA,United States of America,Methodist,1460,Christian
-2,2006,USA,United States of America,Methodist,1460,Christian
-2,2007,USA,United States of America,Methodist,1460,Christian
-2,2008,USA,United States of America,Methodist,1460,Christian
-2,2009,USA,United States of America,Protestant (NFI),1400,Christian
-2,2010,USA,United States of America,Protestant (NFI),1400,Christian
-2,2011,USA,United States of America,Protestant (NFI),1400,Christian
-2,2012,USA,United States of America,Protestant (NFI),1400,Christian
-2,2013,USA,United States of America,Protestant (NFI),1400,Christian
-2,2014,USA,United States of America,Protestant (NFI),1400,Christian
-2,2015,USA,United States of America,Protestant (NFI),1400,Christian
-2,2016,USA,United States of America,Protestant (NFI),1400,Christian
-2,2017,USA,United States of America,Presbyterian,1422,Christian
-2,2018,USA,United States of America,Presbyterian,1422,Christian
+2,1946,USA,United States,Baptist,1440,Christian
+2,1947,USA,United States,Baptist,1440,Christian
+2,1948,USA,United States,Baptist,1440,Christian
+2,1949,USA,United States,Baptist,1440,Christian
+2,1950,USA,United States,Baptist,1440,Christian
+2,1951,USA,United States,Baptist,1440,Christian
+2,1952,USA,United States,Baptist,1440,Christian
+2,1953,USA,United States,Presbyterian,1422,Christian
+2,1954,USA,United States,Presbyterian,1422,Christian
+2,1955,USA,United States,Presbyterian,1422,Christian
+2,1956,USA,United States,Presbyterian,1422,Christian
+2,1957,USA,United States,Presbyterian,1422,Christian
+2,1958,USA,United States,Presbyterian,1422,Christian
+2,1959,USA,United States,Presbyterian,1422,Christian
+2,1960,USA,United States,Presbyterian,1422,Christian
+2,1961,USA,United States,Roman Catholic,1222,Christian
+2,1962,USA,United States,Roman Catholic,1222,Christian
+2,1963,USA,United States,Roman Catholic,1222,Christian
+2,1964,USA,United States,Disciples of Christ (Congregationalist),1423,Christian
+2,1965,USA,United States,Disciples of Christ (Congregationalist),1423,Christian
+2,1966,USA,United States,Disciples of Christ (Congregationalist),1423,Christian
+2,1967,USA,United States,Disciples of Christ (Congregationalist),1423,Christian
+2,1968,USA,United States,Disciples of Christ (Congregationalist),1423,Christian
+2,1969,USA,United States,Quaker,1480,Christian
+2,1970,USA,United States,Quaker,1480,Christian
+2,1971,USA,United States,Quaker,1480,Christian
+2,1972,USA,United States,Quaker,1480,Christian
+2,1973,USA,United States,Quaker,1480,Christian
+2,1974,USA,United States,Quaker,1480,Christian
+2,1975,USA,United States,Episcopalian,1510,Christian
+2,1976,USA,United States,Episcopalian,1510,Christian
+2,1977,USA,United States,Baptist,1440,Christian
+2,1978,USA,United States,Baptist,1440,Christian
+2,1979,USA,United States,Baptist,1440,Christian
+2,1980,USA,United States,Baptist,1440,Christian
+2,1981,USA,United States,Presbyterian,1422,Christian
+2,1982,USA,United States,Presbyterian,1422,Christian
+2,1983,USA,United States,Presbyterian,1422,Christian
+2,1984,USA,United States,Presbyterian,1422,Christian
+2,1985,USA,United States,Presbyterian,1422,Christian
+2,1986,USA,United States,Presbyterian,1422,Christian
+2,1987,USA,United States,Presbyterian,1422,Christian
+2,1988,USA,United States,Presbyterian,1422,Christian
+2,1989,USA,United States,Episcopalian,1510,Christian
+2,1990,USA,United States,Episcopalian,1510,Christian
+2,1991,USA,United States,Episcopalian,1510,Christian
+2,1992,USA,United States,Episcopalian,1510,Christian
+2,1993,USA,United States,Baptist,1440,Christian
+2,1994,USA,United States,Baptist,1440,Christian
+2,1995,USA,United States,Baptist,1440,Christian
+2,1996,USA,United States,Baptist,1440,Christian
+2,1997,USA,United States,Baptist,1440,Christian
+2,1998,USA,United States,Baptist,1440,Christian
+2,1999,USA,United States,Baptist,1440,Christian
+2,2000,USA,United States,Baptist,1440,Christian
+2,2001,USA,United States,Methodist,1460,Christian
+2,2002,USA,United States,Methodist,1460,Christian
+2,2003,USA,United States,Methodist,1460,Christian
+2,2004,USA,United States,Methodist,1460,Christian
+2,2005,USA,United States,Methodist,1460,Christian
+2,2006,USA,United States,Methodist,1460,Christian
+2,2007,USA,United States,Methodist,1460,Christian
+2,2008,USA,United States,Methodist,1460,Christian
+2,2009,USA,United States,Protestant (NFI),1400,Christian
+2,2010,USA,United States,Protestant (NFI),1400,Christian
+2,2011,USA,United States,Protestant (NFI),1400,Christian
+2,2012,USA,United States,Protestant (NFI),1400,Christian
+2,2013,USA,United States,Protestant (NFI),1400,Christian
+2,2014,USA,United States,Protestant (NFI),1400,Christian
+2,2015,USA,United States,Protestant (NFI),1400,Christian
+2,2016,USA,United States,Protestant (NFI),1400,Christian
+2,2017,USA,United States,Presbyterian,1422,Christian
+2,2018,USA,United States,Presbyterian,1422,Christian
 20,1946,CAN,Canada,Presbyterian,1422,Christian
 20,1947,CAN,Canada,Presbyterian,1422,Christian
 20,1948,CAN,Canada,Presbyterian,1422,Christian
@@ -3155,53 +3155,53 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 310,2016,HUN,Hungary,Hungarian Reformed,1422,Christian
 310,2017,HUN,Hungary,Hungarian Reformed,1422,Christian
 310,2018,HUN,Hungary,Hungarian Reformed,1422,Christian
-315,1946,CZE,Czechoslovakia,,,
-315,1947,CZE,Czechoslovakia,,,
-315,1948,CZE,Czechoslovakia,,,
-315,1949,CZE,Czechoslovakia,,,
-315,1950,CZE,Czechoslovakia,,,
-315,1951,CZE,Czechoslovakia,,,
-315,1952,CZE,Czechoslovakia,,,
-315,1953,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1954,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1955,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1956,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1957,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1958,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1959,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1960,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1961,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1962,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1963,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1964,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1965,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1966,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1967,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1968,CZE,Czechoslovakia,,,
-315,1969,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1970,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1971,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1972,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1973,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1974,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1975,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1976,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1977,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1978,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1979,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1980,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1981,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1982,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1983,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1984,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1985,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1986,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1987,CZE,Czechoslovakia,Atheist,9100,New Age
-315,1988,CZE,Czechoslovakia,,,
-315,1989,CZE,Czechoslovakia,,,
-315,1990,CZE,Czechoslovakia,Roman Catholic,1222,Christian
-315,1991,CZE,Czechoslovakia,Roman Catholic,1222,Christian
-315,1992,CZE,Czechoslovakia,Roman Catholic,1222,Christian
+315,1946,CZE,Czech Republic,,,
+315,1947,CZE,Czech Republic,,,
+315,1948,CZE,Czech Republic,,,
+315,1949,CZE,Czech Republic,,,
+315,1950,CZE,Czech Republic,,,
+315,1951,CZE,Czech Republic,,,
+315,1952,CZE,Czech Republic,,,
+315,1953,CZE,Czech Republic,Atheist,9100,New Age
+315,1954,CZE,Czech Republic,Atheist,9100,New Age
+315,1955,CZE,Czech Republic,Atheist,9100,New Age
+315,1956,CZE,Czech Republic,Atheist,9100,New Age
+315,1957,CZE,Czech Republic,Atheist,9100,New Age
+315,1958,CZE,Czech Republic,Atheist,9100,New Age
+315,1959,CZE,Czech Republic,Atheist,9100,New Age
+315,1960,CZE,Czech Republic,Atheist,9100,New Age
+315,1961,CZE,Czech Republic,Atheist,9100,New Age
+315,1962,CZE,Czech Republic,Atheist,9100,New Age
+315,1963,CZE,Czech Republic,Atheist,9100,New Age
+315,1964,CZE,Czech Republic,Atheist,9100,New Age
+315,1965,CZE,Czech Republic,Atheist,9100,New Age
+315,1966,CZE,Czech Republic,Atheist,9100,New Age
+315,1967,CZE,Czech Republic,Atheist,9100,New Age
+315,1968,CZE,Czech Republic,,,
+315,1969,CZE,Czech Republic,Atheist,9100,New Age
+315,1970,CZE,Czech Republic,Atheist,9100,New Age
+315,1971,CZE,Czech Republic,Atheist,9100,New Age
+315,1972,CZE,Czech Republic,Atheist,9100,New Age
+315,1973,CZE,Czech Republic,Atheist,9100,New Age
+315,1974,CZE,Czech Republic,Atheist,9100,New Age
+315,1975,CZE,Czech Republic,Atheist,9100,New Age
+315,1976,CZE,Czech Republic,Atheist,9100,New Age
+315,1977,CZE,Czech Republic,Atheist,9100,New Age
+315,1978,CZE,Czech Republic,Atheist,9100,New Age
+315,1979,CZE,Czech Republic,Atheist,9100,New Age
+315,1980,CZE,Czech Republic,Atheist,9100,New Age
+315,1981,CZE,Czech Republic,Atheist,9100,New Age
+315,1982,CZE,Czech Republic,Atheist,9100,New Age
+315,1983,CZE,Czech Republic,Atheist,9100,New Age
+315,1984,CZE,Czech Republic,Atheist,9100,New Age
+315,1985,CZE,Czech Republic,Atheist,9100,New Age
+315,1986,CZE,Czech Republic,Atheist,9100,New Age
+315,1987,CZE,Czech Republic,Atheist,9100,New Age
+315,1988,CZE,Czech Republic,,,
+315,1989,CZE,Czech Republic,,,
+315,1990,CZE,Czech Republic,Roman Catholic,1222,Christian
+315,1991,CZE,Czech Republic,Roman Catholic,1222,Christian
+315,1992,CZE,Czech Republic,Roman Catholic,1222,Christian
 316,1993,CZE,Czech Republic,Roman Catholic,1222,Christian
 316,1994,CZE,Czech Republic,Roman Catholic,1222,Christian
 316,1995,CZE,Czech Republic,Roman Catholic,1222,Christian
@@ -3670,65 +3670,65 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 350,2016,GRC,Greece,Atheist,9100,New Age
 350,2017,GRC,Greece,Atheist,9100,New Age
 350,2018,GRC,Greece,Atheist,9100,New Age
-352,1960,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1961,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1962,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1963,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1964,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1965,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1966,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1967,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1968,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1969,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1970,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1971,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1972,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1973,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1974,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1975,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1976,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1977,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1978,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1979,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1980,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1981,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1982,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1983,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1984,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1985,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1986,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1987,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1988,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1989,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1990,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1991,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1992,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1993,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1994,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1995,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1996,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1997,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1998,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,1999,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2000,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2001,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2002,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2003,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2004,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2005,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2006,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2007,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2008,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2009,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2010,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2011,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2012,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2013,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2014,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2015,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2016,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2017,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
-352,2018,CYP,Cyprus (Greek),Greek Orthodox,1620,Christian
+352,1960,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1961,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1962,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1963,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1964,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1965,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1966,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1967,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1968,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1969,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1970,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1971,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1972,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1973,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1974,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1975,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1976,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1977,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1978,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1979,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1980,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1981,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1982,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1983,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1984,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1985,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1986,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1987,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1988,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1989,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1990,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1991,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1992,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1993,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1994,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1995,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1996,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1997,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1998,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,1999,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2000,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2001,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2002,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2003,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2004,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2005,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2006,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2007,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2008,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2009,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2010,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2011,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2012,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2013,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2014,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2015,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2016,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2017,CYP,Cyprus,Greek Orthodox,1620,Christian
+352,2018,CYP,Cyprus,Greek Orthodox,1620,Christian
 355,1946,BGR,Bulgaria,,,
 355,1947,BGR,Bulgaria,Atheist,9100,New Age
 355,1948,BGR,Bulgaria,Atheist,9100,New Age
@@ -4566,50 +4566,50 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 395,2016,ISL,Iceland,,,
 395,2017,ISL,Iceland,,,
 395,2018,ISL,Iceland,,,
-403,1975,STP,Sao Tome and Principe,,,
-403,1976,STP,Sao Tome and Principe,,,
-403,1977,STP,Sao Tome and Principe,,,
-403,1978,STP,Sao Tome and Principe,,,
-403,1979,STP,Sao Tome and Principe,,,
-403,1980,STP,Sao Tome and Principe,,,
-403,1981,STP,Sao Tome and Principe,,,
-403,1982,STP,Sao Tome and Principe,,,
-403,1983,STP,Sao Tome and Principe,,,
-403,1984,STP,Sao Tome and Principe,,,
-403,1985,STP,Sao Tome and Principe,,,
-403,1986,STP,Sao Tome and Principe,,,
-403,1987,STP,Sao Tome and Principe,,,
-403,1988,STP,Sao Tome and Principe,,,
-403,1989,STP,Sao Tome and Principe,,,
-403,1990,STP,Sao Tome and Principe,,,
-403,1991,STP,Sao Tome and Principe,,,
-403,1992,STP,Sao Tome and Principe,,,
-403,1993,STP,Sao Tome and Principe,,,
-403,1994,STP,Sao Tome and Principe,,,
-403,1995,STP,Sao Tome and Principe,,,
-403,1996,STP,Sao Tome and Principe,,,
-403,1997,STP,Sao Tome and Principe,,,
-403,1998,STP,Sao Tome and Principe,,,
-403,1999,STP,Sao Tome and Principe,,,
-403,2000,STP,Sao Tome and Principe,,,
-403,2001,STP,Sao Tome and Principe,,,
-403,2002,STP,Sao Tome and Principe,,,
-403,2003,STP,Sao Tome and Principe,,,
-403,2004,STP,Sao Tome and Principe,,,
-403,2005,STP,Sao Tome and Principe,,,
-403,2006,STP,Sao Tome and Principe,,,
-403,2007,STP,Sao Tome and Principe,,,
-403,2008,STP,Sao Tome and Principe,,,
-403,2009,STP,Sao Tome and Principe,,,
-403,2010,STP,Sao Tome and Principe,,,
-403,2011,STP,Sao Tome and Principe,,,
-403,2012,STP,Sao Tome and Principe,,,
-403,2013,STP,Sao Tome and Principe,,,
-403,2014,STP,Sao Tome and Principe,,,
-403,2015,STP,Sao Tome and Principe,,,
-403,2016,STP,Sao Tome and Principe,,,
-403,2017,STP,Sao Tome and Principe,,,
-403,2018,STP,Sao Tome and Principe,,,
+403,1975,STP,São Tomé and Principe,,,
+403,1976,STP,São Tomé and Principe,,,
+403,1977,STP,São Tomé and Principe,,,
+403,1978,STP,São Tomé and Principe,,,
+403,1979,STP,São Tomé and Principe,,,
+403,1980,STP,São Tomé and Principe,,,
+403,1981,STP,São Tomé and Principe,,,
+403,1982,STP,São Tomé and Principe,,,
+403,1983,STP,São Tomé and Principe,,,
+403,1984,STP,São Tomé and Principe,,,
+403,1985,STP,São Tomé and Principe,,,
+403,1986,STP,São Tomé and Principe,,,
+403,1987,STP,São Tomé and Principe,,,
+403,1988,STP,São Tomé and Principe,,,
+403,1989,STP,São Tomé and Principe,,,
+403,1990,STP,São Tomé and Principe,,,
+403,1991,STP,São Tomé and Principe,,,
+403,1992,STP,São Tomé and Principe,,,
+403,1993,STP,São Tomé and Principe,,,
+403,1994,STP,São Tomé and Principe,,,
+403,1995,STP,São Tomé and Principe,,,
+403,1996,STP,São Tomé and Principe,,,
+403,1997,STP,São Tomé and Principe,,,
+403,1998,STP,São Tomé and Principe,,,
+403,1999,STP,São Tomé and Principe,,,
+403,2000,STP,São Tomé and Principe,,,
+403,2001,STP,São Tomé and Principe,,,
+403,2002,STP,São Tomé and Principe,,,
+403,2003,STP,São Tomé and Principe,,,
+403,2004,STP,São Tomé and Principe,,,
+403,2005,STP,São Tomé and Principe,,,
+403,2006,STP,São Tomé and Principe,,,
+403,2007,STP,São Tomé and Principe,,,
+403,2008,STP,São Tomé and Principe,,,
+403,2009,STP,São Tomé and Principe,,,
+403,2010,STP,São Tomé and Principe,,,
+403,2011,STP,São Tomé and Principe,,,
+403,2012,STP,São Tomé and Principe,,,
+403,2013,STP,São Tomé and Principe,,,
+403,2014,STP,São Tomé and Principe,,,
+403,2015,STP,São Tomé and Principe,,,
+403,2016,STP,São Tomé and Principe,,,
+403,2017,STP,São Tomé and Principe,,,
+403,2018,STP,São Tomé and Principe,,,
 404,1974,GNB,Guinea-Bissau,,,
 404,1975,GNB,Guinea-Bissau,,,
 404,1976,GNB,Guinea-Bissau,,,
@@ -7424,79 +7424,79 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 651,2016,EGY,Egypt,Sunni Muslim,3100,Muslim
 651,2017,EGY,Egypt,Sunni Muslim,3100,Muslim
 651,2018,EGY,Egypt,Sunni Muslim,3100,Muslim
-652,1946,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1947,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1948,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1949,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1950,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1951,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1952,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1953,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1954,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1955,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1956,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1957,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1958,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1959,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1960,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1961,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1962,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1963,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1964,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1965,SYR,Syria,Sunni Muslim,3100,Muslim
-652,1966,SYR,Syria,Alawite,3213,Muslim
-652,1967,SYR,Syria,Alawite,3213,Muslim
-652,1968,SYR,Syria,Alawite,3213,Muslim
-652,1969,SYR,Syria,Alawite,3213,Muslim
-652,1970,SYR,Syria,Alawite,3213,Muslim
-652,1971,SYR,Syria,Alawite,3213,Muslim
-652,1972,SYR,Syria,Alawite,3213,Muslim
-652,1973,SYR,Syria,Alawite,3213,Muslim
-652,1974,SYR,Syria,Alawite,3213,Muslim
-652,1975,SYR,Syria,Alawite,3213,Muslim
-652,1976,SYR,Syria,Alawite,3213,Muslim
-652,1977,SYR,Syria,Alawite,3213,Muslim
-652,1978,SYR,Syria,Alawite,3213,Muslim
-652,1979,SYR,Syria,Alawite,3213,Muslim
-652,1980,SYR,Syria,Alawite,3213,Muslim
-652,1981,SYR,Syria,Alawite,3213,Muslim
-652,1982,SYR,Syria,Alawite,3213,Muslim
-652,1983,SYR,Syria,Alawite,3213,Muslim
-652,1984,SYR,Syria,Alawite,3213,Muslim
-652,1985,SYR,Syria,Alawite,3213,Muslim
-652,1986,SYR,Syria,Alawite,3213,Muslim
-652,1987,SYR,Syria,Alawite,3213,Muslim
-652,1988,SYR,Syria,Alawite,3213,Muslim
-652,1989,SYR,Syria,Alawite,3213,Muslim
-652,1990,SYR,Syria,Alawite,3213,Muslim
-652,1991,SYR,Syria,Alawite,3213,Muslim
-652,1992,SYR,Syria,Alawite,3213,Muslim
-652,1993,SYR,Syria,Alawite,3213,Muslim
-652,1994,SYR,Syria,Alawite,3213,Muslim
-652,1995,SYR,Syria,Alawite,3213,Muslim
-652,1996,SYR,Syria,Alawite,3213,Muslim
-652,1997,SYR,Syria,Alawite,3213,Muslim
-652,1998,SYR,Syria,Alawite,3213,Muslim
-652,1999,SYR,Syria,Alawite,3213,Muslim
-652,2000,SYR,Syria,Alawite,3213,Muslim
-652,2001,SYR,Syria,Alawite,3213,Muslim
-652,2002,SYR,Syria,Alawite,3213,Muslim
-652,2003,SYR,Syria,Alawite,3213,Muslim
-652,2004,SYR,Syria,Alawite,3213,Muslim
-652,2005,SYR,Syria,Alawite,3213,Muslim
-652,2006,SYR,Syria,Alawite,3213,Muslim
-652,2007,SYR,Syria,Alawite,3213,Muslim
-652,2008,SYR,Syria,Alawite,3213,Muslim
-652,2009,SYR,Syria,Alawite,3213,Muslim
-652,2010,SYR,Syria,Alawite,3213,Muslim
-652,2011,SYR,Syria,Alawite,3213,Muslim
-652,2012,SYR,Syria,Alawite,3213,Muslim
-652,2013,SYR,Syria,Alawite,3213,Muslim
-652,2014,SYR,Syria,Alawite,3213,Muslim
-652,2015,SYR,Syria,Alawite,3213,Muslim
-652,2016,SYR,Syria,Alawite,3213,Muslim
-652,2017,SYR,Syria,Alawite,3213,Muslim
-652,2018,SYR,Syria,Alawite,3213,Muslim
+652,1946,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1947,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1948,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1949,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1950,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1951,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1952,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1953,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1954,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1955,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1956,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1957,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1958,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1959,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1960,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1961,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1962,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1963,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1964,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1965,SYR,Syrian Arab Republic,Sunni Muslim,3100,Muslim
+652,1966,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1967,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1968,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1969,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1970,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1971,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1972,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1973,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1974,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1975,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1976,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1977,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1978,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1979,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1980,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1981,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1982,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1983,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1984,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1985,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1986,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1987,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1988,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1989,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1990,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1991,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1992,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1993,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1994,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1995,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1996,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1997,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1998,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,1999,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2000,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2001,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2002,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2003,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2004,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2005,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2006,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2007,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2008,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2009,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2010,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2011,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2012,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2013,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2014,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2015,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2016,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2017,SYR,Syrian Arab Republic,Alawite,3213,Muslim
+652,2018,SYR,Syrian Arab Republic,Alawite,3213,Muslim
 660,1946,LBN,Lebanon,Maronite Catholic,1223,Christian
 660,1947,LBN,Lebanon,Maronite Catholic,1223,Christian
 660,1948,LBN,Lebanon,Maronite Catholic,1223,Christian
@@ -8397,77 +8397,77 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 712,2016,MNG,Mongolia,,,
 712,2017,MNG,Mongolia,,,
 712,2018,MNG,Mongolia,,,
-731,1948,PRK,North Korea,Atheist,9100,New Age
-731,1949,PRK,North Korea,Atheist,9100,New Age
-731,1950,PRK,North Korea,Atheist,9100,New Age
-731,1951,PRK,North Korea,Atheist,9100,New Age
-731,1952,PRK,North Korea,Atheist,9100,New Age
-731,1953,PRK,North Korea,Atheist,9100,New Age
-731,1954,PRK,North Korea,Atheist,9100,New Age
-731,1955,PRK,North Korea,Atheist,9100,New Age
-731,1956,PRK,North Korea,Atheist,9100,New Age
-731,1957,PRK,North Korea,Atheist,9100,New Age
-731,1958,PRK,North Korea,Atheist,9100,New Age
-731,1959,PRK,North Korea,Atheist,9100,New Age
-731,1960,PRK,North Korea,Atheist,9100,New Age
-731,1961,PRK,North Korea,Atheist,9100,New Age
-731,1962,PRK,North Korea,Atheist,9100,New Age
-731,1963,PRK,North Korea,Atheist,9100,New Age
-731,1964,PRK,North Korea,Atheist,9100,New Age
-731,1965,PRK,North Korea,Atheist,9100,New Age
-731,1966,PRK,North Korea,Atheist,9100,New Age
-731,1967,PRK,North Korea,Atheist,9100,New Age
-731,1968,PRK,North Korea,Atheist,9100,New Age
-731,1969,PRK,North Korea,Atheist,9100,New Age
-731,1970,PRK,North Korea,Atheist,9100,New Age
-731,1971,PRK,North Korea,Atheist,9100,New Age
-731,1972,PRK,North Korea,Atheist,9100,New Age
-731,1973,PRK,North Korea,Atheist,9100,New Age
-731,1974,PRK,North Korea,Atheist,9100,New Age
-731,1975,PRK,North Korea,Atheist,9100,New Age
-731,1976,PRK,North Korea,Atheist,9100,New Age
-731,1977,PRK,North Korea,Atheist,9100,New Age
-731,1978,PRK,North Korea,Atheist,9100,New Age
-731,1979,PRK,North Korea,Atheist,9100,New Age
-731,1980,PRK,North Korea,Atheist,9100,New Age
-731,1981,PRK,North Korea,Atheist,9100,New Age
-731,1982,PRK,North Korea,Atheist,9100,New Age
-731,1983,PRK,North Korea,Atheist,9100,New Age
-731,1984,PRK,North Korea,Atheist,9100,New Age
-731,1985,PRK,North Korea,Atheist,9100,New Age
-731,1986,PRK,North Korea,Atheist,9100,New Age
-731,1987,PRK,North Korea,Atheist,9100,New Age
-731,1988,PRK,North Korea,Atheist,9100,New Age
-731,1989,PRK,North Korea,Atheist,9100,New Age
-731,1990,PRK,North Korea,Atheist,9100,New Age
-731,1991,PRK,North Korea,Atheist,9100,New Age
-731,1992,PRK,North Korea,Atheist,9100,New Age
-731,1993,PRK,North Korea,Atheist,9100,New Age
-731,1994,PRK,North Korea,Atheist,9100,New Age
-731,1995,PRK,North Korea,Atheist,9100,New Age
-731,1996,PRK,North Korea,Atheist,9100,New Age
-731,1997,PRK,North Korea,Atheist,9100,New Age
-731,1998,PRK,North Korea,Atheist,9100,New Age
-731,1999,PRK,North Korea,Atheist,9100,New Age
-731,2000,PRK,North Korea,Atheist,9100,New Age
-731,2001,PRK,North Korea,Atheist,9100,New Age
-731,2002,PRK,North Korea,Atheist,9100,New Age
-731,2003,PRK,North Korea,Atheist,9100,New Age
-731,2004,PRK,North Korea,Atheist,9100,New Age
-731,2005,PRK,North Korea,Atheist,9100,New Age
-731,2006,PRK,North Korea,Atheist,9100,New Age
-731,2007,PRK,North Korea,Atheist,9100,New Age
-731,2008,PRK,North Korea,Atheist,9100,New Age
-731,2009,PRK,North Korea,Atheist,9100,New Age
-731,2010,PRK,North Korea,Atheist,9100,New Age
-731,2011,PRK,North Korea,Atheist,9100,New Age
-731,2012,PRK,North Korea,Atheist,9100,New Age
-731,2013,PRK,North Korea,Atheist,9100,New Age
-731,2014,PRK,North Korea,Atheist,9100,New Age
-731,2015,PRK,North Korea,Atheist,9100,New Age
-731,2016,PRK,North Korea,Atheist,9100,New Age
-731,2017,PRK,North Korea,Atheist,9100,New Age
-731,2018,PRK,North Korea,Atheist,9100,New Age
+731,1948,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1949,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1950,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1951,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1952,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1953,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1954,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1955,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1956,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1957,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1958,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1959,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1960,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1961,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1962,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1963,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1964,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1965,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1966,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1967,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1968,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1969,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1970,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1971,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1972,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1973,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1974,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1975,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1976,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1977,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1978,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1979,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1980,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1981,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1982,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1983,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1984,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1985,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1986,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1987,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1988,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1989,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1990,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1991,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1992,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1993,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1994,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1995,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1996,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1997,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1998,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,1999,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2000,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2001,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2002,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2003,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2004,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2005,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2006,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2007,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2008,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2009,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2010,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2011,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2012,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2013,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2014,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2015,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2016,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2017,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
+731,2018,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
 740,1946,JPN,Japan,,,
 740,1947,JPN,Japan,,,
 740,1948,JPN,Japan,,,
@@ -9143,72 +9143,72 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 811,2016,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 811,2017,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 811,2018,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
-812,1953,LAO,Laos,,,
-812,1954,LAO,Laos,,,
-812,1955,LAO,Laos,,,
-812,1956,LAO,Laos,,,
-812,1957,LAO,Laos,,,
-812,1958,LAO,Laos,,,
-812,1959,LAO,Laos,,,
-812,1960,LAO,Laos,,,
-812,1961,LAO,Laos,,,
-812,1962,LAO,Laos,,,
-812,1963,LAO,Laos,,,
-812,1964,LAO,Laos,,,
-812,1965,LAO,Laos,,,
-812,1966,LAO,Laos,,,
-812,1967,LAO,Laos,,,
-812,1968,LAO,Laos,,,
-812,1969,LAO,Laos,,,
-812,1970,LAO,Laos,,,
-812,1971,LAO,Laos,,,
-812,1972,LAO,Laos,,,
-812,1973,LAO,Laos,,,
-812,1974,LAO,Laos,,,
-812,1975,LAO,Laos,,,
-812,1976,LAO,Laos,,,
-812,1977,LAO,Laos,,,
-812,1978,LAO,Laos,,,
-812,1979,LAO,Laos,,,
-812,1980,LAO,Laos,,,
-812,1981,LAO,Laos,,,
-812,1982,LAO,Laos,,,
-812,1983,LAO,Laos,,,
-812,1984,LAO,Laos,,,
-812,1985,LAO,Laos,,,
-812,1986,LAO,Laos,,,
-812,1987,LAO,Laos,,,
-812,1988,LAO,Laos,,,
-812,1989,LAO,Laos,,,
-812,1990,LAO,Laos,,,
-812,1991,LAO,Laos,,,
-812,1992,LAO,Laos,,,
-812,1993,LAO,Laos,,,
-812,1994,LAO,Laos,,,
-812,1995,LAO,Laos,,,
-812,1996,LAO,Laos,,,
-812,1997,LAO,Laos,,,
-812,1998,LAO,Laos,,,
-812,1999,LAO,Laos,,,
-812,2000,LAO,Laos,,,
-812,2001,LAO,Laos,,,
-812,2002,LAO,Laos,,,
-812,2003,LAO,Laos,,,
-812,2004,LAO,Laos,,,
-812,2005,LAO,Laos,,,
-812,2006,LAO,Laos,,,
-812,2007,LAO,Laos,,,
-812,2008,LAO,Laos,,,
-812,2009,LAO,Laos,,,
-812,2010,LAO,Laos,,,
-812,2011,LAO,Laos,,,
-812,2012,LAO,Laos,,,
-812,2013,LAO,Laos,,,
-812,2014,LAO,Laos,,,
-812,2015,LAO,Laos,,,
-812,2016,LAO,Laos,,,
-812,2017,LAO,Laos,,,
-812,2018,LAO,Laos,,,
+812,1953,LAO,Lao PDR,,,
+812,1954,LAO,Lao PDR,,,
+812,1955,LAO,Lao PDR,,,
+812,1956,LAO,Lao PDR,,,
+812,1957,LAO,Lao PDR,,,
+812,1958,LAO,Lao PDR,,,
+812,1959,LAO,Lao PDR,,,
+812,1960,LAO,Lao PDR,,,
+812,1961,LAO,Lao PDR,,,
+812,1962,LAO,Lao PDR,,,
+812,1963,LAO,Lao PDR,,,
+812,1964,LAO,Lao PDR,,,
+812,1965,LAO,Lao PDR,,,
+812,1966,LAO,Lao PDR,,,
+812,1967,LAO,Lao PDR,,,
+812,1968,LAO,Lao PDR,,,
+812,1969,LAO,Lao PDR,,,
+812,1970,LAO,Lao PDR,,,
+812,1971,LAO,Lao PDR,,,
+812,1972,LAO,Lao PDR,,,
+812,1973,LAO,Lao PDR,,,
+812,1974,LAO,Lao PDR,,,
+812,1975,LAO,Lao PDR,,,
+812,1976,LAO,Lao PDR,,,
+812,1977,LAO,Lao PDR,,,
+812,1978,LAO,Lao PDR,,,
+812,1979,LAO,Lao PDR,,,
+812,1980,LAO,Lao PDR,,,
+812,1981,LAO,Lao PDR,,,
+812,1982,LAO,Lao PDR,,,
+812,1983,LAO,Lao PDR,,,
+812,1984,LAO,Lao PDR,,,
+812,1985,LAO,Lao PDR,,,
+812,1986,LAO,Lao PDR,,,
+812,1987,LAO,Lao PDR,,,
+812,1988,LAO,Lao PDR,,,
+812,1989,LAO,Lao PDR,,,
+812,1990,LAO,Lao PDR,,,
+812,1991,LAO,Lao PDR,,,
+812,1992,LAO,Lao PDR,,,
+812,1993,LAO,Lao PDR,,,
+812,1994,LAO,Lao PDR,,,
+812,1995,LAO,Lao PDR,,,
+812,1996,LAO,Lao PDR,,,
+812,1997,LAO,Lao PDR,,,
+812,1998,LAO,Lao PDR,,,
+812,1999,LAO,Lao PDR,,,
+812,2000,LAO,Lao PDR,,,
+812,2001,LAO,Lao PDR,,,
+812,2002,LAO,Lao PDR,,,
+812,2003,LAO,Lao PDR,,,
+812,2004,LAO,Lao PDR,,,
+812,2005,LAO,Lao PDR,,,
+812,2006,LAO,Lao PDR,,,
+812,2007,LAO,Lao PDR,,,
+812,2008,LAO,Lao PDR,,,
+812,2009,LAO,Lao PDR,,,
+812,2010,LAO,Lao PDR,,,
+812,2011,LAO,Lao PDR,,,
+812,2012,LAO,Lao PDR,,,
+812,2013,LAO,Lao PDR,,,
+812,2014,LAO,Lao PDR,,,
+812,2015,LAO,Lao PDR,,,
+812,2016,LAO,Lao PDR,,,
+812,2017,LAO,Lao PDR,,,
+812,2018,LAO,Lao PDR,,,
 820,1957,MYS,Malaysia,Sunni Muslim,3100,Muslim
 820,1958,MYS,Malaysia,Sunni Muslim,3100,Muslim
 820,1959,MYS,Malaysia,Sunni Muslim,3100,Muslim
@@ -10061,39 +10061,39 @@ country_code,year,abbrev,country_name,religion,religion_id,parent_religion
 986,2016,PLW,Palau,,,
 986,2017,PLW,Palau,,,
 986,2018,PLW,Palau,,,
-987,1986,FSM,Federated States of Micronesia,,,
-987,1987,FSM,Federated States of Micronesia,,,
-987,1988,FSM,Federated States of Micronesia,,,
-987,1989,FSM,Federated States of Micronesia,,,
-987,1990,FSM,Federated States of Micronesia,,,
-987,1991,FSM,Federated States of Micronesia,,,
-987,1992,FSM,Federated States of Micronesia,,,
-987,1993,FSM,Federated States of Micronesia,,,
-987,1994,FSM,Federated States of Micronesia,,,
-987,1995,FSM,Federated States of Micronesia,,,
-987,1996,FSM,Federated States of Micronesia,,,
-987,1997,FSM,Federated States of Micronesia,,,
-987,1998,FSM,Federated States of Micronesia,,,
-987,1999,FSM,Federated States of Micronesia,,,
-987,2000,FSM,Federated States of Micronesia,,,
-987,2001,FSM,Federated States of Micronesia,,,
-987,2002,FSM,Federated States of Micronesia,,,
-987,2003,FSM,Federated States of Micronesia,,,
-987,2004,FSM,Federated States of Micronesia,,,
-987,2005,FSM,Federated States of Micronesia,,,
-987,2006,FSM,Federated States of Micronesia,,,
-987,2007,FSM,Federated States of Micronesia,,,
-987,2008,FSM,Federated States of Micronesia,,,
-987,2009,FSM,Federated States of Micronesia,,,
-987,2010,FSM,Federated States of Micronesia,,,
-987,2011,FSM,Federated States of Micronesia,,,
-987,2012,FSM,Federated States of Micronesia,,,
-987,2013,FSM,Federated States of Micronesia,,,
-987,2014,FSM,Federated States of Micronesia,,,
-987,2015,FSM,Federated States of Micronesia,,,
-987,2016,FSM,Federated States of Micronesia,,,
-987,2017,FSM,Federated States of Micronesia,,,
-987,2018,FSM,Federated States of Micronesia,,,
+987,1986,FSM,Micronesia,,,
+987,1987,FSM,Micronesia,,,
+987,1988,FSM,Micronesia,,,
+987,1989,FSM,Micronesia,,,
+987,1990,FSM,Micronesia,,,
+987,1991,FSM,Micronesia,,,
+987,1992,FSM,Micronesia,,,
+987,1993,FSM,Micronesia,,,
+987,1994,FSM,Micronesia,,,
+987,1995,FSM,Micronesia,,,
+987,1996,FSM,Micronesia,,,
+987,1997,FSM,Micronesia,,,
+987,1998,FSM,Micronesia,,,
+987,1999,FSM,Micronesia,,,
+987,2000,FSM,Micronesia,,,
+987,2001,FSM,Micronesia,,,
+987,2002,FSM,Micronesia,,,
+987,2003,FSM,Micronesia,,,
+987,2004,FSM,Micronesia,,,
+987,2005,FSM,Micronesia,,,
+987,2006,FSM,Micronesia,,,
+987,2007,FSM,Micronesia,,,
+987,2008,FSM,Micronesia,,,
+987,2009,FSM,Micronesia,,,
+987,2010,FSM,Micronesia,,,
+987,2011,FSM,Micronesia,,,
+987,2012,FSM,Micronesia,,,
+987,2013,FSM,Micronesia,,,
+987,2014,FSM,Micronesia,,,
+987,2015,FSM,Micronesia,,,
+987,2016,FSM,Micronesia,,,
+987,2017,FSM,Micronesia,,,
+987,2018,FSM,Micronesia,,,
 990,1962,WSM,Samoa,,,
 990,1963,WSM,Samoa,,,
 990,1964,WSM,Samoa,,,
