@@ -21,7 +21,6 @@ class CountrySelection {
       this.width = 1000 - this.margin.left - this.margin.right,
       this.height = 200 - this.margin.top - this.margin.bottom;
 
-
     this.selected_topic = null;
     this.selected_attribute = null;
     this.selected_year = null;
@@ -58,6 +57,7 @@ class CountrySelection {
         this.line_graph.changeSelectedCountry(this.selected_countries);
         d3.select("#dropdown-menu1")
           .html(this.data[this.selected_countries[1]].country_name);
+        document.getElementById("dropdown1").classList.toggle("show", false);
       });
     // Switch and IDK why
     d3.select("#dropdown-input1").on("keyup", d => {
@@ -71,6 +71,7 @@ class CountrySelection {
         this.line_graph.changeSelectedCountry(this.selected_countries);
         d3.select("#dropdown-menu1")
           .html(this.data[this.selected_countries[1]].country_name);
+        document.getElementById("dropdown1").classList.toggle("show", false);
       });
     });
 
@@ -90,6 +91,7 @@ class CountrySelection {
         this.line_graph.changeSelectedCountry(this.selected_countries);
         d3.select("#dropdown-menu2")
           .html(this.data[this.selected_countries[0]].country_name);
+        document.getElementById("dropdown2").classList.toggle("show", false);
       });
     // Switch and IDK why
     d3.select("#dropdown-input2").on("keyup", d => {
@@ -103,6 +105,7 @@ class CountrySelection {
         this.line_graph.changeSelectedCountry(this.selected_countries);
         d3.select("#dropdown-menu2")
           .html(this.data[this.selected_countries[0]].country_name);
+        document.getElementById("dropdown2").classList.toggle("show", false);
       });
     });
 
