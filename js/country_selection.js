@@ -1,0 +1,109 @@
+class CountrySelection {
+  constructor(data) {
+    this.data = data.countries;
+    this.attributes = data.attributes;
+    this.topics = data.topics;
+
+
+    // document.getElementById("#dropdown-1").toggle("show");
+    d3.select("#dropdown-menu1").on("click", d => {
+      document.getElementById("dropdown1").classList.toggle("show");
+    });
+    d3.select("#dropdown-menu2").on("click", d => {
+      document.getElementById("dropdown2").classList.toggle("show");
+    });
+
+
+
+    this.margin = { top: 100, right: 50, bottom: 50, left: 75 },
+      this.width = 1000 - this.margin.left - this.margin.right,
+      this.height = 200 - this.margin.top - this.margin.bottom;
+
+    this.selected_countries = ["USA", "MEX"];
+    this.selected_topic = null;
+    this.selected_attribute = null;
+    this.selected_year = null;
+    this.layout();
+  }
+
+  layout() {
+    var span = d3.select("#country-selection");
+    this.svg = span
+      .append("svg")
+      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("height", this.height + this.margin.top + this.margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+
+    this.hover = d3.select("body")
+      .append("div")
+      .attr("class", "hover")
+      .style("opacity", 0);
+
+    this.group = d3.select("#dropdown1")
+      .append("g")
+      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("height", this.height + this.margin.top + this.margin.bottom)
+      .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")")
+      .attr("class", "dropdown-scroll")
+      .attr("overflow", "scroll");
+    this.group.selectAll("a").data(Object.values(this.data))
+      .join("a")
+      .attr("class", "dropdown-item")
+      .html(d => d.country_name);
+
+    d3.select("#dropdown-input1").on("keyup", d => {
+      const search_value = document.getElementById("dropdown-input1").value.toLowerCase();
+      this.group.selectAll("a").data(Object.values(this.data).filter(d => d.country_name.toLowerCase().includes(search_value)))
+      .join("a")
+      .attr("class", "dropdown-item")
+      .html(d => d.country_name);
+    });
+
+    this.group2 = d3.select("#dropdown2")
+      .append("g")
+      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("height", this.height + this.margin.top + this.margin.bottom)
+      .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")")
+      .attr("class", "dropdown-scroll")
+      .attr("overflow", "scroll");
+    this.group2.selectAll("a").data(Object.values(this.data))
+      .join("a")
+      .attr("class", "dropdown-item")
+      .html(d => d.country_name);
+
+    d3.select("#dropdown-input2").on("keyup", d => {
+      const search_value = document.getElementById("dropdown-input2").value.toLowerCase();
+      this.group2.selectAll("a").data(Object.values(this.data).filter(d => d.country_name.toLowerCase().includes(search_value)))
+      .join("a")
+      .attr("class", "dropdown-item")
+      .html(d => d.country_name);
+    });
+
+    // Years for both sides
+    this.xScale = d3.scaleLinear()
+      .domain([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
+      .range([0, this.width]);
+
+    // Percentage, from 0 to 100
+    this.yScale = d3.scaleLinear()
+      .domain([0, 100])
+      .range([this.height, 0]);
+
+    this.path = this.svg.append("g")
+      .attr("width", this.width)
+      .attr("height", this.height);
+
+    // this.xBrushGroup = this.svg.append("g").attr("id", "brush-group");
+    // for (var cat in this.categories) {
+    //   var item = cat.includes('/') ? cat.split('/')[0] : cat;
+    //   item = item.includes(" ") ? item.split(' ')[0] : item;
+    //   this.svg.append("g").classed(item, true);
+    // }
+    // this.selectedIndices = [];
+    // this.drawLegend();
+    // this.draw_lines();
+    // this.drawLines();
+    // this.selection_boxes();
+  }
+}

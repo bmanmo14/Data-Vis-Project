@@ -16,6 +16,7 @@
     <script src="js/religion_data.js"></script>
     <script src="js/country_data.js"></script>
     <script src="js/data-orchestrator.js"></script>
+    <script src="js/country_selection.js"></script>
     <script src="js/line_graph.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -30,7 +31,29 @@
             <div>Name: Brandon Ward; E-Mail: u0962682@utah.edu; UID: u0962682</div>
         </header>
     </div>
-    <div class="containerg" id= "scatterplot"></div>
+
+<div>
+<div class="dropdown show">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-menu1" data-toggle="dropdown" aria-haspopup="true">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu dropdown-scroll" id="dropdown1">
+    <input type="text" placeholder="Search.." id="dropdown-input1">
+  </div>
+</div>
+<div class="dropdown show containert">
+  <button class="btn btn-primary containert dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu containert dropdown-scroll" id="dropdown2">
+    <input type="text" placeholder="Search.." id="dropdown-input2">
+  </div>
+</div>
+</div>
+<div class="containerg" id= "country-selection"></div>
+</div>
+
+    <div class="containerg" id= "line-graph"></div>
 </body>
 
 </html>

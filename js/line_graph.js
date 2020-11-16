@@ -1,14 +1,22 @@
 class LineGraph {
   constructor(data) {
     this.data = data.countries;
+    this.attributes = data.attributes;
+    this.topics = data.topics;
+
     this.margin = { top: 100, right: 50, bottom: 50, left: 75 },
       this.width = 1500 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
+
+    this.selected_countries = ["USA", "MEX"];
+    this.selected_topic = null;
+    this.selected_attribute = null;
+    this.selected_year = null;
     this.layout();
   }
 
   layout() {
-    var span = d3.select("#scatterplot");
+    var span = d3.select("#line-graph");
     this.svg = span
       .append("svg")
       .attr("width", this.width + this.margin.left + this.margin.right)
@@ -31,10 +39,9 @@ class LineGraph {
       .domain([0, 100])
       .range([this.height, 0]);
 
-    // this.line = this.svg.append("g")
-    //   .attr("width", this.width)
-    //   .attr("height", this.height)
-    //   .attr("transform", "translate(0," + 35 + ")");
+    this.path = this.svg.append("g")
+      .attr("width", this.width)
+      .attr("height", this.height);
 
     // this.xBrushGroup = this.svg.append("g").attr("id", "brush-group");
     // for (var cat in this.categories) {
@@ -124,33 +131,49 @@ class LineGraph {
   }
 
   drawLines() {
-    for(var j = 0; j < 17; j++) {
-
-    }
-    var path = d3.path();
-    path.moveTo(this.xScale(0), this.yScale(0));
-    for(var i = YEAR_START; i < YEAR_END; i++) {
-      for(var topic in this.data["USA"].years[i]) {
-
+    var paths = [];
+    for(var c in this.selected_countries) {
+      const country = this.data[this.selected_countries[c]];
+      for(var t in this.topics) {
+        const topic = this.topics[t];
+        console.log(topic)
+        for(var a in this.attributes) {
+          var path = d3.path();
+          var prev_value = 0;
+          path.moveTo(this.xScale(0), this.yScale(0));
+          const attribute = this.attributes[a];
+          if(c != 0){
+            prev_value = country.years[YEAR_START].topics[topic].attributes[attribute] || prev_value;
+            path.moveTo(0, this.yScale(prev_value));
+          }
+          console.log(attribute)
+          for(var i = YEAR_START; i < YEAR_END; i++) {
+            const value = country.years[i].topics[topic].attributes[attribute] || prev_value;
+            if(c != 0){
+              path.lineTo(this.xScale(i-YEAR_END), this.yScale(value));
+            }
+            else {
+              path.lineTo(this.xScale(i-YEAR_START), this.yScale(value));
+            }
+            prev_value = value;
+          }
+          paths.push(path);
+        }
       }
-      path.lineTo(this.xScale(i-YEAR_START),this.yScale(this.data["USA"].years[i].topics["Economics and Infrastructure"].attributes["GDP growth"]));
-    console.log(this.data["USA"].years[i].topics["Economics and Infrastructure"].attributes["GDP growth"])
+      console.log(country)
     }
-    // path.closePath();
-    var p = this.svg.append("g")
-          .attr("width", this.width)
-      .attr("height", this.height)
-      .append("path")
-      // .datum(this.data["USA"])
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 1.5)
-      .attr("d", path);
-
-      // .attr("lineTo", d3.line()
-      //   .x(function(d,i) { return this.xScale(i) })
-      //   .y(function(d) { return this.yScale(d.years[i+YEAR_START].topics["Economics and Infrastructure"].attributes["GDP growth"]) })
-      //   )
+    this.drawPaths(paths);
   }
+
+  drawPaths(p) {
+    this.path.selectAll("path")
+      .data(p)
+      .join("path")
+      .attr("fill", "none")
+      .attr("stroke", "gray")
+      .attr("stroke-width", 1.5)
+      .attr("d", d => d);
+  }
+
 }
 

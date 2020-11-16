@@ -159,3 +159,8 @@ header {
   shape-rendering: crispEdges;
   stroke-width: 0px;
 }
+
+.dropdown-scroll {
+   max-height:300px;/* you can change as you need it */
+   overflow:scroll;/* to get scroll */
+}
