@@ -11,11 +11,13 @@ class DataOrchestrator {
     this.religions = {};
     this.topics = [];
     this.attributes = [];
+    this.topicAttributeRelationships = {};
 
     this.country_religions = {};
 
     this.createReligionTemplate(religion_data);
     this.createCountryAndReligionData(country_data);
+    this.calculateReligionMetrics()
 
     console.log(this.countries);
     console.log(this.religions);
@@ -37,9 +39,7 @@ class DataOrchestrator {
       if (!(parent_religion in this.religions)) {
         this.religions[parent_religion] = new Religion(parent_religion);
       }
-      if (!(religion in this.religions[parent_religion].religion)) {
-        this.religions[parent_religion].religion.push(religion);
-      }
+      this.religions[parent_religion].setReligion(religion);
     }
   }
 
@@ -52,6 +52,7 @@ class DataOrchestrator {
       const attribute_name = row[ATTRIBUTE_NAME].split(" (")[0];
       if(!(this.attributes.includes(attribute_name))) {
         this.attributes.push(attribute_name);
+        this.topicAttributeRelationships[topic].push(attribute_name);
       }
       const attribute_definition = row[DEFINITION];
 
@@ -78,8 +79,16 @@ class DataOrchestrator {
     }
     if (!(this.topics.includes(topic))) {
       this.topics.push(topic);
+      this.topicAttributeRelationships[topic] = [];
     }
     return topic;
+  }
+
+  calculateReligionMetrics() {
+    // this.religions.forEach((value, key, map) => value.calculateMetrics());
+    Object.values(this.religions).forEach(relig => {
+      relig.calculateMetrics(this.topicAttributeRelationships);
+    });
   }
 }
 
