@@ -5,7 +5,7 @@ class LineGraph {
     this.topics = data.topics;
 
     this.margin = { top: 100, right: 50, bottom: 50, left: 75 },
-      this.width = 1500 - this.margin.left - this.margin.right,
+      this.width = 1000 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
 
     this.selected_countries = ["USA", "MEX"];
@@ -128,6 +128,11 @@ class LineGraph {
       .attr("height", this.height)
       .attr("transform", "translate(" + (this.width/2)  + ",0)");
     percent_axis_r.call(y_axis_r);
+  }
+
+  changeSelectedCountry(selected_countries) {
+    this.selected_countries = selected_countries;
+    this.drawLines();
   }
 
   drawLines() {

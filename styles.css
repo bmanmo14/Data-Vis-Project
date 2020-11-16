@@ -104,6 +104,8 @@ td.head {
 
 .containert {
   float: right;
+  margin: auto;
+  text-align: right;
 }
 .sortable {
     user-select: none;
@@ -163,4 +165,9 @@ header {
 .dropdown-scroll {
    max-height:300px;/* you can change as you need it */
    overflow:scroll;/* to get scroll */
+}
+
+.dropdown-container {
+  width: 500;
+  height: 200;
 }
