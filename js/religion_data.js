@@ -39,12 +39,13 @@ class Religion {
   }
 
   calculateMetrics(topicAttributeRelationships) {
-    this.calculateMetric((array) => array.reduce((a, b) => a + b) / array.length, topicAttributeRelationships);
+    this.calculateMetric("mean", (array) => array.reduce((a, b) => a + b) / array.length, topicAttributeRelationships);
+    this.calculateMetric("median", (array) => [...array].sort()[Math.floor(array.length / 2)], topicAttributeRelationships);
   }
 
-  calculateMetric(f, topicAttributeRelationships) {
-    this.metrics["mean"] = {};
-    let mean = this.metrics["mean"];
+  calculateMetric(metric_name, f, topicAttributeRelationships) {
+    this.metrics[metric_name] = {};
+    let mean = this.metrics[metric_name];
     let that = this;
     Object.keys(this.years).forEach(function(y) {
       mean[y] = that.createDefaults(topicAttributeRelationships);
