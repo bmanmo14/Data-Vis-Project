@@ -16,6 +16,10 @@ class Religion {
     this.metrics = {}; // metric -> year -> topic -> attribute
   }
 
+  setCountryReligionYear(religion, year) {
+    this.religions[year] = religion;
+  }
+
   setReligion(religion) {
     if(!(religion in this.religions)){
       this.religions[religion] = 1;
@@ -39,11 +43,10 @@ class Religion {
   }
 
   calculateMetric(f, topicAttributeRelationships) {
-    console.log("asdf");
     this.metrics["mean"] = {};
     let mean = this.metrics["mean"];
     let that = this;
-    Object.keys(this.years).forEach(function(y) { 
+    Object.keys(this.years).forEach(function(y) {
       mean[y] = that.createDefaults(topicAttributeRelationships);
       that.calculateMetricForYear(f, mean, y, topicAttributeRelationships);
     });

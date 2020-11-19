@@ -2,7 +2,7 @@ class DataOrchestrator {
   /**
    * Contains datastructors that house country and religion data.
    *
-   * @param country_data 
+   * @param country_data
    * @param religion_data
    */
   constructor(country_data, religion_data) {
@@ -18,6 +18,7 @@ class DataOrchestrator {
     this.createReligionTemplate(religion_data);
     this.createCountryAndReligionData(country_data);
     this.calculateReligionMetrics()
+    console.log(this.religions)
 
     console.log(this.countries);
     console.log(this.religions);
@@ -33,9 +34,10 @@ class DataOrchestrator {
       const country_code = row[RELIGION_COUNTRY_CODE];
 
       if (!(country_code in this.country_religions)) {
-        this.country_religions[country_code] = new Religion(parent_religion);
-        this.country_religions[country_code].setReligion(religion);
+        this.country_religions[country_code] = {}
       }
+      this.country_religions[country_code][year] = new Religion(parent_religion);
+      this.country_religions[country_code][year].setReligion(religion);
       if (!(parent_religion in this.religions)) {
         this.religions[parent_religion] = new Religion(parent_religion);
       }
@@ -64,8 +66,10 @@ class DataOrchestrator {
         const attribute_value = row[y];
         const country = this.countries[country_code];
         country.setYearTopicAttribute(y, topic, attribute_name, attribute_value, attribute_definition);
-        country.setReligion(this.country_religions[country_code], y);
-        this.religions[this.country_religions[country_code].parent_religion].setYearTopic(y, country.getYearTopicAttribute(y));
+        country.setReligion(this.country_religions[country_code][y], y);
+        if(y in this.country_religions[country_code]){
+          this.religions[this.country_religions[country_code][y].parent_religion].setYearTopic(y, country.getYearTopicAttribute(y));
+        }
       }
     }
   }

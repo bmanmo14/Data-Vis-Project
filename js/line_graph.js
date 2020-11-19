@@ -43,17 +43,9 @@ class LineGraph {
       .attr("width", this.width)
       .attr("height", this.height);
 
-    // this.xBrushGroup = this.svg.append("g").attr("id", "brush-group");
-    // for (var cat in this.categories) {
-    //   var item = cat.includes('/') ? cat.split('/')[0] : cat;
-    //   item = item.includes(" ") ? item.split(' ')[0] : item;
-    //   this.svg.append("g").classed(item, true);
-    // }
-    // this.selectedIndices = [];
     this.drawLegend();
     this.draw_lines();
     this.drawLines();
-    // this.selection_boxes();
   }
   draw_lines() {
     d3.selectAll(".line_x").remove();
@@ -141,7 +133,6 @@ class LineGraph {
       const country = this.data[this.selected_countries[c]];
       for(var t in this.topics) {
         const topic = this.topics[t];
-        console.log(topic)
         for(var a in this.attributes) {
           var path = d3.path();
           var prev_value = 0;
@@ -151,7 +142,6 @@ class LineGraph {
             prev_value = country.years[YEAR_START].topics[topic].attributes[attribute] || prev_value;
             path.moveTo(0, this.yScale(prev_value));
           }
-          console.log(attribute)
           for(var i = YEAR_START; i < YEAR_END; i++) {
             const value = country.years[i].topics[topic].attributes[attribute] || prev_value;
             if(c != 0){
@@ -165,7 +155,6 @@ class LineGraph {
           paths.push(path);
         }
       }
-      console.log(country)
     }
     this.drawPaths(paths);
   }

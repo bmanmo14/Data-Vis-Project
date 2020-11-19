@@ -108,31 +108,5 @@ class CountrySelection {
         document.getElementById("dropdown2").classList.toggle("show", false);
       });
     });
-
-    // Years for both sides
-    this.xScale = d3.scaleLinear()
-      .domain([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
-      .range([0, this.width]);
-
-    // Percentage, from 0 to 100
-    this.yScale = d3.scaleLinear()
-      .domain([0, 100])
-      .range([this.height, 0]);
-
-    this.path = this.svg.append("g")
-      .attr("width", this.width)
-      .attr("height", this.height);
-
-    // this.xBrushGroup = this.svg.append("g").attr("id", "brush-group");
-    // for (var cat in this.categories) {
-    //   var item = cat.includes('/') ? cat.split('/')[0] : cat;
-    //   item = item.includes(" ") ? item.split(' ')[0] : item;
-    //   this.svg.append("g").classed(item, true);
-    // }
-    // this.selectedIndices = [];
-    // this.drawLegend();
-    // this.draw_lines();
-    // this.drawLines();
-    // this.selection_boxes();
   }
 }
