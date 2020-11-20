@@ -152,7 +152,7 @@ class LineGraph {
             }
             prev_value = value;
           }
-          paths.push(path);
+          paths.push([path, topic, attribute]);
         }
       }
     }
@@ -160,13 +160,32 @@ class LineGraph {
   }
 
   drawPaths(p) {
+    const that = this;
     this.path.selectAll("path")
       .data(p)
       .join("path")
       .attr("fill", "none")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
-      .attr("d", d => d);
+      .attr("d", d => d[0])
+      .on('mouseover', function (d, i) {
+        d3.select(this).attr("stroke", "blue")
+        that.hover.transition()
+          .duration(50)
+          .style("opacity", 1)
+          .style("stroke-width", 2);
+        that.hover.html(
+          "<div class=tooltip-title>" + d[1] + ": " + d[2] + "</div>"
+        )
+        .style("left", (d3.event.pageX + 10) + "px")
+        .style("top", (d3.event.pageY - 15) + "px");
+      })
+      .on('mouseout', function (d, i) {
+        d3.select(this).attr("stroke", "gray")
+        that.hover.transition()
+          .duration('50')
+          .style("opacity", 0);
+      });
   }
 
 }
