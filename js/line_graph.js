@@ -139,11 +139,11 @@ class LineGraph {
           path.moveTo(this.xScale(0), this.yScale(0));
           const attribute = this.attributes[a];
           if(c != 0){
-            prev_value = country.years[YEAR_START].topics[topic].attributes[attribute] || prev_value;
+            prev_value = country.topic_attributes[YEAR_START].topics[topic].attributes[attribute] || prev_value;
             path.moveTo(0, this.yScale(prev_value));
           }
           for(var i = YEAR_START; i < YEAR_END; i++) {
-            const value = country.years[i].topics[topic].attributes[attribute] || prev_value;
+            const value = country.topic_attributes[i].topics[topic].attributes[attribute] || prev_value;
             if(c != 0){
               path.lineTo(this.xScale(i-YEAR_END), this.yScale(value));
             }

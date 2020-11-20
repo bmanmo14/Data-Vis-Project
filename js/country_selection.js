@@ -7,12 +7,12 @@ class CountrySelection {
     this.selected_countries = ["USA", "MEX"];
 
     d3.select("#dropdown-menu1")
-    .html(this.data[this.selected_countries[1]].country_name)
+    .html(this.data[this.selected_countries[0]].country_name)
     .on("click", d => {
       document.getElementById("dropdown1").classList.toggle("show");
     });
     d3.select("#dropdown-menu2")
-    .html(this.data[this.selected_countries[0]].country_name)
+    .html(this.data[this.selected_countries[1]].country_name)
     .on("click", d => {
       document.getElementById("dropdown2").classList.toggle("show");
     });

@@ -51,7 +51,7 @@ class Religion {
       mean[y] = that.createDefaults(topicAttributeRelationships);
       that.calculateMetricForYear(f, mean, y, topicAttributeRelationships);
     });
-    console.log(mean);
+    console.log(this.parent_religion, mean);
   }
 
   calculateMetricForYear(f, metric, year, topicAttributeRelationships) {

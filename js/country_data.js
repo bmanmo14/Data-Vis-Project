@@ -12,19 +12,19 @@ class Country {
   constructor(country_code, country_name){
     this.country_code = country_code;
     this.country_name = country_name;
-    this.years = {}
+    this.topic_attributes = {}
     this.religion = {}
   }
 
   setYearTopicAttribute(year, topic, attribute_name, attribute_value, attribute_definition) {
-    if(!(year in this.years)) {
-      this.years[year] = new Year(year);
+    if(!(year in this.topic_attributes)) {
+      this.topic_attributes[year] = new Year(year);
     }
-    this.years[year].setTopicAttribute(topic, attribute_name, attribute_value, attribute_definition)
+    this.topic_attributes[year].setTopicAttribute(topic, attribute_name, attribute_value, attribute_definition)
   }
 
   getYearTopicAttribute(year) {
-    return this.years[year];
+    return this.topic_attributes[year];
   }
 
   setReligion(religion, year) {

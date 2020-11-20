@@ -18,7 +18,6 @@ class DataOrchestrator {
     this.createReligionTemplate(religion_data);
     this.createCountryAndReligionData(country_data);
     this.calculateReligionMetrics()
-    console.log(this.religions)
 
     console.log(this.countries);
     console.log(this.religions);
