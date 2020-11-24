@@ -47,7 +47,7 @@ class DataOrchestrator {
 
   createCountryAndReligionData(country_data) {
     for(var i = 0; i < country_data.length; i++) {
-      var row = country_data[i];
+      const row = country_data[i];
       const country_code = row[COUNTRY_CODE];
       const country_name = row[COUNTRY_NAME];
       const topic = this.createTopic(row[TOPIC]);

@@ -69,6 +69,10 @@ table {
   font: 14px sans-serif;
 }
 
+table td {
+    border:1px solid #000;
+}
+
 svg.title {
   color: #70e412;
   text-align: center;
@@ -171,3 +175,14 @@ header {
   width: 500;
   height: 200;
 }
+
+#parent-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.religion-year-count td {
+    border: none;
+}
+
+
