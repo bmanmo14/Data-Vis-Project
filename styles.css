@@ -185,4 +185,9 @@ header {
     border: none;
 }
 
-
+.line-graph {
+      fill: none;
+      stroke: gray;
+      stroke-width: 1.5;
+      background-color: white;
+}

@@ -4,8 +4,8 @@ class LineGraph {
     this.attributes = data.attributes;
     this.topics = data.topics;
 
-    this.margin = { top: 100, right: 50, bottom: 50, left: 75 },
-      this.width = 1000 - this.margin.left - this.margin.right,
+    this.margin = { top: 100, right: 25, bottom: 50, left: 25 },
+      this.width = 1250 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
 
     this.selected_countries = ["USA", "MEX"];
@@ -34,15 +34,30 @@ class LineGraph {
       .domain([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
       .range([0, this.width]);
 
+    // Years for both sides
+    this.xConv = d3.scaleLinear()
+      .range([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
+      .domain([0, this.width]);
+
     // Percentage, from 0 to 100
     this.yScale = d3.scaleLinear()
       .domain([0, 100])
       .range([this.height, 0]);
 
+    this.yConv = d3.scaleLinear()
+      .range([0, 100])
+      .domain([this.height, 0]);
+
     this.path = this.svg.append("g")
       .attr("width", this.width)
       .attr("height", this.height);
 
+    this.circles = this.path
+      .append("g")
+      .attr("width", this.width)
+      .attr("height", this.height)
+      .attr("class", "circ")
+      .style("opacity", 0);
     this.drawLegend();
     this.draw_lines();
     this.drawLines();
@@ -166,10 +181,21 @@ class LineGraph {
       .join("path")
       .attr("fill", "none")
       .attr("stroke", "gray")
-      .attr("stroke-width", 1.5)
+      .attr("stroke-width", 4)
       .attr("d", d => d[0])
-      .on('mouseover', function (d, i) {
-        d3.select(this).attr("stroke", "blue")
+      .on('click', function (d, i) {
+        console.log(d, i)
+        d3.select(this).attr("stroke", "black");
+        that.circles.style("opacity", 1);
+        that.circles.selectAll("circle")
+        .data([d])
+        .join("circle")
+        .attr("r", d => {
+          return 5;
+        })
+        .attr("cx", d => d3.mouse(this)[0])
+        .attr("cy", d => d3.mouse(this)[1])
+        .attr("fill", "blue");
         that.hover.transition()
           .duration(50)
           .style("opacity", 1)
@@ -183,6 +209,9 @@ class LineGraph {
       .on('mouseout', function (d, i) {
         d3.select(this).attr("stroke", "gray")
         that.hover.transition()
+          .duration('50')
+          .style("opacity", 0);
+        that.circles.transition()
           .duration('50')
           .style("opacity", 0);
       });
