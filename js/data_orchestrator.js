@@ -9,6 +9,7 @@ class DataOrchestrator {
     // Main Structures that hold Country and Religion data
     this.countries = {};
     this.religions = {};
+    this.religionBuckets = ["Christian", "Muslim", "New Age", "Hindu", "Buddhist", "Other"]
     this.topics = [];
     this.attributes = [];
     this.topicAttributeRelationships = {};
@@ -19,8 +20,8 @@ class DataOrchestrator {
     this.createCountryAndReligionData(country_data);
     this.calculateReligionMetrics()
 
-    console.log(this.countries);
-    console.log(this.religions);
+    // console.log(this.countries);
+    // console.log(this.religions);
   }
 
   createReligionTemplate(religion_data) {
