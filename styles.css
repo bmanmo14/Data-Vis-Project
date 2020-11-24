@@ -176,13 +176,12 @@ header {
   height: 200;
 }
 
-religion-year-count {
-    float: left;
-    margin-left:auto;
-    margin-right:auto;
+#parent-table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-religion-year-count td {
+.religion-year-count td {
     border: none;
 }
 

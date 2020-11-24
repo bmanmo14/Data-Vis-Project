@@ -34,28 +34,35 @@ class CountrySelection {
     }
 
     layout() {
-        var span = d3.select("#country-selection");
+
+        // draws a parent table to encase the two year count table for each of the two selected countries
+        var parentTable = d3.select("#country-selection")
+            .append('table')
+            .attr('id', 'parent-table')
+            .append('tr');
         // this.svg = span
         // .append("svg")
         // .attr("width", this.width + this.margin.left + this.margin.right)
         // .attr("height", this.height + this.margin.top + this.margin.bottom);
 
-        let tableOne = span.append("table");
+        let tableOne = parentTable.append('td').append("table");
         tableOne.attr("id", "religion-year-count-one")
             .classed('religion-year-count', true)
             .append('thead')
             .append('tr')
-            .append('th');
+            .append('th')
+            .attr('colspan', '2');
 
         tableOne.append('tbody')
             .attr("id", "religion-year-count-body-one");
 
-      let tableTwo = span.append("table");
+      let tableTwo = parentTable.append('td').append("table");
         tableTwo.attr("id", "religion-year-count-two")
             .classed('religion-year-count', true)
             .append('thead')
             .append('tr')
-            .append('th');
+            .append('th')
+            .attr('colspan', '2');
 
         tableTwo.append('tbody')
             .attr("id", "religion-year-count-body-two");
@@ -149,6 +156,12 @@ class CountrySelection {
         });
     }
 
+    /**
+     * Draws the table for the selected country showing
+     * the religion count over 40 years.
+     *
+     * @param selectedIndex - the index 0 or 1 for selected country
+     */
     drawReligionYearTable(selectedIndex) {
 
         let data = this.religion_year_counts[this.selected_countries[selectedIndex]];
@@ -157,8 +170,9 @@ class CountrySelection {
 
         //update header
         d3.select(tableId).select('thead').select('tr').select('th')
-            .text(this.selected_countries[selectedIndex]);
+            .text(this.data[this.selected_countries[selectedIndex]].country_name);
 
+        // draw body
         let rowSelection = d3.select(tableBodyId)
             .selectAll('tr')
             .data(data)
@@ -172,6 +186,12 @@ class CountrySelection {
         religionCountSelection.text(d => d.value);
     }
 
+    /**
+     * Transforms data in religion year counts to usable
+     * data in tables
+     *
+     * @param d - religion year count for that country.
+     */
     rowToCellDataTransform(d) {
         let religion_name = {
             type: 'religion_name',
@@ -185,6 +205,12 @@ class CountrySelection {
         return data_list;
     }
 
+    /**
+     * Calculates the religion count for the 40 years span
+     * for a selected country
+     *
+     * @param country_code - Country code of a selected country
+     */
     calcCountryReligionCounts(country_code) {
         let years = Object.values(this.data[country_code].religion);
         let religion_counts = [{"name": "Buddhist", "count": 0}, {"name": "Christian", "count": 0},
