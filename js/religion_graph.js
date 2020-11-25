@@ -88,11 +88,11 @@ class ReligionGraph {
         let yearRange = range(YEAR_START, YEAR_END - 1);
         let yearCount = yearRange.length;
         let barWidth = (this.width - this.margin.left - this.margin.right) / yearCount;
-        d3.selectAll(".indiv-relig-plot")
+        let bars = d3.selectAll(".indiv-relig-plot")
             .selectAll("rect")
             .data(yearRange)
-            .join("rect")
-            .style("fill", function (d) {  
+            .join("rect");
+        bars.style("fill", function (d) {  
                 let relig = d3.select(this.parentNode).attr("religion");
                 return that.religionColors[relig];
             })
@@ -100,11 +100,11 @@ class ReligionGraph {
             .attr("height", function (d) {
                 let relig = d3.select(this.parentNode).attr("religion");
                 let metricForYear = that.data[relig].metrics[that.metric][d];
-                console.log(d, metricForYear, that.selectedTopic, that.selectedAttr);
                 if (!(that.selectedTopic in metricForYear) || !(that.selectedAttr in metricForYear[that.selectedTopic])) {
-                    return yScale(0);
+                    return 0;
                 }
-                return that.yScale(metricForYear[that.selectedTopic][that.selectedAttr]);
+                console.log(d, that.selectedAttr, metricForYear[that.selectedTopic][that.selectedAttr]);
+                return metricForYear[that.selectedTopic][that.selectedAttr];
             })
             .attr("transform", function (d, i) { 
                 let height = d3.select(this).attr("height");
