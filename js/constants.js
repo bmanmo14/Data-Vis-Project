@@ -14,3 +14,6 @@ const RELIGION_COUNTRY_NAME = "country_name";
 const RELIGION = "religion";
 const RELIGION_PARENT = "parent_religion";
 const RELIGION_YEAR = "year";
+
+// Constants for other parts of the program
+const CIRCLE_RADIUS = 7;

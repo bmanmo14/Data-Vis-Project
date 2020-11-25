@@ -1,12 +1,18 @@
 class LineGraph {
-  constructor(data) {
+  constructor(data, religion_color, religion_graph) {
+    this.religion_color = religion_color;
     this.data = data.countries;
     this.attributes = data.attributes;
     this.topics = data.topics;
+    this.religion_graph = religion_graph;
 
-    this.margin = { top: 100, right: 25, bottom: 50, left: 25 },
+    this.margin = { top: 150, right: 25, bottom: 50, left: 25 },
       this.width = 1250 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
+
+    this.tooltip_margin = { top: 25, right: 25, bottom: 25, left: 25 },
+      this.tooltip_width = 1250 - this.tooltip_margin.left - this.tooltip_margin.right,
+      this.tooltip_height = 150 - this.tooltip_margin.top - this.tooltip_margin.bottom;
 
     this.selected_countries = ["USA", "MEX"];
     this.selected_topic = null;
@@ -16,18 +22,20 @@ class LineGraph {
   }
 
   layout() {
-    var span = d3.select("#line-graph");
+    var span = d3.select("#line-graph").append("svg")
+      .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
+      .attr("height", this.height + this.margin.top + this.margin.bottom)
+    this.tooltip = span
+      .append("g")
+      .attr("transform", "translate(" + this.tooltip_margin.left + "," + this.tooltip_margin.top + ")")
+      .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
+      .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom)
+
     this.svg = span
-      .append("svg")
+      .append("g")
       .attr("width", this.width + this.margin.left + this.margin.right)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
-      .append("g")
       .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
-
-    this.hover = d3.select("body")
-      .append("div")
-      .attr("class", "hover")
-      .style("opacity", 0);
 
     // Years for both sides
     this.xScale = d3.scaleLinear()
@@ -167,11 +175,15 @@ class LineGraph {
             }
             prev_value = value;
           }
-          paths.push([path, topic, attribute]);
+          paths.push([path, c, topic, attribute]);
         }
       }
     }
     this.drawPaths(paths);
+  }
+
+  sendChange(year) {
+    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, year);
   }
 
   drawPaths(p) {
@@ -183,37 +195,52 @@ class LineGraph {
       .attr("stroke", "gray")
       .attr("stroke-width", 4)
       .attr("d", d => d[0])
-      .on('click', function (d, i) {
-        console.log(d, i)
-        d3.select(this).attr("stroke", "black");
+      .on('mouseover', function (d, i) {
+        const year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+        d3.select(this).attr("stroke", d => {
+          return that.religion_color[that.data[that.selected_countries[d[1]]].religion[year].parent_religion];
+        });
+        that.tooltip.transition()
+          .duration(50)
+          .style("opacity", 1)
+          .style("stroke-width", 2);
+        that.tooltip.selectAll("text")
+                .data([d])
+        .join("p")
+        .html(
+        "<p> KUBFLKEJFNLEKJFNLKFJBELKJNFLKENLKDJKNLKJFN </p>"
+        );
+        // that.tooltip.html(
+        //   "<div class=tooltip-title>" + d[3] + "</div>"
+        // )
+        // .style("left", (d3.event.pageX + 10) + "px")
+        // .style("top", (d3.event.pageY - 15) + "px");
         that.circles.style("opacity", 1);
         that.circles.selectAll("circle")
         .data([d])
         .join("circle")
-        .attr("r", d => {
-          return 5;
-        })
-        .attr("cx", d => d3.mouse(this)[0])
-        .attr("cy", d => d3.mouse(this)[1])
-        .attr("fill", "blue");
-        that.hover.transition()
-          .duration(50)
-          .style("opacity", 1)
-          .style("stroke-width", 2);
-        that.hover.html(
-          "<div class=tooltip-title>" + d[1] + ": " + d[2] + "</div>"
-        )
-        .style("left", (d3.event.pageX + 10) + "px")
-        .style("top", (d3.event.pageY - 15) + "px");
+        .attr("r", CIRCLE_RADIUS)
+        .attr("cx", d3.mouse(this)[0])
+        .attr("cy", d3.mouse(this)[1])
+        .attr("opacity", 1)
+        .attr("fill", d => {
+          return that.religion_color[that.data[that.selected_countries[d[1]]].religion[year].parent_religion];
+        });
+        that.selected_topic = d[2];
+        that.selected_attribute = d[3];
+        that.sendChange(year);
       })
       .on('mouseout', function (d, i) {
         d3.select(this).attr("stroke", "gray")
-        that.hover.transition()
+        that.tooltip.transition()
           .duration('50')
           .style("opacity", 0);
         that.circles.transition()
           .duration('50')
           .style("opacity", 0);
+        // that.selected_topic = null;
+        // that.selected_attribute = null;
+        // that.sendChange(null);
       });
   }
 
