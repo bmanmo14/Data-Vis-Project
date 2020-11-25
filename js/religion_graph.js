@@ -1,7 +1,8 @@
 class ReligionGraph {
-    constructor(religions, religionBuckets) {
+    constructor(religions, religionBuckets, religionColors) {
         this.data = religions;
         this.religionBuckets = religionBuckets;
+        this.religionColors = religionColors;
         this.margin = { top: 50, right: 50, bottom: 50, left: 75 };
         this.width = 1000;
         this.height = 1200;
@@ -24,16 +25,9 @@ class ReligionGraph {
     }
 
     layout() {
-        // var text = svg.append("text")
-        //     .text("Global Attribute Metrics per Religion")
-        //     // .attr("font-family", "sans-serif")
-        //     .attr("font-size", "40px");
-        //     // .attr("fill", "red");
-        // let textBB = text.node().getBBox();
-        // text.attr("x", (this.width - textBB.width) / 2)
-        //     .attr("y", textBB.height);
         let svg = d3.select("#religion-graph")
             .append("svg")
+            .attr("id", "religion-svg")
             .attr("width", this.width)
             .attr("height", this.height);
     
@@ -59,20 +53,64 @@ class ReligionGraph {
         svg.append("g")
             .attr("transform", `translate(${this.margin.left}, ${yOffset})`)
             .call(yAxis);
+        svg.append("g")
+            .classed("indiv-relig-plot", true)
+            .attr("religion", religion)
+            .attr("transform", `translate(0, ${yOffset})`);
+        var text = svg.append("text")
+            .text(religion)
+            .attr("font-size", "15px")
+            .attr("fill", "black");
+        let textBB = text.node().getBBox();
+        text.attr("x", (this.width - textBB.width) / 2)
+            .attr("y", yOffset - 10);
     }
 
     setMetric(metric) {
         console.log(metric);
+        if (this.metric != metric) {
+            this.metric = metric;
+            this.updateCharts();
+        }
     }
 
     changeAttrOrYear(topic, attr, year) {
-        console.log(topic, attr, year);
-        if (attr != this.selectedAttr) {
-            [this.selectedTopic, this.selectedAttr] = [topic, attr];
-            
+        if (attr != this.selectedAttr || year != this.selectedYear) {
+            [this.selectedTopic, this.selectedAttr, this.year] = [topic, attr, year];
+            this.updateCharts();
         }
-        if (year != this.selectedYear) {
-            this.selectedYear = year;
-        }
+    }
+
+    updateCharts() {
+        console.log(this.selectedTopic, this.selectedAttr, this.year);
+        let that = this;
+        const range = (start, stop) => Array.from({ length: (stop - start) + 1 }, (_, i) => start + i);
+        let yearRange = range(YEAR_START, YEAR_END - 1);
+        let yearCount = yearRange.length;
+        let barWidth = (this.width - this.margin.left - this.margin.right) / yearCount;
+        d3.selectAll(".indiv-relig-plot")
+            .selectAll("rect")
+            .data(yearRange)
+            .join("rect")
+            .style("fill", function (d) {  
+                let relig = d3.select(this.parentNode).attr("religion");
+                return that.religionColors[relig];
+            })
+            .attr("width", (d) => barWidth)
+            .attr("height", function (d) {
+                let relig = d3.select(this.parentNode).attr("religion");
+                let metricForYear = that.data[relig].metrics[that.metric][d];
+                console.log(d, metricForYear, that.selectedTopic, that.selectedAttr);
+                if (!(that.selectedTopic in metricForYear) || !(that.selectedAttr in metricForYear[that.selectedTopic])) {
+                    return yScale(0);
+                }
+                return that.yScale(metricForYear[that.selectedTopic][that.selectedAttr]);
+            })
+            .attr("transform", function (d, i) { 
+                let height = d3.select(this).attr("height");
+                return `translate(${that.margin.left + (i * barWidth)}, ${that.chartHeight - height})`;
+            })
+            .style("stroke", "black")
+            .style("stroke-width", 1);
     }
 }

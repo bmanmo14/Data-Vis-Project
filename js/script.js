@@ -20,7 +20,7 @@ Promise.all([d3.csv('data/esg/CountryData.csv'), d3.csv('data/religion/relig.csv
     for(var i in country_data.religionBuckets) {
       religion_color[country_data.religionBuckets[i]] = colorScale[i];
     }
-    const religion_graph = new ReligionGraph(country_data.religions, country_data.religionBuckets);
+    const religion_graph = new ReligionGraph(country_data.religions, country_data.religionBuckets, religion_color);
     const line_graph = new LineGraph(country_data, religion_color, religion_graph);
     const country_selection = new CountrySelection(country_data, line_graph);
 });
