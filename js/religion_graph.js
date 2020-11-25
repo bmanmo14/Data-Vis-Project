@@ -15,6 +15,9 @@ class ReligionGraph {
             .range([this.chartHeight, 0]);
         let that = this;
         this.metric = "mean";
+        this.selectedTopic = null;
+        this.selectedAttr = null;
+        this.selectedYear = null;
         document.getElementById("mean-radio").onclick = (e) => that.setMetric(e.target.value);
         document.getElementById("median-radio").onclick = (e) => that.setMetric(e.target.value); 
         this.layout();
@@ -60,5 +63,9 @@ class ReligionGraph {
 
     setMetric(metric) {
         console.log(metric);
+    }
+
+    changeAttrOrYear(topic, attr, year) {
+        console.log(topic, attr, year);
     }
 }
