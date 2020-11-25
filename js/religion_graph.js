@@ -67,5 +67,12 @@ class ReligionGraph {
 
     changeAttrOrYear(topic, attr, year) {
         console.log(topic, attr, year);
+        if (attr != this.selectedAttr) {
+            [this.selectedTopic, this.selectedAttr] = [topic, attr];
+            
+        }
+        if (year != this.selectedYear) {
+            this.selectedYear = year;
+        }
     }
 }

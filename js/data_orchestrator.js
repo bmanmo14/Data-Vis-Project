@@ -24,6 +24,15 @@ class DataOrchestrator {
     // console.log(this.religions);
   }
 
+  getReligionBucket(religion) {
+    if (this.religionBuckets.includes(religion)) {
+      return religion;
+    }
+    else {
+      return "Other";
+    }
+  }
+
   createReligionTemplate(religion_data) {
     for (var i = 0; i < religion_data.length; i++) {
       var row = religion_data[i];
@@ -38,10 +47,11 @@ class DataOrchestrator {
       }
       this.country_religions[country_code][year] = new Religion(parent_religion);
       this.country_religions[country_code][year].setReligion(religion);
-      if (!(parent_religion in this.religions)) {
-        this.religions[parent_religion] = new Religion(parent_religion);
+      let religion_bucket = this.getReligionBucket(parent_religion);
+      if (!(religion_bucket in this.religions)) {
+        this.religions[religion_bucket] = new Religion(parent_religion);
       }
-      this.religions[parent_religion].setReligion(religion);
+      this.religions[religion_bucket].setReligion(religion);
     }
   }
 
@@ -68,7 +78,8 @@ class DataOrchestrator {
         country.setYearTopicAttribute(y, topic, attribute_name, attribute_value, attribute_definition);
         country.setReligion(this.country_religions[country_code][y], y);
         if(y in this.country_religions[country_code]){
-          this.religions[this.country_religions[country_code][y].parent_religion].setYearTopic(y, country.getYearTopicAttribute(y));
+          let parent_religion = this.country_religions[country_code][y].parent_religion;
+          this.religions[this.getReligionBucket(parent_religion)].setYearTopic(y, country.getYearTopicAttribute(y));
         }
       }
     }
