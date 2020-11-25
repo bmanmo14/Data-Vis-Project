@@ -13,12 +13,12 @@ class CountrySelection {
 
 
         d3.select("#dropdown-menu1")
-            .html(this.data[this.selected_countries[0]].country_name)
+            .html(this.data[this.selected_countries[1]].country_name)
             .on("click", d => {
                 document.getElementById("dropdown1").classList.toggle("show");
             });
         d3.select("#dropdown-menu2")
-            .html(this.data[this.selected_countries[1]].country_name)
+            .html(this.data[this.selected_countries[0]].country_name)
             .on("click", d => {
                 document.getElementById("dropdown2").classList.toggle("show");
             });
@@ -165,8 +165,8 @@ class CountrySelection {
     drawReligionYearTable(selectedIndex) {
 
         let data = this.religion_year_counts[this.selected_countries[selectedIndex]];
-        let tableId = selectedIndex === 0 ? '#religion-year-count-one' : '#religion-year-count-two';
-        let tableBodyId = selectedIndex === 0 ? '#religion-year-count-body-one' : '#religion-year-count-body-two';
+        let tableId = selectedIndex === 0 ? '#religion-year-count-two' : '#religion-year-count-one';
+        let tableBodyId = selectedIndex === 0 ? '#religion-year-count-body-two' : '#religion-year-count-body-one';
 
         //update header
         d3.select(tableId).select('thead').select('tr').select('th')

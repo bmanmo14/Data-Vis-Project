@@ -20,7 +20,7 @@ class ReligionGraph {
         this.selectedAttr = null;
         this.selectedYear = null;
         document.getElementById("mean-radio").onclick = (e) => that.setMetric(e.target.value);
-        document.getElementById("median-radio").onclick = (e) => that.setMetric(e.target.value); 
+        document.getElementById("median-radio").onclick = (e) => that.setMetric(e.target.value);
         this.layout();
     }
 
@@ -30,7 +30,7 @@ class ReligionGraph {
             .attr("id", "religion-svg")
             .attr("width", this.width)
             .attr("height", this.height);
-    
+
         let yOffset = this.margin.top;
         let that = this;
         this.religionBuckets.forEach(function (religionBucket) {
@@ -67,7 +67,7 @@ class ReligionGraph {
     }
 
     setMetric(metric) {
-        console.log(metric);
+        // console.log(metric);
         if (this.metric != metric) {
             this.metric = metric;
             this.updateCharts();
@@ -82,7 +82,7 @@ class ReligionGraph {
     }
 
     updateCharts() {
-        console.log(this.selectedTopic, this.selectedAttr, this.year);
+        // console.log(this.selectedTopic, this.selectedAttr, this.year);
         let that = this;
         const range = (start, stop) => Array.from({ length: (stop - start) + 1 }, (_, i) => start + i);
         let yearRange = range(YEAR_START, YEAR_END - 1);
@@ -92,7 +92,7 @@ class ReligionGraph {
             .selectAll("rect")
             .data(yearRange)
             .join("rect");
-        bars.style("fill", function (d) {  
+        bars.style("fill", function (d) {
                 let relig = d3.select(this.parentNode).attr("religion");
                 return that.religionColors[relig];
             })
@@ -103,10 +103,10 @@ class ReligionGraph {
                 if (!(that.selectedTopic in metricForYear) || !(that.selectedAttr in metricForYear[that.selectedTopic])) {
                     return 0;
                 }
-                console.log(d, that.selectedAttr, metricForYear[that.selectedTopic][that.selectedAttr]);
+                // console.log(d, that.selectedAttr, metricForYear[that.selectedTopic][that.selectedAttr]);
                 return metricForYear[that.selectedTopic][that.selectedAttr];
             })
-            .attr("transform", function (d, i) { 
+            .attr("transform", function (d, i) {
                 let height = d3.select(this).attr("height");
                 return `translate(${that.margin.left + (i * barWidth)}, ${that.chartHeight - height})`;
             })

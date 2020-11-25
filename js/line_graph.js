@@ -18,6 +18,7 @@ class LineGraph {
     this.selected_topic = null;
     this.selected_attribute = null;
     this.selected_year = null;
+    this.paths = {};
     this.layout();
   }
 
@@ -151,7 +152,7 @@ class LineGraph {
   }
 
   drawLines() {
-    var paths = [];
+    this.paths = {};
     for(var c in this.selected_countries) {
       const country = this.data[this.selected_countries[c]];
       for(var t in this.topics) {
@@ -175,28 +176,45 @@ class LineGraph {
             }
             prev_value = value;
           }
-          paths.push([path, c, topic, attribute]);
+          this.paths[country.country_code + topic.split(/[ ,]+/)[0] + attribute.split(/[ ,]+/)[0]] = [path, c, topic, attribute, country.country_code + topic.split(/[ ,]+/)[0] + attribute.split(/[ ,]+/)[0]];
         }
       }
     }
-    this.drawPaths(paths);
+    this.drawPaths();
   }
 
   sendChange(year) {
     this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, year);
   }
 
-  drawPaths(p) {
-    const that = this;
+  drawPaths() {
+    const that = this
+    const sel_country = Object.keys(this.paths).map(d => {
+      return this.paths[d];
+    });
+    console.log(sel_country);
     this.path.selectAll("path")
-      .data(p)
+      .data(sel_country)
       .join("path")
+      .attr("id", d => d[4])
       .attr("fill", "none")
       .attr("stroke", "gray")
       .attr("stroke-width", 4)
       .attr("d", d => d[0])
-      .on('mouseover', function (d, i) {
-        const year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+      .on('click', function (d, i) {
+        var year = 0;
+        var other_country = "";
+        if(d[1] != 0) {
+          year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+          other_country = 0;
+        } else {
+          year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+          other_country = 1;
+        }
+        const d2 = [null, other_country, d[2], d[3]]
+        d3.select("#" + that.selected_countries[other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", other => {
+          return that.religion_color[that.data[that.selected_countries[other_country]].religion[year].parent_religion];
+        });
         d3.select(this).attr("stroke", d => {
           return that.religion_color[that.data[that.selected_countries[d[1]]].religion[year].parent_religion];
         });
@@ -206,10 +224,10 @@ class LineGraph {
           .style("stroke-width", 2);
         that.tooltip.selectAll("text")
                 .data([d])
-        .join("p")
-        .html(
-        "<p> KUBFLKEJFNLEKJFNLKFJBELKJNFLKENLKDJKNLKJFN </p>"
-        );
+        .join("text")
+        .text(that.selected_countries[0] + "  " + that.selected_countries[1])
+        ;
+
         // that.tooltip.html(
         //   "<div class=tooltip-title>" + d[3] + "</div>"
         // )
@@ -238,6 +256,16 @@ class LineGraph {
         that.circles.transition()
           .duration('50')
           .style("opacity", 0);
+        var year = 0;
+        var other_country = 0;
+        if(d[1] != 0) {
+          year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+          other_country = 0;
+        } else {
+          year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+          other_country = 1;
+        }
+        d3.select("#" + that.selected_countries[other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", "gray");
         // that.selected_topic = null;
         // that.selected_attribute = null;
         // that.sendChange(null);
