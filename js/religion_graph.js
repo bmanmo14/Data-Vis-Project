@@ -26,6 +26,7 @@ class ReligionGraph {
         this.selectedCountryReligions = ["Christian", "Christian"];
         document.getElementById("mean-radio").onclick = (e) => that.setMetric(e.target.value);
         document.getElementById("median-radio").onclick = (e) => that.setMetric(e.target.value);
+        document.getElementById("mode-radio").onclick = (e) => that.setMetric(e.target.value);
         this.layout();
     }
 
