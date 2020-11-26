@@ -149,6 +149,13 @@ class LineGraph {
   changeSelectedCountry(selected_countries) {
     this.selected_countries = selected_countries;
     this.drawLines();
+    // if (!this.selected_year === null) {
+    // let selected_country_religions = [this.data[this.selected_countries[0]].religion[1988].parent_religion,
+    //                                   this.data[this.selected_countries[1]].religion[1988].parent_religion];
+    // let selected_attr_values = [this.data[this.selected_countries[0]],
+    //                                   0];
+    this.religion_graph.changeSelectedCountries(this.selected_countries);
+    // }
   }
 
   drawLines() {
@@ -184,7 +191,11 @@ class LineGraph {
   }
 
   sendChange(year) {
-    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, year);
+    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[year].parent_religion, 
+                                    this.data[this.selected_countries[1]].religion[year].parent_religion];
+    let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute],
+                              this.data[this.selected_countries[1]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute]];
+    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, year, selectedCountryReligions, selectedAttrValues);
   }
 
   drawPaths() {
