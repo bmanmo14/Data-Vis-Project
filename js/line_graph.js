@@ -205,7 +205,7 @@ class LineGraph {
   }
 
   sendChange(year) {
-    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[year].parent_religion, 
+    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[year].parent_religion,
                                     this.data[this.selected_countries[1]].religion[year].parent_religion];
     let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute],
                               this.data[this.selected_countries[1]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute]];
@@ -274,7 +274,6 @@ class LineGraph {
 
       d3.select("#" + that.selected_countries[this.other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", that.religion_color[that.data[that.selected_countries[this.other_country]].religion[this.year].parent_religion]);
 
-      console.log(this.other_cx, this.other_cy);
       that.circles.selectAll("circle")
         .data(circles)
         .join("circle")
@@ -290,7 +289,7 @@ class LineGraph {
     }
 
     function dragged(d, i) {
-      if(d[1]) {
+      if(d[1] != 0) {
         this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
