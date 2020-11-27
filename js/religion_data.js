@@ -38,9 +38,30 @@ class Religion {
     }
   }
 
+  mode(array) {
+    let floored = array.map(v => Math.floor(v));
+    let counts = {};
+    let max = null;
+    let maxi = 0;
+    for (let v of floored) {
+      if (counts[v]) {
+        counts[v]++;
+      }
+      else {
+        counts[v] = 1;
+      }
+      if (maxi < counts[v]) {
+        max = v;
+        maxi = counts[v];
+      }
+    }
+    return max;
+  }
+
   calculateMetrics(topicAttributeRelationships) {
     this.calculateMetric("mean", (array) => array.reduce((a, b) => a + b) / array.length, topicAttributeRelationships);
     this.calculateMetric("median", (array) => [...array].sort()[Math.floor(array.length / 2)], topicAttributeRelationships);
+    this.calculateMetric("mode", this.mode, topicAttributeRelationships);
   }
 
   calculateMetric(metric_name, f, topicAttributeRelationships) {
