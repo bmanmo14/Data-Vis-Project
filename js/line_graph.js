@@ -23,6 +23,7 @@ class LineGraph {
   }
 
   layout() {
+
     var span = d3.select("#line-graph").append("svg")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
@@ -60,6 +61,19 @@ class LineGraph {
     this.path = this.svg.append("g")
       .attr("width", this.width)
       .attr("height", this.height);
+
+    const that = this;
+    this.svg.on('click', function (d, i) {
+      that.tooltip.transition()
+        .duration('50')
+        .style("opacity", 0);
+      that.circles.transition()
+        .duration('50')
+        .style("opacity", 0);
+
+      d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+      d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+      });
 
     this.circles = this.path
       .append("g")
@@ -201,76 +215,124 @@ class LineGraph {
       .attr("stroke", "gray")
       .attr("stroke-width", 4)
       .attr("d", d => d[0])
-      .on('click', function (d, i) {
-        var year = 0;
-        var other_country = "";
-        if(d[1] != 0) {
-          year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
-          other_country = 0;
-        } else {
-          year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
-          other_country = 1;
-        }
-        const d2 = [null, other_country, d[2], d[3]]
-        d3.select("#" + that.selected_countries[other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", other => {
-          return that.religion_color[that.data[that.selected_countries[other_country]].religion[year].parent_religion];
-        });
-        d3.select(this).attr("stroke", d => {
-          return that.religion_color[that.data[that.selected_countries[d[1]]].religion[year].parent_religion];
-        });
-        that.tooltip.transition()
-          .duration(50)
-          .style("opacity", 1)
-          .style("stroke-width", 2);
-        that.tooltip.selectAll("text")
-                .data([d])
-        .join("text")
-        .text(that.selected_countries[0] + "  " + that.selected_countries[1])
-        ;
+      .call(this.drag(that));
+      // .on('click', function (d, i) {
+      //   // if (d.defaultPrevented) return;
+      // d3.select(this).attr("stroke", "gray")
+      // that.tooltip.transition()
+      //   .duration('50')
+      //   .style("opacity", 0);
+      // that.circles.transition()
+      //   .duration('50')
+      //   .style("opacity", 0);
 
-        // that.tooltip.html(
-        //   "<div class=tooltip-title>" + d[3] + "</div>"
-        // )
-        // .style("left", (d3.event.pageX + 10) + "px")
-        // .style("top", (d3.event.pageY - 15) + "px");
-        that.circles.style("opacity", 1);
-        that.circles.selectAll("circle")
-        .data([d])
-        .join("circle")
-        .attr("r", CIRCLE_RADIUS)
-        .attr("cx", d3.mouse(this)[0])
-        .attr("cy", d3.mouse(this)[1])
-        .attr("opacity", 1)
-        .attr("fill", d => {
-          return that.religion_color[that.data[that.selected_countries[d[1]]].religion[year].parent_religion];
-        });
-        that.selected_topic = d[2];
-        that.selected_attribute = d[3];
-        that.sendChange(year);
-      })
-      .on('mouseout', function (d, i) {
-        d3.select(this).attr("stroke", "gray")
-        that.tooltip.transition()
-          .duration('50')
-          .style("opacity", 0);
-        that.circles.transition()
-          .duration('50')
-          .style("opacity", 0);
-        var year = 0;
-        var other_country = 0;
-        if(d[1] != 0) {
-          year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
-          other_country = 0;
-        } else {
-          year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
-          other_country = 1;
-        }
-        d3.select("#" + that.selected_countries[other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", "gray");
-        // that.selected_topic = null;
-        // that.selected_attribute = null;
-        // that.sendChange(null);
-      });
+      // d3.select("#" + that.selected_countries[this.other_country] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+      // })
+
   }
 
+  drag(that) {
+    function dragstarted(d, i) {
+      if (that.selected_topic != null) {
+      d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+      d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+      }
+      this.year = 0;
+      this.other_country = 0;
+      this.cx = d3.mouse(this)[0];
+      this.cy = d3.mouse(this)[1];
+      this.other_cy = 0;
+      this.other_cx = 0;
+      if(d[1] != 0) {
+        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.other_country = 0;
+        this.other_cx = that.xScale(this.year-YEAR_START);
+      } else {
+        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.other_country = 1;
+        this.other_cx = that.xScale(this.year-YEAR_END);
+      }
+      this.other_cy = that.yScale(that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]])
+      this.cy = that.yScale(that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]]);
+      this.cx = d3.mouse(this)[0];
+
+      var circles = [[this.cx, this.cy, d[1]], [this.other_cx, this.other_cy, this.other_country]]
+      that.circles.style("opacity", 1);
+
+      d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion]);
+
+      d3.select("#" + that.selected_countries[this.other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", that.religion_color[that.data[that.selected_countries[this.other_country]].religion[this.year].parent_religion]);
+
+      console.log(this.other_cx, this.other_cy);
+      that.circles.selectAll("circle")
+        .data(circles)
+        .join("circle")
+        .attr("r", CIRCLE_RADIUS)
+        .attr("cx", d => d[0])
+        .attr("cy", d => d[1])
+        .attr("opacity", 1)
+        .attr("fill", d => that.religion_color[that.data[that.selected_countries[d[2]]].religion[this.year].parent_religion]);
+
+      that.selected_topic = d[2];
+      that.selected_attribute = d[3];
+      that.sendChange(this.year);
+    }
+
+    function dragged(d, i) {
+      if(d[1]) {
+        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.other_country = 0;
+        this.other_cx = that.xScale(this.year-YEAR_START);
+      } else {
+        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.other_country = 1;
+        this.other_cx = that.xScale(this.year-YEAR_END);
+      }
+      this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
+
+      this.cx = d3.mouse(this)[0];
+      this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
+
+      if(!this.cy) {
+        var i = 0;
+        while(!this.cy && this.year - i > YEAR_START) {
+            this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year - i].topics[d[2]].attributes[d[3]];
+            i++;
+        }
+      }
+      if(!this.other_cy){
+        var i = 0;
+        while(!this.other_cy && this.year - i > YEAR_START) {
+            this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year - i].topics[d[2]].attributes[d[3]];
+            i++;
+        }
+      }
+
+      this.cy = that.yScale(this.cy);
+      this.other_cy = that.yScale(this.other_cy);
+      const circles = [[this.cx, this.cy, d[1]], [this.other_cx, this.other_cy, this.other_country]]
+
+      that.circles.selectAll("circle")
+          .data(circles)
+          .join("circle")
+          .attr("r", CIRCLE_RADIUS)
+          .attr("cx", od => od[0])
+          .attr("cy", od => od[1])
+          .attr("opacity", 1)
+          .attr("fill", od => {
+            return that.religion_color[that.data[that.selected_countries[od[2]]].religion[this.year].parent_religion];
+          });
+      that.sendChange(this.year);
+  }
+
+    function dragended() {
+      that.sendChange(this.year);
+    }
+
+    return d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended);
+  }
 }
 
