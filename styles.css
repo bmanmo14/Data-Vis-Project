@@ -47,6 +47,7 @@ div.hover {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+  margin: center;
 }
 .toggle {
   margin-top: 20px;

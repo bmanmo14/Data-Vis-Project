@@ -64,9 +64,6 @@ class LineGraph {
 
     const that = this;
     this.svg.on('click', function (d, i) {
-      that.tooltip.transition()
-        .duration('50')
-        .style("opacity", 0);
       that.circles.transition()
         .duration('50')
         .style("opacity", 0);
@@ -74,6 +71,16 @@ class LineGraph {
       d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       });
+    this.tooltip_lines = this.tooltip.append("g");
+    this.tooltip_data_left = this.tooltip.append("g")
+      .attr("transform", "translate(" + this.tooltip_margin.left + "," + this.tooltip_margin.top + ")")
+      .attr("width", this.tooltip_width/2)
+      .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom);
+
+    this.tooltip_data_right = this.tooltip.append("g")
+      .attr("transform", "translate(" + (this.tooltip_width/2 + this.tooltip_margin.left) + "," + this.tooltip_margin.top + ")")
+      .attr("width", this.tooltip_width/2)
+      .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom);
 
     this.circles = this.path
       .append("g")
@@ -88,6 +95,7 @@ class LineGraph {
   draw_lines() {
     d3.selectAll(".line_x").remove();
     d3.selectAll(".line_y").remove();
+    d3.selectAll(".tooltip_lines").remove();
     this.svg.append("g").selectAll('line')
       .data([")"])
       .join("line")
@@ -112,6 +120,36 @@ class LineGraph {
         .attr("x2", this.width)
         .attr("y1", (this.height))
         .attr("y2", (this.height));
+    this.tooltip_lines.append("line")
+      .classed(".tooltip_lines", true)
+      .attr("class", "label")
+      .style("stroke", "black")
+      .style("stroke-width", 1)
+      .style("stroke-opacity", 1)
+      .attr("x1", 0)
+      .attr("x2", this.width)
+      .attr("y1", (0))
+      .attr("y2", (0));
+    this.tooltip_lines.append("line")
+      .classed(".tooltip_lines", true)
+      .attr("class", "label")
+      .style("stroke", "black")
+      .style("stroke-width", 1)
+      .style("stroke-opacity", 1)
+      .attr("x1", 0)
+      .attr("x2", this.width)
+      .attr("y1", this.tooltip_height)
+      .attr("y2", this.tooltip_height);
+    this.tooltip_lines.append("line")
+      .classed(".tooltip_lines", true)
+      .attr("class", "label")
+      .style("stroke", "black")
+      .style("stroke-width", 1)
+      .style("stroke-opacity", 1)
+      .attr("x1", this.width/2)
+      .attr("x2", this.width/2)
+      .attr("y1", 0)
+      .attr("y2", this.tooltip_height);
   }
 
   drawLegend() {
@@ -162,6 +200,12 @@ class LineGraph {
 
   changeSelectedCountry(selected_countries) {
     this.selected_countries = selected_countries;
+    this.tooltip_data_left.transition()
+      .duration('50')
+      .style("opacity", 0);
+    this.circles.transition()
+      .duration('50')
+      .style("opacity", 0);
     this.drawLines();
     // if (!this.selected_year === null) {
     // let selected_country_religions = [this.data[this.selected_countries[0]].religion[1988].parent_religion,
@@ -204,12 +248,13 @@ class LineGraph {
     this.drawPaths();
   }
 
-  sendChange(year) {
-    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[year].parent_religion,
-                                    this.data[this.selected_countries[1]].religion[year].parent_religion];
-    let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute],
-                              this.data[this.selected_countries[1]].topic_attributes[year].topics[this.selected_topic].attributes[this.selected_attribute]];
-    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, year, selectedCountryReligions, selectedAttrValues);
+  sendChange() {
+    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[this.selected_year].parent_religion,
+                                    this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
+    let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
+                              this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
+    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
+
   }
 
   drawPaths() {
@@ -270,9 +315,9 @@ class LineGraph {
       var circles = [[this.cx, this.cy, d[1]], [this.other_cx, this.other_cy, this.other_country]]
       that.circles.style("opacity", 1);
 
-      d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion]);
+      d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion] || "#000000");
 
-      d3.select("#" + that.selected_countries[this.other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", that.religion_color[that.data[that.selected_countries[this.other_country]].religion[this.year].parent_religion]);
+      d3.select("#" + that.selected_countries[this.other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", that.religion_color[that.data[that.selected_countries[this.other_country]].religion[this.year].parent_religion] || "#000000");
 
       that.circles.selectAll("circle")
         .data(circles)
@@ -285,7 +330,9 @@ class LineGraph {
 
       that.selected_topic = d[2];
       that.selected_attribute = d[3];
-      that.sendChange(this.year);
+      that.selected_year = this.year
+      that.sendChange();
+      that.setupTooltip(d, i);
     }
 
     function dragged(d, i) {
@@ -320,6 +367,11 @@ class LineGraph {
 
       this.cy = that.yScale(this.cy);
       this.other_cy = that.yScale(this.other_cy);
+
+      d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion] || "#000000");
+
+      d3.select("#" + that.selected_countries[this.other_country] + d[2].split(/[ ,]+/)[0] + d[3].split(/[ ,]+/)[0]).attr("stroke", that.religion_color[that.data[that.selected_countries[this.other_country]].religion[this.year].parent_religion] || "#000000");
+
       const circles = [[this.cx, this.cy, d[1]], [this.other_cx, this.other_cy, this.other_country]]
 
       that.circles.selectAll("circle")
@@ -332,11 +384,15 @@ class LineGraph {
           .attr("fill", od => {
             return that.religion_color[that.data[that.selected_countries[od[2]]].religion[this.year].parent_religion];
           });
-      that.sendChange(this.year);
+      that.selected_year = this.year
+      that.sendChange();
+      that.setupTooltip(d, i);
   }
 
-    function dragended() {
-      that.sendChange(this.year);
+    function dragended(d, i) {
+      that.selected_year = this.year
+      that.sendChange();
+      that.setupTooltip(d, i);
     }
 
     return d3.drag()
@@ -344,5 +400,25 @@ class LineGraph {
         .on("drag", dragged)
         .on("end", dragended);
   }
+  // Topic: Attribute Description
+  // Religion both sides
+  // Attribute
+  // Percentage
+  setupTooltip(d, i) {
+    this.tooltip_data_left.selectAll("text")
+    .data([d])
+    .join("text")
+    .attr("class", "center-text")
+    .style("opacity", 1)
+    .text(this.selected_topic + " " + this.selected_attribute + " " + this.selected_year);
+
+        this.tooltip_data_right.selectAll("text")
+    .data([d])
+    .join("text")
+    .attr("class", "center-text")
+    .style("opacity", 1)
+    .text(this.selected_topic + " " + this.selected_attribute + " " + this.selected_year);
+  }
+
 }
 
