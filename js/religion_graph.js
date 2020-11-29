@@ -157,9 +157,7 @@ class ReligionGraph {
             .attr("transform", function (d, i) {
                 let height = d3.select(this).attr("height");
                 return `translate(${that.margin.left + (i * that.barWidth) + that.barSpacing / 2}, ${that.chartHeight - height})`;
-            })
-            .style("stroke", "black")
-            .style("stroke-width", 1);
+            });
 
             let [c1, c2] = this.selectedCountries;
             let [r1, r2] = this.selectedCountryReligions.map(r => (that.religionBuckets.includes(r)) ? r : "Other");

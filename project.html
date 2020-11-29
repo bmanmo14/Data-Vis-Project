@@ -25,53 +25,72 @@
 </head>
 
 <body>
-    <div id="header-wrap">
-        <header>
-            <h1>World Leader Religious Afiliations and Their Sociopolitical Effects</h1>
-            <div>Name: Brandon Mouser; E-Mail: u0962682@utah.edu; UID: u0962682</div>
-            <div>Name: Kyle Price; E-Mail: kyle.d.price@utah.edu; UID: u1018878</div>
-            <div>Name: Brandon Ward; E-Mail: brandon.ward@utah.edu; UID: u0838890</div>
-        </header>
+  <div id="header-wrap">
+      <header>
+          <h1>World Leader Religious Afiliations and Their Sociopolitical Effects</h1>
+          <div>Name: Brandon Mouser; E-Mail: u0962682@utah.edu; UID: u0962682</div>
+          <div>Name: Kyle Price; E-Mail: kyle.d.price@utah.edu; UID: u1018878</div>
+          <div>Name: Brandon Ward; E-Mail: brandon.ward@utah.edu; UID: u0838890</div>
+      </header>
+  </div>
+
+  <div class="dropdown-container">
+  <div class="dropdown show btn-group dropright">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-menu1" data-toggle="dropdown" aria-haspopup="true">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu dropdown-scroll" id="dropdown1">
+      <input type="text" placeholder="Search.." id="dropdown-input1">
     </div>
-
-<div class="dropdown-container">
-<div class="dropdown show btn-group dropright">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-menu1" data-toggle="dropdown" aria-haspopup="true">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu dropdown-scroll" id="dropdown1">
-    <input type="text" placeholder="Search.." id="dropdown-input1">
   </div>
-</div>
-<div class="dropdown show btn-group dropleft containert">
-  <button class="btn btn-primary containert dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu containert dropdown-scroll" id="dropdown2">
-    <input type="text" placeholder="Search.." id="dropdown-input2">
+  <div class="dropdown show btn-group dropleft containert">
+    <button class="btn btn-primary containert dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu containert dropdown-scroll" id="dropdown2">
+      <input type="text" placeholder="Search.." id="dropdown-input2">
+    </div>
   </div>
-</div>
-<div class="containerg" id= "country-selection"></div>
-</div>
+  <div class="containerg" id= "country-selection"></div>
+  <div class="text-center"> 
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Health
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Social Protection & Labor
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Environment
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option4" autocomplete="off"> Economics and Infrastructure
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option5" autocomplete="off"> Education
+      </label>
+    </div>
+  </div>
 
-    <div class="containerg" id= "line-graph"></div>
-    <div class="containerg" id="religion-graph">
-      <h1 id="religion-label">Global Attribute Metrics per Religion</h1>
-      <div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mean-radio" value="mean" checked>
-          <label class="form-check-label" for="inlineRadio1">Mean</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="median-radio" value="median">
-          <label class="form-check-label" for="inlineRadio2">Median</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mode-radio" value="mode">
-          <label class="form-check-label" for="inlineRadio2">Mode</label>
-        </div>
+  <div class="containerg" id= "line-graph"></div>
+  <div class="containerg" id="religion-graph">
+    <h1 id="religion-label">Global Attribute Metrics per Religion</h1>
+    <div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mean-radio" value="mean" checked>
+        <label class="form-check-label" for="inlineRadio1">Mean</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="median-radio" value="median">
+        <label class="form-check-label" for="inlineRadio2">Median</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mode-radio" value="mode">
+        <label class="form-check-label" for="inlineRadio2">Mode</label>
       </div>
     </div>
+  </div>
+  
 </body>
 
 </html>
