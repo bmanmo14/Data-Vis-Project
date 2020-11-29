@@ -4,10 +4,10 @@ class ReligionGraph {
         this.religionBuckets = religionBuckets;
         this.religionColors = religionColors;
         this.margin = { top: 50, right: 50, bottom: 50, left: 75 };
-        this.width = 1000;
+        this.width = 1250;
         this.height = 1200;
         this.chartHeight = 100;
-        this.plotMargin = 40;
+        this.plotMargin = 50;
         this.xScale = d3.scaleLinear()
             .domain([YEAR_START, YEAR_END])
             .range([this.margin.left, this.width - this.margin.right]);
@@ -18,6 +18,7 @@ class ReligionGraph {
         this.yearRange = range(YEAR_START, YEAR_END - 1);
         this.yearCount = this.yearRange.length;
         this.barWidth = (this.width - this.margin.left - this.margin.right) / this.yearCount;
+        this.barSpacing = 4;
         let that = this;
         this.metric = "mean";
         this.selectedTopic = this.selectedAttr = this.selectedYear = null;
@@ -47,29 +48,40 @@ class ReligionGraph {
 
     createReligionPlot(svg, religion, yOffset) {
         let xAxis = d3.axisBottom(this.xScale)
+            .tickSize(5)
             .ticks(YEAR_END - YEAR_START + 1)
             .tickFormat(d => (d % 5 == 0) ? d : "");
         svg.append("g")
+            .style("font-size", "12px")
             .attr("transform", `translate(0, ${this.chartHeight + yOffset})`)
             .call(xAxis);
         let yAxis = d3.axisLeft()
+            .tickSize(5)
             .scale(this.yScale)
             .ticks(11)
             .tickFormat(d => (d % 20 == 0) ? d : "");
         svg.append("g")
+            .style("font-size", "12px")
             .attr("transform", `translate(${this.margin.left}, ${yOffset})`)
             .call(yAxis);
+        svg.selectAll('line')
+            .style('stroke', '#606060')
+            .style('stroke-width', '1.5px');
+        svg.selectAll('path')
+            .style('stroke', '#606060')
+            .style('stroke-width', '1.5px');
         svg.append("g")
             .classed("indiv-relig-plot", true)
             .attr("id", religion)
             .attr("transform", `translate(0, ${yOffset})`);
         var text = svg.append("text")
             .text(religion)
-            .attr("font-size", "15px")
-            .attr("fill", "black");
+            .style("font-family", "Helvetica")
+            .style("fill", "#606060")
+            .attr("font-size", "18px");
         let textBB = text.node().getBBox();
         text.attr("x", (this.width - textBB.width) / 2)
-            .attr("y", yOffset - 10);
+            .attr("y", yOffset + this.chartHeight + 35);
     }
 
     setMetric(metric) {
@@ -133,7 +145,7 @@ class ReligionGraph {
                 let relig = d3.select(this.parentNode).attr("id");
                 return that.religionColors[relig];
             })
-            .attr("width", (d) => that.barWidth)
+            .attr("width", (d) => that.barWidth - that.barSpacing)
             .attr("height", function (d) {
                 let relig = d3.select(this.parentNode).attr("id");
                 let metricForYear = that.data[relig].metrics[that.metric][d];
@@ -144,7 +156,7 @@ class ReligionGraph {
             })
             .attr("transform", function (d, i) {
                 let height = d3.select(this).attr("height");
-                return `translate(${that.margin.left + (i * that.barWidth)}, ${that.chartHeight - height})`;
+                return `translate(${that.margin.left + (i * that.barWidth) + that.barSpacing / 2}, ${that.chartHeight - height})`;
             })
             .style("stroke", "black")
             .style("stroke-width", 1);
