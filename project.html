@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="js/constants.js"></script>
+    <script src="js/topic_selection.js"></script>
     <script src="js/tooltip.js"></script>
     <script src="js/religion_data.js"></script>
     <script src="js/country_data.js"></script>
@@ -35,44 +36,54 @@
   </div>
 
   <div class="dropdown-container">
-  <div class="dropdown show btn-group dropright">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-menu1" data-toggle="dropdown" aria-haspopup="true">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu dropdown-scroll" id="dropdown1">
-      <input type="text" placeholder="Search.." id="dropdown-input1">
+    <div class="dropdown show btn-group dropright">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-menu1" data-toggle="dropdown" aria-haspopup="true">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu dropdown-scroll" id="dropdown1">
+        <input type="text" placeholder="Search.." id="dropdown-input1">
+      </div>
     </div>
-  </div>
-  <div class="dropdown show btn-group dropleft containert">
-    <button class="btn btn-primary containert dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu containert dropdown-scroll" id="dropdown2">
-      <input type="text" placeholder="Search.." id="dropdown-input2">
+
+    <div class="dropdown show btn-group dropleft containert">
+      <button class="btn btn-primary containert dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu containert dropdown-scroll" id="dropdown2">
+        <input type="text" placeholder="Search.." id="dropdown-input2">
+      </div>
     </div>
-  </div>
-  <div class="containerg" id= "country-selection"></div>
-  <div class="text-center"> 
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Health
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Social Protection & Labor
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> Environment
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option4" autocomplete="off"> Economics and Infrastructure
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option5" autocomplete="off"> Education
-      </label>
-    </div>
+    <div class="containerg" id= "country-selection"></div>
   </div>
 
-  <div class="containerg" id= "line-graph"></div>
+  <div class="containerg">
+    <div id="attribute-selection"></div>
+    <div id="tooltip"></div>
+    <div id="button-group" class="text-center">
+      <div class="btn-group btn-group-toggle" id="buttons" data-toggle="buttons">
+        <label class="btn btn-secondary topic-button active">
+          <input type="radio" name="options" id="option0" autocomplete="off"= > All
+        </label>
+        <label class="btn btn-secondary topic-button">
+          <input type="radio" name="options" id="option1" autocomplete="off"> Health
+        </label>
+        <label class="btn btn-secondary topic-button">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Social Protection & Labor
+        </label>
+        <label class="btn btn-secondary topic-button">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Environment
+        </label>
+        <label class="btn btn-secondary topic-button">
+          <input type="radio" name="options" id="option4" autocomplete="off"> Economics and Infrastructure
+        </label>
+        <label class="btn btn-secondary topic-button">
+          <input type="radio" name="options" id="option5" autocomplete="off"> Education
+        </label>
+      </div>
+    </div>
+    <div id= "line-graph"></div>
+  </div>
+
   <div class="containerg" id="religion-graph">
     <h1 id="religion-label">Global Attribute Metrics per Religion</h1>
     <div>
@@ -90,7 +101,7 @@
       </div>
     </div>
   </div>
-  
+
 </body>
 
 </html>

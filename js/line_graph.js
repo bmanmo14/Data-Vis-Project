@@ -8,16 +8,13 @@ class LineGraph {
     this.topics = data.topics;
     this.religion_graph = religion_graph;
 
-    this.margin = { top: 150, right: 25, bottom: 50, left: 25 },
+    this.margin = { top: 20, right: 25, bottom: 50, left: 25 },
       this.width = 1250 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
 
-    this.tooltip_margin = { top: 25, right: 25, bottom: 25, left: 25 },
-      this.tooltip_width = 1250 - this.tooltip_margin.left - this.tooltip_margin.right,
-      this.tooltip_height = 150 - this.tooltip_margin.top - this.tooltip_margin.bottom;
-
     this.selected_countries = ["USA", "MEX"];
     this.selected_topic = null;
+    this.topic_dropdown = null;
     this.selected_attribute = null;
     this.selected_year = null;
     this.paths = {};
@@ -25,8 +22,9 @@ class LineGraph {
   }
 
   layout() {
-    const span = this.span;
-    this.svg = span
+    this.svg = d3.select("#line-graph").append("svg")
+      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")
       .attr("width", this.width + this.margin.left + this.margin.right)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
@@ -150,6 +148,16 @@ class LineGraph {
     percent_axis_r.call(y_axis_r);
   }
 
+  changeSelectedTopic(topic) {
+    this.topic_dropdown = topic;
+    this.selected_topic = "";
+    if(topic != null){
+      this.selected_topic = topic;
+    }
+    this.drawLines();
+    this.tooltip.setupTooltip(this.selected_topic, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
+  }
+
   changeSelectedCountry(selected_countries) {
     this.selected_countries = selected_countries;
     this.circles.transition()
@@ -171,6 +179,9 @@ class LineGraph {
       const country = this.data[this.selected_countries[c]];
       for(var t in this.topics) {
         const topic = this.topics[t];
+        if (this.topic_dropdown != null && topic != this.topic_dropdown) {
+          continue
+        }
         for(var a in this.attributes) {
           var path = d3.path();
           var prev_value = 0;
@@ -203,7 +214,7 @@ class LineGraph {
     let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
                               this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
     this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
-    this.tooltip.setupTooltip(this.selected_topic, this.selected_attribute, this.selected_year, this.selected_countries);
+    this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
 
   }
 
@@ -239,7 +250,7 @@ class LineGraph {
 
   drag(that) {
     function dragstarted(d, i) {
-      if (that.selected_topic != null) {
+      if (that.selected_attribute != null) {
       d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       }

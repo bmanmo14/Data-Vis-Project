@@ -193,3 +193,7 @@ header {
       stroke-width: 1.5;
       background-color: white;
 }
+
+.topic-button {
+   border: 1px solid #E0E0E0;
+}
