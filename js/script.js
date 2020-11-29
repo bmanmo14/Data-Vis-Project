@@ -12,8 +12,8 @@ Promise.all([d3.csv('data/esg/CountryData.csv'), d3.csv('data/religion/relig.csv
       "#b96dc9",
       // Light Green
       "#70e412",
-      // Black
-      "#606a6dc7",
+      // Dark Gray
+      "#303030",
     ];
     const country_data = new DataOrchestrator(countries, religions);
     var religion_color = {};
