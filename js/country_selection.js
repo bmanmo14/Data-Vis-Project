@@ -1,16 +1,20 @@
 class CountrySelection {
-    constructor(data, line_graph) {
+    constructor(data, line_graph, religion_color) {
         this.data = data.countries;
         this.religions = data.religions;
         this.attributes = data.attributes;
         this.topics = data.topics;
         this.line_graph = line_graph;
         this.selected_countries = ["USA", "MEX"];
+        this.religion_color = religion_color;
         this.religion_year_counts = {};
 
         this.calcCountryReligionCounts(this.selected_countries[0]);
         this.calcCountryReligionCounts(this.selected_countries[1]);
 
+        this.scaleX = d3.scaleLinear()
+            .domain([0, 40])
+            .range([0, 40]);
 
         d3.select("#dropdown-menu1")
             .html(this.data[this.selected_countries[1]].country_name)
@@ -35,7 +39,7 @@ class CountrySelection {
 
     layout() {
 
-        // draws a parent table to encase the two year count table for each of the two selected countries
+        // draws a parent table to encase the two year count tables for each of the two selected countries
         var parentTable = d3.select("#country-selection")
             .append('table')
             .attr('id', 'parent-table')
@@ -180,10 +184,46 @@ class CountrySelection {
         let dataSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
             .join('td')
+
         let religionNameSelection = dataSelection.filter(d => d.type == 'religion_name');
         religionNameSelection.text(d => d.value);
+
         let religionCountSelection = dataSelection.filter(d => d.type == 'religion_count');
-        religionCountSelection.text(d => d.value);
+        let svgSelect = religionCountSelection.selectAll('svg')
+            .data(d => [d])
+            .join('svg')
+            .attr('width', 40)
+            .attr('height', 15);
+
+        //clear any existing rects
+        svgSelect.selectAll('g').remove();
+
+        let grouperSelect = svgSelect.append('g')
+            .data(d => [d]);
+
+        this.addFrequency(grouperSelect);
+    }
+
+    /**
+     *
+     *
+     *
+     * @param - containerSelect -
+     */
+    addFrequency(containerSelect) {
+
+        let that = this;
+        let bars = containerSelect.selectAll('svg')
+            .data(d => [d])
+            .enter();
+
+        bars.append('rect')
+            .attr('class', d => d.name)
+            .attr('fill', d => this.religion_color[d.name])
+            .attr('height', 15)
+            .attr('width', d => this.scaleX(d.value))
+            .attr('x', 10)
+            .attr('y', 0);
     }
 
     /**
@@ -195,11 +235,12 @@ class CountrySelection {
     rowToCellDataTransform(d) {
         let religion_name = {
             type: 'religion_name',
-            value: d.name === "" ? "Unknown" : d.name,
+            value: d.name === "" ? "Other" : d.name,
         };
         let religion_count = {
             type: 'religion_count',
-            value: d.count + ' / 40',
+            name:  d.name === "" ? "Other" : d.name,
+            value: d.count,
         };
         let data_list = [religion_name, religion_count];
         return data_list;
@@ -213,10 +254,9 @@ class CountrySelection {
      */
     calcCountryReligionCounts(country_code) {
         let years = Object.values(this.data[country_code].religion);
-        let religion_counts = [{"name": "Buddhist", "count": 0}, {"name": "Christian", "count": 0},
-            {"name": "Confucianist", "count": 0}, {"name": "Hindu", "count": 0}, {"name": "Jewish", "count": 0},
-            {"name": "Muslim", "count": 0}, {"name": "New Age", "count": 0}, {"name": "Shintoist", "count": 0},
-            {"name": "Sikh", "count": 0}, {"name": "Taoist", "count": 0}, {"name": "", "count": 0}];
+        let religion_counts = [{"name": "Christian", "count": 0}, {"name": "Muslim", "count": 0},
+            {"name": "New Age", "count": 0}, {"name": "Hindu", "count": 0}, {"name": "Buddhist", "count": 0},
+            {"name": "", "count": 0}];
 
         years.forEach(year => {
             if (year === undefined) {
