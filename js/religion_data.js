@@ -60,7 +60,7 @@ class Religion {
 
   calculateMetrics(topicAttributeRelationships) {
     this.calculateMetric("mean", (array) => array.reduce((a, b) => a + b) / array.length, topicAttributeRelationships);
-    this.calculateMetric("median", (array) => [...array].sort()[Math.floor(array.length / 2)], topicAttributeRelationships);
+    this.calculateMetric("median", (array) => [...array].sort(function (a, b) { return a - b })[Math.floor(array.length / 2)], topicAttributeRelationships);
     this.calculateMetric("mode", this.mode, topicAttributeRelationships);
   }
 
