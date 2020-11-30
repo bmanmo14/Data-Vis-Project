@@ -45,6 +45,7 @@ class DataOrchestrator {
       if (!(country_code in this.country_religions)) {
         this.country_religions[country_code] = {}
       }
+
       this.country_religions[country_code][year] = new Religion(parent_religion);
       this.country_religions[country_code][year].setReligion(religion);
       let religion_bucket = this.getReligionBucket(parent_religion);

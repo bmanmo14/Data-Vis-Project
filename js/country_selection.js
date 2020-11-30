@@ -14,7 +14,7 @@ class CountrySelection {
 
         this.scaleX = d3.scaleLinear()
             .domain([0, 40])
-            .range([0, 40]);
+            .range([0, 250]);
 
         d3.select("#dropdown-menu1")
             .html(this.data[this.selected_countries[1]].country_name)
@@ -50,23 +50,34 @@ class CountrySelection {
         // .attr("height", this.height + this.margin.top + this.margin.bottom);
 
         let tableOne = parentTable.append('td').append("table");
-        tableOne.attr("id", "religion-year-count-one")
+        let tableOneHeader = tableOne.attr("id", "religion-year-count-one")
             .classed('religion-year-count', true)
-            .append('thead')
-            .append('tr')
+            .append('thead');
+
+        tableOneHeader.append('tr')
             .append('th')
             .attr('colspan', '2');
+        let tableOneHeaderRow = tableOneHeader.append('tr');
+        tableOneHeaderRow.append('td');
+        tableOneHeaderRow.append('td')
+            .classed('year-count-legend', true);
+
 
         tableOne.append('tbody')
             .attr("id", "religion-year-count-body-one");
 
       let tableTwo = parentTable.append('td').append("table");
-        tableTwo.attr("id", "religion-year-count-two")
+      let tableTwoHeader = tableTwo.attr("id", "religion-year-count-two")
             .classed('religion-year-count', true)
-            .append('thead')
-            .append('tr')
+            .append('thead');
+
+        tableTwoHeader.append('tr')
             .append('th')
             .attr('colspan', '2');
+        let tableTwoHeaderRow = tableTwoHeader.append('tr');
+        tableTwoHeaderRow.append('td');
+        tableTwoHeaderRow.append('td')
+            .classed('year-count-legend', true);
 
         tableTwo.append('tbody')
             .attr("id", "religion-year-count-body-two");
@@ -75,6 +86,8 @@ class CountrySelection {
             .append("div")
             .attr("class", "hover")
             .style("opacity", 0);
+
+        this.drawYearCountLegend();
 
         this.drawReligionYearTable(0);
         this.drawReligionYearTable(1);
@@ -192,7 +205,7 @@ class CountrySelection {
         let svgSelect = religionCountSelection.selectAll('svg')
             .data(d => [d])
             .join('svg')
-            .attr('width', 40)
+            .attr('width', 260)
             .attr('height', 15);
 
         //clear any existing rects
@@ -201,28 +214,55 @@ class CountrySelection {
         let grouperSelect = svgSelect.append('g')
             .data(d => [d]);
 
-        this.addFrequency(grouperSelect);
+        this.addYearCountRect(grouperSelect);
+    }
+
+    drawYearCountLegend() {
+        let yearCountAxisData = [0, 20, 40];
+        let yearCountLegend = d3.selectAll('.year-count-legend')
+            .append('svg')
+            .attr('width', 260)
+            .attr('height', 15);
+        let yearCountGroup = yearCountLegend.append('g');
+        yearCountGroup.selectAll('text')
+            .data(yearCountAxisData)
+            .join('text')
+            .text(d => Math.abs(d))
+            .classed('axis-label', true)
+            .attr('font-size', '10px')
+            .attr('x', d => this.scaleX(d) + 3)
+            .attr('y', 9);
+        yearCountGroup.selectAll('line')
+            .data(yearCountAxisData)
+            .join('line')
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr('x1', d => this.scaleX(d) + 3)
+            .attr("y1", 11)
+            .attr('x2', d => this.scaleX(d) + 3)
+            .attr("y2", 16);
     }
 
     /**
+     * Method for drawing year count rects
      *
      *
-     *
-     * @param - containerSelect -
+     * @param - containerSelect - the group to add to
      */
-    addFrequency(containerSelect) {
+    addYearCountRect(containerSelect) {
 
-        let that = this;
         let bars = containerSelect.selectAll('svg')
             .data(d => [d])
             .enter();
 
         bars.append('rect')
+            .transition()
+            .duration(1000)
             .attr('class', d => d.name)
             .attr('fill', d => this.religion_color[d.name])
             .attr('height', 15)
             .attr('width', d => this.scaleX(d.value))
-            .attr('x', 10)
+            .attr('x', 3)
             .attr('y', 0);
     }
 
@@ -259,12 +299,20 @@ class CountrySelection {
             {"name": "", "count": 0}];
 
         years.forEach(year => {
+            // check if year is undefined and add to "other" count
             if (year === undefined) {
                 let religion = religion_counts.find(r => r.name === "");
                 religion.count = religion.count + 1;
             } else {
                 let religion = religion_counts.find(r => r.name === year.parent_religion);
-                religion.count = religion.count + 1;
+                // check if parent religion is our list, if not add to "other" count
+                if(religion === undefined) {
+                    let religion = religion_counts.find(r => r.name === "");
+                    religion.count = religion.count + 1;
+                }
+                else {
+                    religion.count = religion.count + 1;
+                }
             }
         });
         this.religion_year_counts[country_code] = religion_counts;
