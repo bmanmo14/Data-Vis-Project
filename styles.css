@@ -79,14 +79,6 @@ svg.title {
   text-align: center;
 }
 
-th {
-    font-weight: bold;
-    text-align: center;
-    padding-right: 10px;
-    min-width: 100px;
-    background-color:#b0e0ecc7;
-}
-
 .button {
     margin-top: -5px;
     margin-left: 50px;
@@ -187,6 +179,10 @@ header {
     border: none;
 }
 
+.religion-year-count th {
+    font-size: 24px;
+}
+
 .line-graph {
       fill: none;
       stroke: gray;
@@ -196,4 +192,8 @@ header {
 
 .topic-button {
    border: 1px solid #E0E0E0;
+}
+
+.axis-label {
+    text-anchor: middle;
 }
