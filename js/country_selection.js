@@ -54,12 +54,14 @@ class CountrySelection {
             .classed('religion-year-count', true)
             .append('thead');
 
-        tableOneHeader.append('tr')
-            .append('th')
-            .attr('colspan', '2');
-        let tableOneHeaderRow = tableOneHeader.append('tr');
-        tableOneHeaderRow.append('td');
-        tableOneHeaderRow.append('td')
+        let tableOneHeaderRowOne = tableOneHeader.append('tr');
+        tableOneHeaderRowOne.append('td')
+            .append('img')
+        tableOneHeaderRowOne.append('th')
+
+        let tableOneHeaderRowTwo = tableOneHeader.append('tr');
+        tableOneHeaderRowTwo.append('td');
+        tableOneHeaderRowTwo.append('td')
             .classed('year-count-legend', true);
 
 
@@ -71,12 +73,14 @@ class CountrySelection {
             .classed('religion-year-count', true)
             .append('thead');
 
-        tableTwoHeader.append('tr')
-            .append('th')
-            .attr('colspan', '2');
-        let tableTwoHeaderRow = tableTwoHeader.append('tr');
-        tableTwoHeaderRow.append('td');
-        tableTwoHeaderRow.append('td')
+      let tableTwoHeaderRowOne = tableTwoHeader.append('tr')
+        tableTwoHeaderRowOne.append('td')
+            .append('img')
+        tableTwoHeaderRowOne.append('th')
+
+        let tableTwoHeaderRowTwo = tableTwoHeader.append('tr');
+        tableTwoHeaderRowTwo.append('td');
+        tableTwoHeaderRowTwo.append('td')
             .classed('year-count-legend', true);
 
         tableTwo.append('tbody')
@@ -181,6 +185,9 @@ class CountrySelection {
      */
     drawReligionYearTable(selectedIndex) {
 
+        let country = this.data[this.selected_countries[selectedIndex]];
+        let country_name = country.country_name.toLowerCase().replaceAll(' ', '-');
+
         let data = this.religion_year_counts[this.selected_countries[selectedIndex]];
         let tableId = selectedIndex === 0 ? '#religion-year-count-two' : '#religion-year-count-one';
         let tableBodyId = selectedIndex === 0 ? '#religion-year-count-body-two' : '#religion-year-count-body-one';
@@ -188,6 +195,10 @@ class CountrySelection {
         //update header
         d3.select(tableId).select('thead').select('tr').select('th')
             .text(this.data[this.selected_countries[selectedIndex]].country_name);
+
+        //update flag image
+        d3.select(tableId).select('thead').select('tr').select('img')
+            .attr('src', 'countrys-flags/svg/' + country_name + '.svg');
 
         // draw body
         let rowSelection = d3.select(tableBodyId)

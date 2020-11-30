@@ -183,6 +183,11 @@ header {
     font-size: 24px;
 }
 
+.religion-year-count img {
+    width: 30px;
+    height: 30px;
+}
+
 .line-graph {
       fill: none;
       stroke: gray;
