@@ -46,6 +46,14 @@ class ReligionGraph {
         });
     }
 
+    swap(thisC, thatC, inW) {
+        return inW.replace(thatC, thisC);
+    }
+
+    addWhitespace(word) {
+        return word.replace(' ', '_')
+    }
+
     createReligionPlot(svg, religion, yOffset) {
         let xAxis = d3.axisBottom(this.xScale)
             .tickSize(5)
@@ -72,7 +80,7 @@ class ReligionGraph {
             .style('stroke-width', '1.5px');
         svg.append("g")
             .classed("indiv-relig-plot", true)
-            .attr("id", religion)
+            .attr("id", this.swap('_', ' ', religion))
             .attr("transform", `translate(0, ${yOffset})`);
         var text = svg.append("text")
             .text(religion)
@@ -85,7 +93,6 @@ class ReligionGraph {
     }
 
     setMetric(metric) {
-        // console.log(metric);
         if (this.metric != metric) {
             this.metric = metric;
             this.updateCharts();
@@ -93,7 +100,12 @@ class ReligionGraph {
     }
 
     changeAttrOrYear(topic, attr, year, selectedCountryReligions, selectedAttrValues) {
-        if (attr != this.selectedAttr || year != this.selectedYear) {
+        console.log(topic, this.selectedTopic);
+        if (topic !== this.selectedTopic) {
+            this.selectedTopic = topic;
+            this.clearCharts();
+        }
+        else if (attr !== this.selectedAttr || year !== this.selectedYear) {
             [this.selectedTopic, this.selectedAttr, this.selectedYear] = [topic, attr, year];
             [this.selectedCountryReligions, this.selectedAttrValues] = [selectedCountryReligions, selectedAttrValues];
             this.updateCharts();
@@ -104,12 +116,6 @@ class ReligionGraph {
         if (!(selectedCountries[0] === this.selectedCountries[0] && 
             selectedCountries[1] === this.selectedCountries[1])) {
             this.selectedCountries = selectedCountries;
-           /* this.selectedCountryReligions = selectedCountryReligions;
-            this.selectedAttrValues = selectedAttrValues;
-            */
-            // if (this.selectedAttr && this.selectedYear) {
-            //     this.updateCharts();
-            // }
             this.clearCharts();
         }
     }
@@ -125,12 +131,82 @@ class ReligionGraph {
     }
 
     clearCharts() {
-        d3.selectAll(".indiv-relig-plot")
-            .selectAll("line")
+        let religPlots = d3.selectAll(".indiv-relig-plot");
+        religPlots.selectAll("line")
             .remove();
-        d3.selectAll(".indiv-relig-plot")
-            .selectAll("rect")
+        religPlots.selectAll("rect")
             .remove();
+        religPlots.selectAll(".religion-country-label")
+            .remove();
+    }
+
+    drawCountryIndicatorText(c, v, rectWidth, rectHeight, rLabelG) {
+        rLabelG.append("rect")
+            .style("fill", "E9E9E9")
+            .style("opacity", ".3")
+            .attr("width", rectWidth)
+            .attr("height", rectHeight)
+            .style("stroke", "black")
+            .style("stroke-width", 1);
+        let rTextCountry = rLabelG.append("text")
+            .text(`${c}@`);
+        let rTextValue = rLabelG.append("text")
+            .text(`${v} \%`);
+        rLabelG.selectAll("text")
+            .style("font-family", "Helvetica")
+            .style("fill", "#606060")
+            .attr("font-size", "20px");
+        let rTextCountryBBox = rTextCountry.node().getBBox();
+        let rTextValueBBox = rTextValue.node().getBBox();
+        let centerDist = 3;
+        rTextCountry.attr("x", rectWidth / 2 - rTextCountryBBox.width / 2)
+            .attr("y", rectHeight / 2 - centerDist);
+        rTextValue.attr("x", rectWidth / 2 - rTextValueBBox.width / 2)
+            .attr("y", rectHeight / 2 + rTextValueBBox.height * .75 + centerDist);
+    }
+
+    drawCountryIndicators() {
+        let that = this;
+        let [c1, c2] = this.selectedCountries;
+        let [r1, r2] = this.selectedCountryReligions.map(r => (that.religionBuckets.includes(r)) ? r : "Other");
+        let yearIndex = this.yearRange.indexOf(this.selectedYear);
+        let x1 = this.margin.left + (yearIndex * this.barWidth);
+        let x2 = x1 + this.barWidth;
+        let c1Y = this.chartHeight - this.selectedAttrValues[0];
+        let c2Y = this.chartHeight - this.selectedAttrValues[1];
+        let r1G = d3.select("#" + this.swap('_', ' ', r1));
+        let r2G = d3.select("#" + this.swap('_', ' ', r2));
+        r1G.append('line')
+            .style("stroke", "#989898")
+            .style("stroke-dasharray","4,4")
+            .style("stroke-width", 3)
+            .attr("x1", x1)
+            .attr("y1", c1Y)
+            .attr("x2", x2)
+            .attr("y2", c1Y);
+        r2G.append('line')
+            .style("stroke", "#989898")
+            .style("stroke-dasharray","4,4")
+            .style("stroke-width", 3)
+            .attr("x1", x1)
+            .attr("y1", c2Y)
+            .attr("x2", x2)
+            .attr("y2", c2Y);
+
+        let lineRectDist = 0;
+        let rectWidth = 80;
+        let rectHeight = 50;
+
+        let r1LabelG = r1G.append("g")
+            .classed("religion-country-label", true)
+            .attr("transform", `translate(${x2 + lineRectDist}, ${c1Y - rectHeight / 2})`);
+        let c1Val = String(Number(this.selectedAttrValues[0]).toFixed(1));
+        this.drawCountryIndicatorText(c1, c1Val, rectWidth, rectHeight, r1LabelG);
+        let r2LabelG = r2G.append("g")
+            .classed("religion-country-label", true)
+            .attr("transform", `translate(${x1 - lineRectDist - rectWidth}, ${c2Y - rectHeight / 2})`);
+        let c2Val = String(Number(this.selectedAttrValues[1]).toFixed(1));
+        this.drawCountryIndicatorText(c2, c2Val, rectWidth, rectHeight, r2LabelG);
     }
 
     updateCharts() {
@@ -142,12 +218,12 @@ class ReligionGraph {
             .data(that.yearRange)
             .join("rect");
         bars.style("fill", function (d) {
-                let relig = d3.select(this.parentNode).attr("id");
+                let relig = that.swap(' ', '_', d3.select(this.parentNode).attr("id"));
                 return that.religionColors[relig];
             })
             .attr("width", (d) => that.barWidth - that.barSpacing)
             .attr("height", function (d) {
-                let relig = d3.select(this.parentNode).attr("id");
+                let relig = that.swap(' ', '_', d3.select(this.parentNode).attr("id"));
                 let metricForYear = that.data[relig].metrics[that.metric][d];
                 if (!(that.selectedTopic in metricForYear) || !(that.selectedAttr in metricForYear[that.selectedTopic])) {
                     return 0;
@@ -159,41 +235,6 @@ class ReligionGraph {
                 return `translate(${that.margin.left + (i * that.barWidth) + that.barSpacing / 2}, ${that.chartHeight - height})`;
             });
 
-            let [c1, c2] = this.selectedCountries;
-            let [r1, r2] = this.selectedCountryReligions.map(r => (that.religionBuckets.includes(r)) ? r : "Other");
-            let yearIndex = this.yearRange.indexOf(this.selectedYear);
-            let x1 = this.margin.left + (yearIndex * this.barWidth);
-            let x2 = x1 + this.barWidth;
-            let c1Y = this.chartHeight - this.selectedAttrValues[0];
-            let c2Y = this.chartHeight - this.selectedAttrValues[1];
-            d3.select("#" + r1)
-                .append('line')
-                .style("stroke", "black")
-                .style("stroke-width", 3)
-                .attr("x1", x1)
-                .attr("y1", c1Y)
-                .attr("x2", x2)
-                .attr("y2", c1Y);
-            d3.select("#" + r2)
-                .append('line')
-                .style("stroke", "black")
-                .style("stroke-width", 3)
-                .attr("x1", x1)
-                .attr("y1", c2Y)
-                .attr("x2", x2)
-                .attr("y2", c2Y);
-            // if (r1 === r2) {
-                // d3.select("#" + r1)
-                //     .append("rect")
-                //     .style("fill", "#f2f2f2")
-                //     .attr("width", 60)
-                //     .attr("height", 20)
-                //     .attr("transform", `translate(${x1 - ((60 - this.barWidth) / 2)}, ${0})`)
-                //     .style("stroke", "black")
-                //     .style("stroke-width", 1);
-            // }
-            // else {
-
-            // }
+            this.drawCountryIndicators();
     }
 }
