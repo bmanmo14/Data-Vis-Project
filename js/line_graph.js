@@ -53,6 +53,11 @@ class LineGraph {
       .attr("width", this.width)
       .attr("height", this.height);
 
+    this.dot_line = this.svg.append("g")
+    .classed(".dot-line", true)
+      .attr("width", this.width)
+      .attr("height", this.height);
+
     const that = this;
     this.svg.on('click', function (d, i) {
       that.circles.transition()
@@ -154,8 +159,9 @@ class LineGraph {
     if(topic != null){
       this.selected_topic = topic;
     }
+    this.selected_year = YEAR_START;
     this.drawLines();
-    this.tooltip.setupTooltip(this.selected_topic, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
+    this.sendChange(this.height, this.height);
   }
 
   changeSelectedCountry(selected_countries) {
@@ -164,13 +170,7 @@ class LineGraph {
       .duration('50')
       .style("opacity", 0);
     this.drawLines();
-    // if (!this.selected_year === null) {
-    // let selected_country_religions = [this.data[this.selected_countries[0]].religion[1988].parent_religion,
-    //                                   this.data[this.selected_countries[1]].religion[1988].parent_religion];
-    // let selected_attr_values = [this.data[this.selected_countries[0]],
-    //                                   0];
     this.religion_graph.changeSelectedCountries(this.selected_countries);
-    // }
   }
 
   drawLines() {
@@ -208,14 +208,35 @@ class LineGraph {
     this.drawPaths();
   }
 
-  sendChange() {
-    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[this.selected_year].parent_religion,
-                                    this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
-    let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
-                              this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
-    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
-    this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
+  drawDotLines(cy, other_cy) {
+    this.dot_line.selectAll('line')
+    .data([cy, other_cy])
+    .join("line")
+    .classed(".line_y", true)
+    .attr("class", "label")
+    .style("stroke-dasharray","4,4")
+    .style("stroke", "black")
+    .style("stroke-width", 1)
+    .style("stroke-opacity", 1)
+    .attr("x1", 0)
+    .attr("x2", this.width)
+    .attr("y1", d => d)
+    .attr("y2", d => d);
+  }
 
+  sendChange(cy, other_cy) {
+    if(this.selected_topic === "" || this.selected_attribute == "" ||this.selected_topic === null || this.selected_attribute == null) {
+      this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, null, null, null);
+    }
+    else {
+      let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[this.selected_year].parent_religion,
+                                      this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
+      let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
+                                this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
+      this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
+    }
+    this.drawDotLines(cy, other_cy);
+    this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown || "", this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
   }
 
   drawPaths() {
@@ -292,7 +313,7 @@ class LineGraph {
       that.selected_topic = d[2];
       that.selected_attribute = d[3];
       that.selected_year = this.year
-      that.sendChange();
+      that.sendChange(this.cy, this.other_cy);
     }
 
     function dragged(d, i) {
@@ -345,12 +366,12 @@ class LineGraph {
             return that.religion_color[that.data[that.selected_countries[od[2]]].religion[this.year].parent_religion] || that.religion_color["Other"];
           });
       that.selected_year = this.year
-      that.sendChange();
+      that.sendChange(this.cy, this.other_cy);
   }
 
     function dragended(d, i) {
       that.selected_year = this.year
-      that.sendChange();
+      that.sendChange(this.cy, this.other_cy);
     }
 
     return d3.drag()
