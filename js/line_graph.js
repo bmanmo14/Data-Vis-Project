@@ -23,10 +23,10 @@ class LineGraph {
 
   layout() {
     this.svg = d3.select("#line-graph").append("svg")
-      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("width", this.width + this.margin.left + this.margin.right + 10)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")
-      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("width", this.width + this.margin.left + this.margin.right + 10 )
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
 
@@ -218,10 +218,16 @@ class LineGraph {
     .style("stroke", "black")
     .style("stroke-width", 1)
     .style("stroke-opacity", 1)
-    .attr("x1", 0)
-    .attr("x2", this.width)
+    .attr("x1",0)
+    .attr("x2", this.width - 20)
     .attr("y1", d => d)
     .attr("y2", d => d);
+    this.dot_line.selectAll("text")
+    .data([cy, other_cy])
+    .join("text")
+    .attr("x", this.width - 10)
+    .attr("y", d => d)
+    .text(d => this.yConv(d).toFixed(1) + "%")
   }
 
   sendChange(cy, other_cy) {
