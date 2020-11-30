@@ -154,8 +154,9 @@ class LineGraph {
     if(topic != null){
       this.selected_topic = topic;
     }
+    this.selected_year = YEAR_START;
     this.drawLines();
-    this.tooltip.setupTooltip(this.selected_topic, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
+    this.sendChange();
   }
 
   changeSelectedCountry(selected_countries) {
@@ -209,12 +210,17 @@ class LineGraph {
   }
 
   sendChange() {
-    let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[this.selected_year].parent_religion,
-                                    this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
-    let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
-                              this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
-    this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
-    this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown, this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
+    if(this.selected_topic === "" || this.selected_attribute == "" ||this.selected_topic === null || this.selected_attribute == null) {
+      this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, null, null, null);
+    }
+    else {
+      let selectedCountryReligions = [this.data[this.selected_countries[0]].religion[this.selected_year].parent_religion,
+                                      this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
+      let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
+                                this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
+      this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
+    }
+    this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown || "", this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
 
   }
 
