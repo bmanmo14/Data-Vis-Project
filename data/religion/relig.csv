@@ -145,12 +145,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,CAN,Canada,Roman Catholic,1222,Christian
 2017,CAN,Canada,Roman Catholic,1222,Christian
 2018,CAN,Canada,Roman Catholic,1222,Christian
-1946,CUB,Cuba,,,
-1947,CUB,Cuba,,,
-1948,CUB,Cuba,,,
-1949,CUB,Cuba,,,
-1950,CUB,Cuba,,,
-1951,CUB,Cuba,,,
+1946,CUB,Cuba,Unspecified,,Other
+1947,CUB,Cuba,Unspecified,,Other
+1948,CUB,Cuba,Unspecified,,Other
+1949,CUB,Cuba,Unspecified,,Other
+1950,CUB,Cuba,Unspecified,,Other
+1951,CUB,Cuba,Unspecified,,Other
 1952,CUB,Cuba,Roman Catholic,1222,Christian
 1953,CUB,Cuba,Roman Catholic,1222,Christian
 1954,CUB,Cuba,Roman Catholic,1222,Christian
@@ -288,7 +288,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2013,HTI,Haiti,Roman Catholic,1222,Christian
 2014,HTI,Haiti,Roman Catholic,1222,Christian
 2015,HTI,Haiti,Roman Catholic,1222,Christian
-2016,HTI,Haiti,,,
+2016,HTI,Haiti,Unspecified,,Other
 2017,HTI,Haiti,Roman Catholic,1222,Christian
 2018,HTI,Haiti,Roman Catholic,1222,Christian
 1946,DOM,Dominican Republic,Roman Catholic,1222,Christian
@@ -369,11 +369,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1964,JAM,Jamaica,Roman Catholic,1222,Christian
 1965,JAM,Jamaica,Roman Catholic,1222,Christian
 1966,JAM,Jamaica,Roman Catholic,1222,Christian
-1967,JAM,Jamaica,,,
-1968,JAM,Jamaica,,,
-1969,JAM,Jamaica,,,
-1970,JAM,Jamaica,,,
-1971,JAM,Jamaica,,,
+1967,JAM,Jamaica,Unspecified,,Other
+1968,JAM,Jamaica,Unspecified,,Other
+1969,JAM,Jamaica,Unspecified,,Other
+1970,JAM,Jamaica,Unspecified,,Other
+1971,JAM,Jamaica,Unspecified,,Other
 1972,JAM,Jamaica,Roman Catholic,1222,Christian
 1973,JAM,Jamaica,Roman Catholic,1222,Christian
 1974,JAM,Jamaica,Roman Catholic,1222,Christian
@@ -394,30 +394,30 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1989,JAM,Jamaica,Roman Catholic,1222,Christian
 1990,JAM,Jamaica,Roman Catholic,1222,Christian
 1991,JAM,Jamaica,Roman Catholic,1222,Christian
-1992,JAM,Jamaica,,,
-1993,JAM,Jamaica,,,
-1994,JAM,Jamaica,,,
-1995,JAM,Jamaica,,,
-1996,JAM,Jamaica,,,
-1997,JAM,Jamaica,,,
-1998,JAM,Jamaica,,,
-1999,JAM,Jamaica,,,
-2000,JAM,Jamaica,,,
-2001,JAM,Jamaica,,,
-2002,JAM,Jamaica,,,
-2003,JAM,Jamaica,,,
-2004,JAM,Jamaica,,,
-2005,JAM,Jamaica,,,
-2006,JAM,Jamaica,,,
-2007,JAM,Jamaica,,,
+1992,JAM,Jamaica,Unspecified,,Other
+1993,JAM,Jamaica,Unspecified,,Other
+1994,JAM,Jamaica,Unspecified,,Other
+1995,JAM,Jamaica,Unspecified,,Other
+1996,JAM,Jamaica,Unspecified,,Other
+1997,JAM,Jamaica,Unspecified,,Other
+1998,JAM,Jamaica,Unspecified,,Other
+1999,JAM,Jamaica,Unspecified,,Other
+2000,JAM,Jamaica,Unspecified,,Other
+2001,JAM,Jamaica,Unspecified,,Other
+2002,JAM,Jamaica,Unspecified,,Other
+2003,JAM,Jamaica,Unspecified,,Other
+2004,JAM,Jamaica,Unspecified,,Other
+2005,JAM,Jamaica,Unspecified,,Other
+2006,JAM,Jamaica,Unspecified,,Other
+2007,JAM,Jamaica,Unspecified,,Other
 2008,JAM,Jamaica,Anglican,1510,Christian
 2009,JAM,Jamaica,Anglican,1510,Christian
 2010,JAM,Jamaica,Anglican,1510,Christian
 2011,JAM,Jamaica,Anglican,1510,Christian
-2012,JAM,Jamaica,,,
-2013,JAM,Jamaica,,,
-2014,JAM,Jamaica,,,
-2015,JAM,Jamaica,,,
+2012,JAM,Jamaica,Unspecified,,Other
+2013,JAM,Jamaica,Unspecified,,Other
+2014,JAM,Jamaica,Unspecified,,Other
+2015,JAM,Jamaica,Unspecified,,Other
 2016,JAM,Jamaica,Adventist,1450,Christian
 2017,JAM,Jamaica,Adventist,1450,Christian
 2018,JAM,Jamaica,Adventist,1450,Christian
@@ -440,12 +440,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1978,TTO,Trinidad and Tobago,Anglican,1510,Christian
 1979,TTO,Trinidad and Tobago,Anglican,1510,Christian
 1980,TTO,Trinidad and Tobago,Anglican,1510,Christian
-1981,TTO,Trinidad and Tobago,,,
-1982,TTO,Trinidad and Tobago,,,
-1983,TTO,Trinidad and Tobago,,,
-1984,TTO,Trinidad and Tobago,,,
-1985,TTO,Trinidad and Tobago,,,
-1986,TTO,Trinidad and Tobago,,,
+1981,TTO,Trinidad and Tobago,Unspecified,,Other
+1982,TTO,Trinidad and Tobago,Unspecified,,Other
+1983,TTO,Trinidad and Tobago,Unspecified,,Other
+1984,TTO,Trinidad and Tobago,Unspecified,,Other
+1985,TTO,Trinidad and Tobago,Unspecified,,Other
+1986,TTO,Trinidad and Tobago,Unspecified,,Other
 1987,TTO,Trinidad and Tobago,Methodist,1460,Christian
 1988,TTO,Trinidad and Tobago,Methodist,1460,Christian
 1989,TTO,Trinidad and Tobago,Methodist,1460,Christian
@@ -469,15 +469,15 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2007,TTO,Trinidad and Tobago,Anglican,1510,Christian
 2008,TTO,Trinidad and Tobago,Anglican,1510,Christian
 2009,TTO,Trinidad and Tobago,Anglican,1510,Christian
-2010,TTO,Trinidad and Tobago,,,
-2011,TTO,Trinidad and Tobago,,,
-2012,TTO,Trinidad and Tobago,,,
-2013,TTO,Trinidad and Tobago,,,
-2014,TTO,Trinidad and Tobago,,,
-2015,TTO,Trinidad and Tobago,,,
-2016,TTO,Trinidad and Tobago,,,
-2017,TTO,Trinidad and Tobago,,,
-2018,TTO,Trinidad and Tobago,,,
+2010,TTO,Trinidad and Tobago,Unspecified,,Other
+2011,TTO,Trinidad and Tobago,Unspecified,,Other
+2012,TTO,Trinidad and Tobago,Unspecified,,Other
+2013,TTO,Trinidad and Tobago,Unspecified,,Other
+2014,TTO,Trinidad and Tobago,Unspecified,,Other
+2015,TTO,Trinidad and Tobago,Unspecified,,Other
+2016,TTO,Trinidad and Tobago,Unspecified,,Other
+2017,TTO,Trinidad and Tobago,Unspecified,,Other
+2018,TTO,Trinidad and Tobago,Unspecified,,Other
 1966,BRB,Barbados,Anglican,1510,Christian
 1967,BRB,Barbados,Anglican,1510,Christian
 1968,BRB,Barbados,Anglican,1510,Christian
@@ -531,23 +531,23 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,BRB,Barbados,Anglican,1510,Christian
 2017,BRB,Barbados,Anglican,1510,Christian
 2018,BRB,Barbados,Not Religious,9001,New Age
-1978,DMA,Dominica,,,
-1979,DMA,Dominica,,,
-1980,DMA,Dominica,,,
-1981,DMA,Dominica,,,
-1982,DMA,Dominica,,,
-1983,DMA,Dominica,,,
-1984,DMA,Dominica,,,
-1985,DMA,Dominica,,,
-1986,DMA,Dominica,,,
-1987,DMA,Dominica,,,
-1988,DMA,Dominica,,,
-1989,DMA,Dominica,,,
-1990,DMA,Dominica,,,
-1991,DMA,Dominica,,,
-1992,DMA,Dominica,,,
-1993,DMA,Dominica,,,
-1994,DMA,Dominica,,,
+1978,DMA,Dominica,Unspecified,,Other
+1979,DMA,Dominica,Unspecified,,Other
+1980,DMA,Dominica,Unspecified,,Other
+1981,DMA,Dominica,Unspecified,,Other
+1982,DMA,Dominica,Unspecified,,Other
+1983,DMA,Dominica,Unspecified,,Other
+1984,DMA,Dominica,Unspecified,,Other
+1985,DMA,Dominica,Unspecified,,Other
+1986,DMA,Dominica,Unspecified,,Other
+1987,DMA,Dominica,Unspecified,,Other
+1988,DMA,Dominica,Unspecified,,Other
+1989,DMA,Dominica,Unspecified,,Other
+1990,DMA,Dominica,Unspecified,,Other
+1991,DMA,Dominica,Unspecified,,Other
+1992,DMA,Dominica,Unspecified,,Other
+1993,DMA,Dominica,Unspecified,,Other
+1994,DMA,Dominica,Unspecified,,Other
 1995,DMA,Dominica,Methodist,1460,Christian
 1996,DMA,Dominica,Methodist,1460,Christian
 1997,DMA,Dominica,Methodist,1460,Christian
@@ -582,17 +582,17 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1981,GRD,Grenada,Atheist,9100,New Age
 1982,GRD,Grenada,Atheist,9100,New Age
 1983,GRD,Grenada,Atheist,9100,New Age
-1984,GRD,Grenada,,,
-1985,GRD,Grenada,,,
-1986,GRD,Grenada,,,
-1987,GRD,Grenada,,,
-1988,GRD,Grenada,,,
-1989,GRD,Grenada,,,
-1990,GRD,Grenada,,,
-1991,GRD,Grenada,,,
-1992,GRD,Grenada,,,
-1993,GRD,Grenada,,,
-1994,GRD,Grenada,,,
+1984,GRD,Grenada,Unspecified,,Other
+1985,GRD,Grenada,Unspecified,,Other
+1986,GRD,Grenada,Unspecified,,Other
+1987,GRD,Grenada,Unspecified,,Other
+1988,GRD,Grenada,Unspecified,,Other
+1989,GRD,Grenada,Unspecified,,Other
+1990,GRD,Grenada,Unspecified,,Other
+1991,GRD,Grenada,Unspecified,,Other
+1992,GRD,Grenada,Unspecified,,Other
+1993,GRD,Grenada,Unspecified,,Other
+1994,GRD,Grenada,Unspecified,,Other
 1995,GRD,Grenada,Roman Catholic,1222,Christian
 1996,GRD,Grenada,Roman Catholic,1222,Christian
 1997,GRD,Grenada,Roman Catholic,1222,Christian
@@ -650,11 +650,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2011,ATG,Antigua and Barbuda,Adventist,1450,Christian
 2012,ATG,Antigua and Barbuda,Adventist,1450,Christian
 2013,ATG,Antigua and Barbuda,Adventist,1450,Christian
-2014,ATG,Antigua and Barbuda,,,
-2015,ATG,Antigua and Barbuda,,,
-2016,ATG,Antigua and Barbuda,,,
-2017,ATG,Antigua and Barbuda,,,
-2018,ATG,Antigua and Barbuda,,,
+2014,ATG,Antigua and Barbuda,Unspecified,,Other
+2015,ATG,Antigua and Barbuda,Unspecified,,Other
+2016,ATG,Antigua and Barbuda,Unspecified,,Other
+2017,ATG,Antigua and Barbuda,Unspecified,,Other
+2018,ATG,Antigua and Barbuda,Unspecified,,Other
 1946,MEX,Mexico,Roman Catholic,1222,Christian
 1947,MEX,Mexico,Roman Catholic,1222,Christian
 1948,MEX,Mexico,Roman Catholic,1222,Christian
@@ -771,10 +771,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1948,GTM,Guatemala,Roman Catholic,1222,Christian
 1949,GTM,Guatemala,Roman Catholic,1222,Christian
 1950,GTM,Guatemala,Roman Catholic,1222,Christian
-1951,GTM,Guatemala,,,
-1952,GTM,Guatemala,,,
-1953,GTM,Guatemala,,,
-1954,GTM,Guatemala,,,
+1951,GTM,Guatemala,Unspecified,,Other
+1952,GTM,Guatemala,Unspecified,,Other
+1953,GTM,Guatemala,Unspecified,,Other
+1954,GTM,Guatemala,Unspecified,,Other
 1955,GTM,Guatemala,Roman Catholic,1222,Christian
 1956,GTM,Guatemala,Roman Catholic,1222,Christian
 1957,GTM,Guatemala,Roman Catholic,1222,Christian
@@ -786,40 +786,40 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1963,GTM,Guatemala,Roman Catholic,1222,Christian
 1964,GTM,Guatemala,Roman Catholic,1222,Christian
 1965,GTM,Guatemala,Roman Catholic,1222,Christian
-1966,GTM,Guatemala,,,
-1967,GTM,Guatemala,,,
-1968,GTM,Guatemala,,,
-1969,GTM,Guatemala,,,
-1970,GTM,Guatemala,,,
-1971,GTM,Guatemala,,,
-1972,GTM,Guatemala,,,
-1973,GTM,Guatemala,,,
+1966,GTM,Guatemala,Unspecified,,Other
+1967,GTM,Guatemala,Unspecified,,Other
+1968,GTM,Guatemala,Unspecified,,Other
+1969,GTM,Guatemala,Unspecified,,Other
+1970,GTM,Guatemala,Unspecified,,Other
+1971,GTM,Guatemala,Unspecified,,Other
+1972,GTM,Guatemala,Unspecified,,Other
+1973,GTM,Guatemala,Unspecified,,Other
 1974,GTM,Guatemala,Roman Catholic,1222,Christian
 1975,GTM,Guatemala,Roman Catholic,1222,Christian
 1976,GTM,Guatemala,Roman Catholic,1222,Christian
 1977,GTM,Guatemala,Roman Catholic,1222,Christian
-1978,GTM,Guatemala,,,
-1979,GTM,Guatemala,,,
-1980,GTM,Guatemala,,,
-1981,GTM,Guatemala,,,
+1978,GTM,Guatemala,Unspecified,,Other
+1979,GTM,Guatemala,Unspecified,,Other
+1980,GTM,Guatemala,Unspecified,,Other
+1981,GTM,Guatemala,Unspecified,,Other
 1982,GTM,Guatemala,Roman Catholic,1222,Christian
 1983,GTM,Guatemala,Roman Catholic,1222,Christian
 1984,GTM,Guatemala,Roman Catholic,1222,Christian
 1985,GTM,Guatemala,Roman Catholic,1222,Christian
-1986,GTM,Guatemala,,,
-1987,GTM,Guatemala,,,
-1988,GTM,Guatemala,,,
-1989,GTM,Guatemala,,,
-1990,GTM,Guatemala,,,
+1986,GTM,Guatemala,Unspecified,,Other
+1987,GTM,Guatemala,Unspecified,,Other
+1988,GTM,Guatemala,Unspecified,,Other
+1989,GTM,Guatemala,Unspecified,,Other
+1990,GTM,Guatemala,Unspecified,,Other
 1991,GTM,Guatemala,Protestant (NFI),1400,Christian
 1992,GTM,Guatemala,Protestant (NFI),1400,Christian
-1993,GTM,Guatemala,,,
-1994,GTM,Guatemala,,,
-1995,GTM,Guatemala,,,
-1996,GTM,Guatemala,,,
-1997,GTM,Guatemala,,,
-1998,GTM,Guatemala,,,
-1999,GTM,Guatemala,,,
+1993,GTM,Guatemala,Unspecified,,Other
+1994,GTM,Guatemala,Unspecified,,Other
+1995,GTM,Guatemala,Unspecified,,Other
+1996,GTM,Guatemala,Unspecified,,Other
+1997,GTM,Guatemala,Unspecified,,Other
+1998,GTM,Guatemala,Unspecified,,Other
+1999,GTM,Guatemala,Unspecified,,Other
 2000,GTM,Guatemala,Protestant (NFI),1400,Christian
 2001,GTM,Guatemala,Protestant (NFI),1400,Christian
 2002,GTM,Guatemala,Protestant (NFI),1400,Christian
@@ -842,15 +842,15 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1946,HND,Honduras,Roman Catholic,1222,Christian
 1947,HND,Honduras,Roman Catholic,1222,Christian
 1948,HND,Honduras,Roman Catholic,1222,Christian
-1949,HND,Honduras,,,
-1950,HND,Honduras,,,
-1951,HND,Honduras,,,
-1952,HND,Honduras,,,
-1953,HND,Honduras,,,
-1954,HND,Honduras,,,
-1955,HND,Honduras,,,
-1956,HND,Honduras,,,
-1957,HND,Honduras,,,
+1949,HND,Honduras,Unspecified,,Other
+1950,HND,Honduras,Unspecified,,Other
+1951,HND,Honduras,Unspecified,,Other
+1952,HND,Honduras,Unspecified,,Other
+1953,HND,Honduras,Unspecified,,Other
+1954,HND,Honduras,Unspecified,,Other
+1955,HND,Honduras,Unspecified,,Other
+1956,HND,Honduras,Unspecified,,Other
+1957,HND,Honduras,Unspecified,,Other
 1958,HND,Honduras,Roman Catholic,1222,Christian
 1959,HND,Honduras,Roman Catholic,1222,Christian
 1960,HND,Honduras,Roman Catholic,1222,Christian
@@ -879,18 +879,18 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1983,HND,Honduras,Roman Catholic,1222,Christian
 1984,HND,Honduras,Roman Catholic,1222,Christian
 1985,HND,Honduras,Roman Catholic,1222,Christian
-1986,HND,Honduras,,,
-1987,HND,Honduras,,,
-1988,HND,Honduras,,,
-1989,HND,Honduras,,,
+1986,HND,Honduras,Unspecified,,Other
+1987,HND,Honduras,Unspecified,,Other
+1988,HND,Honduras,Unspecified,,Other
+1989,HND,Honduras,Unspecified,,Other
 1990,HND,Honduras,Christian (NFI),1000,Christian
 1991,HND,Honduras,Christian (NFI),1000,Christian
 1992,HND,Honduras,Christian (NFI),1000,Christian
 1993,HND,Honduras,Christian (NFI),1000,Christian
-1994,HND,Honduras,,,
-1995,HND,Honduras,,,
-1996,HND,Honduras,,,
-1997,HND,Honduras,,,
+1994,HND,Honduras,Unspecified,,Other
+1995,HND,Honduras,Unspecified,,Other
+1996,HND,Honduras,Unspecified,,Other
+1997,HND,Honduras,Unspecified,,Other
 1998,HND,Honduras,Roman Catholic,1222,Christian
 1999,HND,Honduras,Roman Catholic,1222,Christian
 2000,HND,Honduras,Roman Catholic,1222,Christian
@@ -912,11 +912,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,HND,Honduras,Roman Catholic,1222,Christian
 2017,HND,Honduras,Roman Catholic,1222,Christian
 2018,HND,Honduras,Roman Catholic,1222,Christian
-1946,SLV,El Salvador,,,
-1947,SLV,El Salvador,,,
-1948,SLV,El Salvador,,,
+1946,SLV,El Salvador,Unspecified,,Other
+1947,SLV,El Salvador,Unspecified,,Other
+1948,SLV,El Salvador,Unspecified,,Other
 1949,SLV,El Salvador,Lutheran,1410,Christian
-1950,SLV,El Salvador,,,
+1950,SLV,El Salvador,Unspecified,,Other
 1951,SLV,El Salvador,Lutheran,1410,Christian
 1952,SLV,El Salvador,Lutheran,1410,Christian
 1953,SLV,El Salvador,Lutheran,1410,Christian
@@ -927,27 +927,27 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1958,SLV,El Salvador,Roman Catholic,1222,Christian
 1959,SLV,El Salvador,Roman Catholic,1222,Christian
 1960,SLV,El Salvador,Roman Catholic,1222,Christian
-1961,SLV,El Salvador,,,
-1962,SLV,El Salvador,,,
-1963,SLV,El Salvador,,,
-1964,SLV,El Salvador,,,
-1965,SLV,El Salvador,,,
-1966,SLV,El Salvador,,,
+1961,SLV,El Salvador,Unspecified,,Other
+1962,SLV,El Salvador,Unspecified,,Other
+1963,SLV,El Salvador,Unspecified,,Other
+1964,SLV,El Salvador,Unspecified,,Other
+1965,SLV,El Salvador,Unspecified,,Other
+1966,SLV,El Salvador,Unspecified,,Other
 1967,SLV,El Salvador,Roman Catholic,1222,Christian
 1968,SLV,El Salvador,Roman Catholic,1222,Christian
 1969,SLV,El Salvador,Roman Catholic,1222,Christian
 1970,SLV,El Salvador,Roman Catholic,1222,Christian
 1971,SLV,El Salvador,Roman Catholic,1222,Christian
 1972,SLV,El Salvador,Roman Catholic,1222,Christian
-1973,SLV,El Salvador,,,
-1974,SLV,El Salvador,,,
-1975,SLV,El Salvador,,,
-1976,SLV,El Salvador,,,
+1973,SLV,El Salvador,Unspecified,,Other
+1974,SLV,El Salvador,Unspecified,,Other
+1975,SLV,El Salvador,Unspecified,,Other
+1976,SLV,El Salvador,Unspecified,,Other
 1977,SLV,El Salvador,Roman Catholic,1222,Christian
 1978,SLV,El Salvador,Roman Catholic,1222,Christian
 1979,SLV,El Salvador,Roman Catholic,1222,Christian
-1980,SLV,El Salvador,,,
-1981,SLV,El Salvador,,,
+1980,SLV,El Salvador,Unspecified,,Other
+1981,SLV,El Salvador,Unspecified,,Other
 1982,SLV,El Salvador,Roman Catholic,1222,Christian
 1983,SLV,El Salvador,Roman Catholic,1222,Christian
 1984,SLV,El Salvador,Roman Catholic,1222,Christian
@@ -955,11 +955,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1986,SLV,El Salvador,Roman Catholic,1222,Christian
 1987,SLV,El Salvador,Roman Catholic,1222,Christian
 1988,SLV,El Salvador,Roman Catholic,1222,Christian
-1989,SLV,El Salvador,,,
-1990,SLV,El Salvador,,,
-1991,SLV,El Salvador,,,
-1992,SLV,El Salvador,,,
-1993,SLV,El Salvador,,,
+1989,SLV,El Salvador,Unspecified,,Other
+1990,SLV,El Salvador,Unspecified,,Other
+1991,SLV,El Salvador,Unspecified,,Other
+1992,SLV,El Salvador,Unspecified,,Other
+1993,SLV,El Salvador,Unspecified,,Other
 1994,SLV,El Salvador,Roman Catholic,1222,Christian
 1995,SLV,El Salvador,Roman Catholic,1222,Christian
 1996,SLV,El Salvador,Roman Catholic,1222,Christian
@@ -1036,11 +1036,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1994,NIC,Nicaragua,Roman Catholic,1222,Christian
 1995,NIC,Nicaragua,Roman Catholic,1222,Christian
 1996,NIC,Nicaragua,Roman Catholic,1222,Christian
-1997,NIC,Nicaragua,,,
-1998,NIC,Nicaragua,,,
-1999,NIC,Nicaragua,,,
-2000,NIC,Nicaragua,,,
-2001,NIC,Nicaragua,,,
+1997,NIC,Nicaragua,Unspecified,,Other
+1998,NIC,Nicaragua,Unspecified,,Other
+1999,NIC,Nicaragua,Unspecified,,Other
+2000,NIC,Nicaragua,Unspecified,,Other
+2001,NIC,Nicaragua,Unspecified,,Other
 2002,NIC,Nicaragua,Roman Catholic,1222,Christian
 2003,NIC,Nicaragua,Roman Catholic,1222,Christian
 2004,NIC,Nicaragua,Roman Catholic,1222,Christian
@@ -1078,10 +1078,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1963,CRI,Costa Rica,Roman Catholic,1222,Christian
 1964,CRI,Costa Rica,Roman Catholic,1222,Christian
 1965,CRI,Costa Rica,Roman Catholic,1222,Christian
-1966,CRI,Costa Rica,,,
-1967,CRI,Costa Rica,,,
-1968,CRI,Costa Rica,,,
-1969,CRI,Costa Rica,,,
+1966,CRI,Costa Rica,Unspecified,,Other
+1967,CRI,Costa Rica,Unspecified,,Other
+1968,CRI,Costa Rica,Unspecified,,Other
+1969,CRI,Costa Rica,Unspecified,,Other
 1970,CRI,Costa Rica,Not Religious,9001,New Age
 1971,CRI,Costa Rica,Not Religious,9001,New Age
 1972,CRI,Costa Rica,Not Religious,9001,New Age
@@ -1094,10 +1094,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1979,CRI,Costa Rica,Roman Catholic,1222,Christian
 1980,CRI,Costa Rica,Roman Catholic,1222,Christian
 1981,CRI,Costa Rica,Roman Catholic,1222,Christian
-1982,CRI,Costa Rica,,,
-1983,CRI,Costa Rica,,,
-1984,CRI,Costa Rica,,,
-1985,CRI,Costa Rica,,,
+1982,CRI,Costa Rica,Unspecified,,Other
+1983,CRI,Costa Rica,Unspecified,,Other
+1984,CRI,Costa Rica,Unspecified,,Other
+1985,CRI,Costa Rica,Unspecified,,Other
 1986,CRI,Costa Rica,Roman Catholic,1222,Christian
 1987,CRI,Costa Rica,Roman Catholic,1222,Christian
 1988,CRI,Costa Rica,Roman Catholic,1222,Christian
@@ -1167,14 +1167,14 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1979,PAN,Panama,Roman Catholic,1222,Christian
 1980,PAN,Panama,Roman Catholic,1222,Christian
 1981,PAN,Panama,Roman Catholic,1222,Christian
-1982,PAN,Panama,,,
-1983,PAN,Panama,,,
-1984,PAN,Panama,,,
-1985,PAN,Panama,,,
-1986,PAN,Panama,,,
-1987,PAN,Panama,,,
-1988,PAN,Panama,,,
-1989,PAN,Panama,,,
+1982,PAN,Panama,Unspecified,,Other
+1983,PAN,Panama,Unspecified,,Other
+1984,PAN,Panama,Unspecified,,Other
+1985,PAN,Panama,Unspecified,,Other
+1986,PAN,Panama,Unspecified,,Other
+1987,PAN,Panama,Unspecified,,Other
+1988,PAN,Panama,Unspecified,,Other
+1989,PAN,Panama,Unspecified,,Other
 1990,PAN,Panama,Roman Catholic,1222,Christian
 1991,PAN,Panama,Roman Catholic,1222,Christian
 1992,PAN,Panama,Roman Catholic,1222,Christian
@@ -1370,13 +1370,13 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1983,GUY,Guyana,Methodist,1460,Christian
 1984,GUY,Guyana,Methodist,1460,Christian
 1985,GUY,Guyana,Methodist,1460,Christian
-1986,GUY,Guyana,,,
-1987,GUY,Guyana,,,
-1988,GUY,Guyana,,,
-1989,GUY,Guyana,,,
-1990,GUY,Guyana,,,
-1991,GUY,Guyana,,,
-1992,GUY,Guyana,,,
+1986,GUY,Guyana,Unspecified,,Other
+1987,GUY,Guyana,Unspecified,,Other
+1988,GUY,Guyana,Unspecified,,Other
+1989,GUY,Guyana,Unspecified,,Other
+1990,GUY,Guyana,Unspecified,,Other
+1991,GUY,Guyana,Unspecified,,Other
+1992,GUY,Guyana,Unspecified,,Other
 1993,GUY,Guyana,Hindu,5000,Hindu
 1994,GUY,Guyana,Hindu,5000,Hindu
 1995,GUY,Guyana,Hindu,5000,Hindu
@@ -1425,10 +1425,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1994,SUR,Suriname,Roman Catholic,1222,Christian
 1995,SUR,Suriname,Roman Catholic,1222,Christian
 1996,SUR,Suriname,Roman Catholic,1222,Christian
-1997,SUR,Suriname,,,
-1998,SUR,Suriname,,,
-1999,SUR,Suriname,,,
-2000,SUR,Suriname,,,
+1997,SUR,Suriname,Unspecified,,Other
+1998,SUR,Suriname,Unspecified,,Other
+1999,SUR,Suriname,Unspecified,,Other
+2000,SUR,Suriname,Unspecified,,Other
 2001,SUR,Suriname,Roman Catholic,1222,Christian
 2002,SUR,Suriname,Roman Catholic,1222,Christian
 2003,SUR,Suriname,Roman Catholic,1222,Christian
@@ -1467,7 +1467,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1963,ECU,Ecuador,Orthodox (NFI),1600,Christian
 1964,ECU,Ecuador,Roman Catholic,1222,Christian
 1965,ECU,Ecuador,Roman Catholic,1222,Christian
-1966,ECU,Ecuador,,,
+1966,ECU,Ecuador,Unspecified,,Other
 1967,ECU,Ecuador,Roman Catholic,1222,Christian
 1968,ECU,Ecuador,Roman Catholic,1222,Christian
 1969,ECU,Ecuador,Roman Catholic,1222,Christian
@@ -1477,10 +1477,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1973,ECU,Ecuador,Roman Catholic,1222,Christian
 1974,ECU,Ecuador,Roman Catholic,1222,Christian
 1975,ECU,Ecuador,Roman Catholic,1222,Christian
-1976,ECU,Ecuador,,,
-1977,ECU,Ecuador,,,
-1978,ECU,Ecuador,,,
-1979,ECU,Ecuador,,,
+1976,ECU,Ecuador,Unspecified,,Other
+1977,ECU,Ecuador,Unspecified,,Other
+1978,ECU,Ecuador,Unspecified,,Other
+1979,ECU,Ecuador,Unspecified,,Other
 1980,ECU,Ecuador,Roman Catholic,1222,Christian
 1981,ECU,Ecuador,Roman Catholic,1222,Christian
 1982,ECU,Ecuador,Roman Catholic,1222,Christian
@@ -1494,16 +1494,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1990,ECU,Ecuador,Roman Catholic,1222,Christian
 1991,ECU,Ecuador,Roman Catholic,1222,Christian
 1992,ECU,Ecuador,Roman Catholic,1222,Christian
-1993,ECU,Ecuador,,,
-1994,ECU,Ecuador,,,
-1995,ECU,Ecuador,,,
-1996,ECU,Ecuador,,,
-1997,ECU,Ecuador,,,
-1998,ECU,Ecuador,,,
-1999,ECU,Ecuador,,,
-2000,ECU,Ecuador,,,
-2001,ECU,Ecuador,,,
-2002,ECU,Ecuador,,,
+1993,ECU,Ecuador,Unspecified,,Other
+1994,ECU,Ecuador,Unspecified,,Other
+1995,ECU,Ecuador,Unspecified,,Other
+1996,ECU,Ecuador,Unspecified,,Other
+1997,ECU,Ecuador,Unspecified,,Other
+1998,ECU,Ecuador,Unspecified,,Other
+1999,ECU,Ecuador,Unspecified,,Other
+2000,ECU,Ecuador,Unspecified,,Other
+2001,ECU,Ecuador,Unspecified,,Other
+2002,ECU,Ecuador,Unspecified,,Other
 2003,ECU,Ecuador,Roman Catholic,1222,Christian
 2004,ECU,Ecuador,Roman Catholic,1222,Christian
 2005,ECU,Ecuador,Roman Catholic,1222,Christian
@@ -1518,38 +1518,38 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2014,ECU,Ecuador,Roman Catholic,1222,Christian
 2015,ECU,Ecuador,Roman Catholic,1222,Christian
 2016,ECU,Ecuador,Roman Catholic,1222,Christian
-2017,ECU,Ecuador,,,
-2018,ECU,Ecuador,,,
+2017,ECU,Ecuador,Unspecified,,Other
+2018,ECU,Ecuador,Unspecified,,Other
 1946,PER,Peru,Roman Catholic,1222,Christian
 1947,PER,Peru,Roman Catholic,1222,Christian
 1948,PER,Peru,Roman Catholic,1222,Christian
-1949,PER,Peru,,,
-1950,PER,Peru,,,
-1951,PER,Peru,,,
-1952,PER,Peru,,,
-1953,PER,Peru,,,
-1954,PER,Peru,,,
-1955,PER,Peru,,,
-1956,PER,Peru,,,
+1949,PER,Peru,Unspecified,,Other
+1950,PER,Peru,Unspecified,,Other
+1951,PER,Peru,Unspecified,,Other
+1952,PER,Peru,Unspecified,,Other
+1953,PER,Peru,Unspecified,,Other
+1954,PER,Peru,Unspecified,,Other
+1955,PER,Peru,Unspecified,,Other
+1956,PER,Peru,Unspecified,,Other
 1957,PER,Peru,Roman Catholic,1222,Christian
 1958,PER,Peru,Roman Catholic,1222,Christian
 1959,PER,Peru,Roman Catholic,1222,Christian
 1960,PER,Peru,Roman Catholic,1222,Christian
 1961,PER,Peru,Roman Catholic,1222,Christian
 1962,PER,Peru,Roman Catholic,1222,Christian
-1963,PER,Peru,,,
+1963,PER,Peru,Unspecified,,Other
 1964,PER,Peru,Roman Catholic,1222,Christian
 1965,PER,Peru,Roman Catholic,1222,Christian
 1966,PER,Peru,Roman Catholic,1222,Christian
 1967,PER,Peru,Roman Catholic,1222,Christian
 1968,PER,Peru,Roman Catholic,1222,Christian
-1969,PER,Peru,,,
-1970,PER,Peru,,,
-1971,PER,Peru,,,
-1972,PER,Peru,,,
-1973,PER,Peru,,,
-1974,PER,Peru,,,
-1975,PER,Peru,,,
+1969,PER,Peru,Unspecified,,Other
+1970,PER,Peru,Unspecified,,Other
+1971,PER,Peru,Unspecified,,Other
+1972,PER,Peru,Unspecified,,Other
+1973,PER,Peru,Unspecified,,Other
+1974,PER,Peru,Unspecified,,Other
+1975,PER,Peru,Unspecified,,Other
 1976,PER,Peru,Roman Catholic,1222,Christian
 1977,PER,Peru,Roman Catholic,1222,Christian
 1978,PER,Peru,Roman Catholic,1222,Christian
@@ -1593,11 +1593,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,PER,Peru,Roman Catholic,1222,Christian
 2017,PER,Peru,Roman Catholic,1222,Christian
 2018,PER,Peru,Roman Catholic,1222,Christian
-1946,BRA,Brazil,,,
-1947,BRA,Brazil,,,
-1948,BRA,Brazil,,,
-1949,BRA,Brazil,,,
-1950,BRA,Brazil,,,
+1946,BRA,Brazil,Unspecified,,Other
+1947,BRA,Brazil,Unspecified,,Other
+1948,BRA,Brazil,Unspecified,,Other
+1949,BRA,Brazil,Unspecified,,Other
+1950,BRA,Brazil,Unspecified,,Other
 1951,BRA,Brazil,Agnostic,9001,New Age
 1952,BRA,Brazil,Agnostic,9001,New Age
 1953,BRA,Brazil,Agnostic,9001,New Age
@@ -1608,30 +1608,30 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1958,BRA,Brazil,Roman Catholic,1222,Christian
 1959,BRA,Brazil,Roman Catholic,1222,Christian
 1960,BRA,Brazil,Roman Catholic,1222,Christian
-1961,BRA,Brazil,,,
-1962,BRA,Brazil,,,
-1963,BRA,Brazil,,,
+1961,BRA,Brazil,Unspecified,,Other
+1962,BRA,Brazil,Unspecified,,Other
+1963,BRA,Brazil,Unspecified,,Other
 1964,BRA,Brazil,Roman Catholic,1222,Christian
 1965,BRA,Brazil,Roman Catholic,1222,Christian
 1966,BRA,Brazil,Roman Catholic,1222,Christian
-1967,BRA,Brazil,,,
-1968,BRA,Brazil,,,
-1969,BRA,Brazil,,,
-1970,BRA,Brazil,,,
-1971,BRA,Brazil,,,
-1972,BRA,Brazil,,,
-1973,BRA,Brazil,,,
+1967,BRA,Brazil,Unspecified,,Other
+1968,BRA,Brazil,Unspecified,,Other
+1969,BRA,Brazil,Unspecified,,Other
+1970,BRA,Brazil,Unspecified,,Other
+1971,BRA,Brazil,Unspecified,,Other
+1972,BRA,Brazil,Unspecified,,Other
+1973,BRA,Brazil,Unspecified,,Other
 1974,BRA,Brazil,Lutheran,1410,Christian
 1975,BRA,Brazil,Lutheran,1410,Christian
 1976,BRA,Brazil,Lutheran,1410,Christian
 1977,BRA,Brazil,Lutheran,1410,Christian
 1978,BRA,Brazil,Lutheran,1410,Christian
-1979,BRA,Brazil,,,
-1980,BRA,Brazil,,,
-1981,BRA,Brazil,,,
-1982,BRA,Brazil,,,
-1983,BRA,Brazil,,,
-1984,BRA,Brazil,,,
+1979,BRA,Brazil,Unspecified,,Other
+1980,BRA,Brazil,Unspecified,,Other
+1981,BRA,Brazil,Unspecified,,Other
+1982,BRA,Brazil,Unspecified,,Other
+1983,BRA,Brazil,Unspecified,,Other
+1984,BRA,Brazil,Unspecified,,Other
 1985,BRA,Brazil,Roman Catholic,1222,Christian
 1986,BRA,Brazil,Roman Catholic,1222,Christian
 1987,BRA,Brazil,Roman Catholic,1222,Christian
@@ -1666,12 +1666,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,BRA,Brazil,Roman Catholic,1222,Christian
 2017,BRA,Brazil,Roman Catholic,1222,Christian
 2018,BRA,Brazil,Roman Catholic,1222,Christian
-1946,BOL,Bolivia,,,
-1947,BOL,Bolivia,,,
-1948,BOL,Bolivia,,,
-1949,BOL,Bolivia,,,
+1946,BOL,Bolivia,Unspecified,,Other
+1947,BOL,Bolivia,Unspecified,,Other
+1948,BOL,Bolivia,Unspecified,,Other
+1949,BOL,Bolivia,Unspecified,,Other
 1950,BOL,Bolivia,Roman Catholic,1222,Christian
-1951,BOL,Bolivia,,,
+1951,BOL,Bolivia,Unspecified,,Other
 1952,BOL,Bolivia,Roman Catholic,1222,Christian
 1953,BOL,Bolivia,Roman Catholic,1222,Christian
 1954,BOL,Bolivia,Roman Catholic,1222,Christian
@@ -1685,13 +1685,13 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1962,BOL,Bolivia,Roman Catholic,1222,Christian
 1963,BOL,Bolivia,Roman Catholic,1222,Christian
 1964,BOL,Bolivia,Roman Catholic,1222,Christian
-1965,BOL,Bolivia,,,
-1966,BOL,Bolivia,,,
+1965,BOL,Bolivia,Unspecified,,Other
+1966,BOL,Bolivia,Unspecified,,Other
 1967,BOL,Bolivia,Roman Catholic,1222,Christian
 1968,BOL,Bolivia,Roman Catholic,1222,Christian
-1969,BOL,Bolivia,,,
-1970,BOL,Bolivia,,,
-1971,BOL,Bolivia,,,
+1969,BOL,Bolivia,Unspecified,,Other
+1970,BOL,Bolivia,Unspecified,,Other
+1971,BOL,Bolivia,Unspecified,,Other
 1972,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1973,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1974,BOL,Bolivia,Western Christian (NFI),1100,Christian
@@ -1699,21 +1699,21 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1976,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1977,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1978,BOL,Bolivia,Western Christian (NFI),1100,Christian
-1979,BOL,Bolivia,,,
+1979,BOL,Bolivia,Unspecified,,Other
 1980,BOL,Bolivia,Roman Catholic,1222,Christian
-1981,BOL,Bolivia,,,
-1982,BOL,Bolivia,,,
+1981,BOL,Bolivia,Unspecified,,Other
+1982,BOL,Bolivia,Unspecified,,Other
 1983,BOL,Bolivia,Roman Catholic,1222,Christian
 1984,BOL,Bolivia,Roman Catholic,1222,Christian
 1985,BOL,Bolivia,Roman Catholic,1222,Christian
-1986,BOL,Bolivia,,,
-1987,BOL,Bolivia,,,
-1988,BOL,Bolivia,,,
-1989,BOL,Bolivia,,,
-1990,BOL,Bolivia,,,
-1991,BOL,Bolivia,,,
-1992,BOL,Bolivia,,,
-1993,BOL,Bolivia,,,
+1986,BOL,Bolivia,Unspecified,,Other
+1987,BOL,Bolivia,Unspecified,,Other
+1988,BOL,Bolivia,Unspecified,,Other
+1989,BOL,Bolivia,Unspecified,,Other
+1990,BOL,Bolivia,Unspecified,,Other
+1991,BOL,Bolivia,Unspecified,,Other
+1992,BOL,Bolivia,Unspecified,,Other
+1993,BOL,Bolivia,Unspecified,,Other
 1994,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1995,BOL,Bolivia,Western Christian (NFI),1100,Christian
 1996,BOL,Bolivia,Western Christian (NFI),1100,Christian
@@ -1724,8 +1724,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2001,BOL,Bolivia,Roman Catholic,1222,Christian
 2002,BOL,Bolivia,Roman Catholic,1222,Christian
 2003,BOL,Bolivia,Western Christian (NFI),1100,Christian
-2004,BOL,Bolivia,,,
-2005,BOL,Bolivia,,,
+2004,BOL,Bolivia,Unspecified,,Other
+2005,BOL,Bolivia,Unspecified,,Other
 2006,BOL,Bolivia,Roman Catholic,1222,Christian
 2007,BOL,Bolivia,Roman Catholic,1222,Christian
 2008,BOL,Bolivia,Roman Catholic,1222,Christian
@@ -1792,11 +1792,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1996,PRY,Paraguay,Roman Catholic,1222,Christian
 1997,PRY,Paraguay,Roman Catholic,1222,Christian
 1998,PRY,Paraguay,Roman Catholic,1222,Christian
-1999,PRY,Paraguay,,,
-2000,PRY,Paraguay,,,
-2001,PRY,Paraguay,,,
-2002,PRY,Paraguay,,,
-2003,PRY,Paraguay,,,
+1999,PRY,Paraguay,Unspecified,,Other
+2000,PRY,Paraguay,Unspecified,,Other
+2001,PRY,Paraguay,Unspecified,,Other
+2002,PRY,Paraguay,Unspecified,,Other
+2003,PRY,Paraguay,Unspecified,,Other
 2004,PRY,Paraguay,"Protestant (""Evangelical"") (NFI)",1400,Christian
 2005,PRY,Paraguay,"Protestant (""Evangelical"") (NFI)",1400,Christian
 2006,PRY,Paraguay,"Protestant (""Evangelical"") (NFI)",1400,Christian
@@ -1812,13 +1812,13 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,PRY,Paraguay,Roman Catholic,1222,Christian
 2017,PRY,Paraguay,Roman Catholic,1222,Christian
 2018,PRY,Paraguay,Roman Catholic,1222,Christian
-1946,CHL,Chile,,,
-1947,CHL,Chile,,,
-1948,CHL,Chile,,,
-1949,CHL,Chile,,,
-1950,CHL,Chile,,,
-1951,CHL,Chile,,,
-1952,CHL,Chile,,,
+1946,CHL,Chile,Unspecified,,Other
+1947,CHL,Chile,Unspecified,,Other
+1948,CHL,Chile,Unspecified,,Other
+1949,CHL,Chile,Unspecified,,Other
+1950,CHL,Chile,Unspecified,,Other
+1951,CHL,Chile,Unspecified,,Other
+1952,CHL,Chile,Unspecified,,Other
 1953,CHL,Chile,Roman Catholic,1222,Christian
 1954,CHL,Chile,Roman Catholic,1222,Christian
 1955,CHL,Chile,Roman Catholic,1222,Christian
@@ -1958,45 +1958,45 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,ARG,Argentina,Roman Catholic,1222,Christian
 2017,ARG,Argentina,Roman Catholic,1222,Christian
 2018,ARG,Argentina,Roman Catholic,1222,Christian
-1946,URY,Uruguay,,,
-1947,URY,Uruguay,,,
-1948,URY,Uruguay,,,
-1949,URY,Uruguay,,,
-1950,URY,Uruguay,,,
-1951,URY,Uruguay,,,
-1952,URY,Uruguay,,,
-1953,URY,Uruguay,,,
-1954,URY,Uruguay,,,
-1955,URY,Uruguay,,,
-1956,URY,Uruguay,,,
-1957,URY,Uruguay,,,
-1958,URY,Uruguay,,,
-1959,URY,Uruguay,,,
-1960,URY,Uruguay,,,
-1961,URY,Uruguay,,,
-1962,URY,Uruguay,,,
-1963,URY,Uruguay,,,
-1964,URY,Uruguay,,,
-1965,URY,Uruguay,,,
-1966,URY,Uruguay,,,
-1967,URY,Uruguay,,,
-1968,URY,Uruguay,,,
-1969,URY,Uruguay,,,
-1970,URY,Uruguay,,,
-1971,URY,Uruguay,,,
+1946,URY,Uruguay,Unspecified,,Other
+1947,URY,Uruguay,Unspecified,,Other
+1948,URY,Uruguay,Unspecified,,Other
+1949,URY,Uruguay,Unspecified,,Other
+1950,URY,Uruguay,Unspecified,,Other
+1951,URY,Uruguay,Unspecified,,Other
+1952,URY,Uruguay,Unspecified,,Other
+1953,URY,Uruguay,Unspecified,,Other
+1954,URY,Uruguay,Unspecified,,Other
+1955,URY,Uruguay,Unspecified,,Other
+1956,URY,Uruguay,Unspecified,,Other
+1957,URY,Uruguay,Unspecified,,Other
+1958,URY,Uruguay,Unspecified,,Other
+1959,URY,Uruguay,Unspecified,,Other
+1960,URY,Uruguay,Unspecified,,Other
+1961,URY,Uruguay,Unspecified,,Other
+1962,URY,Uruguay,Unspecified,,Other
+1963,URY,Uruguay,Unspecified,,Other
+1964,URY,Uruguay,Unspecified,,Other
+1965,URY,Uruguay,Unspecified,,Other
+1966,URY,Uruguay,Unspecified,,Other
+1967,URY,Uruguay,Unspecified,,Other
+1968,URY,Uruguay,Unspecified,,Other
+1969,URY,Uruguay,Unspecified,,Other
+1970,URY,Uruguay,Unspecified,,Other
+1971,URY,Uruguay,Unspecified,,Other
 1972,URY,Uruguay,Roman Catholic,1222,Christian
 1973,URY,Uruguay,Roman Catholic,1222,Christian
 1974,URY,Uruguay,Roman Catholic,1222,Christian
 1975,URY,Uruguay,Roman Catholic,1222,Christian
-1976,URY,Uruguay,,,
-1977,URY,Uruguay,,,
-1978,URY,Uruguay,,,
-1979,URY,Uruguay,,,
-1980,URY,Uruguay,,,
-1981,URY,Uruguay,,,
-1982,URY,Uruguay,,,
-1983,URY,Uruguay,,,
-1984,URY,Uruguay,,,
+1976,URY,Uruguay,Unspecified,,Other
+1977,URY,Uruguay,Unspecified,,Other
+1978,URY,Uruguay,Unspecified,,Other
+1979,URY,Uruguay,Unspecified,,Other
+1980,URY,Uruguay,Unspecified,,Other
+1981,URY,Uruguay,Unspecified,,Other
+1982,URY,Uruguay,Unspecified,,Other
+1983,URY,Uruguay,Unspecified,,Other
+1984,URY,Uruguay,Unspecified,,Other
 1985,URY,Uruguay,Agnostic,9001,New Age
 1986,URY,Uruguay,Agnostic,9001,New Age
 1987,URY,Uruguay,Agnostic,9001,New Age
@@ -2012,25 +2012,25 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1997,URY,Uruguay,Agnostic,9001,New Age
 1998,URY,Uruguay,Agnostic,9001,New Age
 1999,URY,Uruguay,Agnostic,9001,New Age
-2000,URY,Uruguay,,,
-2001,URY,Uruguay,,,
-2002,URY,Uruguay,,,
-2003,URY,Uruguay,,,
-2004,URY,Uruguay,,,
-2005,URY,Uruguay,,,
-2006,URY,Uruguay,,,
-2007,URY,Uruguay,,,
-2008,URY,Uruguay,,,
-2009,URY,Uruguay,,,
+2000,URY,Uruguay,Unspecified,,Other
+2001,URY,Uruguay,Unspecified,,Other
+2002,URY,Uruguay,Unspecified,,Other
+2003,URY,Uruguay,Unspecified,,Other
+2004,URY,Uruguay,Unspecified,,Other
+2005,URY,Uruguay,Unspecified,,Other
+2006,URY,Uruguay,Unspecified,,Other
+2007,URY,Uruguay,Unspecified,,Other
+2008,URY,Uruguay,Unspecified,,Other
+2009,URY,Uruguay,Unspecified,,Other
 2010,URY,Uruguay,Atheist,9100,New Age
 2011,URY,Uruguay,Atheist,9100,New Age
 2012,URY,Uruguay,Atheist,9100,New Age
 2013,URY,Uruguay,Atheist,9100,New Age
 2014,URY,Uruguay,Atheist,9100,New Age
-2015,URY,Uruguay,,,
-2016,URY,Uruguay,,,
-2017,URY,Uruguay,,,
-2018,URY,Uruguay,,,
+2015,URY,Uruguay,Unspecified,,Other
+2016,URY,Uruguay,Unspecified,,Other
+2017,URY,Uruguay,Unspecified,,Other
+2018,URY,Uruguay,Unspecified,,Other
 1946,GBR,United Kingdom,Agnostic,9001,New Age
 1947,GBR,United Kingdom,Agnostic,9001,New Age
 1948,GBR,United Kingdom,Agnostic,9001,New Age
@@ -2250,18 +2250,18 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,NLD,Netherlands,Protestant Church in the Netherlands,1470,Christian
 2017,NLD,Netherlands,Protestant Church in the Netherlands,1470,Christian
 2018,NLD,Netherlands,Protestant Church in the Netherlands,1470,Christian
-1946,BEL,Belgium,,,
-1947,BEL,Belgium,,,
-1948,BEL,Belgium,,,
-1949,BEL,Belgium,,,
+1946,BEL,Belgium,Unspecified,,Other
+1947,BEL,Belgium,Unspecified,,Other
+1948,BEL,Belgium,Unspecified,,Other
+1949,BEL,Belgium,Unspecified,,Other
 1950,BEL,Belgium,Roman Catholic,1222,Christian
 1951,BEL,Belgium,Roman Catholic,1222,Christian
 1952,BEL,Belgium,Roman Catholic,1222,Christian
 1953,BEL,Belgium,Roman Catholic,1222,Christian
-1954,BEL,Belgium,,,
-1955,BEL,Belgium,,,
-1956,BEL,Belgium,,,
-1957,BEL,Belgium,,,
+1954,BEL,Belgium,Unspecified,,Other
+1955,BEL,Belgium,Unspecified,,Other
+1956,BEL,Belgium,Unspecified,,Other
+1957,BEL,Belgium,Unspecified,,Other
 1958,BEL,Belgium,Roman Catholic,1222,Christian
 1959,BEL,Belgium,Roman Catholic,1222,Christian
 1960,BEL,Belgium,Roman Catholic,1222,Christian
@@ -2277,7 +2277,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1970,BEL,Belgium,Roman Catholic,1222,Christian
 1971,BEL,Belgium,Roman Catholic,1222,Christian
 1972,BEL,Belgium,Roman Catholic,1222,Christian
-1973,BEL,Belgium,,,
+1973,BEL,Belgium,Unspecified,,Other
 1974,BEL,Belgium,Roman Catholic,1222,Christian
 1975,BEL,Belgium,Roman Catholic,1222,Christian
 1976,BEL,Belgium,Roman Catholic,1222,Christian
@@ -2319,10 +2319,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2012,BEL,Belgium,Atheist,9100,New Age
 2013,BEL,Belgium,Atheist,9100,New Age
 2014,BEL,Belgium,Atheist,9100,New Age
-2015,BEL,Belgium,,,
-2016,BEL,Belgium,,,
-2017,BEL,Belgium,,,
-2018,BEL,Belgium,,,
+2015,BEL,Belgium,Unspecified,,Other
+2016,BEL,Belgium,Unspecified,,Other
+2017,BEL,Belgium,Unspecified,,Other
+2018,BEL,Belgium,Unspecified,,Other
 1946,LUX,Luxembourg,Roman Catholic,1222,Christian
 1947,LUX,Luxembourg,Roman Catholic,1222,Christian
 1948,LUX,Luxembourg,Roman Catholic,1222,Christian
@@ -2391,11 +2391,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2011,LUX,Luxembourg,Roman Catholic,1222,Christian
 2012,LUX,Luxembourg,Roman Catholic,1222,Christian
 2013,LUX,Luxembourg,Roman Catholic,1222,Christian
-2014,LUX,Luxembourg,,,
-2015,LUX,Luxembourg,,,
-2016,LUX,Luxembourg,,,
-2017,LUX,Luxembourg,,,
-2018,LUX,Luxembourg,,,
+2014,LUX,Luxembourg,Unspecified,,Other
+2015,LUX,Luxembourg,Unspecified,,Other
+2016,LUX,Luxembourg,Unspecified,,Other
+2017,LUX,Luxembourg,Unspecified,,Other
+2018,LUX,Luxembourg,Unspecified,,Other
 1946,FRA,France,Roman Catholic,1222,Christian
 1947,FRA,France,Atheist,9100,New Age
 1948,FRA,France,Atheist,9100,New Age
@@ -2626,18 +2626,18 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1954,CHE,Switzerland,Protestant (NFI),1400,Christian
 1955,CHE,Switzerland,Protestant (NFI),1400,Christian
 1956,CHE,Switzerland,Protestant (NFI),1400,Christian
-1957,CHE,Switzerland,,,
+1957,CHE,Switzerland,Unspecified,,Other
 1958,CHE,Switzerland,Roman Catholic,1222,Christian
 1959,CHE,Switzerland,Protestant (NFI),1400,Christian
 1960,CHE,Switzerland,Protestant (NFI),1400,Christian
 1961,CHE,Switzerland,Protestant (NFI),1400,Christian
 1962,CHE,Switzerland,Protestant (NFI),1400,Christian
-1963,CHE,Switzerland,,,
+1963,CHE,Switzerland,Unspecified,,Other
 1964,CHE,Switzerland,Roman Catholic,1222,Christian
 1965,CHE,Switzerland,Protestant (NFI),1400,Christian
 1966,CHE,Switzerland,Not Religious,9001,New Age
 1967,CHE,Switzerland,Roman Catholic,1222,Christian
-1968,CHE,Switzerland,,,
+1968,CHE,Switzerland,Unspecified,,Other
 1969,CHE,Switzerland,Roman Catholic,1222,Christian
 1970,CHE,Switzerland,Protestant (NFI),1400,Christian
 1971,CHE,Switzerland,Protestant (NFI),1400,Christian
@@ -2683,11 +2683,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2011,CHE,Switzerland,Roman Catholic,1222,Christian
 2012,CHE,Switzerland,Protestant (NFI),1400,Christian
 2013,CHE,Switzerland,Protestant (NFI),1400,Christian
-2014,CHE,Switzerland,,,
-2015,CHE,Switzerland,,,
+2014,CHE,Switzerland,Unspecified,,Other
+2015,CHE,Switzerland,Unspecified,,Other
 2016,CHE,Switzerland,Protestant (NFI),1400,Christian
 2017,CHE,Switzerland,Roman Catholic,1222,Christian
-2018,CHE,Switzerland,,,
+2018,CHE,Switzerland,Unspecified,,Other
 1946,ESP,Spain,Roman Catholic,1222,Christian
 1947,ESP,Spain,Roman Catholic,1222,Christian
 1948,ESP,Spain,Roman Catholic,1222,Christian
@@ -2762,13 +2762,13 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2017,ESP,Spain,Roman Catholic,1222,Christian
 2018,ESP,Spain,Atheist,9100,New Age
 1946,AND,Andorra,Roman Catholic,1222,Christian
-1947,AND,Andorra,,,
-1948,AND,Andorra,,,
-1949,AND,Andorra,,,
-1950,AND,Andorra,,,
-1951,AND,Andorra,,,
-1952,AND,Andorra,,,
-1953,AND,Andorra,,,
+1947,AND,Andorra,Unspecified,,Other
+1948,AND,Andorra,Unspecified,,Other
+1949,AND,Andorra,Unspecified,,Other
+1950,AND,Andorra,Unspecified,,Other
+1951,AND,Andorra,Unspecified,,Other
+1952,AND,Andorra,Unspecified,,Other
+1953,AND,Andorra,Unspecified,,Other
 1954,AND,Andorra,Roman Catholic,1222,Christian
 1955,AND,Andorra,Roman Catholic,1222,Christian
 1956,AND,Andorra,Roman Catholic,1222,Christian
@@ -2796,44 +2796,44 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1978,AND,Andorra,Roman Catholic,1222,Christian
 1979,AND,Andorra,Roman Catholic,1222,Christian
 1980,AND,Andorra,Roman Catholic,1222,Christian
-1981,AND,Andorra,,,
-1982,AND,Andorra,,,
-1983,AND,Andorra,,,
-1984,AND,Andorra,,,
-1985,AND,Andorra,,,
-1986,AND,Andorra,,,
-1987,AND,Andorra,,,
-1988,AND,Andorra,,,
-1989,AND,Andorra,,,
-1990,AND,Andorra,,,
-1991,AND,Andorra,,,
-1992,AND,Andorra,,,
-1993,AND,Andorra,,,
-1994,AND,Andorra,,,
-1995,AND,Andorra,,,
-1996,AND,Andorra,,,
-1997,AND,Andorra,,,
-1998,AND,Andorra,,,
-1999,AND,Andorra,,,
-2000,AND,Andorra,,,
-2001,AND,Andorra,,,
-2002,AND,Andorra,,,
-2003,AND,Andorra,,,
-2004,AND,Andorra,,,
+1981,AND,Andorra,Unspecified,,Other
+1982,AND,Andorra,Unspecified,,Other
+1983,AND,Andorra,Unspecified,,Other
+1984,AND,Andorra,Unspecified,,Other
+1985,AND,Andorra,Unspecified,,Other
+1986,AND,Andorra,Unspecified,,Other
+1987,AND,Andorra,Unspecified,,Other
+1988,AND,Andorra,Unspecified,,Other
+1989,AND,Andorra,Unspecified,,Other
+1990,AND,Andorra,Unspecified,,Other
+1991,AND,Andorra,Unspecified,,Other
+1992,AND,Andorra,Unspecified,,Other
+1993,AND,Andorra,Unspecified,,Other
+1994,AND,Andorra,Unspecified,,Other
+1995,AND,Andorra,Unspecified,,Other
+1996,AND,Andorra,Unspecified,,Other
+1997,AND,Andorra,Unspecified,,Other
+1998,AND,Andorra,Unspecified,,Other
+1999,AND,Andorra,Unspecified,,Other
+2000,AND,Andorra,Unspecified,,Other
+2001,AND,Andorra,Unspecified,,Other
+2002,AND,Andorra,Unspecified,,Other
+2003,AND,Andorra,Unspecified,,Other
+2004,AND,Andorra,Unspecified,,Other
 2005,AND,Andorra,Roman Catholic,1222,Christian
 2006,AND,Andorra,Roman Catholic,1222,Christian
 2007,AND,Andorra,Roman Catholic,1222,Christian
 2008,AND,Andorra,Roman Catholic,1222,Christian
-2009,AND,Andorra,,,
-2010,AND,Andorra,,,
-2011,AND,Andorra,,,
-2012,AND,Andorra,,,
-2013,AND,Andorra,,,
-2014,AND,Andorra,,,
-2015,AND,Andorra,,,
-2016,AND,Andorra,,,
-2017,AND,Andorra,,,
-2018,AND,Andorra,,,
+2009,AND,Andorra,Unspecified,,Other
+2010,AND,Andorra,Unspecified,,Other
+2011,AND,Andorra,Unspecified,,Other
+2012,AND,Andorra,Unspecified,,Other
+2013,AND,Andorra,Unspecified,,Other
+2014,AND,Andorra,Unspecified,,Other
+2015,AND,Andorra,Unspecified,,Other
+2016,AND,Andorra,Unspecified,,Other
+2017,AND,Andorra,Unspecified,,Other
+2018,AND,Andorra,Unspecified,,Other
 1946,PRT,Portugal,Roman Catholic,1222,Christian
 1947,PRT,Portugal,Roman Catholic,1222,Christian
 1948,PRT,Portugal,Roman Catholic,1222,Christian
@@ -2864,10 +2864,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1973,PRT,Portugal,Roman Catholic,1222,Christian
 1974,PRT,Portugal,Atheist,9100,New Age
 1975,PRT,Portugal,Atheist,9100,New Age
-1976,PRT,Portugal,,,
+1976,PRT,Portugal,Unspecified,,Other
 1977,PRT,Portugal,Agnostic,9001,New Age
 1978,PRT,Portugal,Agnostic,9001,New Age
-1979,PRT,Portugal,,,
+1979,PRT,Portugal,Unspecified,,Other
 1980,PRT,Portugal,Roman Catholic,1222,Christian
 1981,PRT,Portugal,Roman Catholic,1222,Christian
 1982,PRT,Portugal,Roman Catholic,1222,Christian
@@ -3082,7 +3082,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,AUT,Austria,Not Religious,9001,New Age
 2017,AUT,Austria,Not Religious,9001,New Age
 2018,AUT,Austria,Roman Catholic,1222,Christian
-1946,HUN,Hungary,,,
+1946,HUN,Hungary,Unspecified,,Other
 1947,HUN,Hungary,Atheist,9100,New Age
 1948,HUN,Hungary,Atheist,9100,New Age
 1949,HUN,Hungary,Atheist,9100,New Age
@@ -3124,8 +3124,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1985,HUN,Hungary,Atheist,9100,New Age
 1986,HUN,Hungary,Atheist,9100,New Age
 1987,HUN,Hungary,Atheist,9100,New Age
-1988,HUN,Hungary,,,
-1989,HUN,Hungary,,,
+1988,HUN,Hungary,Unspecified,,Other
+1989,HUN,Hungary,Unspecified,,Other
 1990,HUN,Hungary,Roman Catholic,1222,Christian
 1991,HUN,Hungary,Roman Catholic,1222,Christian
 1992,HUN,Hungary,Roman Catholic,1222,Christian
@@ -3145,7 +3145,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2006,HUN,Hungary,Roman Catholic,1222,Christian
 2007,HUN,Hungary,Roman Catholic,1222,Christian
 2008,HUN,Hungary,Roman Catholic,1222,Christian
-2009,HUN,Hungary,,,
+2009,HUN,Hungary,Unspecified,,Other
 2010,HUN,Hungary,Hungarian Reformed,1422,Christian
 2011,HUN,Hungary,Hungarian Reformed,1422,Christian
 2012,HUN,Hungary,Hungarian Reformed,1422,Christian
@@ -3155,13 +3155,13 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,HUN,Hungary,Hungarian Reformed,1422,Christian
 2017,HUN,Hungary,Hungarian Reformed,1422,Christian
 2018,HUN,Hungary,Hungarian Reformed,1422,Christian
-1946,CZE,Czech Republic,,,
-1947,CZE,Czech Republic,,,
-1948,CZE,Czech Republic,,,
-1949,CZE,Czech Republic,,,
-1950,CZE,Czech Republic,,,
-1951,CZE,Czech Republic,,,
-1952,CZE,Czech Republic,,,
+1946,CZE,Czech Republic,Unspecified,,Other
+1947,CZE,Czech Republic,Unspecified,,Other
+1948,CZE,Czech Republic,Unspecified,,Other
+1949,CZE,Czech Republic,Unspecified,,Other
+1950,CZE,Czech Republic,Unspecified,,Other
+1951,CZE,Czech Republic,Unspecified,,Other
+1952,CZE,Czech Republic,Unspecified,,Other
 1953,CZE,Czech Republic,Atheist,9100,New Age
 1954,CZE,Czech Republic,Atheist,9100,New Age
 1955,CZE,Czech Republic,Atheist,9100,New Age
@@ -3177,7 +3177,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1965,CZE,Czech Republic,Atheist,9100,New Age
 1966,CZE,Czech Republic,Atheist,9100,New Age
 1967,CZE,Czech Republic,Atheist,9100,New Age
-1968,CZE,Czech Republic,,,
+1968,CZE,Czech Republic,Unspecified,,Other
 1969,CZE,Czech Republic,Atheist,9100,New Age
 1970,CZE,Czech Republic,Atheist,9100,New Age
 1971,CZE,Czech Republic,Atheist,9100,New Age
@@ -3197,8 +3197,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1985,CZE,Czech Republic,Atheist,9100,New Age
 1986,CZE,Czech Republic,Atheist,9100,New Age
 1987,CZE,Czech Republic,Atheist,9100,New Age
-1988,CZE,Czech Republic,,,
-1989,CZE,Czech Republic,,,
+1988,CZE,Czech Republic,Unspecified,,Other
+1989,CZE,Czech Republic,Unspecified,,Other
 1990,CZE,Czech Republic,Roman Catholic,1222,Christian
 1991,CZE,Czech Republic,Roman Catholic,1222,Christian
 1992,CZE,Czech Republic,Roman Catholic,1222,Christian
@@ -3236,10 +3236,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1951,ITA,Italy,Roman Catholic,1222,Christian
 1952,ITA,Italy,Roman Catholic,1222,Christian
 1953,ITA,Italy,Roman Catholic,1222,Christian
-1954,ITA,Italy,,,
-1955,ITA,Italy,,,
+1954,ITA,Italy,Unspecified,,Other
+1955,ITA,Italy,Unspecified,,Other
 1956,ITA,Italy,Roman Catholic,1222,Christian
-1957,ITA,Italy,,,
+1957,ITA,Italy,Unspecified,,Other
 1958,ITA,Italy,Roman Catholic,1222,Christian
 1959,ITA,Italy,Roman Catholic,1222,Christian
 1960,ITA,Italy,Roman Catholic,1222,Christian
@@ -3251,12 +3251,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1966,ITA,Italy,Roman Catholic,1222,Christian
 1967,ITA,Italy,Roman Catholic,1222,Christian
 1968,ITA,Italy,Roman Catholic,1222,Christian
-1969,ITA,Italy,,,
-1970,ITA,Italy,,,
+1969,ITA,Italy,Unspecified,,Other
+1970,ITA,Italy,Unspecified,,Other
 1971,ITA,Italy,Roman Catholic,1222,Christian
 1972,ITA,Italy,Roman Catholic,1222,Christian
 1973,ITA,Italy,Roman Catholic,1222,Christian
-1974,ITA,Italy,,,
+1974,ITA,Italy,Unspecified,,Other
 1975,ITA,Italy,Roman Catholic,1222,Christian
 1976,ITA,Italy,Roman Catholic,1222,Christian
 1977,ITA,Italy,Roman Catholic,1222,Christian
@@ -3274,7 +3274,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1989,ITA,Italy,Roman Catholic,1222,Christian
 1990,ITA,Italy,Roman Catholic,1222,Christian
 1991,ITA,Italy,Roman Catholic,1222,Christian
-1992,ITA,Italy,,,
+1992,ITA,Italy,Unspecified,,Other
 1993,ITA,Italy,Roman Catholic,1222,Christian
 1994,ITA,Italy,Roman Catholic,1222,Christian
 1995,ITA,Italy,Roman Catholic,1222,Christian
@@ -3282,7 +3282,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1997,ITA,Italy,Roman Catholic,1222,Christian
 1998,ITA,Italy,Roman Catholic,1222,Christian
 1999,ITA,Italy,Roman Catholic,1222,Christian
-2000,ITA,Italy,,,
+2000,ITA,Italy,Unspecified,,Other
 2001,ITA,Italy,Roman Catholic,1222,Christian
 2002,ITA,Italy,Roman Catholic,1222,Christian
 2003,ITA,Italy,Roman Catholic,1222,Christian
@@ -3300,80 +3300,80 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2015,ITA,Italy,Roman Catholic,1222,Christian
 2016,ITA,Italy,Roman Catholic,1222,Christian
 2017,ITA,Italy,Roman Catholic,1222,Christian
-2018,ITA,Italy,,,
-1946,SMR,San Marino,,,
-1947,SMR,San Marino,,,
-1948,SMR,San Marino,,,
-1949,SMR,San Marino,,,
-1950,SMR,San Marino,,,
-1951,SMR,San Marino,,,
-1952,SMR,San Marino,,,
-1953,SMR,San Marino,,,
-1954,SMR,San Marino,,,
-1955,SMR,San Marino,,,
-1956,SMR,San Marino,,,
-1957,SMR,San Marino,,,
-1958,SMR,San Marino,,,
-1959,SMR,San Marino,,,
-1960,SMR,San Marino,,,
-1961,SMR,San Marino,,,
-1962,SMR,San Marino,,,
-1963,SMR,San Marino,,,
-1964,SMR,San Marino,,,
-1965,SMR,San Marino,,,
-1966,SMR,San Marino,,,
-1967,SMR,San Marino,,,
-1968,SMR,San Marino,,,
-1969,SMR,San Marino,,,
-1970,SMR,San Marino,,,
-1971,SMR,San Marino,,,
-1972,SMR,San Marino,,,
-1973,SMR,San Marino,,,
-1974,SMR,San Marino,,,
-1975,SMR,San Marino,,,
-1976,SMR,San Marino,,,
-1977,SMR,San Marino,,,
-1978,SMR,San Marino,,,
-1979,SMR,San Marino,,,
-1980,SMR,San Marino,,,
-1981,SMR,San Marino,,,
-1982,SMR,San Marino,,,
-1983,SMR,San Marino,,,
-1984,SMR,San Marino,,,
-1985,SMR,San Marino,,,
-1986,SMR,San Marino,,,
-1987,SMR,San Marino,,,
-1988,SMR,San Marino,,,
-1989,SMR,San Marino,,,
-1990,SMR,San Marino,,,
-1991,SMR,San Marino,,,
-1992,SMR,San Marino,,,
-1993,SMR,San Marino,,,
-1994,SMR,San Marino,,,
-1995,SMR,San Marino,,,
-1996,SMR,San Marino,,,
-1997,SMR,San Marino,,,
-1998,SMR,San Marino,,,
-1999,SMR,San Marino,,,
-2000,SMR,San Marino,,,
-2001,SMR,San Marino,,,
-2002,SMR,San Marino,,,
-2003,SMR,San Marino,,,
-2004,SMR,San Marino,,,
-2005,SMR,San Marino,,,
-2006,SMR,San Marino,,,
-2007,SMR,San Marino,,,
-2008,SMR,San Marino,,,
-2009,SMR,San Marino,,,
-2010,SMR,San Marino,,,
-2011,SMR,San Marino,,,
-2012,SMR,San Marino,,,
-2013,SMR,San Marino,,,
-2014,SMR,San Marino,,,
-2015,SMR,San Marino,,,
-2016,SMR,San Marino,,,
-2017,SMR,San Marino,,,
-2018,SMR,San Marino,,,
+2018,ITA,Italy,Unspecified,,Other
+1946,SMR,San Marino,Unspecified,,Other
+1947,SMR,San Marino,Unspecified,,Other
+1948,SMR,San Marino,Unspecified,,Other
+1949,SMR,San Marino,Unspecified,,Other
+1950,SMR,San Marino,Unspecified,,Other
+1951,SMR,San Marino,Unspecified,,Other
+1952,SMR,San Marino,Unspecified,,Other
+1953,SMR,San Marino,Unspecified,,Other
+1954,SMR,San Marino,Unspecified,,Other
+1955,SMR,San Marino,Unspecified,,Other
+1956,SMR,San Marino,Unspecified,,Other
+1957,SMR,San Marino,Unspecified,,Other
+1958,SMR,San Marino,Unspecified,,Other
+1959,SMR,San Marino,Unspecified,,Other
+1960,SMR,San Marino,Unspecified,,Other
+1961,SMR,San Marino,Unspecified,,Other
+1962,SMR,San Marino,Unspecified,,Other
+1963,SMR,San Marino,Unspecified,,Other
+1964,SMR,San Marino,Unspecified,,Other
+1965,SMR,San Marino,Unspecified,,Other
+1966,SMR,San Marino,Unspecified,,Other
+1967,SMR,San Marino,Unspecified,,Other
+1968,SMR,San Marino,Unspecified,,Other
+1969,SMR,San Marino,Unspecified,,Other
+1970,SMR,San Marino,Unspecified,,Other
+1971,SMR,San Marino,Unspecified,,Other
+1972,SMR,San Marino,Unspecified,,Other
+1973,SMR,San Marino,Unspecified,,Other
+1974,SMR,San Marino,Unspecified,,Other
+1975,SMR,San Marino,Unspecified,,Other
+1976,SMR,San Marino,Unspecified,,Other
+1977,SMR,San Marino,Unspecified,,Other
+1978,SMR,San Marino,Unspecified,,Other
+1979,SMR,San Marino,Unspecified,,Other
+1980,SMR,San Marino,Unspecified,,Other
+1981,SMR,San Marino,Unspecified,,Other
+1982,SMR,San Marino,Unspecified,,Other
+1983,SMR,San Marino,Unspecified,,Other
+1984,SMR,San Marino,Unspecified,,Other
+1985,SMR,San Marino,Unspecified,,Other
+1986,SMR,San Marino,Unspecified,,Other
+1987,SMR,San Marino,Unspecified,,Other
+1988,SMR,San Marino,Unspecified,,Other
+1989,SMR,San Marino,Unspecified,,Other
+1990,SMR,San Marino,Unspecified,,Other
+1991,SMR,San Marino,Unspecified,,Other
+1992,SMR,San Marino,Unspecified,,Other
+1993,SMR,San Marino,Unspecified,,Other
+1994,SMR,San Marino,Unspecified,,Other
+1995,SMR,San Marino,Unspecified,,Other
+1996,SMR,San Marino,Unspecified,,Other
+1997,SMR,San Marino,Unspecified,,Other
+1998,SMR,San Marino,Unspecified,,Other
+1999,SMR,San Marino,Unspecified,,Other
+2000,SMR,San Marino,Unspecified,,Other
+2001,SMR,San Marino,Unspecified,,Other
+2002,SMR,San Marino,Unspecified,,Other
+2003,SMR,San Marino,Unspecified,,Other
+2004,SMR,San Marino,Unspecified,,Other
+2005,SMR,San Marino,Unspecified,,Other
+2006,SMR,San Marino,Unspecified,,Other
+2007,SMR,San Marino,Unspecified,,Other
+2008,SMR,San Marino,Unspecified,,Other
+2009,SMR,San Marino,Unspecified,,Other
+2010,SMR,San Marino,Unspecified,,Other
+2011,SMR,San Marino,Unspecified,,Other
+2012,SMR,San Marino,Unspecified,,Other
+2013,SMR,San Marino,Unspecified,,Other
+2014,SMR,San Marino,Unspecified,,Other
+2015,SMR,San Marino,Unspecified,,Other
+2016,SMR,San Marino,Unspecified,,Other
+2017,SMR,San Marino,Unspecified,,Other
+2018,SMR,San Marino,Unspecified,,Other
 1964,MLT,Malta,Roman Catholic,1222,Christian
 1965,MLT,Malta,Roman Catholic,1222,Christian
 1966,MLT,Malta,Roman Catholic,1222,Christian
@@ -3407,8 +3407,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1994,MLT,Malta,Roman Catholic,1222,Christian
 1995,MLT,Malta,Roman Catholic,1222,Christian
 1996,MLT,Malta,Roman Catholic,1222,Christian
-1997,MLT,Malta,,,
-1998,MLT,Malta,,,
+1997,MLT,Malta,Unspecified,,Other
+1998,MLT,Malta,Unspecified,,Other
 1999,MLT,Malta,Roman Catholic,1222,Christian
 2000,MLT,Malta,Roman Catholic,1222,Christian
 2001,MLT,Malta,Roman Catholic,1222,Christian
@@ -3549,11 +3549,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1996,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
 1997,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
 1998,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
-1999,BIH,Bosnia and Herzegovina,,,
+1999,BIH,Bosnia and Herzegovina,Unspecified,,Other
 2000,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
-2001,BIH,Bosnia and Herzegovina,,,
-2002,BIH,Bosnia and Herzegovina,,,
-2003,BIH,Bosnia and Herzegovina,,,
+2001,BIH,Bosnia and Herzegovina,Unspecified,,Other
+2002,BIH,Bosnia and Herzegovina,Unspecified,,Other
+2003,BIH,Bosnia and Herzegovina,Unspecified,,Other
 2004,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
 2005,BIH,Bosnia and Herzegovina,Roman Catholic,1222,Christian
 2006,BIH,Bosnia and Herzegovina,Sunni Muslim,3100,Muslim
@@ -3578,11 +3578,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1997,SVN,Slovenia,Not Religious,9001,New Age
 1998,SVN,Slovenia,Not Religious,9001,New Age
 1999,SVN,Slovenia,Not Religious,9001,New Age
-2000,SVN,Slovenia,,,
+2000,SVN,Slovenia,Unspecified,,Other
 2001,SVN,Slovenia,Not Religious,9001,New Age
 2002,SVN,Slovenia,Not Religious,9001,New Age
-2003,SVN,Slovenia,,,
-2004,SVN,Slovenia,,,
+2003,SVN,Slovenia,Unspecified,,Other
+2004,SVN,Slovenia,Unspecified,,Other
 2005,SVN,Slovenia,Roman Catholic,1222,Christian
 2006,SVN,Slovenia,Roman Catholic,1222,Christian
 2007,SVN,Slovenia,Roman Catholic,1222,Christian
@@ -3591,14 +3591,14 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2010,SVN,Slovenia,Atheist,9100,New Age
 2011,SVN,Slovenia,Atheist,9100,New Age
 2012,SVN,Slovenia,Roman Catholic,1222,Christian
-2013,SVN,Slovenia,,,
-2014,SVN,Slovenia,,,
-2015,SVN,Slovenia,,,
-2016,SVN,Slovenia,,,
-2017,SVN,Slovenia,,,
-2018,SVN,Slovenia,,,
+2013,SVN,Slovenia,Unspecified,,Other
+2014,SVN,Slovenia,Unspecified,,Other
+2015,SVN,Slovenia,Unspecified,,Other
+2016,SVN,Slovenia,Unspecified,,Other
+2017,SVN,Slovenia,Unspecified,,Other
+2018,SVN,Slovenia,Unspecified,,Other
 1946,GRC,Greece,Greek Orthodox,1620,Christian
-1947,GRC,Greece,,,
+1947,GRC,Greece,Unspecified,,Other
 1948,GRC,Greece,Greek Orthodox,1620,Christian
 1949,GRC,Greece,Greek Orthodox,1620,Christian
 1950,GRC,Greece,Greek Orthodox,1620,Christian
@@ -3625,7 +3625,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1971,GRC,Greece,Greek Orthodox,1620,Christian
 1972,GRC,Greece,Greek Orthodox,1620,Christian
 1973,GRC,Greece,Greek Orthodox,1620,Christian
-1974,GRC,Greece,,,
+1974,GRC,Greece,Unspecified,,Other
 1975,GRC,Greece,Greek Orthodox,1620,Christian
 1976,GRC,Greece,Greek Orthodox,1620,Christian
 1977,GRC,Greece,Greek Orthodox,1620,Christian
@@ -3729,14 +3729,14 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,CYP,Cyprus,Greek Orthodox,1620,Christian
 2017,CYP,Cyprus,Greek Orthodox,1620,Christian
 2018,CYP,Cyprus,Greek Orthodox,1620,Christian
-1946,BGR,Bulgaria,,,
+1946,BGR,Bulgaria,Unspecified,,Other
 1947,BGR,Bulgaria,Atheist,9100,New Age
 1948,BGR,Bulgaria,Atheist,9100,New Age
 1949,BGR,Bulgaria,Atheist,9100,New Age
-1950,BGR,Bulgaria,,,
-1951,BGR,Bulgaria,,,
-1952,BGR,Bulgaria,,,
-1953,BGR,Bulgaria,,,
+1950,BGR,Bulgaria,Unspecified,,Other
+1951,BGR,Bulgaria,Unspecified,,Other
+1952,BGR,Bulgaria,Unspecified,,Other
+1953,BGR,Bulgaria,Unspecified,,Other
 1954,BGR,Bulgaria,Atheist,9100,New Age
 1955,BGR,Bulgaria,Atheist,9100,New Age
 1956,BGR,Bulgaria,Atheist,9100,New Age
@@ -3774,12 +3774,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1988,BGR,Bulgaria,Atheist,9100,New Age
 1989,BGR,Bulgaria,Atheist,9100,New Age
 1990,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
-1991,BGR,Bulgaria,,,
-1992,BGR,Bulgaria,,,
-1993,BGR,Bulgaria,,,
-1994,BGR,Bulgaria,,,
-1995,BGR,Bulgaria,,,
-1996,BGR,Bulgaria,,,
+1991,BGR,Bulgaria,Unspecified,,Other
+1992,BGR,Bulgaria,Unspecified,,Other
+1993,BGR,Bulgaria,Unspecified,,Other
+1994,BGR,Bulgaria,Unspecified,,Other
+1995,BGR,Bulgaria,Unspecified,,Other
+1996,BGR,Bulgaria,Unspecified,,Other
 1997,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 1998,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 1999,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
@@ -3789,15 +3789,15 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2003,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2004,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2005,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
-2006,BGR,Bulgaria,,,
-2007,BGR,Bulgaria,,,
-2008,BGR,Bulgaria,,,
-2009,BGR,Bulgaria,,,
+2006,BGR,Bulgaria,Unspecified,,Other
+2007,BGR,Bulgaria,Unspecified,,Other
+2008,BGR,Bulgaria,Unspecified,,Other
+2009,BGR,Bulgaria,Unspecified,,Other
 2010,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2011,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2012,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
-2013,BGR,Bulgaria,,,
-2014,BGR,Bulgaria,,,
+2013,BGR,Bulgaria,Unspecified,,Other
+2014,BGR,Bulgaria,Unspecified,,Other
 2015,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2016,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
 2017,BGR,Bulgaria,Bulgarian Orthodox,1620,Christian
@@ -3849,46 +3849,46 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1962,ROU,Romania,Atheist,9100,New Age
 1963,ROU,Romania,Atheist,9100,New Age
 1964,ROU,Romania,Atheist,9100,New Age
-1965,ROU,Romania,,,
-1966,ROU,Romania,,,
-1967,ROU,Romania,,,
-1968,ROU,Romania,,,
-1969,ROU,Romania,,,
-1970,ROU,Romania,,,
-1971,ROU,Romania,,,
-1972,ROU,Romania,,,
-1973,ROU,Romania,,,
-1974,ROU,Romania,,,
-1975,ROU,Romania,,,
-1976,ROU,Romania,,,
-1977,ROU,Romania,,,
-1978,ROU,Romania,,,
-1979,ROU,Romania,,,
-1980,ROU,Romania,,,
-1981,ROU,Romania,,,
-1982,ROU,Romania,,,
-1983,ROU,Romania,,,
-1984,ROU,Romania,,,
-1985,ROU,Romania,,,
-1986,ROU,Romania,,,
-1987,ROU,Romania,,,
-1988,ROU,Romania,,,
-1989,ROU,Romania,,,
-1990,ROU,Romania,,,
-1991,ROU,Romania,,,
-1992,ROU,Romania,,,
-1993,ROU,Romania,,,
-1994,ROU,Romania,,,
-1995,ROU,Romania,,,
-1996,ROU,Romania,,,
+1965,ROU,Romania,Unspecified,,Other
+1966,ROU,Romania,Unspecified,,Other
+1967,ROU,Romania,Unspecified,,Other
+1968,ROU,Romania,Unspecified,,Other
+1969,ROU,Romania,Unspecified,,Other
+1970,ROU,Romania,Unspecified,,Other
+1971,ROU,Romania,Unspecified,,Other
+1972,ROU,Romania,Unspecified,,Other
+1973,ROU,Romania,Unspecified,,Other
+1974,ROU,Romania,Unspecified,,Other
+1975,ROU,Romania,Unspecified,,Other
+1976,ROU,Romania,Unspecified,,Other
+1977,ROU,Romania,Unspecified,,Other
+1978,ROU,Romania,Unspecified,,Other
+1979,ROU,Romania,Unspecified,,Other
+1980,ROU,Romania,Unspecified,,Other
+1981,ROU,Romania,Unspecified,,Other
+1982,ROU,Romania,Unspecified,,Other
+1983,ROU,Romania,Unspecified,,Other
+1984,ROU,Romania,Unspecified,,Other
+1985,ROU,Romania,Unspecified,,Other
+1986,ROU,Romania,Unspecified,,Other
+1987,ROU,Romania,Unspecified,,Other
+1988,ROU,Romania,Unspecified,,Other
+1989,ROU,Romania,Unspecified,,Other
+1990,ROU,Romania,Unspecified,,Other
+1991,ROU,Romania,Unspecified,,Other
+1992,ROU,Romania,Unspecified,,Other
+1993,ROU,Romania,Unspecified,,Other
+1994,ROU,Romania,Unspecified,,Other
+1995,ROU,Romania,Unspecified,,Other
+1996,ROU,Romania,Unspecified,,Other
 1997,ROU,Romania,Romanian Orthodox,1620,Christian
 1998,ROU,Romania,Romanian Orthodox,1620,Christian
 1999,ROU,Romania,Romanian Orthodox,1620,Christian
 2000,ROU,Romania,Romanian Orthodox,1620,Christian
-2001,ROU,Romania,,,
-2002,ROU,Romania,,,
-2003,ROU,Romania,,,
-2004,ROU,Romania,,,
+2001,ROU,Romania,Unspecified,,Other
+2002,ROU,Romania,Unspecified,,Other
+2003,ROU,Romania,Unspecified,,Other
+2004,ROU,Romania,Unspecified,,Other
 2005,ROU,Romania,Romanian Orthodox,1620,Christian
 2006,ROU,Romania,Romanian Orthodox,1620,Christian
 2007,ROU,Romania,Romanian Orthodox,1620,Christian
@@ -3976,62 +3976,62 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,RUS,Russia,Russian Orthodox,1620,Christian
 2017,RUS,Russia,Russian Orthodox,1620,Christian
 2018,RUS,Russia,Russian Orthodox,1620,Christian
-1991,EST,Estonia,,,
-1992,EST,Estonia,,,
-1993,EST,Estonia,,,
-1994,EST,Estonia,,,
-1995,EST,Estonia,,,
-1996,EST,Estonia,,,
-1997,EST,Estonia,,,
-1998,EST,Estonia,,,
-1999,EST,Estonia,,,
-2000,EST,Estonia,,,
-2001,EST,Estonia,,,
-2002,EST,Estonia,,,
-2003,EST,Estonia,,,
-2004,EST,Estonia,,,
-2005,EST,Estonia,,,
-2006,EST,Estonia,,,
-2007,EST,Estonia,,,
-2008,EST,Estonia,,,
-2009,EST,Estonia,,,
-2010,EST,Estonia,,,
-2011,EST,Estonia,,,
-2012,EST,Estonia,,,
-2013,EST,Estonia,,,
-2014,EST,Estonia,,,
-2015,EST,Estonia,,,
-2016,EST,Estonia,,,
+1991,EST,Estonia,Unspecified,,Other
+1992,EST,Estonia,Unspecified,,Other
+1993,EST,Estonia,Unspecified,,Other
+1994,EST,Estonia,Unspecified,,Other
+1995,EST,Estonia,Unspecified,,Other
+1996,EST,Estonia,Unspecified,,Other
+1997,EST,Estonia,Unspecified,,Other
+1998,EST,Estonia,Unspecified,,Other
+1999,EST,Estonia,Unspecified,,Other
+2000,EST,Estonia,Unspecified,,Other
+2001,EST,Estonia,Unspecified,,Other
+2002,EST,Estonia,Unspecified,,Other
+2003,EST,Estonia,Unspecified,,Other
+2004,EST,Estonia,Unspecified,,Other
+2005,EST,Estonia,Unspecified,,Other
+2006,EST,Estonia,Unspecified,,Other
+2007,EST,Estonia,Unspecified,,Other
+2008,EST,Estonia,Unspecified,,Other
+2009,EST,Estonia,Unspecified,,Other
+2010,EST,Estonia,Unspecified,,Other
+2011,EST,Estonia,Unspecified,,Other
+2012,EST,Estonia,Unspecified,,Other
+2013,EST,Estonia,Unspecified,,Other
+2014,EST,Estonia,Unspecified,,Other
+2015,EST,Estonia,Unspecified,,Other
+2016,EST,Estonia,Unspecified,,Other
 2017,EST,Estonia,Protestant (NFI),1400,Christian
 2018,EST,Estonia,Protestant (NFI),1400,Christian
-1991,LVA,Latvia,,,
-1992,LVA,Latvia,,,
-1993,LVA,Latvia,,,
-1994,LVA,Latvia,,,
-1995,LVA,Latvia,,,
-1996,LVA,Latvia,,,
-1997,LVA,Latvia,,,
-1998,LVA,Latvia,,,
-1999,LVA,Latvia,,,
-2000,LVA,Latvia,,,
-2001,LVA,Latvia,,,
-2002,LVA,Latvia,,,
-2003,LVA,Latvia,,,
-2004,LVA,Latvia,,,
-2005,LVA,Latvia,,,
-2006,LVA,Latvia,,,
-2007,LVA,Latvia,,,
-2008,LVA,Latvia,,,
-2009,LVA,Latvia,,,
-2010,LVA,Latvia,,,
-2011,LVA,Latvia,,,
-2012,LVA,Latvia,,,
-2013,LVA,Latvia,,,
-2014,LVA,Latvia,,,
-2015,LVA,Latvia,,,
-2016,LVA,Latvia,,,
-2017,LVA,Latvia,,,
-2018,LVA,Latvia,,,
+1991,LVA,Latvia,Unspecified,,Other
+1992,LVA,Latvia,Unspecified,,Other
+1993,LVA,Latvia,Unspecified,,Other
+1994,LVA,Latvia,Unspecified,,Other
+1995,LVA,Latvia,Unspecified,,Other
+1996,LVA,Latvia,Unspecified,,Other
+1997,LVA,Latvia,Unspecified,,Other
+1998,LVA,Latvia,Unspecified,,Other
+1999,LVA,Latvia,Unspecified,,Other
+2000,LVA,Latvia,Unspecified,,Other
+2001,LVA,Latvia,Unspecified,,Other
+2002,LVA,Latvia,Unspecified,,Other
+2003,LVA,Latvia,Unspecified,,Other
+2004,LVA,Latvia,Unspecified,,Other
+2005,LVA,Latvia,Unspecified,,Other
+2006,LVA,Latvia,Unspecified,,Other
+2007,LVA,Latvia,Unspecified,,Other
+2008,LVA,Latvia,Unspecified,,Other
+2009,LVA,Latvia,Unspecified,,Other
+2010,LVA,Latvia,Unspecified,,Other
+2011,LVA,Latvia,Unspecified,,Other
+2012,LVA,Latvia,Unspecified,,Other
+2013,LVA,Latvia,Unspecified,,Other
+2014,LVA,Latvia,Unspecified,,Other
+2015,LVA,Latvia,Unspecified,,Other
+2016,LVA,Latvia,Unspecified,,Other
+2017,LVA,Latvia,Unspecified,,Other
+2018,LVA,Latvia,Unspecified,,Other
 1990,LTU,Lithuania,Lutheran,1410,Christian
 1991,LTU,Lithuania,Lutheran,1410,Christian
 1992,LTU,Lithuania,Lutheran,1410,Christian
@@ -4092,7 +4092,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1991,BLR,Belarus,Roman Catholic,1222,Christian
 1992,BLR,Belarus,Roman Catholic,1222,Christian
 1993,BLR,Belarus,Roman Catholic,1222,Christian
-1994,BLR,Belarus,,,
+1994,BLR,Belarus,Unspecified,,Other
 1995,BLR,Belarus,Belarussian Orthodox,1620,Christian
 1996,BLR,Belarus,Belarussian Orthodox,1620,Christian
 1997,BLR,Belarus,Belarussian Orthodox,1620,Christian
@@ -4372,32 +4372,32 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1968,NOR,Norway,Lutheran,1410,Christian
 1969,NOR,Norway,Lutheran,1410,Christian
 1970,NOR,Norway,Lutheran,1410,Christian
-1971,NOR,Norway,,,
-1972,NOR,Norway,,,
+1971,NOR,Norway,Unspecified,,Other
+1972,NOR,Norway,Unspecified,,Other
 1973,NOR,Norway,Lutheran,1410,Christian
-1974,NOR,Norway,,,
-1975,NOR,Norway,,,
-1976,NOR,Norway,,,
-1977,NOR,Norway,,,
-1978,NOR,Norway,,,
-1979,NOR,Norway,,,
-1980,NOR,Norway,,,
-1981,NOR,Norway,,,
-1982,NOR,Norway,,,
-1983,NOR,Norway,,,
-1984,NOR,Norway,,,
-1985,NOR,Norway,,,
-1986,NOR,Norway,,,
-1987,NOR,Norway,,,
-1988,NOR,Norway,,,
-1989,NOR,Norway,,,
+1974,NOR,Norway,Unspecified,,Other
+1975,NOR,Norway,Unspecified,,Other
+1976,NOR,Norway,Unspecified,,Other
+1977,NOR,Norway,Unspecified,,Other
+1978,NOR,Norway,Unspecified,,Other
+1979,NOR,Norway,Unspecified,,Other
+1980,NOR,Norway,Unspecified,,Other
+1981,NOR,Norway,Unspecified,,Other
+1982,NOR,Norway,Unspecified,,Other
+1983,NOR,Norway,Unspecified,,Other
+1984,NOR,Norway,Unspecified,,Other
+1985,NOR,Norway,Unspecified,,Other
+1986,NOR,Norway,Unspecified,,Other
+1987,NOR,Norway,Unspecified,,Other
+1988,NOR,Norway,Unspecified,,Other
+1989,NOR,Norway,Unspecified,,Other
 1990,NOR,Norway,Lutheran,1410,Christian
-1991,NOR,Norway,,,
-1992,NOR,Norway,,,
-1993,NOR,Norway,,,
-1994,NOR,Norway,,,
-1995,NOR,Norway,,,
-1996,NOR,Norway,,,
+1991,NOR,Norway,Unspecified,,Other
+1992,NOR,Norway,Unspecified,,Other
+1993,NOR,Norway,Unspecified,,Other
+1994,NOR,Norway,Unspecified,,Other
+1995,NOR,Norway,Unspecified,,Other
+1996,NOR,Norway,Unspecified,,Other
 1997,NOR,Norway,Lutheran,1410,Christian
 1998,NOR,Norway,Lutheran,1410,Christian
 1999,NOR,Norway,Lutheran,1410,Christian
@@ -4420,32 +4420,32 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,NOR,Norway,Christian (NFI),1000,Christian
 2017,NOR,Norway,Christian (NFI),1000,Christian
 2018,NOR,Norway,Christian (NFI),1000,Christian
-1946,DNK,Denmark,,,
-1947,DNK,Denmark,,,
-1948,DNK,Denmark,,,
-1949,DNK,Denmark,,,
-1950,DNK,Denmark,,,
-1951,DNK,Denmark,,,
-1952,DNK,Denmark,,,
-1953,DNK,Denmark,,,
-1954,DNK,Denmark,,,
-1955,DNK,Denmark,,,
-1956,DNK,Denmark,,,
-1957,DNK,Denmark,,,
-1958,DNK,Denmark,,,
-1959,DNK,Denmark,,,
-1960,DNK,Denmark,,,
-1961,DNK,Denmark,,,
-1962,DNK,Denmark,,,
+1946,DNK,Denmark,Unspecified,,Other
+1947,DNK,Denmark,Unspecified,,Other
+1948,DNK,Denmark,Unspecified,,Other
+1949,DNK,Denmark,Unspecified,,Other
+1950,DNK,Denmark,Unspecified,,Other
+1951,DNK,Denmark,Unspecified,,Other
+1952,DNK,Denmark,Unspecified,,Other
+1953,DNK,Denmark,Unspecified,,Other
+1954,DNK,Denmark,Unspecified,,Other
+1955,DNK,Denmark,Unspecified,,Other
+1956,DNK,Denmark,Unspecified,,Other
+1957,DNK,Denmark,Unspecified,,Other
+1958,DNK,Denmark,Unspecified,,Other
+1959,DNK,Denmark,Unspecified,,Other
+1960,DNK,Denmark,Unspecified,,Other
+1961,DNK,Denmark,Unspecified,,Other
+1962,DNK,Denmark,Unspecified,,Other
 1963,DNK,Denmark,Atheist,9100,New Age
 1964,DNK,Denmark,Atheist,9100,New Age
 1965,DNK,Denmark,Atheist,9100,New Age
 1966,DNK,Denmark,Atheist,9100,New Age
 1967,DNK,Denmark,Atheist,9100,New Age
-1968,DNK,Denmark,,,
-1969,DNK,Denmark,,,
-1970,DNK,Denmark,,,
-1971,DNK,Denmark,,,
+1968,DNK,Denmark,Unspecified,,Other
+1969,DNK,Denmark,Unspecified,,Other
+1970,DNK,Denmark,Unspecified,,Other
+1971,DNK,Denmark,Unspecified,,Other
 1972,DNK,Denmark,Atheist,9100,New Age
 1973,DNK,Denmark,Lutheran,1410,Christian
 1974,DNK,Denmark,Lutheran,1410,Christian
@@ -4493,159 +4493,159 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,DNK,Denmark,Lutheran,1410,Christian
 2017,DNK,Denmark,Lutheran,1410,Christian
 2018,DNK,Denmark,Lutheran,1410,Christian
-1946,ISL,Iceland,,,
-1947,ISL,Iceland,,,
-1948,ISL,Iceland,,,
-1949,ISL,Iceland,,,
-1950,ISL,Iceland,,,
-1951,ISL,Iceland,,,
-1952,ISL,Iceland,,,
-1953,ISL,Iceland,,,
-1954,ISL,Iceland,,,
-1955,ISL,Iceland,,,
-1956,ISL,Iceland,,,
-1957,ISL,Iceland,,,
-1958,ISL,Iceland,,,
-1959,ISL,Iceland,,,
-1960,ISL,Iceland,,,
-1961,ISL,Iceland,,,
-1962,ISL,Iceland,,,
-1963,ISL,Iceland,,,
-1964,ISL,Iceland,,,
-1965,ISL,Iceland,,,
-1966,ISL,Iceland,,,
-1967,ISL,Iceland,,,
-1968,ISL,Iceland,,,
-1969,ISL,Iceland,,,
-1970,ISL,Iceland,,,
-1971,ISL,Iceland,,,
-1972,ISL,Iceland,,,
-1973,ISL,Iceland,,,
-1974,ISL,Iceland,,,
-1975,ISL,Iceland,,,
-1976,ISL,Iceland,,,
-1977,ISL,Iceland,,,
-1978,ISL,Iceland,,,
-1979,ISL,Iceland,,,
-1980,ISL,Iceland,,,
-1981,ISL,Iceland,,,
-1982,ISL,Iceland,,,
-1983,ISL,Iceland,,,
-1984,ISL,Iceland,,,
-1985,ISL,Iceland,,,
-1986,ISL,Iceland,,,
-1987,ISL,Iceland,,,
-1988,ISL,Iceland,,,
-1989,ISL,Iceland,,,
-1990,ISL,Iceland,,,
-1991,ISL,Iceland,,,
-1992,ISL,Iceland,,,
-1993,ISL,Iceland,,,
-1994,ISL,Iceland,,,
-1995,ISL,Iceland,,,
-1996,ISL,Iceland,,,
-1997,ISL,Iceland,,,
-1998,ISL,Iceland,,,
-1999,ISL,Iceland,,,
-2000,ISL,Iceland,,,
-2001,ISL,Iceland,,,
-2002,ISL,Iceland,,,
-2003,ISL,Iceland,,,
-2004,ISL,Iceland,,,
+1946,ISL,Iceland,Unspecified,,Other
+1947,ISL,Iceland,Unspecified,,Other
+1948,ISL,Iceland,Unspecified,,Other
+1949,ISL,Iceland,Unspecified,,Other
+1950,ISL,Iceland,Unspecified,,Other
+1951,ISL,Iceland,Unspecified,,Other
+1952,ISL,Iceland,Unspecified,,Other
+1953,ISL,Iceland,Unspecified,,Other
+1954,ISL,Iceland,Unspecified,,Other
+1955,ISL,Iceland,Unspecified,,Other
+1956,ISL,Iceland,Unspecified,,Other
+1957,ISL,Iceland,Unspecified,,Other
+1958,ISL,Iceland,Unspecified,,Other
+1959,ISL,Iceland,Unspecified,,Other
+1960,ISL,Iceland,Unspecified,,Other
+1961,ISL,Iceland,Unspecified,,Other
+1962,ISL,Iceland,Unspecified,,Other
+1963,ISL,Iceland,Unspecified,,Other
+1964,ISL,Iceland,Unspecified,,Other
+1965,ISL,Iceland,Unspecified,,Other
+1966,ISL,Iceland,Unspecified,,Other
+1967,ISL,Iceland,Unspecified,,Other
+1968,ISL,Iceland,Unspecified,,Other
+1969,ISL,Iceland,Unspecified,,Other
+1970,ISL,Iceland,Unspecified,,Other
+1971,ISL,Iceland,Unspecified,,Other
+1972,ISL,Iceland,Unspecified,,Other
+1973,ISL,Iceland,Unspecified,,Other
+1974,ISL,Iceland,Unspecified,,Other
+1975,ISL,Iceland,Unspecified,,Other
+1976,ISL,Iceland,Unspecified,,Other
+1977,ISL,Iceland,Unspecified,,Other
+1978,ISL,Iceland,Unspecified,,Other
+1979,ISL,Iceland,Unspecified,,Other
+1980,ISL,Iceland,Unspecified,,Other
+1981,ISL,Iceland,Unspecified,,Other
+1982,ISL,Iceland,Unspecified,,Other
+1983,ISL,Iceland,Unspecified,,Other
+1984,ISL,Iceland,Unspecified,,Other
+1985,ISL,Iceland,Unspecified,,Other
+1986,ISL,Iceland,Unspecified,,Other
+1987,ISL,Iceland,Unspecified,,Other
+1988,ISL,Iceland,Unspecified,,Other
+1989,ISL,Iceland,Unspecified,,Other
+1990,ISL,Iceland,Unspecified,,Other
+1991,ISL,Iceland,Unspecified,,Other
+1992,ISL,Iceland,Unspecified,,Other
+1993,ISL,Iceland,Unspecified,,Other
+1994,ISL,Iceland,Unspecified,,Other
+1995,ISL,Iceland,Unspecified,,Other
+1996,ISL,Iceland,Unspecified,,Other
+1997,ISL,Iceland,Unspecified,,Other
+1998,ISL,Iceland,Unspecified,,Other
+1999,ISL,Iceland,Unspecified,,Other
+2000,ISL,Iceland,Unspecified,,Other
+2001,ISL,Iceland,Unspecified,,Other
+2002,ISL,Iceland,Unspecified,,Other
+2003,ISL,Iceland,Unspecified,,Other
+2004,ISL,Iceland,Unspecified,,Other
 2005,ISL,Iceland,Lutheran,1410,Christian
 2006,ISL,Iceland,Lutheran,1410,Christian
 2007,ISL,Iceland,Lutheran,1410,Christian
 2008,ISL,Iceland,Lutheran,1410,Christian
-2009,ISL,Iceland,,,
-2010,ISL,Iceland,,,
-2011,ISL,Iceland,,,
-2012,ISL,Iceland,,,
-2013,ISL,Iceland,,,
-2014,ISL,Iceland,,,
-2015,ISL,Iceland,,,
-2016,ISL,Iceland,,,
-2017,ISL,Iceland,,,
-2018,ISL,Iceland,,,
-1975,STP,São Tomé and Principe,,,
-1976,STP,São Tomé and Principe,,,
-1977,STP,São Tomé and Principe,,,
-1978,STP,São Tomé and Principe,,,
-1979,STP,São Tomé and Principe,,,
-1980,STP,São Tomé and Principe,,,
-1981,STP,São Tomé and Principe,,,
-1982,STP,São Tomé and Principe,,,
-1983,STP,São Tomé and Principe,,,
-1984,STP,São Tomé and Principe,,,
-1985,STP,São Tomé and Principe,,,
-1986,STP,São Tomé and Principe,,,
-1987,STP,São Tomé and Principe,,,
-1988,STP,São Tomé and Principe,,,
-1989,STP,São Tomé and Principe,,,
-1990,STP,São Tomé and Principe,,,
-1991,STP,São Tomé and Principe,,,
-1992,STP,São Tomé and Principe,,,
-1993,STP,São Tomé and Principe,,,
-1994,STP,São Tomé and Principe,,,
-1995,STP,São Tomé and Principe,,,
-1996,STP,São Tomé and Principe,,,
-1997,STP,São Tomé and Principe,,,
-1998,STP,São Tomé and Principe,,,
-1999,STP,São Tomé and Principe,,,
-2000,STP,São Tomé and Principe,,,
-2001,STP,São Tomé and Principe,,,
-2002,STP,São Tomé and Principe,,,
-2003,STP,São Tomé and Principe,,,
-2004,STP,São Tomé and Principe,,,
-2005,STP,São Tomé and Principe,,,
-2006,STP,São Tomé and Principe,,,
-2007,STP,São Tomé and Principe,,,
-2008,STP,São Tomé and Principe,,,
-2009,STP,São Tomé and Principe,,,
-2010,STP,São Tomé and Principe,,,
-2011,STP,São Tomé and Principe,,,
-2012,STP,São Tomé and Principe,,,
-2013,STP,São Tomé and Principe,,,
-2014,STP,São Tomé and Principe,,,
-2015,STP,São Tomé and Principe,,,
-2016,STP,São Tomé and Principe,,,
-2017,STP,São Tomé and Principe,,,
-2018,STP,São Tomé and Principe,,,
-1974,GNB,Guinea-Bissau,,,
-1975,GNB,Guinea-Bissau,,,
-1976,GNB,Guinea-Bissau,,,
-1977,GNB,Guinea-Bissau,,,
-1978,GNB,Guinea-Bissau,,,
-1979,GNB,Guinea-Bissau,,,
-1980,GNB,Guinea-Bissau,,,
-1981,GNB,Guinea-Bissau,,,
-1982,GNB,Guinea-Bissau,,,
-1983,GNB,Guinea-Bissau,,,
-1984,GNB,Guinea-Bissau,,,
-1985,GNB,Guinea-Bissau,,,
-1986,GNB,Guinea-Bissau,,,
-1987,GNB,Guinea-Bissau,,,
-1988,GNB,Guinea-Bissau,,,
-1989,GNB,Guinea-Bissau,,,
-1990,GNB,Guinea-Bissau,,,
-1991,GNB,Guinea-Bissau,,,
-1992,GNB,Guinea-Bissau,,,
-1993,GNB,Guinea-Bissau,,,
-1994,GNB,Guinea-Bissau,,,
-1995,GNB,Guinea-Bissau,,,
-1996,GNB,Guinea-Bissau,,,
-1997,GNB,Guinea-Bissau,,,
-1998,GNB,Guinea-Bissau,,,
+2009,ISL,Iceland,Unspecified,,Other
+2010,ISL,Iceland,Unspecified,,Other
+2011,ISL,Iceland,Unspecified,,Other
+2012,ISL,Iceland,Unspecified,,Other
+2013,ISL,Iceland,Unspecified,,Other
+2014,ISL,Iceland,Unspecified,,Other
+2015,ISL,Iceland,Unspecified,,Other
+2016,ISL,Iceland,Unspecified,,Other
+2017,ISL,Iceland,Unspecified,,Other
+2018,ISL,Iceland,Unspecified,,Other
+1975,STP,São Tomé and Principe,Unspecified,,Other
+1976,STP,São Tomé and Principe,Unspecified,,Other
+1977,STP,São Tomé and Principe,Unspecified,,Other
+1978,STP,São Tomé and Principe,Unspecified,,Other
+1979,STP,São Tomé and Principe,Unspecified,,Other
+1980,STP,São Tomé and Principe,Unspecified,,Other
+1981,STP,São Tomé and Principe,Unspecified,,Other
+1982,STP,São Tomé and Principe,Unspecified,,Other
+1983,STP,São Tomé and Principe,Unspecified,,Other
+1984,STP,São Tomé and Principe,Unspecified,,Other
+1985,STP,São Tomé and Principe,Unspecified,,Other
+1986,STP,São Tomé and Principe,Unspecified,,Other
+1987,STP,São Tomé and Principe,Unspecified,,Other
+1988,STP,São Tomé and Principe,Unspecified,,Other
+1989,STP,São Tomé and Principe,Unspecified,,Other
+1990,STP,São Tomé and Principe,Unspecified,,Other
+1991,STP,São Tomé and Principe,Unspecified,,Other
+1992,STP,São Tomé and Principe,Unspecified,,Other
+1993,STP,São Tomé and Principe,Unspecified,,Other
+1994,STP,São Tomé and Principe,Unspecified,,Other
+1995,STP,São Tomé and Principe,Unspecified,,Other
+1996,STP,São Tomé and Principe,Unspecified,,Other
+1997,STP,São Tomé and Principe,Unspecified,,Other
+1998,STP,São Tomé and Principe,Unspecified,,Other
+1999,STP,São Tomé and Principe,Unspecified,,Other
+2000,STP,São Tomé and Principe,Unspecified,,Other
+2001,STP,São Tomé and Principe,Unspecified,,Other
+2002,STP,São Tomé and Principe,Unspecified,,Other
+2003,STP,São Tomé and Principe,Unspecified,,Other
+2004,STP,São Tomé and Principe,Unspecified,,Other
+2005,STP,São Tomé and Principe,Unspecified,,Other
+2006,STP,São Tomé and Principe,Unspecified,,Other
+2007,STP,São Tomé and Principe,Unspecified,,Other
+2008,STP,São Tomé and Principe,Unspecified,,Other
+2009,STP,São Tomé and Principe,Unspecified,,Other
+2010,STP,São Tomé and Principe,Unspecified,,Other
+2011,STP,São Tomé and Principe,Unspecified,,Other
+2012,STP,São Tomé and Principe,Unspecified,,Other
+2013,STP,São Tomé and Principe,Unspecified,,Other
+2014,STP,São Tomé and Principe,Unspecified,,Other
+2015,STP,São Tomé and Principe,Unspecified,,Other
+2016,STP,São Tomé and Principe,Unspecified,,Other
+2017,STP,São Tomé and Principe,Unspecified,,Other
+2018,STP,São Tomé and Principe,Unspecified,,Other
+1974,GNB,Guinea-Bissau,Unspecified,,Other
+1975,GNB,Guinea-Bissau,Unspecified,,Other
+1976,GNB,Guinea-Bissau,Unspecified,,Other
+1977,GNB,Guinea-Bissau,Unspecified,,Other
+1978,GNB,Guinea-Bissau,Unspecified,,Other
+1979,GNB,Guinea-Bissau,Unspecified,,Other
+1980,GNB,Guinea-Bissau,Unspecified,,Other
+1981,GNB,Guinea-Bissau,Unspecified,,Other
+1982,GNB,Guinea-Bissau,Unspecified,,Other
+1983,GNB,Guinea-Bissau,Unspecified,,Other
+1984,GNB,Guinea-Bissau,Unspecified,,Other
+1985,GNB,Guinea-Bissau,Unspecified,,Other
+1986,GNB,Guinea-Bissau,Unspecified,,Other
+1987,GNB,Guinea-Bissau,Unspecified,,Other
+1988,GNB,Guinea-Bissau,Unspecified,,Other
+1989,GNB,Guinea-Bissau,Unspecified,,Other
+1990,GNB,Guinea-Bissau,Unspecified,,Other
+1991,GNB,Guinea-Bissau,Unspecified,,Other
+1992,GNB,Guinea-Bissau,Unspecified,,Other
+1993,GNB,Guinea-Bissau,Unspecified,,Other
+1994,GNB,Guinea-Bissau,Unspecified,,Other
+1995,GNB,Guinea-Bissau,Unspecified,,Other
+1996,GNB,Guinea-Bissau,Unspecified,,Other
+1997,GNB,Guinea-Bissau,Unspecified,,Other
+1998,GNB,Guinea-Bissau,Unspecified,,Other
 1999,GNB,Guinea-Bissau,Muslim (NFI),3000,Muslim
 2000,GNB,Guinea-Bissau,Roman Catholic,1222,Christian
 2001,GNB,Guinea-Bissau,Roman Catholic,1222,Christian
 2002,GNB,Guinea-Bissau,Roman Catholic,1222,Christian
 2003,GNB,Guinea-Bissau,Roman Catholic,1222,Christian
-2004,GNB,Guinea-Bissau,,,
-2005,GNB,Guinea-Bissau,,,
-2006,GNB,Guinea-Bissau,,,
-2007,GNB,Guinea-Bissau,,,
-2008,GNB,Guinea-Bissau,,,
-2009,GNB,Guinea-Bissau,,,
+2004,GNB,Guinea-Bissau,Unspecified,,Other
+2005,GNB,Guinea-Bissau,Unspecified,,Other
+2006,GNB,Guinea-Bissau,Unspecified,,Other
+2007,GNB,Guinea-Bissau,Unspecified,,Other
+2008,GNB,Guinea-Bissau,Unspecified,,Other
+2009,GNB,Guinea-Bissau,Unspecified,,Other
 2010,GNB,Guinea-Bissau,Muslim (NFI),3000,Muslim
 2011,GNB,Guinea-Bissau,Muslim (NFI),3000,Muslim
 2012,GNB,Guinea-Bissau,Muslim (NFI),3000,Muslim
@@ -4832,7 +4832,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1965,BEN,Benin,Roman Catholic,1222,Christian
 1966,BEN,Benin,Roman Catholic,1222,Christian
 1967,BEN,Benin,Roman Catholic,1222,Christian
-1968,BEN,Benin,,,
+1968,BEN,Benin,Unspecified,,Other
 1969,BEN,Benin,Roman Catholic,1222,Christian
 1970,BEN,Benin,Roman Catholic,1222,Christian
 1971,BEN,Benin,Roman Catholic,1222,Christian
@@ -4902,7 +4902,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1976,MRT,Mauritania,Sunni Muslim,3100,Muslim
 1977,MRT,Mauritania,Sunni Muslim,3100,Muslim
 1978,MRT,Mauritania,Sunni Muslim,3100,Muslim
-1979,MRT,Mauritania,,,
+1979,MRT,Mauritania,Unspecified,,Other
 1980,MRT,Mauritania,Sunni Muslim,3100,Muslim
 1981,MRT,Mauritania,Sunni Muslim,3100,Muslim
 1982,MRT,Mauritania,Sunni Muslim,3100,Muslim
@@ -4982,16 +4982,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1997,NER,Niger,Sunni Muslim,3100,Muslim
 1998,NER,Niger,Sunni Muslim,3100,Muslim
 1999,NER,Niger,Sunni Muslim,3100,Muslim
-2000,NER,Niger,,,
-2001,NER,Niger,,,
-2002,NER,Niger,,,
-2003,NER,Niger,,,
-2004,NER,Niger,,,
-2005,NER,Niger,,,
-2006,NER,Niger,,,
-2007,NER,Niger,,,
-2008,NER,Niger,,,
-2009,NER,Niger,,,
+2000,NER,Niger,Unspecified,,Other
+2001,NER,Niger,Unspecified,,Other
+2002,NER,Niger,Unspecified,,Other
+2003,NER,Niger,Unspecified,,Other
+2004,NER,Niger,Unspecified,,Other
+2005,NER,Niger,Unspecified,,Other
+2006,NER,Niger,Unspecified,,Other
+2007,NER,Niger,Unspecified,,Other
+2008,NER,Niger,Unspecified,,Other
+2009,NER,Niger,Unspecified,,Other
 2010,NER,Niger,Sunni Muslim,3100,Muslim
 2011,NER,Niger,Sunni Muslim,3100,Muslim
 2012,NER,Niger,Sunni Muslim,3100,Muslim
@@ -5053,7 +5053,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2007,GIN,Guinea,Muslim (NFI),3000,Muslim
 2008,GIN,Guinea,Muslim (NFI),3000,Muslim
 2009,GIN,Guinea,Muslim (NFI),3000,Muslim
-2010,GIN,Guinea,,,
+2010,GIN,Guinea,Unspecified,,Other
 2011,GIN,Guinea,Muslim (NFI),3000,Muslim
 2012,GIN,Guinea,Muslim (NFI),3000,Muslim
 2013,GIN,Guinea,Muslim (NFI),3000,Muslim
@@ -5166,11 +5166,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1988,LBR,Liberia,Baptist,1440,Christian
 1989,LBR,Liberia,Baptist,1440,Christian
 1990,LBR,Liberia,Baptist,1440,Christian
-1991,LBR,Liberia,,,
-1992,LBR,Liberia,,,
-1993,LBR,Liberia,,,
-1994,LBR,Liberia,,,
-1995,LBR,Liberia,,,
+1991,LBR,Liberia,Unspecified,,Other
+1992,LBR,Liberia,Unspecified,,Other
+1993,LBR,Liberia,Unspecified,,Other
+1994,LBR,Liberia,Unspecified,,Other
+1995,LBR,Liberia,Unspecified,,Other
 1996,LBR,Liberia,Protestant (NFI),1400,Christian
 1997,LBR,Liberia,Muslim (NFI),3000,Muslim
 1998,LBR,Liberia,Protestant (NFI),1400,Christian
@@ -5264,9 +5264,9 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1966,GHA,Ghana,Methodist,1460,Christian
 1967,GHA,Ghana,Methodist,1460,Christian
 1968,GHA,Ghana,Methodist,1460,Christian
-1969,GHA,Ghana,,,
-1970,GHA,Ghana,,,
-1971,GHA,Ghana,,,
+1969,GHA,Ghana,Unspecified,,Other
+1970,GHA,Ghana,Unspecified,,Other
+1971,GHA,Ghana,Unspecified,,Other
 1972,GHA,Ghana,Roman Catholic,1222,Christian
 1973,GHA,Ghana,Roman Catholic,1222,Christian
 1974,GHA,Ghana,Roman Catholic,1222,Christian
@@ -5685,8 +5685,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1976,UGA,Uganda,Muslim (NFI),3000,Muslim
 1977,UGA,Uganda,Muslim (NFI),3000,Muslim
 1978,UGA,Uganda,Muslim (NFI),3000,Muslim
-1979,UGA,Uganda,,,
-1980,UGA,Uganda,,,
+1979,UGA,Uganda,Unspecified,,Other
+1980,UGA,Uganda,Unspecified,,Other
 1981,UGA,Uganda,Roman Catholic,1222,Christian
 1982,UGA,Uganda,Roman Catholic,1222,Christian
 1983,UGA,Uganda,Roman Catholic,1222,Christian
@@ -5816,16 +5816,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1993,TZA,Tanzania,Muslim (NFI),3000,Muslim
 1994,TZA,Tanzania,Muslim (NFI),3000,Muslim
 1995,TZA,Tanzania,Muslim (NFI),3000,Muslim
-1996,TZA,Tanzania,,,
-1997,TZA,Tanzania,,,
-1998,TZA,Tanzania,,,
-1999,TZA,Tanzania,,,
-2000,TZA,Tanzania,,,
-2001,TZA,Tanzania,,,
-2002,TZA,Tanzania,,,
-2003,TZA,Tanzania,,,
-2004,TZA,Tanzania,,,
-2005,TZA,Tanzania,,,
+1996,TZA,Tanzania,Unspecified,,Other
+1997,TZA,Tanzania,Unspecified,,Other
+1998,TZA,Tanzania,Unspecified,,Other
+1999,TZA,Tanzania,Unspecified,,Other
+2000,TZA,Tanzania,Unspecified,,Other
+2001,TZA,Tanzania,Unspecified,,Other
+2002,TZA,Tanzania,Unspecified,,Other
+2003,TZA,Tanzania,Unspecified,,Other
+2004,TZA,Tanzania,Unspecified,,Other
+2005,TZA,Tanzania,Unspecified,,Other
 2006,TZA,Tanzania,Muslim (NFI),3000,Muslim
 2007,TZA,Tanzania,Muslim (NFI),3000,Muslim
 2008,TZA,Tanzania,Muslim (NFI),3000,Muslim
@@ -5839,11 +5839,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,TZA,Tanzania,Roman Catholic,1222,Christian
 2017,TZA,Tanzania,Roman Catholic,1222,Christian
 2018,TZA,Tanzania,Roman Catholic,1222,Christian
-1962,BDI,Burundi,,,
-1963,BDI,Burundi,,,
-1964,BDI,Burundi,,,
-1965,BDI,Burundi,,,
-1966,BDI,Burundi,,,
+1962,BDI,Burundi,Unspecified,,Other
+1963,BDI,Burundi,Unspecified,,Other
+1964,BDI,Burundi,Unspecified,,Other
+1965,BDI,Burundi,Unspecified,,Other
+1966,BDI,Burundi,Unspecified,,Other
 1967,BDI,Burundi,Christian (NFI),1000,Christian
 1968,BDI,Burundi,Christian (NFI),1000,Christian
 1969,BDI,Burundi,Christian (NFI),1000,Christian
@@ -5854,35 +5854,35 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1974,BDI,Burundi,Christian (NFI),1000,Christian
 1975,BDI,Burundi,Christian (NFI),1000,Christian
 1976,BDI,Burundi,Christian (NFI),1000,Christian
-1977,BDI,Burundi,,,
-1978,BDI,Burundi,,,
-1979,BDI,Burundi,,,
-1980,BDI,Burundi,,,
-1981,BDI,Burundi,,,
-1982,BDI,Burundi,,,
-1983,BDI,Burundi,,,
-1984,BDI,Burundi,,,
-1985,BDI,Burundi,,,
-1986,BDI,Burundi,,,
-1987,BDI,Burundi,,,
-1988,BDI,Burundi,,,
-1989,BDI,Burundi,,,
-1990,BDI,Burundi,,,
-1991,BDI,Burundi,,,
-1992,BDI,Burundi,,,
-1993,BDI,Burundi,,,
-1994,BDI,Burundi,,,
-1995,BDI,Burundi,,,
-1996,BDI,Burundi,,,
-1997,BDI,Burundi,,,
-1998,BDI,Burundi,,,
-1999,BDI,Burundi,,,
-2000,BDI,Burundi,,,
-2001,BDI,Burundi,,,
-2002,BDI,Burundi,,,
-2003,BDI,Burundi,,,
-2004,BDI,Burundi,,,
-2005,BDI,Burundi,,,
+1977,BDI,Burundi,Unspecified,,Other
+1978,BDI,Burundi,Unspecified,,Other
+1979,BDI,Burundi,Unspecified,,Other
+1980,BDI,Burundi,Unspecified,,Other
+1981,BDI,Burundi,Unspecified,,Other
+1982,BDI,Burundi,Unspecified,,Other
+1983,BDI,Burundi,Unspecified,,Other
+1984,BDI,Burundi,Unspecified,,Other
+1985,BDI,Burundi,Unspecified,,Other
+1986,BDI,Burundi,Unspecified,,Other
+1987,BDI,Burundi,Unspecified,,Other
+1988,BDI,Burundi,Unspecified,,Other
+1989,BDI,Burundi,Unspecified,,Other
+1990,BDI,Burundi,Unspecified,,Other
+1991,BDI,Burundi,Unspecified,,Other
+1992,BDI,Burundi,Unspecified,,Other
+1993,BDI,Burundi,Unspecified,,Other
+1994,BDI,Burundi,Unspecified,,Other
+1995,BDI,Burundi,Unspecified,,Other
+1996,BDI,Burundi,Unspecified,,Other
+1997,BDI,Burundi,Unspecified,,Other
+1998,BDI,Burundi,Unspecified,,Other
+1999,BDI,Burundi,Unspecified,,Other
+2000,BDI,Burundi,Unspecified,,Other
+2001,BDI,Burundi,Unspecified,,Other
+2002,BDI,Burundi,Unspecified,,Other
+2003,BDI,Burundi,Unspecified,,Other
+2004,BDI,Burundi,Unspecified,,Other
+2005,BDI,Burundi,Unspecified,,Other
 2006,BDI,Burundi,Protestant (NFI),1400,Christian
 2007,BDI,Burundi,Protestant (NFI),1400,Christian
 2008,BDI,Burundi,Protestant (NFI),1400,Christian
@@ -5896,18 +5896,18 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,BDI,Burundi,Protestant (NFI),1400,Christian
 2017,BDI,Burundi,Protestant (NFI),1400,Christian
 2018,BDI,Burundi,Protestant (NFI),1400,Christian
-1962,RWA,Rwanda,,,
-1963,RWA,Rwanda,,,
-1964,RWA,Rwanda,,,
-1965,RWA,Rwanda,,,
-1966,RWA,Rwanda,,,
-1967,RWA,Rwanda,,,
-1968,RWA,Rwanda,,,
-1969,RWA,Rwanda,,,
-1970,RWA,Rwanda,,,
-1971,RWA,Rwanda,,,
-1972,RWA,Rwanda,,,
-1973,RWA,Rwanda,,,
+1962,RWA,Rwanda,Unspecified,,Other
+1963,RWA,Rwanda,Unspecified,,Other
+1964,RWA,Rwanda,Unspecified,,Other
+1965,RWA,Rwanda,Unspecified,,Other
+1966,RWA,Rwanda,Unspecified,,Other
+1967,RWA,Rwanda,Unspecified,,Other
+1968,RWA,Rwanda,Unspecified,,Other
+1969,RWA,Rwanda,Unspecified,,Other
+1970,RWA,Rwanda,Unspecified,,Other
+1971,RWA,Rwanda,Unspecified,,Other
+1972,RWA,Rwanda,Unspecified,,Other
+1973,RWA,Rwanda,Unspecified,,Other
 1974,RWA,Rwanda,Roman Catholic,1222,Christian
 1975,RWA,Rwanda,Roman Catholic,1222,Christian
 1976,RWA,Rwanda,Roman Catholic,1222,Christian
@@ -5984,16 +5984,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1988,SOM,Somalia,Sunni Muslim,3100,Muslim
 1989,SOM,Somalia,Sunni Muslim,3100,Muslim
 1990,SOM,Somalia,Sunni Muslim,3100,Muslim
-1991,SOM,Somalia,,,
-1992,SOM,Somalia,,,
-1993,SOM,Somalia,,,
-1994,SOM,Somalia,,,
-1995,SOM,Somalia,,,
-1996,SOM,Somalia,,,
-1997,SOM,Somalia,,,
-1998,SOM,Somalia,,,
-1999,SOM,Somalia,,,
-2000,SOM,Somalia,,,
+1991,SOM,Somalia,Unspecified,,Other
+1992,SOM,Somalia,Unspecified,,Other
+1993,SOM,Somalia,Unspecified,,Other
+1994,SOM,Somalia,Unspecified,,Other
+1995,SOM,Somalia,Unspecified,,Other
+1996,SOM,Somalia,Unspecified,,Other
+1997,SOM,Somalia,Unspecified,,Other
+1998,SOM,Somalia,Unspecified,,Other
+1999,SOM,Somalia,Unspecified,,Other
+2000,SOM,Somalia,Unspecified,,Other
 2001,SOM,Somalia,Sunni Muslim,3100,Muslim
 2002,SOM,Somalia,Sunni Muslim,3100,Muslim
 2003,SOM,Somalia,Sunni Muslim,3100,Muslim
@@ -6083,8 +6083,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1972,ETH,Ethiopia,Ethiopian Orthodox,1610,Christian
 1973,ETH,Ethiopia,Ethiopian Orthodox,1610,Christian
 1974,ETH,Ethiopia,Ethiopian Orthodox,1610,Christian
-1975,ETH,Ethiopia,,,
-1976,ETH,Ethiopia,,,
+1975,ETH,Ethiopia,Unspecified,,Other
+1976,ETH,Ethiopia,Unspecified,,Other
 1977,ETH,Ethiopia,Atheist,9100,New Age
 1978,ETH,Ethiopia,Atheist,9100,New Age
 1979,ETH,Ethiopia,Atheist,9100,New Age
@@ -6099,28 +6099,28 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1988,ETH,Ethiopia,Atheist,9100,New Age
 1989,ETH,Ethiopia,Atheist,9100,New Age
 1990,ETH,Ethiopia,Atheist,9100,New Age
-1991,ETH,Ethiopia,,,
-1992,ETH,Ethiopia,,,
-1993,ETH,Ethiopia,,,
-1994,ETH,Ethiopia,,,
-1995,ETH,Ethiopia,,,
-1996,ETH,Ethiopia,,,
-1997,ETH,Ethiopia,,,
-1998,ETH,Ethiopia,,,
-1999,ETH,Ethiopia,,,
-2000,ETH,Ethiopia,,,
-2001,ETH,Ethiopia,,,
-2002,ETH,Ethiopia,,,
-2003,ETH,Ethiopia,,,
-2004,ETH,Ethiopia,,,
-2005,ETH,Ethiopia,,,
-2006,ETH,Ethiopia,,,
-2007,ETH,Ethiopia,,,
-2008,ETH,Ethiopia,,,
-2009,ETH,Ethiopia,,,
-2010,ETH,Ethiopia,,,
-2011,ETH,Ethiopia,,,
-2012,ETH,Ethiopia,,,
+1991,ETH,Ethiopia,Unspecified,,Other
+1992,ETH,Ethiopia,Unspecified,,Other
+1993,ETH,Ethiopia,Unspecified,,Other
+1994,ETH,Ethiopia,Unspecified,,Other
+1995,ETH,Ethiopia,Unspecified,,Other
+1996,ETH,Ethiopia,Unspecified,,Other
+1997,ETH,Ethiopia,Unspecified,,Other
+1998,ETH,Ethiopia,Unspecified,,Other
+1999,ETH,Ethiopia,Unspecified,,Other
+2000,ETH,Ethiopia,Unspecified,,Other
+2001,ETH,Ethiopia,Unspecified,,Other
+2002,ETH,Ethiopia,Unspecified,,Other
+2003,ETH,Ethiopia,Unspecified,,Other
+2004,ETH,Ethiopia,Unspecified,,Other
+2005,ETH,Ethiopia,Unspecified,,Other
+2006,ETH,Ethiopia,Unspecified,,Other
+2007,ETH,Ethiopia,Unspecified,,Other
+2008,ETH,Ethiopia,Unspecified,,Other
+2009,ETH,Ethiopia,Unspecified,,Other
+2010,ETH,Ethiopia,Unspecified,,Other
+2011,ETH,Ethiopia,Unspecified,,Other
+2012,ETH,Ethiopia,Unspecified,,Other
 2013,ETH,Ethiopia,Pentecostal,1520,Christian
 2014,ETH,Ethiopia,Pentecostal,1520,Christian
 2015,ETH,Ethiopia,Pentecostal,1520,Christian
@@ -6196,7 +6196,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2015,AGO,Angola,Roman Catholic,1222,Christian
 2016,AGO,Angola,Roman Catholic,1222,Christian
 2017,AGO,Angola,Roman Catholic,1222,Christian
-2018,AGO,Angola,,,
+2018,AGO,Angola,Unspecified,,Other
 1975,MOZ,Mozambique,Atheist,9100,New Age
 1976,MOZ,Mozambique,Atheist,9100,New Age
 1977,MOZ,Mozambique,Atheist,9100,New Age
@@ -6237,10 +6237,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2012,MOZ,Mozambique,Christian (NFI),1000,Christian
 2013,MOZ,Mozambique,Christian (NFI),1000,Christian
 2014,MOZ,Mozambique,Christian (NFI),1000,Christian
-2015,MOZ,Mozambique,,,
-2016,MOZ,Mozambique,,,
-2017,MOZ,Mozambique,,,
-2018,MOZ,Mozambique,,,
+2015,MOZ,Mozambique,Unspecified,,Other
+2016,MOZ,Mozambique,Unspecified,,Other
+2017,MOZ,Mozambique,Unspecified,,Other
+2018,MOZ,Mozambique,Unspecified,,Other
 1964,ZMB,Zambia,Presbyterian,1422,Christian
 1965,ZMB,Zambia,Presbyterian,1422,Christian
 1966,ZMB,Zambia,Presbyterian,1422,Christian
@@ -6398,8 +6398,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2009,MWI,Malawi,Roman Catholic,1222,Christian
 2010,MWI,Malawi,Roman Catholic,1222,Christian
 2011,MWI,Malawi,Roman Catholic,1222,Christian
-2012,MWI,Malawi,,,
-2013,MWI,Malawi,,,
+2012,MWI,Malawi,Unspecified,,Other
+2013,MWI,Malawi,Unspecified,,Other
 2014,MWI,Malawi,Roman Catholic,1222,Christian
 2015,MWI,Malawi,Roman Catholic,1222,Christian
 2016,MWI,Malawi,Roman Catholic,1222,Christian
@@ -6458,16 +6458,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1996,ZAF,South Africa,Methodist,1460,Christian
 1997,ZAF,South Africa,Methodist,1460,Christian
 1998,ZAF,South Africa,Methodist,1460,Christian
-1999,ZAF,South Africa,,,
-2000,ZAF,South Africa,,,
-2001,ZAF,South Africa,,,
-2002,ZAF,South Africa,,,
-2003,ZAF,South Africa,,,
-2004,ZAF,South Africa,,,
-2005,ZAF,South Africa,,,
-2006,ZAF,South Africa,,,
-2007,ZAF,South Africa,,,
-2008,ZAF,South Africa,,,
+1999,ZAF,South Africa,Unspecified,,Other
+2000,ZAF,South Africa,Unspecified,,Other
+2001,ZAF,South Africa,Unspecified,,Other
+2002,ZAF,South Africa,Unspecified,,Other
+2003,ZAF,South Africa,Unspecified,,Other
+2004,ZAF,South Africa,Unspecified,,Other
+2005,ZAF,South Africa,Unspecified,,Other
+2006,ZAF,South Africa,Unspecified,,Other
+2007,ZAF,South Africa,Unspecified,,Other
+2008,ZAF,South Africa,Unspecified,,Other
 2009,ZAF,South Africa,Methodist,1460,Christian
 2010,ZAF,South Africa,Methodist,1460,Christian
 2011,ZAF,South Africa,Methodist,1460,Christian
@@ -6527,39 +6527,39 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1983,LSO,Lesotho,Roman Catholic,1222,Christian
 1984,LSO,Lesotho,Roman Catholic,1222,Christian
 1985,LSO,Lesotho,Roman Catholic,1222,Christian
-1986,LSO,Lesotho,,,
-1987,LSO,Lesotho,,,
-1988,LSO,Lesotho,,,
-1989,LSO,Lesotho,,,
-1990,LSO,Lesotho,,,
-1991,LSO,Lesotho,,,
-1992,LSO,Lesotho,,,
-1993,LSO,Lesotho,,,
-1994,LSO,Lesotho,,,
-1995,LSO,Lesotho,,,
-1996,LSO,Lesotho,,,
-1997,LSO,Lesotho,,,
-1998,LSO,Lesotho,,,
-1999,LSO,Lesotho,,,
-2000,LSO,Lesotho,,,
-2001,LSO,Lesotho,,,
-2002,LSO,Lesotho,,,
-2003,LSO,Lesotho,,,
-2004,LSO,Lesotho,,,
-2005,LSO,Lesotho,,,
-2006,LSO,Lesotho,,,
-2007,LSO,Lesotho,,,
-2008,LSO,Lesotho,,,
-2009,LSO,Lesotho,,,
-2010,LSO,Lesotho,,,
-2011,LSO,Lesotho,,,
-2012,LSO,Lesotho,,,
-2013,LSO,Lesotho,,,
-2014,LSO,Lesotho,,,
-2015,LSO,Lesotho,,,
-2016,LSO,Lesotho,,,
-2017,LSO,Lesotho,,,
-2018,LSO,Lesotho,,,
+1986,LSO,Lesotho,Unspecified,,Other
+1987,LSO,Lesotho,Unspecified,,Other
+1988,LSO,Lesotho,Unspecified,,Other
+1989,LSO,Lesotho,Unspecified,,Other
+1990,LSO,Lesotho,Unspecified,,Other
+1991,LSO,Lesotho,Unspecified,,Other
+1992,LSO,Lesotho,Unspecified,,Other
+1993,LSO,Lesotho,Unspecified,,Other
+1994,LSO,Lesotho,Unspecified,,Other
+1995,LSO,Lesotho,Unspecified,,Other
+1996,LSO,Lesotho,Unspecified,,Other
+1997,LSO,Lesotho,Unspecified,,Other
+1998,LSO,Lesotho,Unspecified,,Other
+1999,LSO,Lesotho,Unspecified,,Other
+2000,LSO,Lesotho,Unspecified,,Other
+2001,LSO,Lesotho,Unspecified,,Other
+2002,LSO,Lesotho,Unspecified,,Other
+2003,LSO,Lesotho,Unspecified,,Other
+2004,LSO,Lesotho,Unspecified,,Other
+2005,LSO,Lesotho,Unspecified,,Other
+2006,LSO,Lesotho,Unspecified,,Other
+2007,LSO,Lesotho,Unspecified,,Other
+2008,LSO,Lesotho,Unspecified,,Other
+2009,LSO,Lesotho,Unspecified,,Other
+2010,LSO,Lesotho,Unspecified,,Other
+2011,LSO,Lesotho,Unspecified,,Other
+2012,LSO,Lesotho,Unspecified,,Other
+2013,LSO,Lesotho,Unspecified,,Other
+2014,LSO,Lesotho,Unspecified,,Other
+2015,LSO,Lesotho,Unspecified,,Other
+2016,LSO,Lesotho,Unspecified,,Other
+2017,LSO,Lesotho,Unspecified,,Other
+2018,LSO,Lesotho,Unspecified,,Other
 1966,BWA,Botswana,Roman Catholic,1222,Christian
 1967,BWA,Botswana,Roman Catholic,1222,Christian
 1968,BWA,Botswana,Roman Catholic,1222,Christian
@@ -6612,7 +6612,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2015,BWA,Botswana,Roman Catholic,1222,Christian
 2016,BWA,Botswana,Roman Catholic,1222,Christian
 2017,BWA,Botswana,Roman Catholic,1222,Christian
-2018,BWA,Botswana,,,
+2018,BWA,Botswana,Unspecified,,Other
 1960,MDG,Madagascar,Roman Catholic,1222,Christian
 1961,MDG,Madagascar,Roman Catholic,1222,Christian
 1962,MDG,Madagascar,Roman Catholic,1222,Christian
@@ -6672,10 +6672,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,MDG,Madagascar,Christian (NFI),1000,Christian
 2017,MDG,Madagascar,Christian (NFI),1000,Christian
 2018,MDG,Madagascar,Christian (NFI),1000,Christian
-1975,COM,Comoros,,,
+1975,COM,Comoros,Unspecified,,Other
 1976,COM,Comoros,Sunni Muslim,3100,Muslim
 1977,COM,Comoros,Sunni Muslim,3100,Muslim
-1978,COM,Comoros,,,
+1978,COM,Comoros,Unspecified,,Other
 1979,COM,Comoros,Muslim (NFI),3000,Muslim
 1980,COM,Comoros,Muslim (NFI),3000,Muslim
 1981,COM,Comoros,Muslim (NFI),3000,Muslim
@@ -6687,15 +6687,15 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1987,COM,Comoros,Muslim (NFI),3000,Muslim
 1988,COM,Comoros,Muslim (NFI),3000,Muslim
 1989,COM,Comoros,Muslim (NFI),3000,Muslim
-1990,COM,Comoros,,,
-1991,COM,Comoros,,,
-1992,COM,Comoros,,,
-1993,COM,Comoros,,,
-1994,COM,Comoros,,,
-1995,COM,Comoros,,,
-1996,COM,Comoros,,,
-1997,COM,Comoros,,,
-1998,COM,Comoros,,,
+1990,COM,Comoros,Unspecified,,Other
+1991,COM,Comoros,Unspecified,,Other
+1992,COM,Comoros,Unspecified,,Other
+1993,COM,Comoros,Unspecified,,Other
+1994,COM,Comoros,Unspecified,,Other
+1995,COM,Comoros,Unspecified,,Other
+1996,COM,Comoros,Unspecified,,Other
+1997,COM,Comoros,Unspecified,,Other
+1998,COM,Comoros,Unspecified,,Other
 1999,COM,Comoros,Muslim (NFI),3000,Muslim
 2000,COM,Comoros,Muslim (NFI),3000,Muslim
 2001,COM,Comoros,Muslim (NFI),3000,Muslim
@@ -6708,11 +6708,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2008,COM,Comoros,Muslim (NFI),3000,Muslim
 2009,COM,Comoros,Muslim (NFI),3000,Muslim
 2010,COM,Comoros,Muslim (NFI),3000,Muslim
-2011,COM,Comoros,,,
-2012,COM,Comoros,,,
-2013,COM,Comoros,,,
-2014,COM,Comoros,,,
-2015,COM,Comoros,,,
+2011,COM,Comoros,Unspecified,,Other
+2012,COM,Comoros,Unspecified,,Other
+2013,COM,Comoros,Unspecified,,Other
+2014,COM,Comoros,Unspecified,,Other
+2015,COM,Comoros,Unspecified,,Other
 2016,COM,Comoros,Muslim (NFI),3000,Muslim
 2017,COM,Comoros,Muslim (NFI),3000,Muslim
 2018,COM,Comoros,Muslim (NFI),3000,Muslim
@@ -6767,7 +6767,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,MUS,Mauritius,Hindu,5000,Hindu
 2017,MUS,Mauritius,Hindu,5000,Hindu
 2018,MUS,Mauritius,Hindu,5000,Hindu
-1976,SYC,Seychelles,,,
+1976,SYC,Seychelles,Unspecified,,Other
 1977,SYC,Seychelles,Roman Catholic,1222,Christian
 1978,SYC,Seychelles,Roman Catholic,1222,Christian
 1979,SYC,Seychelles,Roman Catholic,1222,Christian
@@ -6795,21 +6795,21 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2001,SYC,Seychelles,Roman Catholic,1222,Christian
 2002,SYC,Seychelles,Roman Catholic,1222,Christian
 2003,SYC,Seychelles,Roman Catholic,1222,Christian
-2004,SYC,Seychelles,,,
-2005,SYC,Seychelles,,,
-2006,SYC,Seychelles,,,
-2007,SYC,Seychelles,,,
-2008,SYC,Seychelles,,,
-2009,SYC,Seychelles,,,
-2010,SYC,Seychelles,,,
-2011,SYC,Seychelles,,,
-2012,SYC,Seychelles,,,
-2013,SYC,Seychelles,,,
-2014,SYC,Seychelles,,,
-2015,SYC,Seychelles,,,
-2016,SYC,Seychelles,,,
-2017,SYC,Seychelles,,,
-2018,SYC,Seychelles,,,
+2004,SYC,Seychelles,Unspecified,,Other
+2005,SYC,Seychelles,Unspecified,,Other
+2006,SYC,Seychelles,Unspecified,,Other
+2007,SYC,Seychelles,Unspecified,,Other
+2008,SYC,Seychelles,Unspecified,,Other
+2009,SYC,Seychelles,Unspecified,,Other
+2010,SYC,Seychelles,Unspecified,,Other
+2011,SYC,Seychelles,Unspecified,,Other
+2012,SYC,Seychelles,Unspecified,,Other
+2013,SYC,Seychelles,Unspecified,,Other
+2014,SYC,Seychelles,Unspecified,,Other
+2015,SYC,Seychelles,Unspecified,,Other
+2016,SYC,Seychelles,Unspecified,,Other
+2017,SYC,Seychelles,Unspecified,,Other
+2018,SYC,Seychelles,Unspecified,,Other
 1956,MAR,Morocco,Sunni Muslim,3100,Muslim
 1957,MAR,Morocco,Sunni Muslim,3100,Muslim
 1958,MAR,Morocco,Sunni Muslim,3100,Muslim
@@ -7054,16 +7054,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2009,LBY,Libya,Sunni Muslim,3100,Muslim
 2010,LBY,Libya,Sunni Muslim,3100,Muslim
 2011,LBY,Libya,Sunni Muslim,3100,Muslim
-2012,LBY,Libya,,,
-2013,LBY,Libya,,,
-2014,LBY,Libya,,,
-2015,LBY,Libya,,,
-2016,LBY,Libya,,,
-2017,LBY,Libya,,,
-2018,LBY,Libya,,,
+2012,LBY,Libya,Unspecified,,Other
+2013,LBY,Libya,Unspecified,,Other
+2014,LBY,Libya,Unspecified,,Other
+2015,LBY,Libya,Unspecified,,Other
+2016,LBY,Libya,Unspecified,,Other
+2017,LBY,Libya,Unspecified,,Other
+2018,LBY,Libya,Unspecified,,Other
 1956,SDN,Sudan,Muslim (NFI),3000,Muslim
-1957,SDN,Sudan,,,
-1958,SDN,Sudan,,,
+1957,SDN,Sudan,Unspecified,,Other
+1958,SDN,Sudan,Unspecified,,Other
 1959,SDN,Sudan,Sunni Muslim,3100,Muslim
 1960,SDN,Sudan,Sunni Muslim,3100,Muslim
 1961,SDN,Sudan,Sunni Muslim,3100,Muslim
@@ -7335,7 +7335,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2000,IRQ,Iraq,Sunni Muslim,3100,Muslim
 2001,IRQ,Iraq,Sunni Muslim,3100,Muslim
 2002,IRQ,Iraq,Sunni Muslim,3100,Muslim
-2003,IRQ,Iraq,,,
+2003,IRQ,Iraq,Unspecified,,Other
 2004,IRQ,Iraq,"Twelver, Shia Muslim",3210,Muslim
 2005,IRQ,Iraq,Shia Muslim,3200,Muslim
 2006,IRQ,Iraq,Shia Muslim,3200,Muslim
@@ -7540,7 +7540,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1986,LBN,Lebanon,Maronite Catholic,1223,Christian
 1987,LBN,Lebanon,Maronite Catholic,1223,Christian
 1988,LBN,Lebanon,Maronite Catholic,1223,Christian
-1989,LBN,Lebanon,,,
+1989,LBN,Lebanon,Unspecified,,Other
 1990,LBN,Lebanon,Maronite Catholic,1223,Christian
 1991,LBN,Lebanon,Maronite Catholic,1223,Christian
 1992,LBN,Lebanon,Maronite Catholic,1223,Christian
@@ -8221,8 +8221,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2014,UZB,Uzbekistan,Sunni Muslim,3100,Muslim
 2015,UZB,Uzbekistan,Sunni Muslim,3100,Muslim
 2016,UZB,Uzbekistan,Sunni Muslim,3100,Muslim
-2017,UZB,Uzbekistan,,,
-2018,UZB,Uzbekistan,,,
+2017,UZB,Uzbekistan,Unspecified,,Other
+2018,UZB,Uzbekistan,Unspecified,,Other
 1991,KAZ,Kazakhstan,Sunni Muslim,3100,Muslim
 1992,KAZ,Kazakhstan,Sunni Muslim,3100,Muslim
 1993,KAZ,Kazakhstan,Sunni Muslim,3100,Muslim
@@ -8254,7 +8254,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1946,CHN,China,Methodist,1460,Christian
 1947,CHN,China,Methodist,1460,Christian
 1948,CHN,China,Methodist,1460,Christian
-1949,CHN,China,,,
+1949,CHN,China,Unspecified,,Other
 1950,CHN,China,Atheist,9100,New Age
 1951,CHN,China,Atheist,9100,New Age
 1952,CHN,China,Atheist,9100,New Age
@@ -8363,40 +8363,40 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1982,MNG,Mongolia,Atheist,9100,New Age
 1983,MNG,Mongolia,Atheist,9100,New Age
 1984,MNG,Mongolia,Atheist,9100,New Age
-1985,MNG,Mongolia,,,
-1986,MNG,Mongolia,,,
-1987,MNG,Mongolia,,,
-1988,MNG,Mongolia,,,
-1989,MNG,Mongolia,,,
-1990,MNG,Mongolia,,,
-1991,MNG,Mongolia,,,
-1992,MNG,Mongolia,,,
-1993,MNG,Mongolia,,,
-1994,MNG,Mongolia,,,
-1995,MNG,Mongolia,,,
-1996,MNG,Mongolia,,,
-1997,MNG,Mongolia,,,
-1998,MNG,Mongolia,,,
-1999,MNG,Mongolia,,,
-2000,MNG,Mongolia,,,
-2001,MNG,Mongolia,,,
-2002,MNG,Mongolia,,,
-2003,MNG,Mongolia,,,
-2004,MNG,Mongolia,,,
+1985,MNG,Mongolia,Unspecified,,Other
+1986,MNG,Mongolia,Unspecified,,Other
+1987,MNG,Mongolia,Unspecified,,Other
+1988,MNG,Mongolia,Unspecified,,Other
+1989,MNG,Mongolia,Unspecified,,Other
+1990,MNG,Mongolia,Unspecified,,Other
+1991,MNG,Mongolia,Unspecified,,Other
+1992,MNG,Mongolia,Unspecified,,Other
+1993,MNG,Mongolia,Unspecified,,Other
+1994,MNG,Mongolia,Unspecified,,Other
+1995,MNG,Mongolia,Unspecified,,Other
+1996,MNG,Mongolia,Unspecified,,Other
+1997,MNG,Mongolia,Unspecified,,Other
+1998,MNG,Mongolia,Unspecified,,Other
+1999,MNG,Mongolia,Unspecified,,Other
+2000,MNG,Mongolia,Unspecified,,Other
+2001,MNG,Mongolia,Unspecified,,Other
+2002,MNG,Mongolia,Unspecified,,Other
+2003,MNG,Mongolia,Unspecified,,Other
+2004,MNG,Mongolia,Unspecified,,Other
 2005,MNG,Mongolia,Tibetan Buddhist,6300,Buddhist
 2006,MNG,Mongolia,Tibetan Buddhist,6300,Buddhist
 2007,MNG,Mongolia,Tibetan Buddhist,6300,Buddhist
 2008,MNG,Mongolia,Tibetan Buddhist,6300,Buddhist
-2009,MNG,Mongolia,,,
-2010,MNG,Mongolia,,,
-2011,MNG,Mongolia,,,
-2012,MNG,Mongolia,,,
-2013,MNG,Mongolia,,,
-2014,MNG,Mongolia,,,
-2015,MNG,Mongolia,,,
-2016,MNG,Mongolia,,,
-2017,MNG,Mongolia,,,
-2018,MNG,Mongolia,,,
+2009,MNG,Mongolia,Unspecified,,Other
+2010,MNG,Mongolia,Unspecified,,Other
+2011,MNG,Mongolia,Unspecified,,Other
+2012,MNG,Mongolia,Unspecified,,Other
+2013,MNG,Mongolia,Unspecified,,Other
+2014,MNG,Mongolia,Unspecified,,Other
+2015,MNG,Mongolia,Unspecified,,Other
+2016,MNG,Mongolia,Unspecified,,Other
+2017,MNG,Mongolia,Unspecified,,Other
+2018,MNG,Mongolia,Unspecified,,Other
 1948,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
 1949,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
 1950,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
@@ -8468,61 +8468,61 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
 2017,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
 2018,PRK,Dem. People's Rep. Korea,Atheist,9100,New Age
-1946,JPN,Japan,,,
-1947,JPN,Japan,,,
-1948,JPN,Japan,,,
-1949,JPN,Japan,,,
-1950,JPN,Japan,,,
-1951,JPN,Japan,,,
+1946,JPN,Japan,Unspecified,,Other
+1947,JPN,Japan,Unspecified,,Other
+1948,JPN,Japan,Unspecified,,Other
+1949,JPN,Japan,Unspecified,,Other
+1950,JPN,Japan,Unspecified,,Other
+1951,JPN,Japan,Unspecified,,Other
 1952,JPN,Japan,Roman Catholic,1222,Christian
 1953,JPN,Japan,Roman Catholic,1222,Christian
 1954,JPN,Japan,Roman Catholic,1222,Christian
 1955,JPN,Japan,Baptist,1440,Christian
 1956,JPN,Japan,Baptist,1440,Christian
-1957,JPN,Japan,,,
-1958,JPN,Japan,,,
-1959,JPN,Japan,,,
-1960,JPN,Japan,,,
-1961,JPN,Japan,,,
-1962,JPN,Japan,,,
-1963,JPN,Japan,,,
-1964,JPN,Japan,,,
-1965,JPN,Japan,,,
-1966,JPN,Japan,,,
-1967,JPN,Japan,,,
-1968,JPN,Japan,,,
-1969,JPN,Japan,,,
-1970,JPN,Japan,,,
-1971,JPN,Japan,,,
-1972,JPN,Japan,,,
-1973,JPN,Japan,,,
-1974,JPN,Japan,,,
-1975,JPN,Japan,,,
-1976,JPN,Japan,,,
-1977,JPN,Japan,,,
-1978,JPN,Japan,,,
+1957,JPN,Japan,Unspecified,,Other
+1958,JPN,Japan,Unspecified,,Other
+1959,JPN,Japan,Unspecified,,Other
+1960,JPN,Japan,Unspecified,,Other
+1961,JPN,Japan,Unspecified,,Other
+1962,JPN,Japan,Unspecified,,Other
+1963,JPN,Japan,Unspecified,,Other
+1964,JPN,Japan,Unspecified,,Other
+1965,JPN,Japan,Unspecified,,Other
+1966,JPN,Japan,Unspecified,,Other
+1967,JPN,Japan,Unspecified,,Other
+1968,JPN,Japan,Unspecified,,Other
+1969,JPN,Japan,Unspecified,,Other
+1970,JPN,Japan,Unspecified,,Other
+1971,JPN,Japan,Unspecified,,Other
+1972,JPN,Japan,Unspecified,,Other
+1973,JPN,Japan,Unspecified,,Other
+1974,JPN,Japan,Unspecified,,Other
+1975,JPN,Japan,Unspecified,,Other
+1976,JPN,Japan,Unspecified,,Other
+1977,JPN,Japan,Unspecified,,Other
+1978,JPN,Japan,Unspecified,,Other
 1979,JPN,Japan,Western Christian (NFI),1100,Christian
-1980,JPN,Japan,,,
-1981,JPN,Japan,,,
-1982,JPN,Japan,,,
+1980,JPN,Japan,Unspecified,,Other
+1981,JPN,Japan,Unspecified,,Other
+1982,JPN,Japan,Unspecified,,Other
 1983,JPN,Japan,Japanese Religious Complex,7200,Shintoist
 1984,JPN,Japan,Japanese Religious Complex,7200,Shintoist
 1985,JPN,Japan,Japanese Religious Complex,7200,Shintoist
 1986,JPN,Japan,Japanese Religious Complex,7200,Shintoist
 1987,JPN,Japan,Japanese Religious Complex,7200,Shintoist
 1988,JPN,Japan,Mahayana Buddhist,6200,Buddhist
-1989,JPN,Japan,,,
-1990,JPN,Japan,,,
-1991,JPN,Japan,,,
-1992,JPN,Japan,,,
-1993,JPN,Japan,,,
-1994,JPN,Japan,,,
-1995,JPN,Japan,,,
-1996,JPN,Japan,,,
-1997,JPN,Japan,,,
-1998,JPN,Japan,,,
+1989,JPN,Japan,Unspecified,,Other
+1990,JPN,Japan,Unspecified,,Other
+1991,JPN,Japan,Unspecified,,Other
+1992,JPN,Japan,Unspecified,,Other
+1993,JPN,Japan,Unspecified,,Other
+1994,JPN,Japan,Unspecified,,Other
+1995,JPN,Japan,Unspecified,,Other
+1996,JPN,Japan,Unspecified,,Other
+1997,JPN,Japan,Unspecified,,Other
+1998,JPN,Japan,Unspecified,,Other
 1999,JPN,Japan,Japanese Religious Complex,7200,Shintoist
-2000,JPN,Japan,,,
+2000,JPN,Japan,Unspecified,,Other
 2001,JPN,Japan,Shintoist,7100,Shintoist
 2002,JPN,Japan,Shintoist,7100,Shintoist
 2003,JPN,Japan,Shintoist,7100,Shintoist
@@ -8530,7 +8530,7 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2005,JPN,Japan,Shintoist,7100,Shintoist
 2006,JPN,Japan,Shintoist,7100,Shintoist
 2007,JPN,Japan,Shintoist,7100,Shintoist
-2008,JPN,Japan,,,
+2008,JPN,Japan,Unspecified,,Other
 2009,JPN,Japan,Roman Catholic,1222,Christian
 2010,JPN,Japan,Mahayana Buddhist,6200,Buddhist
 2011,JPN,Japan,Mahayana Buddhist,6200,Buddhist
@@ -8668,11 +8668,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1998,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 1999,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 2000,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
-2001,BTN,Bhutan,,,
+2001,BTN,Bhutan,Unspecified,,Other
 2002,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 2003,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 2004,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
-2005,BTN,Bhutan,,,
+2005,BTN,Bhutan,Unspecified,,Other
 2006,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 2007,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
 2008,BTN,Bhutan,Tibetan Buddhist,6300,Buddhist
@@ -8814,10 +8814,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1953,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
 1954,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
 1955,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
-1956,LKA,Sri Lanka,,,
-1957,LKA,Sri Lanka,,,
-1958,LKA,Sri Lanka,,,
-1959,LKA,Sri Lanka,,,
+1956,LKA,Sri Lanka,Unspecified,,Other
+1957,LKA,Sri Lanka,Unspecified,,Other
+1958,LKA,Sri Lanka,Unspecified,,Other
+1959,LKA,Sri Lanka,Unspecified,,Other
 1960,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
 1961,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
 1962,LKA,Sri Lanka,Theravada Buddhist,6100,Buddhist
@@ -8980,9 +8980,9 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1992,NPL,Nepal,Hindu,5000,Hindu
 1993,NPL,Nepal,Hindu,5000,Hindu
 1994,NPL,Nepal,Hindu,5000,Hindu
-1995,NPL,Nepal,,,
+1995,NPL,Nepal,Unspecified,,Other
 1996,NPL,Nepal,Hindu,5000,Hindu
-1997,NPL,Nepal,,,
+1997,NPL,Nepal,Unspecified,,Other
 1998,NPL,Nepal,Hindu,5000,Hindu
 1999,NPL,Nepal,Hindu,5000,Hindu
 2000,NPL,Nepal,Hindu,5000,Hindu
@@ -9004,8 +9004,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,NPL,Nepal,Hindu,5000,Hindu
 2017,NPL,Nepal,Hindu,5000,Hindu
 2018,NPL,Nepal,Hindu,5000,Hindu
-1946,THA,Thailand,,,
-1947,THA,Thailand,,,
+1946,THA,Thailand,Unspecified,,Other
+1947,THA,Thailand,Unspecified,,Other
 1948,THA,Thailand,Theravada Buddhist,6100,Buddhist
 1949,THA,Thailand,Theravada Buddhist,6100,Buddhist
 1950,THA,Thailand,Theravada Buddhist,6100,Buddhist
@@ -9054,8 +9054,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1993,THA,Thailand,Theravada Buddhist,6100,Buddhist
 1994,THA,Thailand,Theravada Buddhist,6100,Buddhist
 1995,THA,Thailand,Theravada Buddhist,6100,Buddhist
-1996,THA,Thailand,,,
-1997,THA,Thailand,,,
+1996,THA,Thailand,Unspecified,,Other
+1997,THA,Thailand,Unspecified,,Other
 1998,THA,Thailand,Theravada Buddhist,6100,Buddhist
 1999,THA,Thailand,Theravada Buddhist,6100,Buddhist
 2000,THA,Thailand,Theravada Buddhist,6100,Buddhist
@@ -9072,11 +9072,11 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2011,THA,Thailand,Theravada Buddhist,6100,Buddhist
 2012,THA,Thailand,Theravada Buddhist,6100,Buddhist
 2013,THA,Thailand,Theravada Buddhist,6100,Buddhist
-2014,THA,Thailand,,,
-2015,THA,Thailand,,,
-2016,THA,Thailand,,,
-2017,THA,Thailand,,,
-2018,THA,Thailand,,,
+2014,THA,Thailand,Unspecified,,Other
+2015,THA,Thailand,Unspecified,,Other
+2016,THA,Thailand,Unspecified,,Other
+2017,THA,Thailand,Unspecified,,Other
+2018,THA,Thailand,Unspecified,,Other
 1953,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 1954,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 1955,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
@@ -9103,12 +9103,12 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1976,KHM,Cambodia,Atheist,9100,New Age
 1977,KHM,Cambodia,Atheist,9100,New Age
 1978,KHM,Cambodia,Atheist,9100,New Age
-1979,KHM,Cambodia,,,
-1980,KHM,Cambodia,,,
-1981,KHM,Cambodia,,,
-1982,KHM,Cambodia,,,
-1983,KHM,Cambodia,,,
-1984,KHM,Cambodia,,,
+1979,KHM,Cambodia,Unspecified,,Other
+1980,KHM,Cambodia,Unspecified,,Other
+1981,KHM,Cambodia,Unspecified,,Other
+1982,KHM,Cambodia,Unspecified,,Other
+1983,KHM,Cambodia,Unspecified,,Other
+1984,KHM,Cambodia,Unspecified,,Other
 1985,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 1986,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 1987,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
@@ -9143,72 +9143,72 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 2017,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
 2018,KHM,Cambodia,Theravada Buddhist,6100,Buddhist
-1953,LAO,Lao PDR,,,
-1954,LAO,Lao PDR,,,
-1955,LAO,Lao PDR,,,
-1956,LAO,Lao PDR,,,
-1957,LAO,Lao PDR,,,
-1958,LAO,Lao PDR,,,
-1959,LAO,Lao PDR,,,
-1960,LAO,Lao PDR,,,
-1961,LAO,Lao PDR,,,
-1962,LAO,Lao PDR,,,
-1963,LAO,Lao PDR,,,
-1964,LAO,Lao PDR,,,
-1965,LAO,Lao PDR,,,
-1966,LAO,Lao PDR,,,
-1967,LAO,Lao PDR,,,
-1968,LAO,Lao PDR,,,
-1969,LAO,Lao PDR,,,
-1970,LAO,Lao PDR,,,
-1971,LAO,Lao PDR,,,
-1972,LAO,Lao PDR,,,
-1973,LAO,Lao PDR,,,
-1974,LAO,Lao PDR,,,
-1975,LAO,Lao PDR,,,
-1976,LAO,Lao PDR,,,
-1977,LAO,Lao PDR,,,
-1978,LAO,Lao PDR,,,
-1979,LAO,Lao PDR,,,
-1980,LAO,Lao PDR,,,
-1981,LAO,Lao PDR,,,
-1982,LAO,Lao PDR,,,
-1983,LAO,Lao PDR,,,
-1984,LAO,Lao PDR,,,
-1985,LAO,Lao PDR,,,
-1986,LAO,Lao PDR,,,
-1987,LAO,Lao PDR,,,
-1988,LAO,Lao PDR,,,
-1989,LAO,Lao PDR,,,
-1990,LAO,Lao PDR,,,
-1991,LAO,Lao PDR,,,
-1992,LAO,Lao PDR,,,
-1993,LAO,Lao PDR,,,
-1994,LAO,Lao PDR,,,
-1995,LAO,Lao PDR,,,
-1996,LAO,Lao PDR,,,
-1997,LAO,Lao PDR,,,
-1998,LAO,Lao PDR,,,
-1999,LAO,Lao PDR,,,
-2000,LAO,Lao PDR,,,
-2001,LAO,Lao PDR,,,
-2002,LAO,Lao PDR,,,
-2003,LAO,Lao PDR,,,
-2004,LAO,Lao PDR,,,
-2005,LAO,Lao PDR,,,
-2006,LAO,Lao PDR,,,
-2007,LAO,Lao PDR,,,
-2008,LAO,Lao PDR,,,
-2009,LAO,Lao PDR,,,
-2010,LAO,Lao PDR,,,
-2011,LAO,Lao PDR,,,
-2012,LAO,Lao PDR,,,
-2013,LAO,Lao PDR,,,
-2014,LAO,Lao PDR,,,
-2015,LAO,Lao PDR,,,
-2016,LAO,Lao PDR,,,
-2017,LAO,Lao PDR,,,
-2018,LAO,Lao PDR,,,
+1953,LAO,Lao PDR,Unspecified,,Other
+1954,LAO,Lao PDR,Unspecified,,Other
+1955,LAO,Lao PDR,Unspecified,,Other
+1956,LAO,Lao PDR,Unspecified,,Other
+1957,LAO,Lao PDR,Unspecified,,Other
+1958,LAO,Lao PDR,Unspecified,,Other
+1959,LAO,Lao PDR,Unspecified,,Other
+1960,LAO,Lao PDR,Unspecified,,Other
+1961,LAO,Lao PDR,Unspecified,,Other
+1962,LAO,Lao PDR,Unspecified,,Other
+1963,LAO,Lao PDR,Unspecified,,Other
+1964,LAO,Lao PDR,Unspecified,,Other
+1965,LAO,Lao PDR,Unspecified,,Other
+1966,LAO,Lao PDR,Unspecified,,Other
+1967,LAO,Lao PDR,Unspecified,,Other
+1968,LAO,Lao PDR,Unspecified,,Other
+1969,LAO,Lao PDR,Unspecified,,Other
+1970,LAO,Lao PDR,Unspecified,,Other
+1971,LAO,Lao PDR,Unspecified,,Other
+1972,LAO,Lao PDR,Unspecified,,Other
+1973,LAO,Lao PDR,Unspecified,,Other
+1974,LAO,Lao PDR,Unspecified,,Other
+1975,LAO,Lao PDR,Unspecified,,Other
+1976,LAO,Lao PDR,Unspecified,,Other
+1977,LAO,Lao PDR,Unspecified,,Other
+1978,LAO,Lao PDR,Unspecified,,Other
+1979,LAO,Lao PDR,Unspecified,,Other
+1980,LAO,Lao PDR,Unspecified,,Other
+1981,LAO,Lao PDR,Unspecified,,Other
+1982,LAO,Lao PDR,Unspecified,,Other
+1983,LAO,Lao PDR,Unspecified,,Other
+1984,LAO,Lao PDR,Unspecified,,Other
+1985,LAO,Lao PDR,Unspecified,,Other
+1986,LAO,Lao PDR,Unspecified,,Other
+1987,LAO,Lao PDR,Unspecified,,Other
+1988,LAO,Lao PDR,Unspecified,,Other
+1989,LAO,Lao PDR,Unspecified,,Other
+1990,LAO,Lao PDR,Unspecified,,Other
+1991,LAO,Lao PDR,Unspecified,,Other
+1992,LAO,Lao PDR,Unspecified,,Other
+1993,LAO,Lao PDR,Unspecified,,Other
+1994,LAO,Lao PDR,Unspecified,,Other
+1995,LAO,Lao PDR,Unspecified,,Other
+1996,LAO,Lao PDR,Unspecified,,Other
+1997,LAO,Lao PDR,Unspecified,,Other
+1998,LAO,Lao PDR,Unspecified,,Other
+1999,LAO,Lao PDR,Unspecified,,Other
+2000,LAO,Lao PDR,Unspecified,,Other
+2001,LAO,Lao PDR,Unspecified,,Other
+2002,LAO,Lao PDR,Unspecified,,Other
+2003,LAO,Lao PDR,Unspecified,,Other
+2004,LAO,Lao PDR,Unspecified,,Other
+2005,LAO,Lao PDR,Unspecified,,Other
+2006,LAO,Lao PDR,Unspecified,,Other
+2007,LAO,Lao PDR,Unspecified,,Other
+2008,LAO,Lao PDR,Unspecified,,Other
+2009,LAO,Lao PDR,Unspecified,,Other
+2010,LAO,Lao PDR,Unspecified,,Other
+2011,LAO,Lao PDR,Unspecified,,Other
+2012,LAO,Lao PDR,Unspecified,,Other
+2013,LAO,Lao PDR,Unspecified,,Other
+2014,LAO,Lao PDR,Unspecified,,Other
+2015,LAO,Lao PDR,Unspecified,,Other
+2016,LAO,Lao PDR,Unspecified,,Other
+2017,LAO,Lao PDR,Unspecified,,Other
+2018,LAO,Lao PDR,Unspecified,,Other
 1957,MYS,Malaysia,Sunni Muslim,3100,Muslim
 1958,MYS,Malaysia,Sunni Muslim,3100,Muslim
 1959,MYS,Malaysia,Sunni Muslim,3100,Muslim
@@ -9311,20 +9311,20 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2002,SGP,Singapore,Agnostic,9001,New Age
 2003,SGP,Singapore,Agnostic,9001,New Age
 2004,SGP,Singapore,Agnostic,9001,New Age
-2005,SGP,Singapore,,,
-2006,SGP,Singapore,,,
-2007,SGP,Singapore,,,
-2008,SGP,Singapore,,,
-2009,SGP,Singapore,,,
-2010,SGP,Singapore,,,
-2011,SGP,Singapore,,,
-2012,SGP,Singapore,,,
-2013,SGP,Singapore,,,
-2014,SGP,Singapore,,,
-2015,SGP,Singapore,,,
-2016,SGP,Singapore,,,
-2017,SGP,Singapore,,,
-2018,SGP,Singapore,,,
+2005,SGP,Singapore,Unspecified,,Other
+2006,SGP,Singapore,Unspecified,,Other
+2007,SGP,Singapore,Unspecified,,Other
+2008,SGP,Singapore,Unspecified,,Other
+2009,SGP,Singapore,Unspecified,,Other
+2010,SGP,Singapore,Unspecified,,Other
+2011,SGP,Singapore,Unspecified,,Other
+2012,SGP,Singapore,Unspecified,,Other
+2013,SGP,Singapore,Unspecified,,Other
+2014,SGP,Singapore,Unspecified,,Other
+2015,SGP,Singapore,Unspecified,,Other
+2016,SGP,Singapore,Unspecified,,Other
+2017,SGP,Singapore,Unspecified,,Other
+2018,SGP,Singapore,Unspecified,,Other
 1984,BRN,Brunei,Sunni Muslim,3100,Muslim
 1985,BRN,Brunei,Sunni Muslim,3100,Muslim
 1986,BRN,Brunei,Sunni Muslim,3100,Muslim
@@ -9581,29 +9581,29 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1977,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 1978,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 1979,PNG,Papua New Guinea,Roman Catholic,1222,Christian
-1980,PNG,Papua New Guinea,,,
-1981,PNG,Papua New Guinea,,,
-1982,PNG,Papua New Guinea,,,
+1980,PNG,Papua New Guinea,Unspecified,,Other
+1981,PNG,Papua New Guinea,Unspecified,,Other
+1982,PNG,Papua New Guinea,Unspecified,,Other
 1983,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 1984,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 1985,PNG,Papua New Guinea,Roman Catholic,1222,Christian
-1986,PNG,Papua New Guinea,,,
-1987,PNG,Papua New Guinea,,,
-1988,PNG,Papua New Guinea,,,
-1989,PNG,Papua New Guinea,,,
-1990,PNG,Papua New Guinea,,,
-1991,PNG,Papua New Guinea,,,
-1992,PNG,Papua New Guinea,,,
-1993,PNG,Papua New Guinea,,,
-1994,PNG,Papua New Guinea,,,
-1995,PNG,Papua New Guinea,,,
-1996,PNG,Papua New Guinea,,,
-1997,PNG,Papua New Guinea,,,
-1998,PNG,Papua New Guinea,,,
-1999,PNG,Papua New Guinea,,,
-2000,PNG,Papua New Guinea,,,
-2001,PNG,Papua New Guinea,,,
-2002,PNG,Papua New Guinea,,,
+1986,PNG,Papua New Guinea,Unspecified,,Other
+1987,PNG,Papua New Guinea,Unspecified,,Other
+1988,PNG,Papua New Guinea,Unspecified,,Other
+1989,PNG,Papua New Guinea,Unspecified,,Other
+1990,PNG,Papua New Guinea,Unspecified,,Other
+1991,PNG,Papua New Guinea,Unspecified,,Other
+1992,PNG,Papua New Guinea,Unspecified,,Other
+1993,PNG,Papua New Guinea,Unspecified,,Other
+1994,PNG,Papua New Guinea,Unspecified,,Other
+1995,PNG,Papua New Guinea,Unspecified,,Other
+1996,PNG,Papua New Guinea,Unspecified,,Other
+1997,PNG,Papua New Guinea,Unspecified,,Other
+1998,PNG,Papua New Guinea,Unspecified,,Other
+1999,PNG,Papua New Guinea,Unspecified,,Other
+2000,PNG,Papua New Guinea,Unspecified,,Other
+2001,PNG,Papua New Guinea,Unspecified,,Other
+2002,PNG,Papua New Guinea,Unspecified,,Other
 2003,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 2004,PNG,Papua New Guinea,Roman Catholic,1222,Christian
 2005,PNG,Papua New Guinea,Roman Catholic,1222,Christian
@@ -9620,18 +9620,18 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,PNG,Papua New Guinea,Lutheran,1410,Christian
 2017,PNG,Papua New Guinea,Lutheran,1410,Christian
 2018,PNG,Papua New Guinea,Lutheran,1410,Christian
-1946,NZL,New Zealand,,,
-1947,NZL,New Zealand,,,
-1948,NZL,New Zealand,,,
-1949,NZL,New Zealand,,,
-1950,NZL,New Zealand,,,
-1951,NZL,New Zealand,,,
-1952,NZL,New Zealand,,,
-1953,NZL,New Zealand,,,
-1954,NZL,New Zealand,,,
-1955,NZL,New Zealand,,,
-1956,NZL,New Zealand,,,
-1957,NZL,New Zealand,,,
+1946,NZL,New Zealand,Unspecified,,Other
+1947,NZL,New Zealand,Unspecified,,Other
+1948,NZL,New Zealand,Unspecified,,Other
+1949,NZL,New Zealand,Unspecified,,Other
+1950,NZL,New Zealand,Unspecified,,Other
+1951,NZL,New Zealand,Unspecified,,Other
+1952,NZL,New Zealand,Unspecified,,Other
+1953,NZL,New Zealand,Unspecified,,Other
+1954,NZL,New Zealand,Unspecified,,Other
+1955,NZL,New Zealand,Unspecified,,Other
+1956,NZL,New Zealand,Unspecified,,Other
+1957,NZL,New Zealand,Unspecified,,Other
 1958,NZL,New Zealand,Christian (NFI),1000,Christian
 1959,NZL,New Zealand,Christian (NFI),1000,Christian
 1960,NZL,New Zealand,Christian (NFI),1000,Christian
@@ -9647,9 +9647,9 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1970,NZL,New Zealand,Protestant (NFI),1400,Christian
 1971,NZL,New Zealand,Protestant (NFI),1400,Christian
 1972,NZL,New Zealand,Protestant (NFI),1400,Christian
-1973,NZL,New Zealand,,,
-1974,NZL,New Zealand,,,
-1975,NZL,New Zealand,,,
+1973,NZL,New Zealand,Unspecified,,Other
+1974,NZL,New Zealand,Unspecified,,Other
+1975,NZL,New Zealand,Unspecified,,Other
 1976,NZL,New Zealand,Protestant (NFI),1400,Christian
 1977,NZL,New Zealand,Protestant (NFI),1400,Christian
 1978,NZL,New Zealand,Protestant (NFI),1400,Christian
@@ -9705,30 +9705,30 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1989,VUT,Vanuatu,Anglican,1510,Christian
 1990,VUT,Vanuatu,Anglican,1510,Christian
 1991,VUT,Vanuatu,Anglican,1510,Christian
-1992,VUT,Vanuatu,,,
-1993,VUT,Vanuatu,,,
-1994,VUT,Vanuatu,,,
-1995,VUT,Vanuatu,,,
-1996,VUT,Vanuatu,,,
-1997,VUT,Vanuatu,,,
-1998,VUT,Vanuatu,,,
-1999,VUT,Vanuatu,,,
+1992,VUT,Vanuatu,Unspecified,,Other
+1993,VUT,Vanuatu,Unspecified,,Other
+1994,VUT,Vanuatu,Unspecified,,Other
+1995,VUT,Vanuatu,Unspecified,,Other
+1996,VUT,Vanuatu,Unspecified,,Other
+1997,VUT,Vanuatu,Unspecified,,Other
+1998,VUT,Vanuatu,Unspecified,,Other
+1999,VUT,Vanuatu,Unspecified,,Other
 2000,VUT,Vanuatu,Christian (NFI),1000,Christian
-2001,VUT,Vanuatu,,,
-2002,VUT,Vanuatu,,,
-2003,VUT,Vanuatu,,,
-2004,VUT,Vanuatu,,,
-2005,VUT,Vanuatu,,,
-2006,VUT,Vanuatu,,,
-2007,VUT,Vanuatu,,,
-2008,VUT,Vanuatu,,,
-2009,VUT,Vanuatu,,,
-2010,VUT,Vanuatu,,,
-2011,VUT,Vanuatu,,,
-2012,VUT,Vanuatu,,,
-2013,VUT,Vanuatu,,,
-2014,VUT,Vanuatu,,,
-2015,VUT,Vanuatu,,,
+2001,VUT,Vanuatu,Unspecified,,Other
+2002,VUT,Vanuatu,Unspecified,,Other
+2003,VUT,Vanuatu,Unspecified,,Other
+2004,VUT,Vanuatu,Unspecified,,Other
+2005,VUT,Vanuatu,Unspecified,,Other
+2006,VUT,Vanuatu,Unspecified,,Other
+2007,VUT,Vanuatu,Unspecified,,Other
+2008,VUT,Vanuatu,Unspecified,,Other
+2009,VUT,Vanuatu,Unspecified,,Other
+2010,VUT,Vanuatu,Unspecified,,Other
+2011,VUT,Vanuatu,Unspecified,,Other
+2012,VUT,Vanuatu,Unspecified,,Other
+2013,VUT,Vanuatu,Unspecified,,Other
+2014,VUT,Vanuatu,Unspecified,,Other
+2015,VUT,Vanuatu,Unspecified,,Other
 2016,VUT,Vanuatu,Protestant (NFI),1400,Christian
 2017,VUT,Vanuatu,Protestant (NFI),1400,Christian
 2018,VUT,Vanuatu,Protestant (NFI),1400,Christian
@@ -9741,8 +9741,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1984,SLB,Solomon Islands,Anglican,1510,Christian
 1985,SLB,Solomon Islands,South Seas Evangelical Church (Pentecostal),1520,Christian
 1986,SLB,Solomon Islands,South Seas Evangelical Church (Pentecostal),1520,Christian
-1987,SLB,Solomon Islands,,,
-1988,SLB,Solomon Islands,,,
+1987,SLB,Solomon Islands,Unspecified,,Other
+1988,SLB,Solomon Islands,Unspecified,,Other
 1989,SLB,Solomon Islands,Anglican,1510,Christian
 1990,SLB,Solomon Islands,Anglican,1510,Christian
 1991,SLB,Solomon Islands,Anglican,1510,Christian
@@ -9756,10 +9756,10 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1999,SLB,Solomon Islands,Roman Catholic,1222,Christian
 2000,SLB,Solomon Islands,Adventist,1450,Christian
 2001,SLB,Solomon Islands,Adventist,1450,Christian
-2002,SLB,Solomon Islands,,,
-2003,SLB,Solomon Islands,,,
-2004,SLB,Solomon Islands,,,
-2005,SLB,Solomon Islands,,,
+2002,SLB,Solomon Islands,Unspecified,,Other
+2003,SLB,Solomon Islands,Unspecified,,Other
+2004,SLB,Solomon Islands,Unspecified,,Other
+2005,SLB,Solomon Islands,Unspecified,,Other
 2006,SLB,Solomon Islands,Adventist,1450,Christian
 2007,SLB,Solomon Islands,Adventist,1450,Christian
 2008,SLB,Solomon Islands,Anglican,1510,Christian
@@ -9773,87 +9773,87 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2016,SLB,Solomon Islands,Adventist,1450,Christian
 2017,SLB,Solomon Islands,Adventist,1450,Christian
 2018,SLB,Solomon Islands,South Seas Evangelical Church (Pentecostal),1520,Christian
-1979,KIR,Kiribati,,,
-1980,KIR,Kiribati,,,
-1981,KIR,Kiribati,,,
-1982,KIR,Kiribati,,,
-1983,KIR,Kiribati,,,
-1984,KIR,Kiribati,,,
-1985,KIR,Kiribati,,,
-1986,KIR,Kiribati,,,
-1987,KIR,Kiribati,,,
-1988,KIR,Kiribati,,,
-1989,KIR,Kiribati,,,
-1990,KIR,Kiribati,,,
-1991,KIR,Kiribati,,,
-1992,KIR,Kiribati,,,
-1993,KIR,Kiribati,,,
-1994,KIR,Kiribati,,,
-1995,KIR,Kiribati,,,
-1996,KIR,Kiribati,,,
-1997,KIR,Kiribati,,,
-1998,KIR,Kiribati,,,
-1999,KIR,Kiribati,,,
-2000,KIR,Kiribati,,,
-2001,KIR,Kiribati,,,
-2002,KIR,Kiribati,,,
-2003,KIR,Kiribati,,,
-2004,KIR,Kiribati,,,
-2005,KIR,Kiribati,,,
-2006,KIR,Kiribati,,,
-2007,KIR,Kiribati,,,
-2008,KIR,Kiribati,,,
-2009,KIR,Kiribati,,,
-2010,KIR,Kiribati,,,
-2011,KIR,Kiribati,,,
-2012,KIR,Kiribati,,,
-2013,KIR,Kiribati,,,
-2014,KIR,Kiribati,,,
-2015,KIR,Kiribati,,,
+1979,KIR,Kiribati,Unspecified,,Other
+1980,KIR,Kiribati,Unspecified,,Other
+1981,KIR,Kiribati,Unspecified,,Other
+1982,KIR,Kiribati,Unspecified,,Other
+1983,KIR,Kiribati,Unspecified,,Other
+1984,KIR,Kiribati,Unspecified,,Other
+1985,KIR,Kiribati,Unspecified,,Other
+1986,KIR,Kiribati,Unspecified,,Other
+1987,KIR,Kiribati,Unspecified,,Other
+1988,KIR,Kiribati,Unspecified,,Other
+1989,KIR,Kiribati,Unspecified,,Other
+1990,KIR,Kiribati,Unspecified,,Other
+1991,KIR,Kiribati,Unspecified,,Other
+1992,KIR,Kiribati,Unspecified,,Other
+1993,KIR,Kiribati,Unspecified,,Other
+1994,KIR,Kiribati,Unspecified,,Other
+1995,KIR,Kiribati,Unspecified,,Other
+1996,KIR,Kiribati,Unspecified,,Other
+1997,KIR,Kiribati,Unspecified,,Other
+1998,KIR,Kiribati,Unspecified,,Other
+1999,KIR,Kiribati,Unspecified,,Other
+2000,KIR,Kiribati,Unspecified,,Other
+2001,KIR,Kiribati,Unspecified,,Other
+2002,KIR,Kiribati,Unspecified,,Other
+2003,KIR,Kiribati,Unspecified,,Other
+2004,KIR,Kiribati,Unspecified,,Other
+2005,KIR,Kiribati,Unspecified,,Other
+2006,KIR,Kiribati,Unspecified,,Other
+2007,KIR,Kiribati,Unspecified,,Other
+2008,KIR,Kiribati,Unspecified,,Other
+2009,KIR,Kiribati,Unspecified,,Other
+2010,KIR,Kiribati,Unspecified,,Other
+2011,KIR,Kiribati,Unspecified,,Other
+2012,KIR,Kiribati,Unspecified,,Other
+2013,KIR,Kiribati,Unspecified,,Other
+2014,KIR,Kiribati,Unspecified,,Other
+2015,KIR,Kiribati,Unspecified,,Other
 2016,KIR,Kiribati,Kiribati United Church,1470,Christian
 2017,KIR,Kiribati,Kiribati United Church,1470,Christian
 2018,KIR,Kiribati,Kiribati United Church,1470,Christian
-1978,TUV,Tuvalu,,,
-1979,TUV,Tuvalu,,,
-1980,TUV,Tuvalu,,,
-1981,TUV,Tuvalu,,,
-1982,TUV,Tuvalu,,,
-1983,TUV,Tuvalu,,,
-1984,TUV,Tuvalu,,,
-1985,TUV,Tuvalu,,,
-1986,TUV,Tuvalu,,,
-1987,TUV,Tuvalu,,,
-1988,TUV,Tuvalu,,,
-1989,TUV,Tuvalu,,,
-1990,TUV,Tuvalu,,,
-1991,TUV,Tuvalu,,,
-1992,TUV,Tuvalu,,,
-1993,TUV,Tuvalu,,,
-1994,TUV,Tuvalu,,,
-1995,TUV,Tuvalu,,,
-1996,TUV,Tuvalu,,,
-1997,TUV,Tuvalu,,,
-1998,TUV,Tuvalu,,,
-1999,TUV,Tuvalu,,,
-2000,TUV,Tuvalu,,,
-2001,TUV,Tuvalu,,,
-2002,TUV,Tuvalu,,,
-2003,TUV,Tuvalu,,,
-2004,TUV,Tuvalu,,,
-2005,TUV,Tuvalu,,,
-2006,TUV,Tuvalu,,,
-2007,TUV,Tuvalu,,,
-2008,TUV,Tuvalu,,,
-2009,TUV,Tuvalu,,,
-2010,TUV,Tuvalu,,,
-2011,TUV,Tuvalu,,,
-2012,TUV,Tuvalu,,,
-2013,TUV,Tuvalu,,,
-2014,TUV,Tuvalu,,,
-2015,TUV,Tuvalu,,,
-2016,TUV,Tuvalu,,,
-2017,TUV,Tuvalu,,,
-2018,TUV,Tuvalu,,,
+1978,TUV,Tuvalu,Unspecified,,Other
+1979,TUV,Tuvalu,Unspecified,,Other
+1980,TUV,Tuvalu,Unspecified,,Other
+1981,TUV,Tuvalu,Unspecified,,Other
+1982,TUV,Tuvalu,Unspecified,,Other
+1983,TUV,Tuvalu,Unspecified,,Other
+1984,TUV,Tuvalu,Unspecified,,Other
+1985,TUV,Tuvalu,Unspecified,,Other
+1986,TUV,Tuvalu,Unspecified,,Other
+1987,TUV,Tuvalu,Unspecified,,Other
+1988,TUV,Tuvalu,Unspecified,,Other
+1989,TUV,Tuvalu,Unspecified,,Other
+1990,TUV,Tuvalu,Unspecified,,Other
+1991,TUV,Tuvalu,Unspecified,,Other
+1992,TUV,Tuvalu,Unspecified,,Other
+1993,TUV,Tuvalu,Unspecified,,Other
+1994,TUV,Tuvalu,Unspecified,,Other
+1995,TUV,Tuvalu,Unspecified,,Other
+1996,TUV,Tuvalu,Unspecified,,Other
+1997,TUV,Tuvalu,Unspecified,,Other
+1998,TUV,Tuvalu,Unspecified,,Other
+1999,TUV,Tuvalu,Unspecified,,Other
+2000,TUV,Tuvalu,Unspecified,,Other
+2001,TUV,Tuvalu,Unspecified,,Other
+2002,TUV,Tuvalu,Unspecified,,Other
+2003,TUV,Tuvalu,Unspecified,,Other
+2004,TUV,Tuvalu,Unspecified,,Other
+2005,TUV,Tuvalu,Unspecified,,Other
+2006,TUV,Tuvalu,Unspecified,,Other
+2007,TUV,Tuvalu,Unspecified,,Other
+2008,TUV,Tuvalu,Unspecified,,Other
+2009,TUV,Tuvalu,Unspecified,,Other
+2010,TUV,Tuvalu,Unspecified,,Other
+2011,TUV,Tuvalu,Unspecified,,Other
+2012,TUV,Tuvalu,Unspecified,,Other
+2013,TUV,Tuvalu,Unspecified,,Other
+2014,TUV,Tuvalu,Unspecified,,Other
+2015,TUV,Tuvalu,Unspecified,,Other
+2016,TUV,Tuvalu,Unspecified,,Other
+2017,TUV,Tuvalu,Unspecified,,Other
+2018,TUV,Tuvalu,Unspecified,,Other
 1970,FJI,Fiji,Roman Catholic,1222,Christian
 1971,FJI,Fiji,Roman Catholic,1222,Christian
 1972,FJI,Fiji,Roman Catholic,1222,Christian
@@ -9942,16 +9942,16 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2006,TON,Tonga,Wesleyan,1460,Christian
 2007,TON,Tonga,Wesleyan,1460,Christian
 2008,TON,Tonga,Wesleyan,1460,Christian
-2009,TON,Tonga,,,
-2010,TON,Tonga,,,
-2011,TON,Tonga,,,
-2012,TON,Tonga,,,
-2013,TON,Tonga,,,
-2014,TON,Tonga,,,
-2015,TON,Tonga,,,
-2016,TON,Tonga,,,
-2017,TON,Tonga,,,
-2018,TON,Tonga,,,
+2009,TON,Tonga,Unspecified,,Other
+2010,TON,Tonga,Unspecified,,Other
+2011,TON,Tonga,Unspecified,,Other
+2012,TON,Tonga,Unspecified,,Other
+2013,TON,Tonga,Unspecified,,Other
+2014,TON,Tonga,Unspecified,,Other
+2015,TON,Tonga,Unspecified,,Other
+2016,TON,Tonga,Unspecified,,Other
+2017,TON,Tonga,Unspecified,,Other
+2018,TON,Tonga,Unspecified,,Other
 1968,NRU,Nauru,Christian (NFI),1000,Christian
 1969,NRU,Nauru,Christian (NFI),1000,Christian
 1970,NRU,Nauru,Christian (NFI),1000,Christian
@@ -9995,28 +9995,28 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2008,NRU,Nauru,Roman Catholic,1222,Christian
 2009,NRU,Nauru,Roman Catholic,1222,Christian
 2010,NRU,Nauru,Roman Catholic,1222,Christian
-2011,NRU,Nauru,,,
-2012,NRU,Nauru,,,
+2011,NRU,Nauru,Unspecified,,Other
+2012,NRU,Nauru,Unspecified,,Other
 2013,NRU,Nauru,Congregationalist,1423,Christian
 2014,NRU,Nauru,Congregationalist,1423,Christian
 2015,NRU,Nauru,Congregationalist,1423,Christian
 2016,NRU,Nauru,Congregationalist,1423,Christian
 2017,NRU,Nauru,Congregationalist,1423,Christian
 2018,NRU,Nauru,Congregationalist,1423,Christian
-1986,MHL,Marshall Islands,,,
-1987,MHL,Marshall Islands,,,
-1988,MHL,Marshall Islands,,,
-1989,MHL,Marshall Islands,,,
-1990,MHL,Marshall Islands,,,
-1991,MHL,Marshall Islands,,,
-1992,MHL,Marshall Islands,,,
-1993,MHL,Marshall Islands,,,
-1994,MHL,Marshall Islands,,,
-1995,MHL,Marshall Islands,,,
-1996,MHL,Marshall Islands,,,
-1997,MHL,Marshall Islands,,,
-1998,MHL,Marshall Islands,,,
-1999,MHL,Marshall Islands,,,
+1986,MHL,Marshall Islands,Unspecified,,Other
+1987,MHL,Marshall Islands,Unspecified,,Other
+1988,MHL,Marshall Islands,Unspecified,,Other
+1989,MHL,Marshall Islands,Unspecified,,Other
+1990,MHL,Marshall Islands,Unspecified,,Other
+1991,MHL,Marshall Islands,Unspecified,,Other
+1992,MHL,Marshall Islands,Unspecified,,Other
+1993,MHL,Marshall Islands,Unspecified,,Other
+1994,MHL,Marshall Islands,Unspecified,,Other
+1995,MHL,Marshall Islands,Unspecified,,Other
+1996,MHL,Marshall Islands,Unspecified,,Other
+1997,MHL,Marshall Islands,Unspecified,,Other
+1998,MHL,Marshall Islands,Unspecified,,Other
+1999,MHL,Marshall Islands,Unspecified,,Other
 2000,MHL,Marshall Islands,Protestant (NFI),1400,Christian
 2001,MHL,Marshall Islands,Protestant (NFI),1400,Christian
 2002,MHL,Marshall Islands,Protestant (NFI),1400,Christian
@@ -10027,87 +10027,87 @@ year,country_code,country_name,religion,religion_id,parent_religion
 2007,MHL,Marshall Islands,Protestant (NFI),1400,Christian
 2008,MHL,Marshall Islands,Roman Catholic,1222,Christian
 2009,MHL,Marshall Islands,Roman Catholic,1222,Christian
-2010,MHL,Marshall Islands,,,
-2011,MHL,Marshall Islands,,,
-2012,MHL,Marshall Islands,,,
-2013,MHL,Marshall Islands,,,
-2014,MHL,Marshall Islands,,,
-2015,MHL,Marshall Islands,,,
-2016,MHL,Marshall Islands,,,
-2017,MHL,Marshall Islands,,,
-2018,MHL,Marshall Islands,,,
-1994,PLW,Palau,,,
-1995,PLW,Palau,,,
-1996,PLW,Palau,,,
-1997,PLW,Palau,,,
-1998,PLW,Palau,,,
-1999,PLW,Palau,,,
-2000,PLW,Palau,,,
-2001,PLW,Palau,,,
-2002,PLW,Palau,,,
-2003,PLW,Palau,,,
-2004,PLW,Palau,,,
-2005,PLW,Palau,,,
-2006,PLW,Palau,,,
-2007,PLW,Palau,,,
-2008,PLW,Palau,,,
-2009,PLW,Palau,,,
-2010,PLW,Palau,,,
-2011,PLW,Palau,,,
-2012,PLW,Palau,,,
-2013,PLW,Palau,,,
-2014,PLW,Palau,,,
-2015,PLW,Palau,,,
-2016,PLW,Palau,,,
-2017,PLW,Palau,,,
-2018,PLW,Palau,,,
-1986,FSM,Micronesia,,,
-1987,FSM,Micronesia,,,
-1988,FSM,Micronesia,,,
-1989,FSM,Micronesia,,,
-1990,FSM,Micronesia,,,
-1991,FSM,Micronesia,,,
-1992,FSM,Micronesia,,,
-1993,FSM,Micronesia,,,
-1994,FSM,Micronesia,,,
-1995,FSM,Micronesia,,,
-1996,FSM,Micronesia,,,
-1997,FSM,Micronesia,,,
-1998,FSM,Micronesia,,,
-1999,FSM,Micronesia,,,
-2000,FSM,Micronesia,,,
-2001,FSM,Micronesia,,,
-2002,FSM,Micronesia,,,
-2003,FSM,Micronesia,,,
-2004,FSM,Micronesia,,,
-2005,FSM,Micronesia,,,
-2006,FSM,Micronesia,,,
-2007,FSM,Micronesia,,,
-2008,FSM,Micronesia,,,
-2009,FSM,Micronesia,,,
-2010,FSM,Micronesia,,,
-2011,FSM,Micronesia,,,
-2012,FSM,Micronesia,,,
-2013,FSM,Micronesia,,,
-2014,FSM,Micronesia,,,
-2015,FSM,Micronesia,,,
-2016,FSM,Micronesia,,,
-2017,FSM,Micronesia,,,
-2018,FSM,Micronesia,,,
-1962,WSM,Samoa,,,
-1963,WSM,Samoa,,,
-1964,WSM,Samoa,,,
-1965,WSM,Samoa,,,
-1966,WSM,Samoa,,,
-1967,WSM,Samoa,,,
-1968,WSM,Samoa,,,
-1969,WSM,Samoa,,,
-1970,WSM,Samoa,,,
-1971,WSM,Samoa,,,
-1972,WSM,Samoa,,,
-1973,WSM,Samoa,,,
-1974,WSM,Samoa,,,
-1975,WSM,Samoa,,,
+2010,MHL,Marshall Islands,Unspecified,,Other
+2011,MHL,Marshall Islands,Unspecified,,Other
+2012,MHL,Marshall Islands,Unspecified,,Other
+2013,MHL,Marshall Islands,Unspecified,,Other
+2014,MHL,Marshall Islands,Unspecified,,Other
+2015,MHL,Marshall Islands,Unspecified,,Other
+2016,MHL,Marshall Islands,Unspecified,,Other
+2017,MHL,Marshall Islands,Unspecified,,Other
+2018,MHL,Marshall Islands,Unspecified,,Other
+1994,PLW,Palau,Unspecified,,Other
+1995,PLW,Palau,Unspecified,,Other
+1996,PLW,Palau,Unspecified,,Other
+1997,PLW,Palau,Unspecified,,Other
+1998,PLW,Palau,Unspecified,,Other
+1999,PLW,Palau,Unspecified,,Other
+2000,PLW,Palau,Unspecified,,Other
+2001,PLW,Palau,Unspecified,,Other
+2002,PLW,Palau,Unspecified,,Other
+2003,PLW,Palau,Unspecified,,Other
+2004,PLW,Palau,Unspecified,,Other
+2005,PLW,Palau,Unspecified,,Other
+2006,PLW,Palau,Unspecified,,Other
+2007,PLW,Palau,Unspecified,,Other
+2008,PLW,Palau,Unspecified,,Other
+2009,PLW,Palau,Unspecified,,Other
+2010,PLW,Palau,Unspecified,,Other
+2011,PLW,Palau,Unspecified,,Other
+2012,PLW,Palau,Unspecified,,Other
+2013,PLW,Palau,Unspecified,,Other
+2014,PLW,Palau,Unspecified,,Other
+2015,PLW,Palau,Unspecified,,Other
+2016,PLW,Palau,Unspecified,,Other
+2017,PLW,Palau,Unspecified,,Other
+2018,PLW,Palau,Unspecified,,Other
+1986,FSM,Micronesia,Unspecified,,Other
+1987,FSM,Micronesia,Unspecified,,Other
+1988,FSM,Micronesia,Unspecified,,Other
+1989,FSM,Micronesia,Unspecified,,Other
+1990,FSM,Micronesia,Unspecified,,Other
+1991,FSM,Micronesia,Unspecified,,Other
+1992,FSM,Micronesia,Unspecified,,Other
+1993,FSM,Micronesia,Unspecified,,Other
+1994,FSM,Micronesia,Unspecified,,Other
+1995,FSM,Micronesia,Unspecified,,Other
+1996,FSM,Micronesia,Unspecified,,Other
+1997,FSM,Micronesia,Unspecified,,Other
+1998,FSM,Micronesia,Unspecified,,Other
+1999,FSM,Micronesia,Unspecified,,Other
+2000,FSM,Micronesia,Unspecified,,Other
+2001,FSM,Micronesia,Unspecified,,Other
+2002,FSM,Micronesia,Unspecified,,Other
+2003,FSM,Micronesia,Unspecified,,Other
+2004,FSM,Micronesia,Unspecified,,Other
+2005,FSM,Micronesia,Unspecified,,Other
+2006,FSM,Micronesia,Unspecified,,Other
+2007,FSM,Micronesia,Unspecified,,Other
+2008,FSM,Micronesia,Unspecified,,Other
+2009,FSM,Micronesia,Unspecified,,Other
+2010,FSM,Micronesia,Unspecified,,Other
+2011,FSM,Micronesia,Unspecified,,Other
+2012,FSM,Micronesia,Unspecified,,Other
+2013,FSM,Micronesia,Unspecified,,Other
+2014,FSM,Micronesia,Unspecified,,Other
+2015,FSM,Micronesia,Unspecified,,Other
+2016,FSM,Micronesia,Unspecified,,Other
+2017,FSM,Micronesia,Unspecified,,Other
+2018,FSM,Micronesia,Unspecified,,Other
+1962,WSM,Samoa,Unspecified,,Other
+1963,WSM,Samoa,Unspecified,,Other
+1964,WSM,Samoa,Unspecified,,Other
+1965,WSM,Samoa,Unspecified,,Other
+1966,WSM,Samoa,Unspecified,,Other
+1967,WSM,Samoa,Unspecified,,Other
+1968,WSM,Samoa,Unspecified,,Other
+1969,WSM,Samoa,Unspecified,,Other
+1970,WSM,Samoa,Unspecified,,Other
+1971,WSM,Samoa,Unspecified,,Other
+1972,WSM,Samoa,Unspecified,,Other
+1973,WSM,Samoa,Unspecified,,Other
+1974,WSM,Samoa,Unspecified,,Other
+1975,WSM,Samoa,Unspecified,,Other
 1976,WSM,Samoa,Roman Catholic,1222,Christian
 1977,WSM,Samoa,Roman Catholic,1222,Christian
 1978,WSM,Samoa,Roman Catholic,1222,Christian
@@ -10118,8 +10118,8 @@ year,country_code,country_name,religion,religion_id,parent_religion
 1983,WSM,Samoa,Protestant (NFI),1400,Christian
 1984,WSM,Samoa,Protestant (NFI),1400,Christian
 1985,WSM,Samoa,Protestant (NFI),1400,Christian
-1986,WSM,Samoa,,,
-1987,WSM,Samoa,,,
+1986,WSM,Samoa,Unspecified,,Other
+1987,WSM,Samoa,Unspecified,,Other
 1988,WSM,Samoa,Protestant (NFI),1400,Christian
 1989,WSM,Samoa,Protestant (NFI),1400,Christian
 1990,WSM,Samoa,Protestant (NFI),1400,Christian
