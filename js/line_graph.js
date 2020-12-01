@@ -32,12 +32,12 @@ class LineGraph {
 
     // Years for both sides
     this.xScale = d3.scaleLinear()
-      .domain([-1 * (YEAR_END - 1 - YEAR_START), (YEAR_END - 1 - YEAR_START)])
+      .domain([-1 * (YEAR_END  - YEAR_START), (YEAR_END  - YEAR_START)])
       .range([0, this.width]);
 
     // Years for both sides
     this.xConv = d3.scaleLinear()
-      .range([-1 * (YEAR_END - 1 - YEAR_START), (YEAR_END - 1 - YEAR_START)])
+      .range([-1 * (YEAR_END  - YEAR_START), (YEAR_END  - YEAR_START)])
       .domain([0, this.width]);
 
     // Percentage, from 0 to 100
@@ -190,14 +190,14 @@ class LineGraph {
             prev_value = country.topic_attributes[YEAR_START].topics[topic].attributes[attribute] || prev_value;
             path.moveTo(0, this.yScale(prev_value));
           }
-          for(var i = YEAR_START; i < YEAR_END; i++) {
+          for(var i = YEAR_START; i <= YEAR_END; i++) {
             const value = country.topic_attributes[i].topics[topic].attributes[attribute] || prev_value;
             var y_val = this.yScale(value);
             if(value < 0) {
               y_val = this.yScale(0);
             }
             if(c != 0){
-              path.lineTo(this.xScale(i-YEAR_END + 1), y_val);
+              path.lineTo(this.xScale(i-YEAR_END), y_val);
             }
             else {
               path.lineTo(this.xScale(i-YEAR_START), y_val);
@@ -342,6 +342,7 @@ class LineGraph {
       if(this.year < YEAR_START || this.year >= YEAR_END) {
         return;
       }
+      console.log(this.year)
       this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
       this.cx = d3.mouse(this)[0];

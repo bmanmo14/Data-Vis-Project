@@ -4,7 +4,7 @@ const COUNTRY_CODE = "CountryCode";
 const SERIES_CODE = "SeriesCode";
 const ATTRIBUTE_NAME = "Indicator Name";
 const YEAR_START = 1978;
-const YEAR_END = 2019;
+const YEAR_END = 2018;
 const TOPIC = "Topic";
 const DEFINITION = "Definition";
 
