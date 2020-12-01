@@ -230,7 +230,7 @@ class LineGraph {
       .data([[cy, index], [other_cy, other_index]])
       .join("text")
       .classed("dot_line", true)
-      .attr("x", d => d[1] == 0 ? -50 : this.width + 10)
+      .attr("x", d => d[1] == 0 ? -70 : this.width + 10)
       .attr("y", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0])
       .text(d => this.yConv(d[0]) < 0 ? 0.0 + "%" : this.yConv(d[0]).toFixed(1) + "%");
   }
