@@ -244,6 +244,7 @@ class LineGraph {
                                       this.data[this.selected_countries[1]].religion[this.selected_year].parent_religion];
       let selectedAttrValues = [this.data[this.selected_countries[0]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute],
                                 this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
+      selectedAttrValues = selectedAttrValues.map(v => (v >= 0) ? v : 0.0)
       this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
     }
     this.drawDotLines(cy, other_cy, index, other_index);
