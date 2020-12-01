@@ -32,12 +32,12 @@ class LineGraph {
 
     // Years for both sides
     this.xScale = d3.scaleLinear()
-      .domain([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
+      .domain([-1 * (YEAR_END - 1 - YEAR_START), (YEAR_END - 1 - YEAR_START)])
       .range([0, this.width]);
 
     // Years for both sides
     this.xConv = d3.scaleLinear()
-      .range([-1 * (YEAR_END - YEAR_START), (YEAR_END - YEAR_START)])
+      .range([-1 * (YEAR_END - 1 - YEAR_START), (YEAR_END - 1 - YEAR_START)])
       .domain([0, this.width]);
 
     // Percentage, from 0 to 100
@@ -197,7 +197,7 @@ class LineGraph {
               y_val = this.yScale(0);
             }
             if(c != 0){
-              path.lineTo(this.xScale(i-YEAR_END), y_val);
+              path.lineTo(this.xScale(i-YEAR_END+1), y_val);
             }
             else {
               path.lineTo(this.xScale(i-YEAR_START), y_val);

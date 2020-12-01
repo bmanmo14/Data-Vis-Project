@@ -73,7 +73,7 @@ class DataOrchestrator {
         this.countries[country_code] = new Country(country_code, country_name)
       }
 
-      for(var y = YEAR_START; y < YEAR_END; y++) {
+      for(var y = YEAR_START; y <= YEAR_END; y++) {
         const attribute_value = row[y];
         const country = this.countries[country_code];
         country.setYearTopicAttribute(y, topic, attribute_name, attribute_value, attribute_definition);
