@@ -347,6 +347,9 @@ class LineGraph {
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
       }
+      if(this.year < YEAR_START || this.year >= YEAR_END) {
+        return;
+      }
       this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
       this.cx = d3.mouse(this)[0];
@@ -391,6 +394,9 @@ class LineGraph {
   }
 
     function dragended(d, i) {
+      if(this.year < YEAR_START || this.year >= YEAR_END) {
+        return;
+      }
       that.selected_year = this.year
       that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy), d[1], this.other_country);
     }
