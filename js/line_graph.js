@@ -197,7 +197,7 @@ class LineGraph {
               y_val = this.yScale(0);
             }
             if(c != 0){
-              path.lineTo(this.xScale(i-YEAR_END+1), y_val);
+              path.lineTo(this.xScale(i-YEAR_END + 1), y_val);
             }
             else {
               path.lineTo(this.xScale(i-YEAR_START), y_val);
@@ -230,7 +230,7 @@ class LineGraph {
       .data([[cy, index], [other_cy, other_index]])
       .join("text")
       .classed("dot_line", true)
-      .attr("x", d => d[1] == 0 ? - 65 : this.width + 10)
+      .attr("x", d => d[1] == 0 ? - 65 : this.width + 20)
       .attr("y", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0])
       .text(d => this.yConv(d[0]) < 0 ? 0.0 + "%" : this.yConv(d[0]).toFixed(1) + "%");
   }
@@ -299,11 +299,11 @@ class LineGraph {
       this.other_cy = 0;
       this.other_cx = 0;
       if(d[1] != 0) {
-        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
       } else {
-        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
       }
@@ -339,11 +339,11 @@ class LineGraph {
 
     function dragged(d, i) {
       if(d[1] != 0) {
-        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
       } else {
-        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0]));
+        this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
       }
