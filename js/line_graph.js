@@ -267,22 +267,10 @@ class LineGraph {
       .attr("d", d => d[0])
       .call(this.drag(that))
       .on('click', function (d, i) {
-    d3.selectAll(".dot_line").remove();
-    d3.selectAll(".dot_liney").remove();
-    });
-        //   // if (d.defaultPrevented) return;
-      // d3.select(this).attr("stroke", "gray")
-      // that.tooltip.transition()
-      //   .duration('50')
-      //   .style("opacity", 0);
-      // that.circles.transition()
-      //   .duration('50')
-      //   .style("opacity", 0);
-
-      // d3.select("#" + that.selected_countries[this.other_country] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
-      // })
-
-  }
+        d3.selectAll(".dot_line").remove();
+        d3.selectAll(".dot_liney").remove();
+      });
+    }
 
   drag(that) {
     function dragstarted(d, i) {
@@ -299,10 +287,12 @@ class LineGraph {
       this.other_cy = 0;
       this.other_cx = 0;
       if(d[1] != 0) {
+        if(d3.mouse(this)[0] > that.width/2 - 10) return;
         this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
       } else {
+        if(d3.mouse(this)[0] < that.width/2 - 5) return;
         this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
@@ -339,10 +329,12 @@ class LineGraph {
 
     function dragged(d, i) {
       if(d[1] != 0) {
+        if(d3.mouse(this)[0] > that.width/2 - 10) return;
         this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
       } else {
+        if(d3.mouse(this)[0] < that.width/2 - 5) return;
         this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
