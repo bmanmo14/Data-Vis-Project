@@ -8,7 +8,7 @@ class LineGraph {
     this.topics = data.topics;
     this.religion_graph = religion_graph;
 
-    this.margin = { top: 20, right: 25, bottom: 50, left: 25 },
+    this.margin = { top: 20, right: 50, bottom: 50, left: 60 },
       this.width = 1250 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
 
@@ -23,7 +23,7 @@ class LineGraph {
 
   layout() {
     this.svg = d3.select("#line-graph").append("svg")
-      .attr("width", this.width + this.margin.left + this.margin.right + 10)
+      .attr("width", this.width + this.margin.left + this.margin.right + 50)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")
       .attr("width", this.width + this.margin.left + this.margin.right + 10 )
@@ -63,10 +63,9 @@ class LineGraph {
       that.circles.transition()
         .duration('50')
         .style("opacity", 0);
-
       d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
-      });
+    });
 
     this.circles = this.path
       .append("g")
@@ -212,36 +211,31 @@ class LineGraph {
     this.drawPaths();
   }
 
-  drawDotLines(cy, other_cy) {
+  drawDotLines(cy, other_cy, other_index, index) {
     const lt = other_cy >= cy;
     this.dot_line.selectAll('line')
-    .data([cy, other_cy])
-    .join("line")
-    .classed(".line_y", true)
-    .attr("class", "label")
-    .style("stroke-dasharray","4,4")
-    .style("stroke", "black")
-    .style("stroke-width", 1)
-    .style("stroke-opacity", 1)
-    .attr("x1",0)
-    .attr("x2", this.width - 20)
-    .attr("y1", d => d)
-    .attr("y2", d => d);
+      .data([[cy, index], [other_cy, other_index]])
+      .join("line")
+      .classed("dot_liney", true)
+      .attr("class", "label")
+      .style("stroke-dasharray","4,4")
+      .style("stroke", "black")
+      .style("stroke-width", 1)
+      .style("stroke-opacity", 1)
+      .attr("x1",0)
+      .attr("x2", this.width)
+      .attr("y1", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0])
+      .attr("y2", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0]);
     this.dot_line.selectAll("text")
-    .data([cy, other_cy])
-    .join("text")
-    .attr("x", this.width - 10)
-    .attr("y", (d, i) =>    {
-      d = d > this.yScale(0) ? this.yScale(0) : d;
-    if(i == 0 && !lt) {
-      d += 20;
-    }
-      return d;
-    })
-    .text(d => this.yConv(d).toFixed(1) + "%");
+      .data([[cy, index], [other_cy, other_index]])
+      .join("text")
+      .classed("dot_line", true)
+      .attr("x", d => d[1] == 0 ? -50 : this.width + 10)
+      .attr("y", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0])
+      .text(d => this.yConv(d[0]) < 0 ? 0.0 + "%" : this.yConv(d[0]).toFixed(1) + "%");
   }
 
-  sendChange(cy, other_cy) {
+  sendChange(cy, other_cy, index, other_index) {
     if(this.selected_topic === "" || this.selected_attribute == "" ||this.selected_topic === null || this.selected_attribute == null) {
       this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, null, null, null);
     }
@@ -252,7 +246,7 @@ class LineGraph {
                                 this.data[this.selected_countries[1]].topic_attributes[this.selected_year].topics[this.selected_topic].attributes[this.selected_attribute]];
       this.religion_graph.changeAttrOrYear(this.selected_topic, this.selected_attribute, this.selected_year, selectedCountryReligions, selectedAttrValues);
     }
-    this.drawDotLines(cy, other_cy);
+    this.drawDotLines(cy, other_cy, index, other_index);
     this.tooltip.setupTooltip(this.selected_topic || this.topic_dropdown || "", this.selected_attribute, this.selected_year || YEAR_START, this.selected_countries);
   }
 
@@ -270,9 +264,12 @@ class LineGraph {
       .attr("stroke", "gray")
       .attr("stroke-width", 4)
       .attr("d", d => d[0])
-      .call(this.drag(that));
-      // .on('click', function (d, i) {
-      //   // if (d.defaultPrevented) return;
+      .call(this.drag(that))
+      .on('click', function (d, i) {
+    d3.selectAll(".dot_line").remove();
+    d3.selectAll(".dot_liney").remove();
+    });
+        //   // if (d.defaultPrevented) return;
       // d3.select(this).attr("stroke", "gray")
       // that.tooltip.transition()
       //   .duration('50')
@@ -288,6 +285,8 @@ class LineGraph {
 
   drag(that) {
     function dragstarted(d, i) {
+      d3.selectAll(".dot_line").remove();
+      d3.selectAll(".dot_liney").remove();
       if (that.selected_attribute != null) {
       d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
       d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
@@ -307,11 +306,15 @@ class LineGraph {
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
       }
-      this.other_cy = that.yScale(that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]])
-      this.cy = that.yScale(that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]]);
+      this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
+      this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
+
+      const y = that.yScale(this.cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.cy);
+      const other_y = that.yScale(this.other_cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.other_cy);
+
       this.cx = d3.mouse(this)[0];
 
-      var circles = [[this.cx, this.cy, d[1]], [this.other_cx, this.other_cy, this.other_country]]
+      var circles = [[this.cx, y, d[1]], [this.other_cx, other_y, this.other_country]]
       that.circles.style("opacity", 1);
 
       d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion] || that.region_color["Other"]);
@@ -330,7 +333,7 @@ class LineGraph {
       that.selected_topic = d[2];
       that.selected_attribute = d[3];
       that.selected_year = this.year
-      that.sendChange(this.cy, this.other_cy);
+      that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy), d[1], this.other_country);
     }
 
     function dragged(d, i) {
@@ -363,7 +366,7 @@ class LineGraph {
         }
       }
 
-      const y = this.cy = that.yScale(this.cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.cy);
+      const y = that.yScale(this.cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.cy);
       const other_y = that.yScale(this.other_cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.other_cy);
 
       d3.select(this).attr("stroke", d => that.religion_color[that.data[that.selected_countries[d[1]]].religion[this.year].parent_religion] || that.religion_color.Other);
@@ -383,12 +386,12 @@ class LineGraph {
             return that.religion_color[that.data[that.selected_countries[od[2]]].religion[this.year].parent_religion] || that.religion_color["Other"];
           });
       that.selected_year = this.year
-      that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy));
+      that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy), d[1], this.other_country);
   }
 
     function dragended(d, i) {
       that.selected_year = this.year
-      that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy));
+      that.sendChange(that.yScale(this.cy), that.yScale(this.other_cy), d[1], this.other_country);
     }
 
     return d3.drag()
