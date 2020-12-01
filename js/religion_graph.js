@@ -3,7 +3,7 @@ class ReligionGraph {
         this.data = religions;
         this.religionBuckets = religionBuckets;
         this.religionColors = religionColors;
-        this.margin = { top: 50, right: 50, bottom: 50, left: 75 };
+        this.margin = { top: 50, right: 80, bottom: 50, left: 80 };
         this.width = 1250;
         this.height = 1200;
         this.chartHeight = 100;
@@ -143,18 +143,18 @@ class ReligionGraph {
     drawCountryIndicatorText(c, v, rectWidth, rectHeight, rLabelG) {
         rLabelG.append("rect")
             .style("fill", "E9E9E9")
-            .style("opacity", ".3")
+            .style("opacity", ".7")
             .attr("width", rectWidth)
             .attr("height", rectHeight)
             .style("stroke", "black")
-            .style("stroke-width", 1);
+            .style("stroke-width", 0);
         let rTextCountry = rLabelG.append("text")
             .text(`${c}@`);
         let rTextValue = rLabelG.append("text")
             .text(`${v} \%`);
         rLabelG.selectAll("text")
             .style("font-family", "Helvetica")
-            .style("fill", "#606060")
+            .style("fill", "#555555")
             .attr("font-size", "20px");
         let rTextCountryBBox = rTextCountry.node().getBBox();
         let rTextValueBBox = rTextValue.node().getBBox();
@@ -210,7 +210,6 @@ class ReligionGraph {
     }
 
     updateCharts() {
-        // console.log(this.selectedTopic, this.selectedAttr, this.year);
         let that = this;
         this.clearCharts();
         let bars = d3.selectAll(".indiv-relig-plot")
