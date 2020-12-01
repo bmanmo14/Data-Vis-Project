@@ -25,7 +25,7 @@ class Tooltip {
   layout() {
     this.desc_span = d3.select("#attribute-selection").append("svg")
       .attr("width", this.description_width + this.description_margin.left + this.description_margin.right)
-      .attr("height", this.description_height + this.description_margin.top + this.description_margin.bottom);
+      .attr("height", 80);
 
     this.span = d3.select("#tooltip").append("svg")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
@@ -42,6 +42,8 @@ class Tooltip {
       .attr("transform", "translate(" + this.tooltip_margin.left + "," + this.tooltip_margin.top + ")")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
       .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom)
+        .append('text')
+        .attr('id', 'attr-desc')
 
     this.tooltip_lines = this.tooltip.append("g");
     this.tooltip_data_left = this.tooltip.append("g")
@@ -90,19 +92,48 @@ class Tooltip {
       .attr("y2", this.tooltip_height);
   }
 
-  updateDescription() {
-    const description = this.description
-      .selectAll("text")
-      .data(["Attribute Description"])
-      .enter()
-      .append("text")
-      .attr("class", "center-text")
-      .style("opacity", 1);
+  updateDescription(selected_year, selected_attribute, selected_topic, country) {
+    let desc = country.topic_attributes[selected_year].topics[selected_topic].attribute_definition[selected_attribute];
 
-    description.append("tspan")
-    .attr("x", 0)
-    .attr("dy", (d, i) => (1.25 * 1) + "em")
-    .text((d, i) => d);
+    let description = d3.select("#attribute-selection").select("g");
+
+    description.selectAll('text').remove();
+
+    description.append('text').append("tspan")
+        .attr("x", 0)
+        .attr("dy", (d, i) => (1.05 * 1) + "em")
+        .attr("class", "center-text")
+        .style("opacity", 1)
+        .text('Attribute Description');
+    let text = description.append('text')
+        .attr("x", 0)
+        .attr("dy", (d, i) => (1.2 * 2) + "em")
+        .text(desc);
+
+    // logic for making text wrap inside an svg
+    let words = text.text().split(/\s+/).reverse();
+    let width = this.description_width + this.description_margin.left + this.description_margin.right;
+    let y = parseFloat(text.attr('dy'));
+    let x = text.attr('x');
+    let anchor = text.attr('text-anchor');
+
+    let tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('text-anchor', anchor);
+    let lineNumber = 0;
+    let line = [];
+    let word = words.pop();
+
+    while (word) {
+      line.push(word);
+      tspan.text(line.join(' '));
+      if (tspan.node().getComputedTextLength() > width) {
+        lineNumber += 1;
+        line.pop();
+        tspan.text(line.join(' '));
+        line = [word];
+        tspan = text.append('tspan').attr('x', x).attr('y', lineNumber * 56).attr('anchor', anchor).text(word);
+      }
+      word = words.pop();
+    }
   }
 
   // Topic: Attribute Description?
@@ -113,7 +144,13 @@ class Tooltip {
     this.selected_topic = selected_topic;
     if(selected_attribute != this.selected_attribute) {
       this.selected_attribute = selected_attribute;
-      this.updateDescription();
+      if(selected_attribute !== '') {
+        let country = this.data[selected_countries[0]]
+        this.updateDescription(selected_year, selected_attribute, selected_topic, country);
+      }
+      else {
+        d3.select("#attribute-selection").select("g").selectAll('text').remove();
+      }
     }
     this.selected_year = selected_year;
     this.selected_countries = selected_countries;

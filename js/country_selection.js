@@ -285,8 +285,8 @@ class CountrySelection {
             .attr('class', d => d.name)
             .attr('fill', d => this.religion_color[d.name])
             .attr('height', 15)
-            .attr('width', d => this.scaleX(d.value))
-            .attr('x', 3)
+            .attr('width', d => d.value === 0 ? 0 : (this.scaleX(d.value) - 5))
+            .attr('x', 2)
             .attr('y', 0);
     }
 
