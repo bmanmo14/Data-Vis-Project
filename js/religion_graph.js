@@ -9,7 +9,7 @@ class ReligionGraph {
         this.chartHeight = 100;
         this.plotMargin = 50;
         this.xScale = d3.scaleLinear()
-            .domain([YEAR_START, YEAR_END])
+            .domain([YEAR_START, YEAR_END - 1])
             .range([this.margin.left, this.width - this.margin.right]);
         this.yScale = d3.scaleLinear()
             .domain([0, 100])
@@ -57,7 +57,7 @@ class ReligionGraph {
     createReligionPlot(svg, religion, yOffset) {
         let xAxis = d3.axisBottom(this.xScale)
             .tickSize(5)
-            .ticks(YEAR_END - YEAR_START + 1)
+            .ticks(YEAR_END - 1 - YEAR_START)
             .tickFormat(d => (d % 5 == 0) ? d : "");
         svg.append("g")
             .style("font-size", "12px")
