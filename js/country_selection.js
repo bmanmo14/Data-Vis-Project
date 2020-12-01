@@ -171,8 +171,8 @@ class CountrySelection {
                 .on("click", d => {
                     delete this.religion_year_counts[this.selected_countries[0]];
                     this.selected_countries[0] = d.country_code;
-                    this.line_graph.changeSelectedCountry(d.country_code);
-                    this.calcCountryReligionCounts(0);
+                    this.line_graph.changeSelectedCountry(this.selected_countries);
+                    this.calcCountryReligionCounts(d.country_code);
                     this.drawReligionYearTable(0);
                     d3.select("#dropdown-menu2")
                         .html(this.data[this.selected_countries[0]].country_name);
