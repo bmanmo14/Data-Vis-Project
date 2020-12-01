@@ -59,13 +59,15 @@ class LineGraph {
       .attr("height", this.height);
 
     const that = this;
-    this.svg.on('click', function (d, i) {
-      that.circles.transition()
-        .duration('50')
-        .style("opacity", 0);
-      d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
-      d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
-    });
+    // this.svg.on('click', function (d, i) {
+    //   that.circles.transition()
+    //     .duration('50')
+    //     .style("opacity", 0);
+    //   d3.select("#" + that.selected_countries[0] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+    //   d3.select("#" + that.selected_countries[1] + that.selected_topic.split(/[ ,]+/)[0] + that.selected_attribute.split(/[ ,]+/)[0]).attr("stroke", "gray");
+    //   that.dot_line.selectAll('line').remove();
+    //   that.dot_line.selectAll('text').remove();
+    // });
 
     this.circles = this.path
       .append("g")
@@ -160,6 +162,8 @@ class LineGraph {
     }
     this.selected_year = YEAR_START;
     this.drawLines();
+    this.dot_line.selectAll('line').remove();
+    this.dot_line.selectAll('text').remove();
     this.sendChange(this.height, this.height);
   }
 
@@ -169,6 +173,8 @@ class LineGraph {
       .duration('50')
       .style("opacity", 0);
     this.drawLines();
+    this.dot_line.selectAll('line').remove();
+    this.dot_line.selectAll('text').remove();
     this.religion_graph.changeSelectedCountries(this.selected_countries);
   }
 
@@ -212,7 +218,6 @@ class LineGraph {
   }
 
   drawDotLines(cy, other_cy, other_index, index) {
-    const lt = other_cy >= cy;
     this.dot_line.selectAll('line')
       .data([[cy, index], [other_cy, other_index]])
       .join("line")
@@ -263,12 +268,11 @@ class LineGraph {
       .attr("id", d => d[4])
       .attr("fill", "none")
       .attr("stroke", "gray")
-      .attr("stroke-width", 4)
+      .attr("stroke-width", 5)
       .attr("d", d => d[0])
       .call(this.drag(that))
       .on('click', function (d, i) {
-        d3.selectAll(".dot_line").remove();
-        d3.selectAll(".dot_liney").remove();
+        that.drag(that);
       });
     }
 
@@ -291,19 +295,19 @@ class LineGraph {
         this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
+        this.cx =that.xScale(this.year-YEAR_END);
       } else {
         if(d3.mouse(this)[0] < that.width/2 - 5) return;
         this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
+        this.cx = that.xScale(this.year-YEAR_START);
       }
       this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
       this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
       const y = that.yScale(this.cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.cy);
       const other_y = that.yScale(this.other_cy) > that.yScale(0) ? that.yScale(0) : that.yScale(this.other_cy);
-
-      this.cx = d3.mouse(this)[0];
 
       var circles = [[this.cx, y, d[1]], [this.other_cx, other_y, this.other_country]]
       that.circles.style("opacity", 1);
@@ -316,7 +320,7 @@ class LineGraph {
         .data(circles)
         .join("circle")
         .attr("r", CIRCLE_RADIUS)
-        .attr("cx", d => d[0] + CIRCLE_RADIUS)
+        .attr("cx", d => d[0])
         .attr("cy", d => d[1])
         .attr("opacity", 1)
         .attr("fill", d => that.religion_color[that.data[that.selected_countries[d[2]]].religion[this.year].parent_religion] || that.religion_color["Other"]);
@@ -333,11 +337,13 @@ class LineGraph {
         this.year = YEAR_END + parseInt(that.xConv(d3.mouse(this)[0])) - 1;
         this.other_country = 0;
         this.other_cx = that.xScale(this.year-YEAR_START);
+        this.cx = that.xScale(this.year-YEAR_END);
       } else {
         if(d3.mouse(this)[0] < that.width/2 - 5) return;
         this.year = YEAR_START + parseInt(that.xConv(d3.mouse(this)[0])) + 1;
         this.other_country = 1;
         this.other_cx = that.xScale(this.year-YEAR_END);
+        this.cx = that.xScale(this.year-YEAR_START);
       }
       if(this.year < YEAR_START || this.year >= YEAR_END) {
         return;
@@ -345,7 +351,6 @@ class LineGraph {
       console.log(this.year)
       this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
-      this.cx = d3.mouse(this)[0];
       this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
       if(!this.cy) {
@@ -376,7 +381,7 @@ class LineGraph {
           .data(circles)
           .join("circle")
           .attr("r", CIRCLE_RADIUS)
-          .attr("cx", od => od[0] + CIRCLE_RADIUS)
+          .attr("cx", od => od[0])
           .attr("cy", od => od[1])
           .attr("opacity", 1)
           .attr("fill", od => {
