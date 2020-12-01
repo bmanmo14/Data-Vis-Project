@@ -8,9 +8,9 @@ class Tooltip {
     //   this.width = 1250 - this.margin.left - this.margin.right,
     //   this.height = 750 - this.margin.top - this.margin.bottom;
 
-    this.description_margin = { top: 20, right: 25, bottom: 10, left: 25 },
+    this.description_margin = { top: 100, right: 25, bottom: 20, left: 25 },
       this.description_width = 1250 - this.description_margin.left - this.description_margin.right,
-      this.description_height =  100 - this.description_margin.top - this.description_margin.bottom;
+      this.description_height =  50 - this.description_margin.top - this.description_margin.bottom;
 
     this.tooltip_margin = { top: 20, right: 25, bottom: 10, left: 25 },
       this.tooltip_width = 1250 - this.tooltip_margin.left - this.tooltip_margin.right,
@@ -23,7 +23,7 @@ class Tooltip {
   }
 
   layout() {
-    this.description = d3.select("#attribute-selection").append("svg")
+    this.desc_span = d3.select("#attribute-selection").append("svg")
       .attr("width", this.description_width + this.description_margin.left + this.description_margin.right)
       .attr("height", this.description_height + this.description_margin.top + this.description_margin.bottom);
 
@@ -32,6 +32,12 @@ class Tooltip {
       .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom);
 
     this.tooltip = this.span
+      .append("g")
+      .attr("transform", "translate(" + this.tooltip_margin.left + "," + this.tooltip_margin.top + ")")
+      .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
+      .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom);
+
+    this.description = this.desc_span
       .append("g")
       .attr("transform", "translate(" + this.tooltip_margin.left + "," + this.tooltip_margin.top + ")")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
@@ -95,7 +101,7 @@ class Tooltip {
 
     description.append("tspan")
     .attr("x", 0)
-    .attr("dy", (d, i) => (1.25 * i) + "em")
+    .attr("dy", (d, i) => (1.25 * 1) + "em")
     .text((d, i) => d);
   }
 
