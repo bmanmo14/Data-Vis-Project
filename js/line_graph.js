@@ -8,7 +8,7 @@ class LineGraph {
     this.topics = data.topics;
     this.religion_graph = religion_graph;
 
-    this.margin = { top: 20, right: 50, bottom: 50, left: 60 },
+    this.margin = { top: 20, right: 50, bottom: 50, left: 70 },
       this.width = 1250 - this.margin.left - this.margin.right,
       this.height = 750 - this.margin.top - this.margin.bottom;
 
@@ -23,7 +23,7 @@ class LineGraph {
 
   layout() {
     this.svg = d3.select("#line-graph").append("svg")
-      .attr("width", this.width + this.margin.left + this.margin.right + 50)
+      .attr("width", this.width + this.margin.left + this.margin.right + 70)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")
       .attr("width", this.width + this.margin.left + this.margin.right + 10 )
@@ -230,7 +230,7 @@ class LineGraph {
       .data([[cy, index], [other_cy, other_index]])
       .join("text")
       .classed("dot_line", true)
-      .attr("x", d => d[1] == 0 ? -70 : this.width + 10)
+      .attr("x", d => d[1] == 0 ? - 65 : this.width + 10)
       .attr("y", d => d[0] > this.yScale(0) ? this.yScale(0) : d[0])
       .text(d => this.yConv(d[0]) < 0 ? 0.0 + "%" : this.yConv(d[0]).toFixed(1) + "%");
   }
@@ -326,7 +326,7 @@ class LineGraph {
         .data(circles)
         .join("circle")
         .attr("r", CIRCLE_RADIUS)
-        .attr("cx", d => d[0])
+        .attr("cx", d => d[0] + CIRCLE_RADIUS)
         .attr("cy", d => d[1])
         .attr("opacity", 1)
         .attr("fill", d => that.religion_color[that.data[that.selected_countries[d[2]]].religion[this.year].parent_religion] || that.religion_color["Other"]);
@@ -380,7 +380,7 @@ class LineGraph {
           .data(circles)
           .join("circle")
           .attr("r", CIRCLE_RADIUS)
-          .attr("cx", od => od[0])
+          .attr("cx", od => od[0] + CIRCLE_RADIUS)
           .attr("cy", od => od[1])
           .attr("opacity", 1)
           .attr("fill", od => {
