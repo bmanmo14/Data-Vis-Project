@@ -58,8 +58,10 @@ class CountrySelection {
         tableOneHeaderRowOne.append('td')
             .append('img')
         tableOneHeaderRowOne.append('th')
+            .attr('colspan', 2);
 
         let tableOneHeaderRowTwo = tableOneHeader.append('tr');
+        tableOneHeaderRowTwo.append('td');
         tableOneHeaderRowTwo.append('td');
         tableOneHeaderRowTwo.append('td')
             .classed('year-count-legend', true);
@@ -77,8 +79,10 @@ class CountrySelection {
         tableTwoHeaderRowOne.append('td')
             .append('img')
         tableTwoHeaderRowOne.append('th')
+            .attr('colspan', 2);
 
         let tableTwoHeaderRowTwo = tableTwoHeader.append('tr');
+        tableTwoHeaderRowTwo.append('td');
         tableTwoHeaderRowTwo.append('td');
         tableTwoHeaderRowTwo.append('td')
             .classed('year-count-legend', true);
@@ -194,11 +198,15 @@ class CountrySelection {
 
         //update header
         d3.select(tableId).select('thead').select('tr').select('th')
-            .text(this.data[this.selected_countries[selectedIndex]].country_name);
+            .text(this.data[this.selected_countries[selectedIndex]].country_name)
+            .style("opacity", 0)
+            .transition().duration(500).ease(d3.easeLinear).style("opacity", 1);
 
         //update flag image
         d3.select(tableId).select('thead').select('tr').select('img')
-            .attr('src', 'countrys-flags/svg/' + country_name + '.svg');
+            .attr('src', 'countrys-flags/svg/' + country_name + '.svg')
+            .style("opacity", 0)
+            .transition().duration(500).ease(d3.easeLinear).style("opacity", 1);
 
         // draw body
         let rowSelection = d3.select(tableBodyId)
@@ -208,6 +216,11 @@ class CountrySelection {
         let dataSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
             .join('td')
+
+        let indicatorSelection = dataSelection.filter(d => d.type == 'indicator');
+        indicatorSelection.selectAll('img').remove();
+        indicatorSelection.append('img')
+            .attr('src',d => d.value);
 
         let religionNameSelection = dataSelection.filter(d => d.type == 'religion_name');
         religionNameSelection.text(d => d.value);
@@ -284,6 +297,11 @@ class CountrySelection {
      * @param d - religion year count for that country.
      */
     rowToCellDataTransform(d) {
+        let indicator = {
+            type : 'indicator',
+            value :  d.name === "" ? 'religion-indicators/other.png' :
+                'religion-indicators/' + d.name.toLowerCase().replaceAll(' ', '-') + '.png'
+        };
         let religion_name = {
             type: 'religion_name',
             value: d.name === "" ? "Other" : d.name,
@@ -293,7 +311,7 @@ class CountrySelection {
             name:  d.name === "" ? "Other" : d.name,
             value: d.count,
         };
-        let data_list = [religion_name, religion_count];
+        let data_list = [indicator, religion_name, religion_count];
         return data_list;
     }
 
