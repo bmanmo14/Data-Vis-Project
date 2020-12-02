@@ -204,6 +204,7 @@ header {
 #parent-table {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
 
 .religion-year-count td {
