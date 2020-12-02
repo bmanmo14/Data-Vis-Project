@@ -1,8 +1,8 @@
 #help-button {
   float:left;
 }
-body {  
-  min-width:1400px; 
+body {
+  min-width:1400px;
 }
 #button-group {
     max-width: 1200px;
@@ -211,4 +211,9 @@ header {
 
 .axis-label {
     text-anchor: middle;
+}
+
+.table-size {
+  max-width: 1200px;
+  margin: auto;
 }
