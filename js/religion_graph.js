@@ -3,8 +3,8 @@ class ReligionGraph {
         this.data = religions;
         this.religionBuckets = religionBuckets;
         this.religionColors = religionColors;
-        this.margin = { top: 50, right: 80, bottom: 50, left: 80 };
-        this.width = 1250;
+        this.margin = { top: 50, right: 80, bottom: 50, left: 100 };
+        this.width = 1350;
         this.height = 1200;
         this.chartHeight = 100;
         this.plotMargin = 50;

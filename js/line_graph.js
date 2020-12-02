@@ -8,9 +8,9 @@ class LineGraph {
     this.topics = data.topics;
     this.religion_graph = religion_graph;
 
-    this.margin = { top: 20, right: 50, bottom: 50, left: 70 },
-      this.width = 1250 - this.margin.left - this.margin.right,
-      this.height = 750 - this.margin.top - this.margin.bottom;
+    this.margin = { top: 20, right: 50, bottom: 50, left: 120 },
+      this.width = 1360 - this.margin.left - this.margin.right,
+      this.height = 600 - this.margin.top - this.margin.bottom;
 
     this.selected_countries = ["USA", "MEX"];
     this.selected_topic = null;
