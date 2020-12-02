@@ -234,6 +234,11 @@ header {
     text-anchor: middle;
 }
 
+.table-size {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .description {
     fill: rgb(96, 96, 96);
 }
