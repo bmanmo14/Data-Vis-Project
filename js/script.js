@@ -25,5 +25,6 @@ Promise.all([d3.csv('data/esg/CountryData.csv'), d3.csv('data/religion/relig.csv
     const line_graph = new LineGraph(country_data, religion_color, religion_graph, tooltip);
     const topic_selection = new TopicSelection(line_graph, country_data.topics);
     const country_selection = new CountrySelection(country_data, line_graph, religion_color);
+    const help = new Help();
 });
 
