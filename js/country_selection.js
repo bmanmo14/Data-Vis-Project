@@ -44,12 +44,9 @@ class CountrySelection {
             .append('table')
             .attr('id', 'parent-table')
             .append('tr');
-        // this.svg = span
-        // .append("svg")
-        // .attr("width", this.width + this.margin.left + this.margin.right)
-        // .attr("height", this.height + this.margin.top + this.margin.bottom);
 
-        let tableOne = parentTable.append('td').append("table");
+        let tableOne = parentTable.append('td').append("table")
+            .style('margin', '15px');
         let tableOneHeader = tableOne.attr("id", "religion-year-count-one")
             .classed('religion-year-count', true)
             .append('thead');
@@ -70,7 +67,8 @@ class CountrySelection {
         tableOne.append('tbody')
             .attr("id", "religion-year-count-body-one");
 
-      let tableTwo = parentTable.append('td').append("table");
+      let tableTwo = parentTable.append('td').append("table")
+          .style('margin', '15px');
       let tableTwoHeader = tableTwo.attr("id", "religion-year-count-two")
             .classed('religion-year-count', true)
             .append('thead');
