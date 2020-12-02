@@ -212,3 +212,7 @@ header {
 .axis-label {
     text-anchor: middle;
 }
+
+.description {
+    fill: rgb(96, 96, 96);
+}

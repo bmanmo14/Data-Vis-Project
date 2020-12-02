@@ -25,7 +25,7 @@ class Tooltip {
   layout() {
     this.desc_span = d3.select("#attribute-selection").append("svg")
       .attr("width", this.description_width + this.description_margin.left + this.description_margin.right)
-      .attr("height", 80);
+      .attr("height", 175);
 
     this.span = d3.select("#tooltip").append("svg")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
@@ -99,17 +99,41 @@ class Tooltip {
 
     description.selectAll('text').remove();
 
+
+    // topic description logic
     description.append('text').append("tspan")
         .attr("x", 0)
-        .attr("dy", (d, i) => (1.05 * 1) + "em")
+        .attr("dy", (d, i) => (0.8 * 2) + "em")
         .attr("class", "center-text")
         .style("opacity", 1)
-        .text('Attribute Description');
-    let text = description.append('text')
-        .attr("x", 0)
-        .attr("dy", (d, i) => (1.2 * 2) + "em")
-        .text(desc);
+        .style('font-size', '24px')
+        .text('Topic: ' + selected_topic);
 
+    // attribute description logic
+    description.append('text').append("tspan")
+        .attr("x", 0)
+        .attr("dy", (d, i) => (1.6 * 2) + "em")
+        .attr("class", "center-text")
+        .style("opacity", 1)
+        .style('font-size', '18px')
+        .text('Attribute: ' + selected_attribute);
+
+    description.append('text').append("tspan")
+        .attr("x", 0)
+        .attr("dy", (d, i) => (2.8 * 2) + "em")
+        .attr("class", "center-text description")
+        .style("opacity", 1)
+        .text('Description:');
+
+    let text = description.append('text')
+        .attr("class", "description")
+        .attr("x", 0)
+        .attr("dy", (d, i) => (3.2 * 2) + "em")
+        .text(desc);
+    this.wrapText(text, 15)
+  }
+
+  wrapText(text, scale) {
     // logic for making text wrap inside an svg
     let words = text.text().split(/\s+/).reverse();
     let width = this.description_width + this.description_margin.left + this.description_margin.right;
@@ -126,11 +150,11 @@ class Tooltip {
       line.push(word);
       tspan.text(line.join(' '));
       if (tspan.node().getComputedTextLength() > width) {
-        lineNumber += 1;
         line.pop();
         tspan.text(line.join(' '));
         line = [word];
-        tspan = text.append('tspan').attr('x', x).attr('y', lineNumber * 56).attr('anchor', anchor).text(word);
+        tspan = text.append('tspan').attr('x', x).attr('y', 125 + (lineNumber * scale)).attr('anchor', anchor).text(word);
+        lineNumber += 1;
       }
       word = words.pop();
     }
@@ -158,44 +182,50 @@ class Tooltip {
       .selectAll("text").remove();
     this.tooltip_data_left
       .selectAll("text").remove();
-    const labels = [
-      "Topic: ",
-      "Attribute: ",
-      "Religion: "
-    ];
-    const label_value_left = [
-      this.selected_topic,
-      this.selected_attribute,
-      Object.keys(this.data[this.selected_countries[1]].religion[this.selected_year].religions)[0]
-    ];
-    const text = this.tooltip_data_left
-      .selectAll("text")
-      .data(labels)
-      .enter()
-      .append("text")
-      .attr("class", "center-text")
-      .style("opacity", 1);
+    if(selected_attribute !== '') {
+      const labels = [
+        "Religion: ",
+        "Percentage: ",
+        "Year: "
+      ];
+      let left_percent = parseFloat(this.data[this.selected_countries[1]].topic_attributes[selected_year].topics[selected_topic].attributes[selected_attribute]);
+      left_percent = Number.isNaN(left_percent) ? 0.0 : left_percent.toFixed(2);
+      const label_value_left = [
+        Object.keys(this.data[this.selected_countries[1]].religion[this.selected_year].religions)[0],
+        left_percent + '%',
+        selected_year
+      ];
+      const text = this.tooltip_data_left
+          .selectAll("text")
+          .data(labels)
+          .enter()
+          .append("text")
+          .attr("class", "center-text")
+          .style("opacity", 1);
 
-    text.append("tspan")
-    .attr("x", 0)
-    .attr("dy", (d, i) => (1.25 * i) + "em")
-    .text((d, i) => labels[i] + label_value_left[i]);
-    const label_value_right = [
-      this.selected_topic,
-      this.selected_attribute,
-      Object.keys(this.data[this.selected_countries[0]].religion[this.selected_year].religions)[0]
-    ];
-    const text_right = this.tooltip_data_right
-      .selectAll("text")
-      .data(labels)
-      .enter()
-      .append("text")
-      .attr("class", "center-text")
-      .style("opacity", 1);
+      text.append("tspan")
+          .attr("x", 0)
+          .attr("dy", (d, i) => (1.25 * i) + "em")
+          .text((d, i) => labels[i] + label_value_left[i]);
+      let right_percent = parseFloat(this.data[this.selected_countries[0]].topic_attributes[selected_year].topics[selected_topic].attributes[selected_attribute])
+      right_percent = Number.isNaN(right_percent) ? 0.0 : right_percent.toFixed(2)
+      const label_value_right = [
+        Object.keys(this.data[this.selected_countries[0]].religion[this.selected_year].religions)[0],
+        right_percent + '%',
+        selected_year
+      ];
+      const text_right = this.tooltip_data_right
+          .selectAll("text")
+          .data(labels)
+          .enter()
+          .append("text")
+          .attr("class", "center-text")
+          .style("opacity", 1);
 
-    text_right.append("tspan")
-    .attr("x", 0)
-    .attr("dy", (d, i) => (1.25 * i) + "em")
-    .text((d, i) => labels[i] + label_value_right[i]);
+      text_right.append("tspan")
+          .attr("x", 0)
+          .attr("dy", (d, i) => (1.25 * i) + "em")
+          .text((d, i) => labels[i] + label_value_right[i]);
+    }
   }
 }
