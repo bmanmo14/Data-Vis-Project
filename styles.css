@@ -1,6 +1,36 @@
+#help-div-content {
+  position: absolute;
+  font-family: "Helvetica";
+  fill: #505050;
+  font-size: 18px;
+  top:0;
+  left:0;
+  z-index:5;
+  width:100%;
+  height:100%;
+  display: none;
+}
+
+#help-div-screen {
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(255, 255, 255, 0.411);
+  z-index:3;
+  width:100%;
+  height:100%;
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 #help-button {
   float:left;
 }
+
 body {  
   min-width:1400px; 
 }
@@ -10,7 +40,8 @@ body {
 }
 
 div.hover {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   text-align: center;
   padding: .5rem;
   background: #ffffffad;
@@ -29,16 +60,6 @@ div.hover {
   fill-opacity: 1;
   stroke: black;
   cursor: pointer;
-}
-
-.help-active {
-  position:absolute;
-  top:0;
-  left:0;
-  background:rgba(255, 255, 255, 0.411);
-  z-index:5;
-  width:100%;
-  height:100%;
 }
 
 .circ-brush {
