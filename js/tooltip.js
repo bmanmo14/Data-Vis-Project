@@ -24,10 +24,12 @@ class Tooltip {
 
   layout() {
     this.desc_span = d3.select("#attribute-selection").append("svg")
+      .attr("id", "topic-svg")
       .attr("width", this.description_width + this.description_margin.left + this.description_margin.right)
       .attr("height", 175);
 
     this.span = d3.select("#tooltip").append("svg")
+      .attr("id", "tooltip-svg")
       .attr("width", this.tooltip_width + this.tooltip_margin.left + this.tooltip_margin.right)
       .attr("height", this.tooltip_height + this.tooltip_margin.top + this.tooltip_margin.bottom);
 

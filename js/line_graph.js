@@ -22,7 +22,9 @@ class LineGraph {
   }
 
   layout() {
-    this.svg = d3.select("#line-graph").append("svg")
+    this.svg = d3.select("#line-graph")
+      .append("svg")
+      .attr("id", "line-svg")
       .attr("width", this.width + this.margin.left + this.margin.right + 70)
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")

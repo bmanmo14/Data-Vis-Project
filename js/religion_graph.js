@@ -5,7 +5,7 @@ class ReligionGraph {
         this.religionColors = religionColors;
         this.margin = { top: 50, right: 80, bottom: 50, left: 100 };
         this.width = 1350;
-        this.height = 1200;
+        this.height = 1060;
         this.chartHeight = 100;
         this.plotMargin = 50;
         this.xScale = d3.scaleLinear()
