@@ -14,6 +14,17 @@ Promise.all([d3.csv('data/esg/CountryData.csv'), d3.csv('data/religion/relig.csv
       // Dark Gray
       "#303030",
     ];
+    let toggle_show_more = function() {
+      let show = document.getElementById("collapseExample").className.includes("show");
+      if (show) {
+        document.getElementById("show-more").innerText = "Show More";
+      }
+      else {
+        document.getElementById("show-more").innerText = "Show Less";
+      }
+      document.getElementById("collapseExample").classList.toggle("show");
+    }
+    document.getElementById("show-more").onclick = (e) => toggle_show_more();
     const country_data = new DataOrchestrator(countries, religions);
     var religion_color = {};
     for(var i in country_data.religionBuckets) {
@@ -26,4 +37,3 @@ Promise.all([d3.csv('data/esg/CountryData.csv'), d3.csv('data/religion/relig.csv
     const country_selection = new CountrySelection(country_data, line_graph, religion_color);
     const help = new Help();
 });
-
