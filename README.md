@@ -2,12 +2,13 @@
 
 ### Created By: Brandon Mouser, Kyle Price, Brandon Ward
 
-### [Project Webpage](https://bmanmo14.github.io/Data-Vis-Project/project.html)
+### [Webpage](https://bmanmo14.github.io/Data-Vis-Project/project.html)
+### [YouTube Video](https://youtu.be/p7uaOZ3lrrc)
 
 ### Project Overview
 
 The project is set up like most of the homeworks for this class:
-  * Process Book is ProcessBook.pdf, located [here](./ProcessBook.pdf)
+  * Process Book is ProcessBook.pdf, located [here](/ProcessBook.pdf)
   * The project is loaded from `project.html`
   * Styles are in `styles.css`
   * The feedback excercise and this README are in this main directory
