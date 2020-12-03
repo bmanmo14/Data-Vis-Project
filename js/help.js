@@ -45,14 +45,14 @@ class Help {
         helpData["line_info"] = {
             boxWidth: 230,
             boxHeight: 435,
-            text: "This is the main interaction area. The left and right line plots illustrate the attribute values as they change throughout time (1978 - 2017) for the selected countries. Users can click a line on either side and both plots will 'focus' on the selected year/attribute. The user can also drag their cursor from the left to right and the page will update to reflect the change. Lastly, to narrow the attributes in the plot, the user can select individual topics.",
+            text: "This is the main interaction area. The left and right line plots illustrate the attribute values as they change throughout time (1978 - 2017) for the selected countries. Users can click a line on either side and both plots will 'focus' on the selected year/attribute. The user can also drag their cursor from the left to right and the page will update to reflect the change. Lastly, to narrow the attributes in the plot, the user can select individual topics above.",
             pageElement: "line-svg",
             leftShift : 115,
         };
         helpData["relig_info"] = {
             boxWidth: 230,
             boxHeight: 420,
-            text: "This area is not interactive. It simply reflects the changes made from above. For the selected topic/attribute, metrics are caculated over every country who has a leader that ascribes to the religion represented by the histograms for a given year. The selectable metrics are 'mean', 'median', and 'mode'. Additionally, the selected countries' attribute values are pointed out in their respective religion histograms.",
+            text: "This area is not interactive. It simply reflects the changes made from above. For the selected topic/attribute, metrics are caculated over every country that has a leader that ascribed to the religion represented by the histograms for a given year. The selectable metrics are 'mean', 'median', and 'mode'. Additionally, the selected countries' attribute values are pointed out in their respective religion histograms.",
             pageElement: "religion-svg",
             leftShift: 75,
         };

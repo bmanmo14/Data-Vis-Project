@@ -35,7 +35,7 @@ body {
 }
 
 body {
-  min-width:1500px;
+  min-width:1525px;
 }
 #button-group {
     max-width: 1200px;
@@ -96,6 +96,14 @@ div.hover {
 
 header {
   padding-top: 0.3em;
+  margin-bottom: 30px;
+}
+
+#intro-text {
+  margin: auto;
+  max-width: 1200px;
+  color: #505050;
+  font-size: 18px;
 }
 
 .header-top {
@@ -152,11 +160,6 @@ td.head {
     cursor: pointer;
     padding: 6px;
 }
-
-/* .sortable:hover {
-    background: #d1d1d1;
-
-} */
 
 .sortable.sorting:hover {
     background: #232323;
@@ -247,5 +250,5 @@ tr {
 }
 
 .description {
-    fill: rgb(96, 96, 96);
+    fill: #505050;
 }
