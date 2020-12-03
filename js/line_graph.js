@@ -263,7 +263,6 @@ class LineGraph {
     const sel_country = Object.keys(this.paths).map(d => {
       return this.paths[d];
     });
-    console.log(sel_country);
     this.path.selectAll("path")
       .data(sel_country)
       .join("path")
@@ -350,7 +349,6 @@ class LineGraph {
       if(this.year < YEAR_START || this.year >= YEAR_END) {
         return;
       }
-      console.log(this.year)
       this.other_cy = that.data[that.selected_countries[this.other_country]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];
 
       this.cy = that.data[that.selected_countries[d[1]]].topic_attributes[this.year].topics[d[2]].attributes[d[3]];

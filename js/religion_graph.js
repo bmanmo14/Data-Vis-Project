@@ -100,7 +100,6 @@ class ReligionGraph {
     }
 
     changeAttrOrYear(topic, attr, year, selectedCountryReligions, selectedAttrValues) {
-        console.log(topic, this.selectedTopic);
         if (topic !== this.selectedTopic  || attr === "") {
             this.selectedTopic = topic;
             this.clearCharts();

@@ -29,10 +29,13 @@ body {
 
 #help-button {
   float:left;
+  margin-top: 0.3em;
+  margin-left: 5px;
+  background-color: #0062CC;
 }
 
-body {  
-  min-width:1400px; 
+body {
+  min-width:1500px;
 }
 #button-group {
     max-width: 1200px;
@@ -92,9 +95,17 @@ div.hover {
 }
 
 header {
-  padding: 0.5em;
+  padding-top: 0.3em;
+}
+
+.header-top {
+  margin-left: 140px;
+  margin-right: 140px;
+  font-weight: bold;
+  margin: center;
   text-align: center;
-  height: 100px;
+  height: 60px;
+  font-size: 2.5em;
 }
 table {
   border-collapse: collapse;
@@ -174,12 +185,6 @@ tr {
     text-align: center;
 }
 
-header {
-    padding: 0.5em;
-    text-align: center;
-    height: 100px;
-}
-
 .axis {
   font: 10px sans-serif;
 }
@@ -204,7 +209,7 @@ header {
 #parent-table {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .religion-year-count td {
@@ -238,6 +243,7 @@ header {
 .table-size {
   max-width: 1200px;
   margin: auto;
+  margin-top: 0px;
 }
 
 .description {
